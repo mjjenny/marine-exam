@@ -1,8 +1,10 @@
 /* Engine Room Academy — static cache-first + API network-first + offline POST queue */
-const STATIC_CACHE = "era-static-v3";
+const STATIC_CACHE = "era-static-v4";
 const API_CACHE = "era-api-v1";
+const SHELL_URL = "/index.html";
 const OFFLINE_URL = "/offline.html";
-const PRECACHE_URLS = ["/offline.html", "/manifest.json"];
+// SPA shell must be cached so navigations work with no network.
+const PRECACHE_URLS = ["/", SHELL_URL, OFFLINE_URL, "/manifest.json"];
 const SYNC_TAG = "exam-sync";
 const DB_NAME = "era-offline";
 const DB_VERSION = 1;
@@ -308,12 +310,31 @@ self.addEventListener("fetch", (event) => {
 
   if (request.method !== "GET") return;
 
-  // Navigations: network-first, never pin HTML in the long-lived cache
+  // Navigations: network-first, fall back to cached SPA shell (index.html).
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).catch(() =>
-        caches.match(OFFLINE_URL).then((offline) => offline || caches.match("/"))
-      )
+      (async () => {
+        try {
+          const response = await fetch(request);
+          if (response && response.ok) {
+            const cache = await caches.open(STATIC_CACHE);
+            // Keep both common shell URLs warm for offline launches.
+            cache.put(SHELL_URL, response.clone());
+            cache.put("/", response.clone());
+          }
+          return response;
+        } catch {
+          const cache = await caches.open(STATIC_CACHE);
+          return (
+            (await cache.match(SHELL_URL)) ||
+            (await cache.match("/")) ||
+            (await cache.match(OFFLINE_URL)) ||
+            (await caches.match(SHELL_URL)) ||
+            (await caches.match("/")) ||
+            (await caches.match(OFFLINE_URL))
+          );
+        }
+      })()
     );
     return;
   }
