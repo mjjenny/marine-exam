@@ -16,44 +16,46 @@ import AdminApprovals from "./pages/AdminApprovals.jsx";
 import AdminModeration from "./pages/AdminModeration.jsx";
 import AdminAddDiet from "./pages/AdminAddDiet.jsx";
 import ProtectedRoute from "./auth/ProtectedRoute.jsx";
+import BottomNav from "./components/BottomNav.jsx";
+import Profile from "./pages/Profile.jsx";
 import { useAuth } from "./auth/AuthContext.jsx";
 
 function HeaderNav() {
   const { user, logout } = useAuth();
   return (
-    <nav style={{ marginLeft: "auto", display: "flex", gap: "1rem", alignItems: "center" }}>
-      <Link to="/" style={{ color: "var(--navy-100)" }}>
+    <nav className="header-nav" aria-label="Desktop">
+      <Link to="/" className="header-nav-link">
         Home
       </Link>
       {user ? (
         <>
           {user.is_admin && (
             <>
-              <Link to="/admin/approvals" style={{ color: "var(--amber-500)" }}>
+              <Link to="/admin/approvals" className="header-nav-link accent">
                 Approvals
               </Link>
-              <Link to="/admin/moderation" style={{ color: "var(--amber-500)" }}>
+              <Link to="/admin/moderation" className="header-nav-link accent">
                 Moderation
               </Link>
-              <Link to="/admin/add-diet" style={{ color: "var(--amber-500)" }}>
+              <Link to="/admin/add-diet" className="header-nav-link accent">
                 Add Diet
               </Link>
             </>
           )}
-          <span style={{ color: "var(--navy-100)", fontSize: "0.85rem" }}>
+          <Link to="/profile" className="header-nav-meta">
             {user.email}
             {user.is_admin ? " (admin)" : ""}
-          </span>
-          <button className="btn btn-ghost" onClick={logout}>
+          </Link>
+          <button type="button" className="btn btn-ghost" onClick={logout}>
             Log out
           </button>
         </>
       ) : (
         <>
-          <Link to="/login" style={{ color: "var(--navy-100)" }}>
+          <Link to="/login" className="header-nav-link">
             Log in
           </Link>
-          <Link to="/signup" style={{ color: "var(--amber-500)" }}>
+          <Link to="/signup" className="header-nav-link accent">
             Sign up
           </Link>
         </>
@@ -67,9 +69,9 @@ export default function App() {
   // clearing a prior page error — while the header/nav stay outside it and keep working.
   const location = useLocation();
   return (
-    <>
+    <div className="app-shell">
       <WireframeBackground />
-      <header className="app-header">
+      <header className="app-header desktop-only">
         <span className="brand">
           Marine Engineer <span className="accent">Exam Prep</span>
         </span>
@@ -83,6 +85,14 @@ export default function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/pending" element={<Pending />} />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/"
             element={
@@ -158,6 +168,7 @@ export default function App() {
         </Routes>
         </ErrorBoundary>
       </main>
-    </>
+      <BottomNav />
+    </div>
   );
 }

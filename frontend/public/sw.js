@@ -1,7 +1,7 @@
-/* Engine Room Academy — basic cache-first service worker */
-const CACHE_NAME = "era-static-v1";
+/* Engine Room Academy — cache-first static assets; network-first HTML */
+const CACHE_NAME = "era-static-v2";
 const OFFLINE_URL = "/offline.html";
-const PRECACHE_URLS = ["/", "/offline.html", "/manifest.json"];
+const PRECACHE_URLS = ["/offline.html", "/manifest.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -22,7 +22,7 @@ self.addEventListener("activate", (event) => {
 function isStaticAsset(url) {
   return (
     url.pathname.startsWith("/assets/") ||
-    /\.(?:js|css|png|jpg|jpeg|gif|svg|webp|woff2?|ttf|ico|json)$/i.test(url.pathname)
+    /\.(?:js|css|png|jpg|jpeg|gif|svg|webp|woff2?|ttf|ico)$/i.test(url.pathname)
   );
 }
 
@@ -42,6 +42,17 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Navigations: always prefer the network so index.html / SPA shell stay fresh.
+  // Do not write HTML into the long-lived cache (prevents sticky old shells).
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request).catch(() =>
+        caches.match(OFFLINE_URL).then((offline) => offline || caches.match("/"))
+      )
+    );
+    return;
+  }
+
   // Cache-first for hashed build assets and other static files.
   if (isStaticAsset(url)) {
     event.respondWith(
@@ -57,24 +68,6 @@ self.addEventListener("fetch", (event) => {
           })
           .catch(() => cached);
       })
-    );
-    return;
-  }
-
-  // Navigations: try network, fall back to offline page (then cached shell).
-  if (request.mode === "navigate") {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (response && response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
-          }
-          return response;
-        })
-        .catch(() =>
-          caches.match(OFFLINE_URL).then((offline) => offline || caches.match("/"))
-        )
     );
   }
 });
