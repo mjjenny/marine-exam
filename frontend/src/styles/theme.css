@@ -1479,3 +1479,30 @@ a.list-row,
     padding-bottom: calc(1rem + 56px + env(safe-area-inset-bottom, 0px));
   }
 }
+
+/* Offline mode chip */
+.offline-indicator {
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.85rem;
+  background: #5c3b0a;
+  color: #ffe6b0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgba(245, 166, 35, 0.45);
+  text-align: center;
+}
+.offline-indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--amber-500);
+  box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.25);
+  flex-shrink: 0;
+}

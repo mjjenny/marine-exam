@@ -11,6 +11,7 @@ export default function SuggestModal({ answerId, currentAnswer, onClose, pending
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(null);
   const [done, setDone] = useState(false);
+  const [queuedOffline, setQueuedOffline] = useState(false);
 
   // Close on Escape.
   useEffect(() => {
@@ -25,7 +26,8 @@ export default function SuggestModal({ answerId, currentAnswer, onClose, pending
     setBusy(true);
     setError(null);
     try {
-      await api.submitSuggestion(answerId, text.trim(), files);
+      const result = await api.submitSuggestion(answerId, text.trim(), files);
+      setQueuedOffline(Boolean(result?.queued || result?.offline));
       setDone(true);
     } catch (err) {
       setError(err.message || "Submission failed");
@@ -39,11 +41,27 @@ export default function SuggestModal({ answerId, currentAnswer, onClose, pending
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         {done ? (
           <>
-            <h2>{pending ? "Answer submitted" : "Suggestion submitted"}</h2>
+            <h2>
+              {queuedOffline
+                ? "Saved offline"
+                : pending
+                  ? "Answer submitted"
+                  : "Suggestion submitted"}
+            </h2>
             <p className="muted">
-              Thanks — your {pending ? "answer" : "suggestion"} is{" "}
-              <strong>pending review</strong>. An administrator will review and, once
-              approved, publish it to this entry.
+              {queuedOffline ? (
+                <>
+                  You're offline — your {pending ? "answer" : "suggestion"} was saved on this
+                  device and will <strong>submit automatically</strong> when the connection
+                  returns.
+                </>
+              ) : (
+                <>
+                  Thanks — your {pending ? "answer" : "suggestion"} is{" "}
+                  <strong>pending review</strong>. An administrator will review and, once
+                  approved, publish it to this entry.
+                </>
+              )}
             </p>
             <div className="modal-actions">
               <button className="btn" onClick={onClose}>

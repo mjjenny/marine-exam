@@ -17,6 +17,7 @@ import AdminModeration from "./pages/AdminModeration.jsx";
 import AdminAddDiet from "./pages/AdminAddDiet.jsx";
 import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import BottomNav from "./components/BottomNav.jsx";
+import OfflineIndicator from "./components/OfflineIndicator.jsx";
 import Profile from "./pages/Profile.jsx";
 import { useAuth } from "./auth/AuthContext.jsx";
 
@@ -71,6 +72,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <WireframeBackground />
+      <OfflineIndicator />
       <header className="app-header desktop-only">
         <span className="brand">
           Marine Engineer <span className="accent">Exam Prep</span>
