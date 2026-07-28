@@ -1,0 +1,757 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Cylinder Liner Calibration, Two Forms of Abnormal Wear & Prevention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Procedure for liner calibration, and how readings are recorded (6)**\n\n**[Sketch]** Calibration tool & template in the liner \u2014 liner template with holes; liner calibration gauge.\n\nGauge at regular intervals per the maintenance manual; keep records per cylinder and calculate wear rate. Clean and inspect the liner before gauging. Liner and micrometer must be at the same temperature, or a correction factor is applied. Measure using a standard template with strategically positioned holes \u2014 the micrometer is placed in each hole for readings at fixed heights, taking Port\u2013Starboard and Forward\u2013Aft measurements at every position; the difference between directions gives ovality. Wear is greatest in the top one-third (highest combustion temperature and pressure). Normal rate is approximately 0.1mm/1000 hours, rising if overloaded; renew the liner at approximately 0.6\u20130.8% of bore, or per maker's limit.\n\n**(b) TWO forms of abnormal wear and how recognised (6)**\n\n- **Oval wear** \u2014 non-uniform elliptical wear from piston side thrust; recognised at calibration by a significant thrust-vs-non-thrust diameter difference, leading to poor ring sealing and blow-by, high oil consumption.\n- **Scuffing (micro-seizure)** \u2014 localised welding and tearing from lubrication failure/friction; recognised as deep vertical scratches/scoring visible via scavenge ports, leading to ring wear, high oil use, poor compression.\n\n**(c) How abnormal wear is prevented (4)**\n\nCorrect cylinder oil grade and BN, evenly distributed via the lubricators; proper cooling water flow/temperature to avoid localised overheating/distortion; avoid prolonged low-load running; correct start/stop procedures; periodic liner and ring inspection with regular calibration for predictive maintenance.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2022",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Discovered during null-entry resolution: this diet was previously wrongly claimed by a different canonical (abnormal-excessive-liner-wear-cause-effects-prevention); direct full-text check confirms it actually belongs here."
+        }
+      ],
+      "canonical_id": "liner-calibration-abnormal-wear-prevention"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Abnormal & Excessive Liner Wear \u2014 Cause/Detection, Effects & Prevention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Causes and detection (6)**\n\nCauses: poor lubrication (metal-to-metal contact \u2192 scuffing); improper combustion (bad timing, poor fuel, prolonged low load \u2192 glazing and carbon); contaminants (cat fines/abrasives, excess cylinder-oil deposits, cooling water leaks eroding the surface); distortion/misalignment (poor installation, uneven cooling \u2192 uneven wear).\n\nDetection: liner calibration (internal micrometer/bore gauge at set positions); increased blow-by (smoke, low compression); high LO consumption; abnormal patterns visible at scavenge port inspection.\n\n**(b) Effects and consequences (5)**\n\nReduced ring sealing \u2192 blow-by \u2192 efficiency loss, higher fuel/LO use; loss of compression \u2192 poor combustion, carbon deposits; increased clearance \u2192 ring flutter \u2192 breakage/sticking; in severe cases, liner cracking \u2192 cooling water entering the combustion chamber; uneven wear \u2192 piston misalignment and scuffing.\n\n**(c) Prevention (5)**\n\nCorrect oil grade and feed rate; maintain cooling water flow and temperature; load management (running at higher loads periodically prevents glazing); fuel quality and injection timing control; routine calibration and scavenge inspections for early detection.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2020",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "abnormal-excessive-liner-wear-cause-effects-prevention"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Cylinder Liner Scuffing \u2014 Cause/Detection, Effects & Treating Minor Scuffing",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Cause and detection (6)**\n\nCause: metal-to-metal contact between rings and liner when the oil film breaks down \u2014 inadequate lubrication, contaminated oil, wrong surface finish; overheating (poor cooling/overload \u2192 local thermal expansion, lost clearance); piston misalignment or worn rings giving uneven pressure.\n\nDetection: raised EGT on the unit (friction); higher liner/piston temperatures; excessive blow-by with rising LO consumption; scavenge port inspection showing discoloured, rough or smeared surfaces.\n\n**(b) Effects (4)**\n\nLoss of ring-liner sealing \u2192 blow-by, power/efficiency drop; friction \u2192 higher temperatures \u2192 further deterioration; severe cases \u2192 deep grooves requiring liner renewal; metal debris \u2192 abrasive particles in the LO; extreme cases \u2192 piston seizure.\n\n**(c) Treating minor scuffing to avoid liner replacement (6)**\n\nRaise the cylinder oil feed rate to re-establish the film; run at higher load for a period so the rings polish the surface; plateau honing at maintenance (light machining removes high spots, restores the oil-retaining finish); localised lapping with abrasive paste/controlled running-in; for more severe cases, renew rings with softer or chrome-plated rings \u2014 if scuffing still progresses, full liner replacement is needed.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2019",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2025",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "cylinder-liner-scuffing-cause-effects-treatment"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Medium-Speed Liners \u2014 Polishing & Glazing, Anti-Polishing Ring & Effective Lubrication",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Cause and effects of polishing and glazing (6)**\n\n**Polishing** \u2014 excessive/poor-quality lubrication produces a smooth, mirror-like liner surface with no asperity contact, so the liner can't retain oil: friction rises, sealing falls, and rapid ring wear follows. **Glazing** \u2014 incomplete combustion leaves unburnt fuel and oil residues forming a hard, varnish-like layer, typical of prolonged low-load running where combustion temperatures are never reached, leading to poor oil-film retention, blow-by, low compression and high oil consumption. Both, unaddressed, lead to severe liner/ring wear, efficiency loss and maintenance cost.\n\n**(b) Action of an anti-polishing ring (APR) (5)**\n\n**[Sketch]** Anti-polishing ring at the liner top, proud of ring travel, scraping the piston top-land.\n\nThe APR is a carbon scraper ring at the top of the liner. On each up-stroke it scrapes carbon off the piston top-land/crown edge, stopping deposits reaching the rings and liner \u2014 keeping ring-liner contact correct (preventing polishing/glazing), maintaining ring sealing (less blow-by/oil use), and removing insulating deposits that would otherwise cause local overheating. The APR should be inspected and maintained regularly.\n\n**(c) How effective cylinder lubrication is achieved (5)**\n\nCorrect oil selection plus a controlled feed rate (tribo pack) and optimal distribution onto the liner; the right quantity (avoiding both starvation and over-lubrication/carbon/glazing); correct BN to neutralise acids; honing cross-hatch to retain the film; ongoing monitoring of liner wear, ring condition and lube performance.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2023",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        }
+      ],
+      "canonical_id": "medium-speed-liners-polishing-glazing-apr-lubrication"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Thermal Stress in the Cylinder Liner \u2014 How Induced, Why Damaging, Avoiding at Full Power",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How thermal stress is induced when operating, with a sketch (8/10)**\n\n**[Sketch]** Bar under constant heating vs original unheated condition \u2014 hot side in tension/compression pattern across the section.\n\nA large temperature difference (\u0394T) exists between the inner and outer liner surfaces \u2014 the inner face sees combustion gas, the outer is water-cooled. The inner face expands more, creating internal stress as different parts of the liner try to expand/contract at different rates. This is worst at the upper liner (longest gas exposure). Repeated heating/cooling cycles cause thermal fatigue, leading to cracks/deformation; effects are intensified by sudden load changes, inefficient cooling, and poor lubrication.\n\n**(b) Why this is damaging (4)**\n\nUneven expansion/contraction causes cracking, distortion and fatigue failure; micro-cracks propagate, leading to coolant leakage, compression loss and ring wear; local overheating and deposits cause scuffing and seizure.\n\n**(c) How thermal stress is avoided without reducing power / how it is minimised (4/6)**\n\n**[Sketch]** ME cooling-water system (cooler, FW generator, preheater, expansion tank, main & standby circulating pumps) plus a load-dependent liner cooling temperature graph.\n\nThe cooler regulates cooling water temperature; even circulation eliminates hot spots; the expansion tank absorbs volume change for steady pressure and no thermal shock; the preheater warms the engine before starting (avoiding cold-start shock at load); main and standby circulating pumps guarantee flow; load-dependent cooling keeps liner wall temperature optimal across the load range. Operationally: avoid rapid load changes, maintain quality coolant, and inspect the cooling system regularly.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2022",
+          "question_number": "Q2",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2022",
+          "question_number": "Q2",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q8",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "This occurrence uses a different mark split ((a)10 covering induction+why-damaging combined, (b)6 minimising) from the Oct2022/Mar2022 8/4/4 split, though the substance is the same \u2014 the guide groups all three under one canonical."
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q6",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Found via direct full-text cross-check against the 2016-2023 archive \u2014 verbatim match to this existing canonical, using the same 8/4/4 mark split as the Oct2022/Mar2022 occurrences."
+        }
+      ],
+      "canonical_id": "thermal-stress-cylinder-liner-induced-damaging-avoiding"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Thermal Stress + Fatigue of the Cylinder Liner \u2014 How Combined, and Minimising Operation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) What \"thermal stress\" is, and how/why it occurs in a liner (4)**\n\nInternal stress arises from temperature variation: the hot inner face (combustion) versus the cooled outer face causes uneven expansion, building internal stress through repeated expansion/contraction \u2014 intensified by rapid load change, poor cooling, and temperature fluctuation.\n\n**(b) How the upper liner is subjected to fatigue (4)**\n\nEvery cycle combines thermal cycling (heat-cool) with the mechanical stress of combustion pressure; repeated cycles start micro-cracks at stress concentrations, particularly near cooling ports and flame-impingement zones.\n\n**(c) How thermal stress and fatigue combine to cause failure (4)**\n\nThermal micro-cracks become weak points; mechanical combustion stress widens and deepens them, leading to fractures, scuffing and hot spots; cracks can penetrate the wall, causing coolant leakage or total breakdown.\n\n**(d) How to operate the engine to minimise the combined risk (4)**\n\nGradual load changes; uniform coolant flow and correct cooling water temperature; correct cylinder oil selection/distribution; regular inspection (borescoping, crack detection); keeping combustion parameters (Pmax, injection timing) at recommended values; considering improved liner materials/coatings.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "thermal-stress-fatigue-liner-combined-minimising"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "FOUR Defects Found During Piston/Liner Inspection via Scavenge Ports",
+      "merged_from_duplicate": false,
+      "answer_markdown": "Four defects, their causes, and preventive action:\n\n1. **Liner scuffing** \u2014 rough/scored surface. Cause: insufficient lubrication, improper combustion, thermal stress leading to metal-to-metal contact. Prevention: proper cylinder lubrication, correct injection timing, avoid overloading.\n2. **Ring breakage/excessive wear** \u2014 broken, worn or stuck rings. Cause: poor fuel quality, poor ring lubrication, excessive combustion pressure, leading to lost seal, blow-by and increased oil use. Prevention: regular ring inspection/renewal, high-quality cylinder oil, proper fuel treatment.\n3. **Carbon/deposit build-up on crown and liner**. Cause: incomplete combustion, excessive cylinder-oil feed rate, poor-quality fuel, leading to increased thermal stress and poor ring sealing. Prevention: maintain the injection system, optimise feed rate, periodic crown decarbonisation.\n4. **Crack formation on liner or piston crown**. Cause: high thermal stress, improper cooling, mechanical overload \u2014 potentially catastrophic if unchecked. Prevention: monitor cooling for even heat dissipation, avoid excessive load, routine NDT for early detection.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q7 based on the compiled guide; independent OCR re-check of the archived October 2024 paper confirms this is actually Q2. (October 2024's real Q7 is the top-bracing question, covered separately under Engine Static Structure/Engine Construction & Working.)"
+        },
+        {
+          "diet": "April 2016",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "pre_catalog_or_unverified",
+          "matched_cluster": null,
+          "note": "Pre-dates the archived paper range \u2014 attested only by the compiled guide's own repeat-tracking."
+        }
+      ],
+      "canonical_id": "four-defects-scavenge-port-inspection"
+    },
+    {
+      "topic_id": "piston",
+      "title": "Two-Stroke Piston \u2014 Thermal Stress & Crown Cracking, Labelled Sketch, Crown Burning & Carbon in Cooling Spaces",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) \"Thermal stress\" and how it cracks crown surfaces (4)**\n\nUneven temperature across the crown \u2014 the top face sees combustion gas, the underside is oil/water-cooled \u2014 creates thermal gradients and uneven expansion/contraction. Repeated cycles cause thermal fatigue; once stress exceeds the fatigue limit, cracks form at high-stress points such as edges, cooling holes and ring grooves. This is accelerated by poor cooling flow, excessive combustion temperatures, and prolonged high load.\n\n**(b) Piston cross-section sketch, labelling main components with coolant flow**\n\n**[Sketch]** Moly-chrome steel crown (withstands heat) \u00b7 Nozzle \u00b7 Short cast-iron skirt \u00b7 Centre line for studs \u00b7 Hardened steel piston rod \u00b7 Path of cooling oil (arrows up through the rod \u2192 crown underside \u2192 return).\n\n**(c) A cause of EACH: (i) burning of crown upper surfaces (2); (ii) carbon deposits in the cooling spaces (2)**\n\n(i) Crown burning: localised overheating from poor combustion (bad injection timing/atomisation/low-grade fuel), cooling failure, or excessive load pushing combustion temperatures beyond the material limit.\n\n(ii) Carbon in cooling spaces: oil contamination/thermal degradation of the cooling oil leaving carbon residue; inefficient cooling flow creating hot spots where oil burns; poor maintenance (passages not cleaned at overhaul).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2020",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "8",
+            "2",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "8",
+            "2",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "8",
+            "2",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "8",
+            "2",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: this diet was previously mis-assigned elsewhere; direct full-text re-check confirms this is the thermal-stress/crown-cracking piston question matching this canonical."
+        }
+      ],
+      "canonical_id": "two-stroke-piston-thermal-stress-crown-cracking-sketch"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "Exhaust Valve Burn-Out \u2014 Indications, Causes & Minimising Practices",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Indications of valve burn-out, with reasons (4)**\n\nRise in EGT on the unit (hot gas leaks past the valve, often the highest EGT of all cylinders); loss of power on the unit (compression down, incomplete combustion, low MEP); exhaust smoke change (black = incomplete combustion, bluish = oil, sparks/afterburning if severe); abnormal noise (hissing on compression, irregular running/vibration, turbocharger surging from uneven gas flow); compression pressure drop with irregular firing, detected by EGT pyrometers, MIP systems, scavenge pressure and visual/audible checks.\n\n**(b) Causes of burnt-out valves (4)**\n\nHigh-temperature (hot) corrosion \u2014 vanadium, sodium and sulphur in residual fuel form low-melting vanadates/sulphates attacking seat metal above ~450\u2013500\u00b0C; poor seating/leakage from deposits (soot, carbon, cat-fines) holding the valve off its seat, creating a hot-gas jet and local burning; impact damage/mechanical wear from too-fast/hard seating; overheating from low-load/slow-steaming, fouled turbocharger, or poor bore-cooling of the seat; poor fuel quality/treatment; inadequate maintenance (infrequent overhaul, wrong seating pressure/velocity, sealing-oil system neglect).\n\n**(c) Minimising practices (8)**\n\nMonitoring/trending EGT per cylinder and indicator/compression cards; fuel management (low-vanadium/sodium fuel, purifiers/filters against cat-fines and water, avoid prolonged <40\u201350% load, periodic load-up to 80\u201385% MCR every 1\u20132 days to burn deposits off); valve operation checks (correct timing/closing velocity, daily sealing-oil checks, spindle rotation verification); scheduled overhauls per maker's TBO (inspect spindle/disc/seat for deposits, burning, dents; measure seat burn-away; regrind/renew); exhaust system maintenance (clean EGB/turbocharger, check manifold for soot); cylinder lubrication and temperature control (correct feed rate/TBN, optimal scavenge/exhaust temperatures, efficient cooling); crew training so early symptoms are recognised.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "exhaust-valve-burnout-indications-causes-minimising"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "Cracked Cylinder Head (Combustion Chamber \u2194 Water Space) \u2014 Symptoms, Actions & Report",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Symptoms, with reasons (4)**\n\nCooling-water contamination (oil/combustion gas entering the CW \u2014 colour change, foul odour, frothing in the expansion tank); loss of cooling water (unexplained level drop from water entering the combustion space); white smoke/steam in the exhaust (water vaporising in the chamber); fluctuating cylinder temperatures and pressures (irregular combustion from coolant ingress).\n\n**(b) Actions if the engine cannot be immediately stopped (6)**\n\nReduce load (lowers Pmax and temperature, slowing crack growth); continuously monitor the CW system (level drop, temperature, pressure); isolate the cylinder \u2014 cut fuel if the design permits (reduces water ingress); temporarily increase cylinder lubrication; regularly inspect the scavenge space for water/oil emulsification and ring damage; prepare a controlled shutdown at the earliest safe opportunity, with the crew informed and alert.\n\n**(c) Report to the Superintendent \u2014 probable cause and prevention (6)**\n\n*Incident*: white smoke, fluctuating head temperatures, CW level drop \u2014 probable crack between head and water space. *Immediate*: load reduced, fuel cut to the unit, CW parameters maintained, scavenge space inspected. *Probable cause*: thermal fatigue from high localised temperature, improper CW flow, or previous overheating \u2014 fatigue starting at stress concentrations such as injector pockets and valve seats. *Preventive*: replace the head at the earliest port opportunity, carry out metallurgical inspection, check/clean CW flow across all heads, tighten temperature monitoring and alarm limits, reinforce gradual load-change procedures to avoid thermal shock.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2016",
+          "question_number": "Q2",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Found via a direct full-text cross-check of the 2016-2023 archive against this canonical's content \u2014 my initial keyword-matching pass had flagged this as a possible gap, but the actual question text is a verbatim match to this existing canonical."
+        }
+      ],
+      "canonical_id": "cracked-cylinder-head-symptoms-actions-report"
+    },
+    {
+      "topic_id": "lifting-equipment",
+      "title": "Lifting a Cylinder Cover \u2014 Procedure, Risks & Lifting-Gear Certification",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Procedure for lifting a cylinder cover from a slow-speed crosshead engine, with sketches (6)**\n\nInform port authorities the engine is immobilised; at the FWE bring the telegraph/fuel lever to zero, take controls at the ECR; stop pumps, shut fuel/exhaust-valve-air/start-air/LO/jacket valves, fit \"Do not operate\" tags; engage turning gear. Remove CW piping, HP fuel pipes to injectors, the exhaust-valve air pipe, LO hydraulic pipe, and drain pipes. Clean stud threads, fit the hydraulic tensioning device over the studs (nut elongated by hydraulic pressure, supplied at one point or via pump and flexible hoses to each nut), back nuts off with a tommy bar, release pressure, remove nuts. Screw in lifting eye-bolts, hook the crane, lift the cover clear (with a small water jacket), and land it on wooden blocks. Discard the sealing gasket; cover the liner bore; lap the fuel/start/exhaust valve bores; fit new seal rings and CW connection gaskets on reassembly.\n\n**(b) Risks of the lifting operation (4)**\n\nDropping/uncontrolled fall (sling/shackle/hook failure, wire snap, lifting-eye shear \u2014 a 1\u20132 tonne cover onto the block/liner/personnel); personnel struck by a suspended load (sway from ship motion or uneven hoisting causing crushing); damage to engine components (striking the exhaust-valve housing/injectors/studs, damaging the liner top face, misalignment on landing); crane/gear failure (SWL exceeded, limit-switch failure, tool misuse) \u2014 all heightened in the confined, low-headroom engine room, requiring risk assessment, a toolbox talk, and exclusion zones.\n\n**(c) Arrangements ensuring lifting equipment has a current test certificate and is fit for use (6)**\n\nTesting/thorough examination by a competent person before first use and at least every 5 years, with accessories/loose gear thoroughly examined every 12 months (and re-tested after modification/damage/repair). A competent person's certificate confirms SWL, test details and fitness. A Register of Lifting Appliances lists all items, ID marks, SWL, test dates and certificates, available to flag/port state/class. Certificates are obtained within 28 days and retained for at least 2 years; gear is permanently marked with SWL, ID and last-test date. Planned maintenance includes pre-use visual checks, lubrication, and function tests (limit switches, brakes) \u2014 defective gear is taken out of use until re-certified, with class/flag compliance verified via the SMS before heavy lifts.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2016",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "App shows this dual-tagged 'Cylinder head' + 'Lifting equipment' \u2014 filed here under Lifting equipment as the primary tag per the existing convention for this canonical."
+        }
+      ],
+      "canonical_id": "lifting-cylinder-cover-procedure-risks-certification"
+    },
+    {
+      "topic_id": "piston",
+      "title": "Report \u2014 Piston Cracking in One Unit, Then a Second Unit",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report to the superintendent concerning piston cracking in one unit, then a second unit (16)**\n\n*Detection*: a rise in EGT plus abnormal knocking on one unit prompted slowing the engine; scavenge port inspection revealed crown cracking; a precautionary inspection then found a similar crack in another piston.\n\n*Immediate*: load reduced; temperatures/pressures monitored on all units; affected units isolated with fuel cut off; crankcase and scavenge spaces inspected; CW/LO parameters maintained; bridge and office informed.\n\n*Remedy*: controlled stop; heads, pistons and liners removed and examined; cracks confirmed, with metallurgical analysis identifying thermal fatigue as the primary cause; replacement pistons fitted to maker's spec (fitment/clearances); injectors serviced to confirm correct spray pattern (no localised overheating); cooling passages cleared; reassembled per the manual; slow-turned before restart; gradual restart with monitoring.\n\n*Recommendations*: regular crown inspections for thermal fatigue/stress cracks; periodic borescope of combustion chambers; EGT/pressure differential monitoring; injection timing/atomisation checks; a cooling-system routine for uniform crown temperatures; gradual load changes; metallurgical testing of pistons at overhauls; guidance requested from the office on replacement intervals.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2018",
+          "question_number": "Q6",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "report-piston-cracking-one-then-second-unit"
+    },
+    {
+      "topic_id": "bearings",
+      "title": "Report \u2014 Crosshead Engine Bottom-End (Crankpin) Bearing Failure at Sea",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on a crosshead engine bottom-end (crankpin) bearing failure at sea (16)**\n\n*Detection*: an oil-mist detector high-level alarm on the unit, escalating to a general crankcase OMD alarm; knocking/hammering from the crankcase; bearing temperatures rising; increased vibration; LO pressure falling with rising differential across the LO filters; visually, metallic particles/white metal in the sump and on magnetic filters. After stopping and barring over, opening the crankcase doors revealed severe wiping, scoring, partial break-up of the lower shell, and white metal transferred to the crankpin journal \u2014 no full seizure.\n\n*Immediate*: dead slow then stop per the emergency procedure; fuel rack to zero/spill valve tripped; start air isolated; no crankcase entry until the oil mist dissipated, with ventilation running; bridge informed, steerage kept on reduced power; engineers mustered.\n\n*Continuing passage*: the cylinder was cut out per maker's procedure \u2014 fuel pump deactivated, exhaust valve kept closed (hydraulic override on ME engines), lubricator quill blanked, CW in/out closed; scavenge checked for gas leaks; the piston was left in place (too risky to lift at sea); restart at 60\u201370% MCR avoiding critical speeds; crankcase checks every 4 hours, frequent oil samples, temperatures/pressures/vibration watched; bridge kept advised; an emergency-towing contingency prepared; the vessel arrived safely.\n\n*Probable cause*: lubrication failure causing oil-film breakdown, overheating, wiping and white-metal damage \u2014 contributing factors included partial restriction of the oil supply bore (sludge), marginally low viscosity (high temperature or minor water ingress), localised overload (uneven cylinder loads or geometrical irregularity), and cat-fines or water contamination abrading/corroding the overlay; full root-cause analysis to follow in drydock alongside a review of oil-analysis trends.\n\n*Other checks*: all other bottom-end, crosshead and main bearings inspected (clearances normal); crankshaft deflections within maker's limits; LO system flushed, filters changed, magnetic plugs re-checked; oil samples sent ashore (acceptable BN, slight Fe/particle rise); turbocharger, scavenge spaces and piston cooling verified; cylinder loads re-balanced via indicator cards/MIP.\n\n*Recommendations*: in drydock, open the bearing and journal fully, renew shells, clean oil bores; reminders on oil analysis, filter differentials and crankcase inspections. Enclosures: logbook pages, OMD records, LO lab reports, photographs.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q8",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "October 2025",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot as Q1 on this diet."
+        }
+      ],
+      "canonical_id": "report-crosshead-bottom-end-crankpin-bearing-failure-sea-2"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Report \u2014 Cylinder Liner Cracking With Water Leakage Into the Cylinder",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on liner cracking with water leakage into the cylinder (16)**\n\n*Detection (5 signs)*: drop in CW pressure with rising water consumption; water contamination visible in the scavenge space at port inspection; white exhaust smoke; unstable performance with high EGT on the unit; higher-than-normal liner temperature.\n\n*Immediate*: load reduced; visual check via scavenge ports plus CW samples taken for testing; CW supply to that liner isolated; bridge and office notified, emergency repairs prepared.\n\n*Rectify*: engine stopped and cooled; head removed; liner inspected, revealing a longitudinal crack; liner renewed with a spare per maker's instructions; rings/components checked for water damage; CW channels flushed; LO checked for water and samples analysed.\n\n*Before restart*: new liner seating and alignment confirmed; torqued to spec; CW system pressure-tested; LO inspected; piston movement/clearance verified.\n\n*After restart*: parameters monitored, confirming no further leakage; exhaust colour/temperatures normal; LO re-tested clean; load increased gradually. Closing recommendations: reinforce inspections/PM schedule; spare-parts and condition-monitoring recommendations to follow.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "report-liner-cracking-water-leakage-cylinder"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "Report \u2014 Replacement of a Damaged Cylinder Cover at Sea",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on replacing a damaged cylinder cover at sea (16)**\n\n*Detection*: abnormal EGT rise, irregular knocking, raised CW temperature on the unit; scavenge-port inspection revealed gas leakage around the cover joint, confirmed by a compression-pressure drop and soot around the head.\n\n*Likely cause*: thermal stress and fatigue from repeated heat/cool cycles; uneven CW flow from partly blocked cooling passages causing local overheating and cracking; combustion-pressure fluctuation from poor injection or worn parts; incorrect torque or gasket failure at a previous maintenance, eroding the sealing face via blow-by.\n\n*Action*: controlled shutdown; CW drained, components isolated; bolts slackened in sequence to avoid distortion; cover lifted with proper gear; the block's seating surface inspected; new cover fitted with alignment and torque to spec; cooling passages cleaned; lubrication and injector settings verified; gradual restart watching for leaks, temperatures and pressures.\n\n*Prevention*: routine cleaning of cooling passages; torque verification at overhauls; EGT condition monitoring; injector inspection/calibration and timing checks; correct gaskets and tightening procedure.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2018",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "report-cylinder-cover-replacement-at-sea"
+    },
+    {
+      "topic_id": "engine-protection",
+      "title": "UMS Call-Out \u2014 Slowdown From High Cylinder Exhaust Temperature",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Duty engineer's procedure on a UMS slowdown for high cylinder EGT (6)**\n\nAcknowledge the alarm and inform the bridge; assess using engine room logs and alarm records; carry out a visual inspection for leaks and vibration; verify EGT readings and identify the affected cylinder; slow the engine gradually; investigate and rectify the cause (fuel issue, valve problem) before returning to normal operation.\n\n**(b) Causes of high EGT on a single cylinder, with reasons (5)**\n\nLeaky exhaust valve (hot gas escape, incomplete combustion); leaky fuel injector (excess fuel causing afterburning); incorrect fuel-pump timing; increased piston/ring clearance causing blow-by (low compression, incomplete combustion); scavenge fire (uncontrolled combustion in the scavenge space).\n\n**(c) Why the defect damages the engine if not slowed down at once (5)**\n\nHigh temperatures rapidly degrade components \u2014 the exhaust valve can burn/warp; ring and liner wear accelerates; continued running allows overheating to spread to the turbocharger and engine block, hence the requirement to slow down immediately.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "ums-call-out-slowdown-high-egt"
+    },
+    {
+      "topic_id": "maintenance-overhaul",
+      "title": "Consequences of Poor Maintenance Technique \u2014 Four Named Components",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Consequences of poor maintenance technique, with reasons, for each of:**\n\n**(a) Main engine LO self-cleaning filters (4)**\n\nIneffective filtration allows contaminated oil (sludge, metal, combustion products) to circulate, causing premature bearing/ring wear; blocked discs cause oil starvation, risking bearing seizure and crankshaft damage. Fix: regular inspection, proper disc cleaning, timely renewal of worn parts.\n\n**(b) Cylinder liner honing (4)**\n\nToo smooth (over-honed or wrong cross-hatch) gives no oil retention, causing friction and scuffing; excessive honing causes high oil consumption and carbon; uneven honing causes uneven wear and shortened liner life. Fix: hone to the maker's surface-finish specification.\n\n**(c) Auxiliary engine bottom-end bearing overhaul (4)**\n\nWrong reassembly, improper torque, or missed defects cause uneven load, friction and bearing failure; dirty surfaces or unchecked clearances cause oil starvation, overheating and crankshaft damage. Fix: precise torques, clearance measurement, thorough shell and journal inspection.\n\n**(d) Fitting of piston compression and oil control rings (4)**\n\nWrong gap alignment or reversed orientation causes poor sealing (low compression, blow-by, high oil use, power loss, liner wear); wrong size or worn rings cause overheating and early failure. Fix: fit per maker's instructions \u2014 correct alignment, gap clearance, and orientation.",
+      "examiner_focus": [
+        "This is a classic cross-topic banker question \u2014 parts (a) LO filters and (c) bearing overhaul belong more naturally to the Lubricating Oil and Bearings subject areas respectively, while (b) liner honing and (d) ring fitting are this topic's own content. It repeats across many diets going back to at least 2016 under near-identical wording."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "April 2025",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "consequences-poor-maintenance-four-components"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "CEO Report \u2014 Slow-Turning Failure & Water at the Cylinder Head Gasket",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on a four-stroke main engine's failure to complete slow turning, and water discovered around a cylinder head gasket (16)**\n\n*Detection*: pre-departure slow turning per standing orders and maker's instructions failed to complete \u2014 the turning gear stopped/stalled mid-rotation, indicating hydraulic lock. An immediate stop was issued and turning gear isolated; inspection revealed water weeping around the No. 5 unit's cylinder head gasket; starting was aborted and departure delayed.\n\n*Possible causes*: failed/deteriorated cylinder head gasket allowing jacket cooling water into the combustion space; cracked cylinder head (thermal fatigue/mechanical stress across water passages); cracked cylinder liner (upper collar/flange near the cooling jacket); leaking head cooling-water O-rings/sealing rings; leaking water-cooled fuel valve/injector sleeve; leaking air-start valve (less likely to cause full lock); air cooler/heat-exchanger leakage.\n\n*Identifying the exact cause*: indicator cocks opened on all cylinders confirmed water ejection from No. 5; the head was removed after depressurising/draining the CW system; visual inspection plus dye-penetrant testing of the fire face and water passages; hydraulic pressure test of the head at 1.5\u00d7 working pressure; the gasket was found compressed/damaged with a wash-out track; liner top land/collar inspected with DPI; block mating face checked for distortion; the CW pressure/level log reviewed, confirming slow pressure loss over the previous watch; a CW sample analysed (CO\u2082 test) confirming combustion-gas cross-contamination; crankcase inspected for milky (water-contaminated) LO, sample sent for analysis. Root cause: the No. 5 head gasket failed due to inadequate clamping load \u2014 two studs found with reduced clamping force from thermal-cycling fatigue.\n\n*Rectification*: head sent ashore for crack testing and refacing, new OEM gasket fitted; two damaged studs renewed, block mating face checked for flatness; head refitted and torqued to maker's sequence/values/angle; liner O-rings renewed preventively; CW system refilled, vented and pressure-tested with no leaks; engine slow-turned with indicator cocks open confirming no further water ejection; started and run at low load with all parameters within limits; LO renewed and system flushed following confirmed contamination.\n\n*Prevention*: PMS updated to add cylinder-head stud-torque verification; standing instruction revised so slow turning is always performed with indicator cocks cracked open; jacket CW pressure-trend logging made mandatory, with any unexplained drop triggering investigation; CW inhibitor concentration checked; remaining heads scheduled for stud-torque checks; crew briefed on hydraulic-lock hazards and gasket-failure warning signs.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical.",
+        "App screenshot confirms this is tagged 'Cylinder head' in the live system, not 'Starting & control' as originally filed here \u2014 moved topic files accordingly."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q1; independent OCR re-check of the archived December 2024 paper confirms this is actually Q2."
+        },
+        {
+          "diet": "December 2020",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "ceo-report-slow-turning-failure-water-head-gasket"
+    }
+  ]
+}

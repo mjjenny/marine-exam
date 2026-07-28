@@ -1,0 +1,465 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Turbocharger Performance Monitoring & Assessment of Condition",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How performance is monitored and how information is used to assess performance (8)**\n\nPerformance is monitored through a range of operational parameters reflecting the health and efficiency of both turbine and compressor stages: turbocharger speed (proximity sensor/tachometer \u2014 a drop or sudden increase may suggest fouling, bearing failure or imbalance); compressor inlet/outlet air pressure and temperature (a reduction in scavenge air pressure or rise in outlet temperature can indicate compressor-side fouling or clogged filters); exhaust gas temperature and pressure at turbine inlet (high values point to turbine-blade fouling or combustion issues); differential pressure across filters and gas paths (rising pressure drop indicates choking); vibration monitoring (bearing wear, rotor imbalance, blade damage); and, where fitted, lube oil pressure/temperature and surge-detection features.\n\nAll readings are logged in engine monitoring systems and compared against baseline/design data. Trend analysis supports preventive maintenance planning, fault detection, performance optimisation, and avoidance of major failures.\n\n**(b) Arrangements for maintaining the system in good condition (8)**\n\nRoutine cleaning of both compressor side (fouling from salt, dust, oil mist \u2014 manual or water-washing methods) and turbine side (carbon deposits \u2014 grit blasting or manufacturer in-service cleaning). Air intake filters are periodically cleaned/replaced. On turbochargers with independent lube oil systems, oil level, temperature, pressure and cleanliness are checked regularly, and oil seals inspected to prevent leakage into the air path. Bearings are inspected for wear, vibration and overheating, and renewed during planned overhauls. After major maintenance or blade repair the rotor is dynamically balanced. Proper warm-up/cool-down procedures reduce thermal stress on casing and rotor. Overhauls occur at manufacturer-recommended intervals, examining and renewing seals, bearings and blades as necessary. Detailed maintenance logs and trend records (vibration levels, cleaning intervals, component replacements) support long-term condition monitoring and preventive scheduling.",
+      "examiner_focus": [
+        "A recurring mark-loser: candidates who don't read the question properly answer in general terms rather than specifically naming the instrumentation used (gauges, manometers, etc.) and explaining how each specific reading (turbine temperature change, air-filter suction pressure drop, impeller pressure change, cooler temperature change) is used to assess performance."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q4",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q4",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q3",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2020",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q1",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q3",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2025",
+          "question_number": "Q4",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot as Q4 on this diet."
+        }
+      ],
+      "canonical_id": "turbocharger-performance-monitoring-assessment"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Why Turbochargers Are Fitted \u2014 Installation, Monitoring & In-Situ Cleaning",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why turbochargers are fitted and how they efficiently achieve that aim (6)**\n\nTurbochargers use otherwise-wasted exhaust gas energy to compress intake (scavenge) air, allowing more air (and therefore more fuel) to be burned per cycle than a naturally-aspirated engine could manage, substantially raising power output and efficiency for a given cylinder size without the parasitic power loss of a mechanically-driven blower.\n\n**(b) Installation, monitoring, and in-situ cleaning (10)**\n\n**[Sketch]** Turbocharger installation \u2014 exhaust gas, charge-air and cooling-water paths; T/C, air cooler, scavenge & exhaust manifolds.\n\nA typical installation has a turbine side connected to the exhaust manifold and a compressor side connected to the air intake. Exhaust gas from the cylinders enters the turbine casing, rotating the turbine blades, and exits to the uptake/economiser. The turbine shaft drives the compressor impeller, which draws in atmospheric air, compresses it, and delivers it to the charge air cooler; cooled, compressed air then enters the scavenge manifold. A cooling-water system (fresh water through the charge air cooler) removes compression heat to maintain optimal air density.\n\nMonitoring systems include: turbocharger speed (tachometer), exhaust gas temperature at turbine inlet, charge air pressure and temperature, bearing lube oil pressure (if fitted), and vibration monitoring \u2014 detecting fouling, imbalance, overheating or bearing failure. Functioning is checked through regular calibration, alarm testing, and observing operational trends.\n\nIn-situ cleaning without dismantling: on the compressor side, water washing injects a fine mist of water into the air intake while the engine runs at steady load, washing deposits from the blades. On the turbine side, dry particulate blasting or chemical cleaning systems (carbon-removing granules or cleaning fluids injected via dedicated turbine-side connections) dislodge soot and carbon deposits \u2014 reducing the need for frequent dismantling.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "why-turbochargers-fitted-installation-monitoring-cleaning"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Electric Scavenge Blowers, Disabling a Failed Turbocharger & Running with T/C Inoperative",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why electrically driven scavenge air blowers are sometimes fitted (4)**\n\nA turbocharger depends on sufficient exhaust gas energy, only produced at moderate-to-high engine load. At very low loads, starting, manoeuvring or idling, exhaust gas volume/energy is insufficient to drive the turbocharger effectively, so the engine relies on electrically driven auxiliary blowers for adequate scavenge air. These typically operate automatically below a set load threshold (often ~30% MCR) and switch off once the turbocharger becomes effective, ensuring smooth transition and maintaining overall efficiency.\n\n**(b) Disabling a turbocharger to allow operation after rotor failure (8)**\n\nThe turbocharger bypass isolation method diverts exhaust gas away from the turbocharger and supplies combustion air via the auxiliary scavenge blowers instead. Exhaust gas bypass valves redirect exhaust away from the turbine inlet directly to the uptake/economiser; turbine inlet and outlet are blanked and the compressor side isolated from the scavenge manifold, fully isolating the unit from both gas and air sides. Electrically driven scavenge blowers are brought online to supply charge air, the engine control system is adjusted to match fuel injection to the reduced air supply, and lube oil lines to the turbocharger are isolated. Sensor alarm thresholds for the isolated unit are adjusted to avoid false alarms. This allows the engine to continue at a de-rated power level, generally 25\u201340% MCR.\n\n**(c) Procedure for running with the turbocharger inoperative (4)**\n\nThe engine is run de-rated using electrically driven scavenge blowers, typically in a \"blower mode\"/\"manual scavenge air\" mode adjusting fuel injection to match reduced air. Load is restricted to a safe margin (typically 25\u201340% MCR depending on engine make/class). Starting air and fuel injection timing may be manually or automatically adjusted for low-air operation. Frequent monitoring of exhaust temperatures, cylinder pressures and scavenge air pressure is essential. This is a temporary emergency measure only, pending repair or replacement of the turbocharger.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "electric-scavenge-blowers-disabling-failed-turbocharger"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Turbocharger Jet-Assist System & Waste-Gate/Air-Bypass Arrangement",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Turbocharger jet-assist system \u2014 how and why it is used (10)**\n\n**[Sketch]** Jet-assist system: 1 regulating arm \u00b7 2 switch \u00b7 3 piston \u00b7 4 jet solenoid valve \u00b7 5 lambda cylinder \u00b7 6 shutdown solenoid valve.\n\nThe jet-assist system is an auxiliary device improving turbocharger performance during low-load conditions or transient operations (rapid acceleration, sudden load changes), by injecting compressed air directly onto the turbine to temporarily increase its speed and boost compressor output when exhaust gas energy alone is inadequate.\n\nWhen the fuel index increases, the regulating arm (1) rotates, activating the switch (2), which pushes the piston (3) forward. This completes an electrical circuit, triggering the jet solenoid valve (4), which opens to allow compressed air from the ship's compressed-air system onto the compressor side, rapidly accelerating it. This raises charge air pressure, which acts on the lambda cylinder (5), returning the piston (3) to its original position; once the required lambda (air-fuel) ratio is achieved, the system deactivates automatically, with the shutdown solenoid valve (6) ensuring safe interruption. Jet assist typically activates during load increases above ~50% MCR and stays active 3\u20138 seconds; if active over 10 seconds, the solenoid closes and a jet-assist failure alarm triggers. This reduces turbo lag and ensures optimal combustion under dynamic loads.\n\n**(b) Waste-gate and air-bypass system \u2014 why fitted (6)**\n\n**[Sketch]** Waste-gate (upstream of turbine) and air-bypass arrangement across exhaust & scavenge receivers.\n\nExhaust gas from the cylinders enters the exhaust receiver, distributing flow to the turbine. To prevent turbine over-speed and compressor over-boosting at high load, a waste-gate valve upstream of the turbine allows a portion of exhaust gas to bypass the turbine entirely, straight to the uptake \u2014 protecting both turbocharger and engine. An air-bypass valve between the scavenge air receiver and compressor outlet allows a portion of compressed air to bypass the receiver and recirculate, used during transient conditions for fine air-delivery control. Both valves operate on control signals based on engine load, air pressure or turbocharger speed, maintaining efficiency, avoiding surge, reducing thermal stress, and ensuring stable operation across the load range.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q6",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q2",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q2",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q2",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Found via a direct full-text cross-check of the 2016-2023 archive \u2014 confirmed verbatim match to this existing canonical."
+        }
+      ],
+      "canonical_id": "turbocharger-jet-assist-waste-gate-air-bypass"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Turbocharger Lubrication System, Bearing Replacement & Return-to-Service Checks",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Lubrication system for a turbocharger (6)**\n\n**[Sketch]** T/C lubrication system: main LO storage/engine sump \u2192 T/C LO supply pumps \u2192 LO cooler \u2192 LO filter \u2192 bearings \u2192 drain back to sump.\n\nLubricating oil is drawn from the main engine sump or a dedicated LO storage tank by turbocharger LO supply pump(s), passes through an LO cooler (temperature control) and LO filter (removes contaminants), and is routed under pressure to the turbocharger bearings, forming a protective film that reduces friction and dissipates heat at the very high rotational speeds involved. Oil then drains back via a return line to the main sump for recirculation. Redundancy features (standby pumps, cooler bypass for cold conditions) are typically provided.\n\n**(b) Replacement of a turbocharger bearing, and checks before return to service (10 \u2014 note: guide shows this part as 4, see instance note)**\n\n**[Sketch]** Bearing/rotor work \u2014 removing the rotor: lifting bracket, gas casing, air-inlet casing, guide plate & axial lock, centering tube, rotor sling, guide tube, holding pin.\n\nAfter isolating the turbocharger and allowing it to cool, the air-inlet and exhaust-gas casings are removed to expose the rotor assembly. Using a lifting bracket or rotor sling, the rotor is carefully lifted after removing the guide plate, axial lock and centering/guide tubes, then placed on a support stand. The bearing housing is accessed and old bearings removed; the housing and shaft are cleaned and journals inspected for wear, pitting or scoring. New bearings are fitted, with clearances measured against manufacturer limits. Oil passages are checked clear and the rotor manually rotated to confirm smooth movement before reinsertion, alignment and torquing of all components.\n\n**Checks before returning to service**: lube oil system connected and flow-checked for leaks; lube oil pressure, bearing temperature and vibration monitored during startup; rotor free rotation and proper alignment confirmed manually.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "The source guide prints the mark split as (a) 6 and (b) 4, summing to only 10 \u2014 this doesn't reconcile to 16 and was not force-corrected; the confirmed December 2025 screenshot shows (a) 6 (b) 10, which is used here instead as the verified split."
+        },
+        {
+          "diet": "December 2021",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "turbocharger-lubrication-bearing-replacement-return-to-service"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Two-Stroke Exhaust-Gas & Charge-Air Flow, Water Separator Operation & Consequences",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Exhaust-gas and charge-air flow through a two-stroke engine cylinder and turbocharger, with cooling and water-separation (6)**\n\n**[Sketch]** Two-stroke exhaust-gas/charge-air flow: T/C, air cooler (LT FW in/out), water separator & drain, scavenge manifold, exhaust manifold.\n\nExhaust gas exiting the engine drives the turbine side of the turbocharger; the turbine shaft drives a compressor drawing in and compressing fresh air from the engine room. This is directed through the charge air cooler (cooled by LT fresh water) before entering the scavenge manifold and cylinders. As the air is cooled, moisture condenses and is collected by the water separator and drained off before the air reaches the cylinders. After combustion, exhaust gas exits through the exhaust manifold back to the turbocharger, completing the cycle.\n\n**(b) How a water separator removes water droplets (4)**\n\nAs hot, humid compressed air cools in the charge air cooler, water vapour condenses into droplets. The separator uses inertia and deflection: internal baffles/vanes force an abrupt change of airflow direction; heavier water droplets cannot follow the rapid direction change (due to inertia) and are flung against the separator walls, where they coalesce and collect at the bottom for draining, leaving only dry, clean air to reach the cylinders.\n\n**(c) Consequences of not removing/draining water droplets (6)**\n\nWater entering the cylinders can corrode liners, piston rings and other internal components, reducing service life. It disrupts combustion (lower combustion temperature, poor ignition quality), causing incomplete combustion, carbon deposits and fouling. Water can wash away lubricating oil from critical surfaces (piston rings, liners), increasing friction and wear. In extreme cases, water ingress can cause hydraulic locking, leading to mechanical failure or deformation of engine parts. Regular draining is therefore essential for safe, efficient operation.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2021",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check of the archived paper (was previously unconfirmed/null); this diet was also wrongly double-claimed by the hybrid-SOx-scrubber canonical, now removed there."
+        }
+      ],
+      "canonical_id": "two-stroke-exhaust-charge-air-flow-water-separator"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Report \u2014 Turbocharger Vibration & Surging Incident",
+      "merged_from_duplicate": false,
+      "answer_markdown": null,
+      "examiner_focus": [],
+      "question_instances": [
+        {
+          "diet": "October 2020",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "WITHHELD \u2014 content mismatch. Question text confirmed verbatim against the archived paper: \"Write a report to the superintendent engineer concerning an incident of turbocharger vibration and surging which occurred on a 2-stroke, direct-drive, main propulsion engine...\" (16 marks). The source guide's 'Sol:' for this entry is NOT an answer to this question \u2014 it is verbatim the answer to a completely different report question (March 2018 Q7: four-stroke main engine slow-turning-procedure failure and water around a cylinder head gasket), independently confirmed word-for-word against the March 2018 archive. This is a copy-paste/compilation error in the source guide, not a paraphrase issue. answer_markdown is deliberately left null rather than either reusing the wrong content or inventing a substitute \u2014 the real verbatim answer for this question needs to be sourced fresh."
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q4",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Same withholding as the October 2020 instance above \u2014 question text confirmed against the archived paper, but no correct source answer available."
+        }
+      ],
+      "canonical_id": "report-turbocharger-vibration-surging-incident"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Charge-Air Coolers \u2014 Purpose, In-Service Checks, Consequences of No Condensate Drain",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why charge-air coolers are fitted, and effects if not maintained (6)**\n\nCharge air coolers increase intake air density after turbocharger compression (which heats the air, reducing density and available oxygen). Cooling the air restores density, allowing more oxygen into the cylinders \u2014 improving combustion efficiency, power output and fuel economy while reducing emissions. If not properly maintained, fouling on the cooling surfaces reduces heat transfer, raising intake air temperature; this can cause poor combustion, increased SFOC, higher exhaust temperatures, greater risk of thermal overload on exhaust valves and piston crowns, engine knocking, and a general drop in performance.\n\n**(b) Chief Engineer's instructions for routine in-service checks (6)**\n\n- **Air temperature monitoring**: regularly record charge air temperature before/after the cooler; a rising outlet temperature or reduced differential indicates fouling.\n- **Pressure drop monitoring**: increased pressure drop across the cooler signals clogging, requiring cleaning.\n- **Cooling water parameters**: monitor LT cooling water inlet/outlet temperature and ensure adequate flow/pressure.\n- **Drain inspection**: check the water separator drain daily and keep it clear; excessive water may indicate a leaking cooler tube.\n- **Visual inspection/borescope**: periodically inspect externally for leaks and internally (borescope) for fouling or corrosion.\n- **Scheduled cleaning**: plan regular chemical/manual cleaning per manufacturer recommendation, especially during overhauls, with all observations logged.\n\n**(c) Consequences if condensate is not drained (4)**\n\nAccumulated water can be carried into the combustion chambers with the charge air, causing corrosion of cylinder liners, piston rings and other internal parts. Water ingress disrupts combustion, leading to knocking, power loss and increased emissions. In severe cases, hydraulic locking can occur \u2014 incompressible liquid in the cylinder causing mechanical failure or deformation of engine parts.",
+      "examiner_focus": [
+        "A recurring mark-loser: candidates drift into explaining why turbocharging in general is used, rather than staying specifically on charge air coolers; for part (b), some describe how to clean the cooler rather than how performance and cleanliness are monitored/assessed, which is what's actually asked."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2020",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2018",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2016",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "charge-air-coolers-purpose-checks-condensate"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Water Separators \u2014 Operating After CAC Damage & After T/C Bearing Failure",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why water separators are fitted (4)**\n\nWater separators remove condensed moisture from the scavenge air after it passes through the charge air cooler. As compressed air cools, water vapour condenses into droplets; if not removed, this water can enter the combustion chamber, corroding piston rings and cylinder liners, interfering with combustion efficiency, and in extreme cases causing hydraulic lock. The separator ensures only clean, dry air enters the cylinders.\n\n**(b) Operating with a charge air cooler damaged beyond immediate repair (6)**\n\nIf design permits, the charge air cooler can be bypassed, allowing hot compressed air directly into the engine \u2014 but due to high intake temperatures, the engine must be de-rated to reduce thermal load and prevent abnormal combustion or high exhaust temperatures. Scavenge air temperature, exhaust gas temperature and other key parameters are closely monitored; cooling systems (jacket water, LO) may be run harder, rapid load changes avoided, and in some designs water injection used temporarily to lower intake air temperature. This is an emergency measure only, pending port repairs.\n\n**(c) Operating after an unrepairable turbocharger bearing failure (6)**\n\nThe faulty turbocharger is isolated (locked or bypassed per engine design) to prevent further mechanical damage from a seized/imbalanced rotor. Auxiliary electrically driven scavenge blowers automatically start to supply charge air, though at lower volume/pressure than the turbocharger provided. The engine is de-rated to a reduced load, typically not exceeding 30\u201340% MCR, with fuel index adjusted to match the reduced air supply and prevent over-fuelling (incomplete combustion, black smoke, exhaust fouling). Scavenge pressure, exhaust temperature and the scavenge space are monitored closely; this arrangement is strictly temporary, pending proper repair.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2017",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "water-separators-operating-after-cac-damage-tc-bearing-failure"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Assessing Turbocharger Operating Performance & Performance-Degrading Defects",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How turbocharger operating performance may be assessed (10)**\n\nAssessed through continuous/periodic monitoring of: turbocharger rotor speed, scavenge air pressure, air cooler differential pressure, exhaust gas temperature before/after the turbocharger, and charge air temperature \u2014 logged routinely and compared against engine performance curves or manufacturer baseline data. Rising exhaust gas temperature or falling scavenge air pressure at a given load indicates poor performance. Air cooler pressure-drop trends reveal fouling; turbocharger speed directly indicates how effectively exhaust energy is being used. On multi-turbocharger engines, comparing exhaust temperatures between units helps identify imbalance or an underperforming unit. Visual inspections during overhauls (carbon deposits, bearing-seal oil leakage, blade damage) also contribute. Trending this data over time supports predicting and rectifying performance degradation.\n\n**(b) Defects that adversely affect performance, with reasons (6)**\n\n- **Fouling of turbine/compressor blades** (carbon deposits, salt/oil contamination) \u2014 causes imbalance and reduced airflow, lowering turbocharger speed and air delivery efficiency.\n- **Blade damage** (erosion, cracking, deformation) \u2014 reduces performance and can cause vibration.\n- **Oil leakage from the bearing housing** into the compressor/turbine side \u2014 contaminates and fouls the airflow, and may signal impending bearing failure.\n- **Blocked/leaking charge air coolers and clogged air filters** \u2014 increase air-path resistance, reducing charge air pressure and affecting combustion.\n- **Defective sensors/instrumentation** \u2014 give misleading readings, hindering accurate assessment.\n\nUnaddressed, these defects cause poor combustion, increased fuel consumption and higher emissions.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2016",
+          "question_number": "Q3",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "assessing-tc-operating-performance-degrading-defects"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Single-Turbocharger Engine \u2014 Impeller Vane Breaks Off and Strikes the Charge-Air Cooler",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Action to enable main engine operation after a small impeller vane fragment breaks off and impacts the charge-air cooler, on a slow-speed engine with a single turbocharger (16)**\n\nImmediate action is needed to assess damage extent and determine if safe operation remains possible, given the risk of further deterioration of the turbocharger's rotating assembly and impaired charge-air-cooler air delivery/cooling.\n\n- Reduce engine load and stabilise at lower power output to minimise further stress on the turbocharger.\n- Fully inspect the charge air cooler for punctures, deformation or internal fin damage affecting pressure/temperature or causing air leakage and loss of scavenge efficiency.\n- Recover any fragments and thoroughly clean the scavenge space to prevent further debris ingestion into the cylinders.\n- If the cooler is leaking, apply temporary sealing (approved repair compounds, epoxy, or isolating damaged rows) to maintain partial functionality.\n- Closely monitor charge air temperature and pressure to keep them within acceptable limits.\n- Evaluate turbocharger performance: rpm, vibration (if sensors fitted), abnormal noise or temperature rise, especially near the bearing housings.\n- If the turbocharger remains operational but at reduced efficiency, run at reduced load (typically not exceeding 40\u201350% MCR), relying on auxiliary scavenge blowers to supplement charge air, with fuel index reduced accordingly to prevent over-fuelling and incomplete combustion.\n- If the turbocharger shows further signs of failure, bypass it altogether and operate in natural-aspiration mode assisted solely by auxiliary blowers \u2014 this limits output significantly and requires constant monitoring of exhaust gas temperature and scavenge pressure, since excessive load in this condition risks poor combustion, fouling and thermal damage.\n- Maintain close coordination with the company's technical team and class society; log a full damage report and prepare spares for replacement at the next port.\n\nSuch temporary operation is only intended to allow the vessel to reach a safe haven for proper repair.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": "Q6",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "single-tc-engine-impeller-vane-breaks-off-cac"
+    }
+  ]
+}

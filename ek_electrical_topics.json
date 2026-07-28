@@ -1,0 +1,101 @@
+{
+  "subject": "EK Electrical",
+  "subject_slug": "ek-electrical",
+  "notes": "Topic taxonomy for the EK Electrical question bank (58 canonical questions, built from verified SQA/MCA past papers July 2016 - July 2026). Each question below maps to exactly one topic_id, matching the platform's topics table (id, subject_id, name). Use 'slug' as a stable reference key when writing the migration/seed script - it will not change even if question wording is refined later. 'merged_from' notes where multiple original UMTC-index question numbers turned out to be the same real underlying question. 'gap' notes where a topic was flagged as unverifiable against the official papers and is not included as a standalone canonical_answer.",
+
+  "topics": [
+    { "id": 1,  "name": "Neutral Systems & Earth Fault Detection" },
+    { "id": 2,  "name": "Insulation & Circuit Testing" },
+    { "id": 3,  "name": "Generator Excitation Systems" },
+    { "id": 4,  "name": "Generator Protection" },
+    { "id": 5,  "name": "Paralleling, Synchronising & Power Management" },
+    { "id": 6,  "name": "Switchboards & Circuit Protection" },
+    { "id": 7,  "name": "Emergency & Standby Power Systems" },
+    { "id": 8,  "name": "Electric Motors: Construction & Types" },
+    { "id": 9,  "name": "Motor Starting & Speed Control" },
+    { "id": 10, "name": "Motor Protection" },
+    { "id": 11, "name": "High Voltage Systems" },
+    { "id": 12, "name": "Power Factor" },
+    { "id": 13, "name": "Hazardous Area Equipment" },
+    { "id": 14, "name": "Batteries" },
+    { "id": 15, "name": "Large Transformers" },
+    { "id": 16, "name": "Corrosion Protection & Surveys" }
+  ],
+
+  "questions": [
+    { "slug": "insulated-vs-earthed-neutral", "topic_id": 1, "title": "Insulated vs earthed neutral system: advantages/disadvantages + NER", "marks": 10, "verified_diets": ["Jul 2017"] },
+    { "slug": "earth-leakage-detection-instrument-type", "topic_id": 1, "title": "Earth leakage detection (instrument type) + insulated neutral fault clearance", "marks": 10, "verified_diets": ["Oct 2020", "Dec 2021", "Oct 2022"] },
+
+    { "slug": "insulation-resistance-and-continuity-tests", "topic_id": 2, "title": "Insulation resistance test + resistance/continuity tests", "marks": 10, "verified_diets": ["Mar 2021", "Jul 2022"] },
+    { "slug": "insulation-testing-procedure-polarisation-index", "topic_id": 2, "title": "Insulation testing procedure + Polarisation Index", "marks": 10, "verified_diets": ["Oct 2021", "Oct 2024", "Mar 2026"] },
+
+    { "slug": "self-excited-ac-generator", "topic_id": 3, "title": "Self-excited A.C. generator circuit and operation", "marks": 10, "verified_diets": ["Mar 2017", "Oct 2022"] },
+    { "slug": "avr-thyristor-control", "topic_id": 3, "title": "Automatic Voltage Regulator (AVR) using thyristors", "marks": 10, "verified_diets": ["Dec 2021", "Dec 2024"] },
+    { "slug": "static-excitation-system", "topic_id": 3, "title": "Static excitation system for a generator", "marks": 10, "verified_diets": ["Jul 2021"] },
+    { "slug": "shaft-generator-frequency-converter", "topic_id": 3, "title": "Shaft generator using a frequency converter", "marks": 10, "verified_diets": ["Jul 2016", "Oct 2022"] },
+
+    { "slug": "reverse-power-protection-phase-sensitive-detector", "topic_id": 4, "title": "Reverse power protection: mechanical vs electronic relay + phase sensitive detector circuit", "marks": 10, "verified_diets": ["Oct 2023", "Oct 2024"] },
+    { "slug": "why-reverse-power-protection-necessary", "topic_id": 4, "title": "Why reverse power protection is necessary for generators in parallel", "marks": null, "verified_diets": ["Jul 2018 (question stem not fully verified - see notes)"] },
+    { "slug": "main-generator-protective-devices", "topic_id": 4, "title": "Protective devices fitted to a main A.C. generator (overcurrent, negative phase sequence, loss of field, undervoltage, reverse power)", "marks": 10, "verified_diets": ["Dec 2019", "Oct 2020"] },
+    { "slug": "high-winding-temperature-alarm", "topic_id": 4, "title": "High winding temperature alarm: immediate/subsequent actions + cooler tube leakage protection", "marks": 10, "verified_diets": ["Mar 2025"] },
+
+    { "slug": "paralleling-synchronising-generators", "topic_id": 5, "title": "Paralleling of A.C. generators: synchronisation requirements, KW/Kvar sharing, damage from incorrect sync / PMS features (two verified variants of part (d))", "marks": 10, "verified_diets": ["Dec 2018", "Jul 2022", "Jul 2024", "Jul 2026"], "merged_from": ["original UMTC Q08 (synchroscope)", "original UMTC Q12 (paralleling)"] },
+    { "slug": "load-sensing-electronic-governor", "topic_id": 5, "title": "Load sensing electronic governor controller for an A.C. generator", "marks": 10, "verified_diets": ["Jul 2017", "Jul 2025"] },
+    { "slug": "automatic-starting-load-sharing-stopping", "topic_id": 5, "title": "Automatic starting, load sharing and stopping of generators", "marks": 10, "verified_diets": ["Jul 2016", "Jul 2020"] },
+    { "slug": "power-management-system-features", "topic_id": 5, "title": "Automatic Power Management System features + manual fallback on PMS failure", "marks": 10, "verified_diets": ["Jul 2017"] },
+    { "slug": "shore-power-connection", "topic_id": 5, "title": "Shore power connection: wiring diagram with phase sequence indicator + consequences of incorrect connection + generator shutdown procedure before changeover", "marks": 10, "verified_diets": ["Dec 2024", "Jul 2026"], "notes": "Two verified variants of part (b): consequences-of-wrong-connection (Dec 2024) and generator-shutdown-procedure (Jul 2026, own sitting)" },
+
+    { "slug": "ac-switchboards-protective-devices", "topic_id": 6, "title": "A.C. switchboards: protective devices, breaker failure to open, stuck breaker actions", "marks": 10, "verified_diets": ["Dec 2016", "Aug 2020", "Mar 2024"] },
+    { "slug": "discrimination-fuses-preferential-tripping", "topic_id": 6, "title": "Protection of electrical power circuits: discrimination, fuse types, preferential tripping", "marks": 10, "verified_diets": ["Jul 2019", "Dec 2023"] },
+    { "slug": "protection-distribution-system-electrical-fires", "topic_id": 6, "title": "Protection of electrical equipment in a distribution system + causes of electrical fires", "marks": 10, "verified_diets": ["Dec 2016", "Jul 2021"] },
+    { "slug": "overcurrent-protection-methods", "topic_id": 6, "title": "Overcurrent protection methods + inverse time characteristic", "marks": 10, "verified_diets": ["Oct 2017", "Oct 2021"] },
+    { "slug": "short-circuit-severity-factors", "topic_id": 6, "title": "Factors influencing short-circuit severity + role of reactance", "marks": 10, "verified_diets": ["Jul 2016"] },
+    { "slug": "protective-devices-purpose-each", "topic_id": 6, "title": "Electrical system protective devices: purpose of each (overcurrent, short circuit, no-volt, reverse power, preferential tripping)", "marks": 10, "verified_diets": ["Jul 2020", "Dec 2020"] },
+
+    { "slug": "emergency-generator-distribution-sketch", "topic_id": 7, "title": "Emergency generator power supply and distribution system sketch + regulations", "marks": 10, "verified_diets": ["Aug 2020", "Mar 2025", "Oct 2025"] },
+    { "slug": "emergency-generator-starting-testing", "topic_id": 7, "title": "Emergency generator starting, connection to busbars, and load testing", "marks": 10, "verified_diets": ["Mar 2022", "Dec 2023", "Mar 2026"] },
+    { "slug": "essential-services-fire-conditions", "topic_id": 7, "title": "Essential electrical services operable under fire conditions + cable bulkhead passage", "marks": 10, "verified_diets": ["Oct 2017", "Jul 2024"] },
+    { "slug": "ups-operation-essential-services", "topic_id": 7, "title": "UPS (a.c. input) operation + essential services supported", "marks": 10, "verified_diets": ["Dec 2016", "Oct 2018", "Jul 2022"] },
+
+    { "slug": "synchronous-induction-motor-construction", "topic_id": 8, "title": "Synchronous motor and induction motor: construction and operation", "marks": 10, "verified_diets": ["Aug 2020", "Dec 2024"] },
+    { "slug": "induction-motor-cross-section", "topic_id": 8, "title": "Induction motor cross section + construction", "marks": 10, "verified_diets": ["Mar 2024", "Dec 2025"] },
+    { "slug": "squirrel-cage-rotor-construction", "topic_id": 8, "title": "Squirrel cage rotor constructional details + double cage rotors", "marks": 10, "verified_diets": ["Mar 2021", "Jul 2023"] },
+
+    { "slug": "wound-rotor-double-cage-starting-torque", "topic_id": 9, "title": "Improving starting torque: wound rotor + double cage", "marks": 10, "verified_diets": ["Mar 2022"] },
+    { "slug": "star-delta-starters", "topic_id": 9, "title": "Star-delta starters: reduced voltage starting + sequence of operation", "marks": 10, "verified_diets": ["Oct 2017", "Jul 2019"] },
+    { "slug": "dol-starting-electronic-soft-starter", "topic_id": 9, "title": "Direct-on-line starting consequences + electronic soft starting system", "marks": 10, "verified_diets": ["Dec 2019", "Oct 2021", "Jul 2025"], "merged_from": ["original UMTC Q37", "original UMTC Q38", "original UMTC Q39 - all one real question"] },
+    { "slug": "synchro-converter-variable-speed", "topic_id": 9, "title": "Synchro-converter for variable speed control of A.C. motors", "marks": 10, "verified_diets": ["Jul 2024"] },
+
+    { "slug": "overload-relay-types", "topic_id": 10, "title": "Overload relay types: thermal, magnetic, electronic", "marks": 10, "verified_diets": ["Oct 2022", "Mar 2025", "Mar 2026"] },
+    { "slug": "induction-motor-fuses-single-phasing-thermistors", "topic_id": 10, "title": "A.C. induction motors: fuses, single phasing effects, thermistors, overload relay types", "marks": 10, "verified_diets": ["Dec 2021"] },
+
+    { "slug": "hv-neutral-systems-tanker-regs", "topic_id": 11, "title": "Insulated/earthed HV systems: tanker regulations + earth leakage detection methods", "marks": 10, "verified_diets": ["Jul 2016"] },
+    { "slug": "hv-equipment-testing", "topic_id": 11, "title": "Testing High Voltage equipment: earthing down, test voltage, procedure, IR temperature measurement", "marks": 10, "verified_diets": ["Jul 2023"] },
+    { "slug": "hv-motor-protection", "topic_id": 11, "title": "Protection of HV A.C. motors: fuses/single phasing + RTD/thermistor temperature sensors", "marks": 10, "verified_diets": ["Mar 2023", "Jul 2026"] },
+
+    { "slug": "power-factor-synchronous-correction", "topic_id": 12, "title": "Power factor, why low PF is detrimental, synchronous motor correction with phasor diagrams", "marks": 10, "verified_diets": ["Oct 2022", "Mar 2024", "Oct 2025"] },
+
+    { "slug": "hazardous-equipment-types-tests", "topic_id": 13, "title": "Hazardous area equipment types (intrinsically safe, flameproof, increased safety) + electrical tests", "marks": 10, "verified_diets": ["Oct 2017", "Mar 2023"] },
+    { "slug": "hazardous-equipment-types-pump-lighting", "topic_id": 13, "title": "Hazardous area equipment types (incl. pressurised enclosure) + pump room lighting", "marks": 10, "verified_diets": ["Jul 2016", "Dec 2019"] },
+
+    { "slug": "lithium-ion-batteries", "topic_id": 14, "title": "Lithium-ion batteries: adoption, advantages/disadvantages, cell drift, thermal runaway", "marks": 10, "verified_diets": ["Mar 2022", "Jul 2025"] },
+    { "slug": "alkaline-battery-cell", "topic_id": 14, "title": "Alkaline (nickel-cadmium) battery cell: construction, charge/discharge, overcharge effects", "marks": 10, "verified_diets": ["Oct 2018"] },
+    { "slug": "emergency-battery-precautions-charging", "topic_id": 14, "title": "Battery systems for emergency purposes: personnel safety, storage, maintenance precautions + rate of charge", "marks": 10, "verified_diets": ["Oct 2017", "Jul 2021", "Mar 2022", "Dec 2025 (reported, unverified)"] },
+
+    { "slug": "large-transformers-onboard", "topic_id": 15, "title": "Large electrical transformers on board ships: use, efficiency, regulations, protection, maintenance", "marks": 10, "verified_diets": ["Oct 2017", "Mar 2021", "Oct 2023"] },
+
+    { "slug": "iccp-system", "topic_id": 16, "title": "Impressed Current Cathodic Protection (ICCP) system", "marks": null, "verified_diets": ["Oct 2019 (question stem not fully verified - see notes)"] },
+    { "slug": "class-society-electrical-survey", "topic_id": 16, "title": "Main electrical items covered in a Classification Society periodical survey", "marks": 10, "verified_diets": ["Oct 2017"] }
+  ],
+
+  "known_gaps": [
+    { "topic_description": "Main circuit breakers on a switchboard (standalone)", "status": "not found as a distinct past question - content covered by ac-switchboards-protective-devices and main-generator-protective-devices" },
+    { "topic_description": "With reference to alternating current generators (generic UMTC index entry)", "status": "too generic to map to one real question - covered collectively by the Generator Excitation Systems and Generator Protection topics" }
+  ],
+
+  "verification_tiers": {
+    "tier_1_full_official_source": "Question text, diet date, and marker's report all verified directly against official SQA past paper PDFs. Applies to all questions with diets from Jul 2016 through Jul 2025 official papers processed earlier in this project.",
+    "tier_2_screenshot_or_recollection": "Diet confirmed via Marine Samraj screenshot or candidate's own attendance/memory, not the official marker's report. Applies to Oct 2025, Dec 2025, Mar 2026 additions, and Jul 2026 questions. Examiner Focus content is marked pending for these until an official marker's report is published and processed.",
+    "tier_3_unverified_stem": "Genuine marker's report commentary exists confirming the topic was tested, but the literal official question wording could not be confirmed due to a PDF extraction gap. Applies to 'why-reverse-power-protection-necessary' and 'iccp-system'."
+  }
+}

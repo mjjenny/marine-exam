@@ -1,0 +1,507 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "pollution-prevention",
+      "title": "Fuel-Water Emulsification (FWE) to Reduce Diesel Engine NOx Emissions",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Fuel-Water Emulsification system, with a sketch (12)**\n\n**[Sketch]** Fuel-Water Emulsification system \u2014 D.O. and HFO tanks, supply pumps, emergency air-driven pump, homogenizer with H\u2082O feed, circulating pump, pre-heater, safety tank, venting box, full-flow filter, water sensor, main engine, fuel oil drain tank.\n\nThe FWE system reduces NOx emissions by introducing controlled amounts of water into the fuel before combustion. Fuel (D.O. or HFO) is pumped from storage tanks by supply pumps, with an emergency air-driven pump ensuring supply during pump failure. The fuel passes through a homogenizer, where water is added and mixed to form a stable, uniform emulsion, then fed to the circulating pump for consistent flow and pressure. Before entering the engine, the emulsified fuel is preheated to the desired viscosity and passes through a full-flow filter and a water sensor monitoring water content. Excess fuel returns to the system, with separated water drained to the fuel oil drain tank; a venting box and safety tank manage pressure fluctuations.\n\nThe NOx-reduction mechanism is the micro-explosion effect: as fuel droplets reach the high-temperature combustion chamber, the water inside rapidly vaporises, causing the droplets to break into finer particles (improving air-fuel mixing) while absorbing latent heat and lowering local combustion temperature. Since NOx formation is highly temperature-dependent, this reduces NOx significantly; the water also promotes slower, more uniform combustion, preventing the localised hot spots that are primary NOx sources, and reduces particulate-forming fuel-rich zones. Overall, FWE can reduce NOx emissions by 30\u201350%.\n\n**(b) Disadvantages of this method (4)**\n\nEngine efficiency may be affected, as water addition reduces the fuel's energy content, causing a slight rise in fuel consumption for the same power output. Corrosion and wear risk on fuel system components is higher due to water presence, accelerating oxidation and erosion. Maintaining a stable emulsion requires precise monitoring and control \u2014 poorly mixed emulsions cause incomplete combustion, increased carbon deposits, and potential engine damage. The system also requires additional equipment and modifications, raising installation and maintenance costs.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": "Q5",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "April 2016",
+          "question_number": "Q1",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "pre_catalog_or_unverified",
+          "matched_cluster": null,
+          "note": "Pre-dates the archived paper range \u2014 attested only by the compiled guide's own repeat-tracking."
+        }
+      ],
+      "canonical_id": "fuel-water-emulsification-nox-reduction"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "SOx Exhaust Gas Cleaning \u2014 Monitored Parameters & Sea-Pollution Prevention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) System parameters monitored, monitoring device location, data storage & availability to regulators (10)**\n\nKey parameters: the SO\u2082/CO\u2082 ratio (gas analysers in the exhaust duct, verifying SOx stays within permissible limits); pH level of discharge water (measured at the washwater discharge outlet, to prevent acidic effluent harming marine life); turbidity (suspended particles in discharge water, for opacity compliance); polycyclic aromatic hydrocarbon (PAH) concentration (sensors in the washwater discharge line, to prevent oil pollution from scrubber effluent); temperature (at the washwater discharge point, to prevent thermal pollution); washwater flow rate (flow meters, ensuring adequate water for SOx removal); pressure drop across the scrubber (differential pressure sensors, detecting blockages/inefficiency); and, for open-loop systems, alkalinity at the scrubber inlet (ensuring effective SOx absorption and pH control).\n\nData is stored in the ship's onboard EGCS data recording system, typically integrated with the ship's automation system, continuously logged and accessible via digital logs, printouts or electronic submissions. Flag states, port state control and classification societies require this data available for inspection; modern installations may also feature remote monitoring for real-time compliance tracking.\n\n**(b) How SOx cleaning systems can pollute sea water, and prevention (6)**\n\n*Pollution causes*: acidification (open-loop scrubbers discharge acidic washwater, lowering sea pH and affecting ecosystems); heavy-metal contamination (vanadium, nickel, lead in discharge); oil/PAH pollution (hydrocarbons mixing into washwater); increased turbidity (particulate matter reducing light penetration for aquatic life); thermal pollution (discharge significantly warmer than ambient seawater).\n\n*Prevention*: pH neutralisation (alkaline dosing, e.g. sodium hydroxide, to keep discharge pH above regulatory limits); filtration and treatment (washwater filtration and sludge removal to capture metals/particles); PAH monitoring (sensors ensuring hydrocarbon levels stay within limits); closed-loop or hybrid systems (recycling washwater instead of direct discharge, or switching modes); and compliance with MARPOL Annex VI via regular inspection and documentation of washwater quality.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q9",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q8",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q4",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "sox-exhaust-cleaning-parameters-sea-pollution"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "SCR Chemical Supply System \u2014 Safety/Pollution Avoidance & NOx Reduction Chemistry",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Diesel engine NOx reduction system chemical supply \u2014 sketch, safety & pollution avoidance (12)**\n\n**[Sketch]** SCR chemical supply system \u2014 Controller, Safety Valve, Evap, dosing pump, Ammonia tank, flow-rate/temp/NOx/ammonia sensing lines, air <LEL, static mixer, receiver, ME, T/C, bypass, SCR.\n\nSCR reduces NOx via controlled injection of ammonia (or urea solution) into the exhaust, reacting with NOx over a catalyst to form harmless N\u2082 and H\u2082O, meeting IMO Tier III. The reagent is stored in a dedicated tank and pumped through double-skinned pipe (safety); an evaporator and dosing pump prepare the correct quantity for engine load/exhaust conditions. A static mixer blends ammonia into the exhaust stream, with air supplied below the Lower Explosive Limit (LEL) to eliminate combustion risk; the mixed gas passes through a receiver before the SCR reactor. A bypass valve allows exhaust to skip the SCR unit if needed, for continuous engine operation during a system fault.\n\nSafety/pollution-avoidance features: double-skinned piping (prevents ammonia leaks); flow-rate, temperature, NOx and ammonia-slip sensors (performance/compliance monitoring); a safety valve (releases excess pressure); and dynamic injection-rate adjustment (limits ammonia slip \u2014 unreacted ammonia that would otherwise pollute the atmosphere). Proper temperature control and flow regulation optimise catalyst efficiency for effective NOx reduction under MARPOL Annex VI.\n\n**(b) Chemical reactions involved (4)**\n\nUrea thermally decomposes to ammonia and CO\u2082:\n\nCO(NH\u2082)\u2082 + H\u2082O \u2192 2NH\u2083 + CO\u2082\n\nAmmonia then reacts with NOx over a vanadium/titanium/zeolite-based catalyst. For NO:\n\n4NO + 4NH\u2083 + O\u2082 \u2192 4N\u2082 + 6H\u2082O\n\nFor NO\u2082:\n\n6NO\u2082 + 8NH\u2083 \u2192 7N\u2082 + 12H\u2082O\n\nWhere the exhaust contains a mix of NO and NO\u2082, the optimal 1:1 reaction is:\n\nNO + NO\u2082 + 2NH\u2083 \u2192 2N\u2082 + 3H\u2082O\n\nThe system minimises ammonia slip \u2014 excess unreacted ammonia released to atmosphere as secondary pollution \u2014 through continuous monitoring of NOx levels, temperature and injection rate.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q5",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q2",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "scr-chemical-supply-safety-pollution-reactions"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Why Efficient Engines Produce More NOx + SCR Unit Description + Monitoring Exhaust Flows",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why highly efficient diesel engines tend to produce more NOx (4)**\n\nHigher efficiency comes from higher combustion temperatures and pressure ratios, and NOx formation is directly temperature-dependent \u2014 nitrogen and oxygen react at high temperature to form NO/NO\u2082. Advanced fuel injection and turbocharging improve air-fuel mixing, raising peak combustion temperature; efficient engines also run leaner (excess oxygen), further promoting NOx formation. Environmental regulation therefore requires after-treatment technologies such as SCR to offset this trade-off.\n\n**(b) SCR unit for a marine propulsion diesel engine (8)**\n\n**[Sketch]** Selective Catalytic Reduction unit \u2014 Controller, Safety Valve, Evap, dosing pump, Ammonia tank, flow-rate/temp/NOx/ammonia lines, air <LEL, static mixer, receiver, ME, T/C, bypass, SCR.\n\n(As described in the SCR chemical-supply canonical: ammonia/urea stored and dosed via evaporator and pump, mixed into the exhaust via a static mixer with sub-LEL air, reacted over the catalyst, with a bypass valve for system faults.) Efficiency depends on accurate reagent dosing and maintaining the SCR's optimal temperature range (typically 250\u2013450\u00b0C) for effective NOx conversion, ensuring IMO Tier III compliance under MARPOL Annex VI.\n\n**(c) Why exhaust gas flow monitoring in/out of the SCR is required, and how readings control chemical dosing (4)**\n\nFlow rate, temperature and NOx concentration are measured at both SCR inlet and outlet. These readings set the precise reagent dose: too little reagent leaves NOx reduction incomplete (excess emissions); too much causes ammonia slip (unreacted ammonia released to atmosphere, a pollution and compliance risk). The SCR control unit adjusts injection rate in real time based on these readings and changing engine load/fuel type, keeping the system within IMO Tier III limits while minimising ammonia-related pollution.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "efficient-engines-more-nox-scr-monitoring-flows"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "External NOx Reduction System (SCR) \u2014 Chemistry, Urea vs Ammonia, Exhaust-Gas-Quality Monitoring",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) External NOx reduction system (SCR), with chemistry (8)**\n\n**[Sketch]** External NOx reduction system (SCR) \u2014 Controller, Safety Valve, Evap, dosing pump, Ammonia tank, flow-rate/temp/NOx/ammonia lines, air <LEL, static mixer, receiver, ME, T/C, bypass, SCR.\n\nAmmonia solution, stored in a dedicated tank and pumped via double-skinned pipe, is prepared by an evaporator and dosing pump and injected via a static mixer into the exhaust stream (with sub-LEL air for safety), before passing through a receiver into the SCR reactor. A bypass valve allows exhaust to skip the unit if needed. Reaction chemistry: 4NO + 4NH\u2083 + O\u2082 \u2192 4N\u2082 + 6H\u2082O and 6NO\u2082 + 8NH\u2083 \u2192 7N\u2082 + 12H\u2082O.\n\n**(b) Why urea is used instead of ammonia (4)**\n\nAmmonia is toxic and hazardous, requiring specialised pressurised or refrigerated storage. Urea (CO(NH\u2082)\u2082) is a stable, non-toxic solid or aqueous solution that is easily stored and transported; injected into the exhaust, it thermally decomposes to release ammonia in a controlled way: CO(NH\u2082)\u2082 + H\u2082O \u2192 2NH\u2083 + CO\u2082 \u2014 reducing ammonia-slip and environmental-hazard risk versus direct ammonia handling.\n\n**(c) Why exhaust gas quality is monitored before and after the SCR unit, and how this affects operation (4)**\n\nSensors measure NOx concentration, temperature and ammonia level. Pre-SCR monitoring determines the correct reagent dose (too little \u2192 incomplete NOx reduction; too much \u2192 ammonia slip and pollution). Post-SCR monitoring confirms compliance with IMO Tier III and that no excess ammonia is released. This closed-loop monitoring optimises reagent consumption, maintains catalytic efficiency, and prevents damage from unreacted-ammonia deposits.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2022",
+          "question_number": "Q3",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source guide's own diet tag for this canonical shows 'March 2022' as Q4; the archived paper confirms it is actually Q3 \u2014 corrected here."
+        }
+      ],
+      "canonical_id": "external-nox-reduction-scr-urea-vs-ammonia"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "SCR + Fuel Sulphur Content Effects & Turbocharger Interaction \u2014 Dual-Path System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Influence of fuel sulphur content on SCR operation, with a graph (4)**\n\n**[Graph]** Temperature upstream of SCR (250\u2013370\u00b0C) vs sulphur content (0\u20134.0%).\n\nHigh-sulphur fuel combustion produces SO\u2082 and some SO\u2083, which react with the ammonia injected for NOx reduction, forming ammonium bisulphate (NH\u2084HSO\u2084) and ammonium sulphate ((NH\u2084)\u2082SO\u2084):\n\nSO\u2083 + NH\u2083 + H\u2082O \u2192 NH\u2084HSO\u2084\nSO\u2083 + 2NH\u2083 + H\u2082O \u2192 (NH\u2084)\u2082SO\u2084\n\nThese sulphate deposits condense at relatively high temperature (250\u2013300\u00b0C), blocking and fouling the SCR catalyst and reducing effectiveness over time, increasing cleaning/maintenance costs. Sulphuric acid (H\u2082SO\u2084) formation from SO\u2083 and water condensation can also corrode the turbocharger, economiser and SCR reactor housing, especially if exhaust temperature drops too low at low engine load. Mitigations: exhaust gas heating to keep temperature above 300\u2013350\u00b0C (preventing bisulphate deposition), and/or an SOx scrubber upstream of the SCR to cut sulphur content before it reaches the catalyst.\n\n**(b) How turbocharger operation can detrimentally affect the SCR unit when burning high-sulphur fuel (4)**\n\nHigh-sulphur fuel raises SOx, which can react with SCR ammonia injection to form ammonium bisulphate; if exhaust temperature is low, this condenses on the turbocharger turbine blades, causing corrosion/fouling that reduces turbocharger efficiency and can lead to surging or eventual failure. Turbochargers also reduce exhaust gas temperature (especially at lower loads), which can fall below the SCR's optimal range (250\u2013450\u00b0C), further increasing bisulphate deposition risk on both SCR catalyst and turbocharger components. Mitigations include engine tuning adjustments, exhaust gas bypass systems, or waste-heat-recovery modifications to keep exhaust temperature adequate for SCR operation while protecting the turbocharger.\n\n**(c) A system maintaining good turbocharger performance and good NOx reduction when burning high-sulphur fuel, meeting the conflicting conditions (8)**\n\n**[Sketch]** Dual-path SCR/turbocharger arrangement \u2014 Controller, Safety Valve, Evap, dosing pump, Ammonia tank, sensing lines, air <LEL, static mixer, receiver, ME, T/C, bypass, SCR.\n\nA dual-path exhaust arrangement combines: an **SCR bypass system** (allows exhaust to partially/fully bypass the SCR at low load, when temperatures are too low to prevent bisulphate formation); an **exhaust gas heater/heat-retention system** (waste-heat recovery or exhaust gas burner raising temperature before the SCR reactor, reducing sulphate-deposition risk); a **turbocharger protection mechanism** (dedicated heat exchanger or air bypass regulating turbocharger-inlet gas temperature, preventing condensation of corrosive sulphur compounds on turbine blades); an **SOx scrubber upstream of the SCR** (removing most sulphur oxides before the SCR reactor); and an **intelligent ammonia-injection control system** (adjusting dosing based on real-time exhaust temperature and sulphur content, optimising NOx reduction while avoiding excess ammonia slip).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2024",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "scr-fuel-sulphur-turbocharger-dual-path"
+    },
+    {
+      "topic_id": "pollution-prevention",
+      "title": "Diesel Engine NOx Emissions & Control \u2014 EGR/DWI CO2 Trade-Off + Selective Catalytic Reduction System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How EGR and Direct Water Injection reduce NOx but raise specific CO2 emissions (6)**\n\nIn EGR, a portion of exhaust gas is recirculated into the intake air, reducing available oxygen and peak combustion temperature; since NOx formation is highly temperature-dependent, this suppresses thermal NOx. However, reduced oxygen causes less complete combustion, lowering engine efficiency and raising specific fuel consumption (SFC) \u2014 and since CO\u2082 is directly tied to fuel burned, specific CO\u2082 emissions rise per unit power.\n\nDirect Water Injection similarly injects water into the combustion chamber/intake to absorb heat and lower peak temperature, suppressing NOx \u2014 but also reduces combustion completeness/thermal efficiency, requiring more fuel for the same power output and again raising CO\u2082 per kWh.\n\nBoth methods trade NOx reduction for efficiency, requiring careful optimisation to balance emissions control against fuel economy.\n\n**(b) Selective Catalytic Reduction system, with monitoring/control systems required**\n\n**[Sketch]** Selective Catalytic Reduction system \u2014 Controller, Safety Valve, Evap, dosing pump, Ammonia tank, flow-rate/temp/NOx/ammonia lines, air <LEL, static mixer, receiver, ME, T/C, bypass, SCR.\n\nSCR chemically converts NOx to N\u2082 and H\u2082O using ammonia as the reducing agent, meeting IMO Tier III. Key components: ammonia tank, pump/evaporator, static mixer (thorough blending before the reactor), receiver, and SCR reactor, with a bypass for low-load/fault conditions.\n\nMonitoring/control required: NOx sensors at SCR inlet and outlet (verify emissions stay within regulatory limits); ammonia-slip sensors (detect unreacted ammonia before atmospheric release); exhaust temperature monitoring (the catalyst has an effective operating range \u2014 too low reduces conversion efficiency, too high risks catalyst damage); and a controller that adjusts ammonia injection rate in real time against NOx level and engine load, backed by pressure-relief/safety valves for safe ammonia handling. All data is logged for real-time diagnostics and compliance reporting (verifiable at port inspections under MARPOL Annex VI).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2022",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q1",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q8",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: previously mis-assigned elsewhere. Direct full-text re-check confirms this diet asks (a) SCR system + chemical reaction (10) then (b) engine-based NOx-reduction systems that increase CO2 (6) - same substance as this canonical but in reversed order and a different mark split (10/6 rather than 6/10)."
+        }
+      ],
+      "canonical_id": "nox-egr-dwi-co2-tradeoff-scr-system"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Hybrid SOx Scrubber Systems \u2014 Open/Closed Loop Fluids, When Used, Closed-Loop Effectiveness & Sea-Pollution Avoidance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Fluids used in open and closed loops, and how controlled to meet scrubbing demand (6)**\n\nIn open-loop mode, seawater is the scrubbing medium \u2014 its natural alkalinity neutralises SOx; seawater is drawn in, used for scrubbing, then discharged overboard once meeting discharge limits. In closed-loop mode, freshwater dosed with an alkaline additive (usually sodium hydroxide, NaOH) is continuously recirculated with minimal discharge. Scrubbing efficiency is controlled by adjusting fluid flow rate, NaOH dosing and water pH against engine load \u2014 higher loads producing more SOx require higher flow/dosing, lower loads less.\n\n**(b) When Open Loop vs Closed Loop scrubbing is used (2)**\n\nOpen-loop scrubbing is used in open seas, where seawater alkalinity is high and regulations permit discharge of treated washwater. Closed-loop scrubbing is used in Emission Control Areas (ECAs) and ports, where discharge regulations are strict and open-loop discharge is restricted.\n\n**(c) Maintaining closed-loop neutralising effectiveness over long periods, and avoiding sea pollution (8)**\n\nAs SOx reacts with NaOH, the fluid's alkalinity falls over time, so additional NaOH is dosed to maintain effective scrubbing, with pH and NaOH concentration continuously monitored and adjusted. To prevent pollution, a water treatment unit removes sludge and particulate matter before any treated washwater is discharged; sludge (containing sulphates and impurities) is collected in holding tanks for shore disposal, ensuring no acidic or contaminated discharge reaches the sea, per IMO regulations.",
+      "examiner_focus": [
+        "A significant trap in this question: the stem specifically says \"hybrid SOx scrubber systems\" (a single unit capable of running in either mode), but almost all candidates answer as if describing two separate, independent Open Loop and Closed Loop scrubbers \u2014 reading the exact wording of the stem is essential here."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "2",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "2",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2024",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "2",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via direct PDF text extraction of the archived July 2024 paper."
+        }
+      ],
+      "canonical_id": "hybrid-sox-scrubber-fluids-when-used-effectiveness"
+    },
+    {
+      "topic_id": "ig-scrubber-system",
+      "title": "Open Loop / Closed Loop SOx Scrubber (Describe Either) + Monitoring for IMO Compliance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Describe EITHER an Open Loop OR a Closed Loop SOx scrubber system (10)**\n\n**[Sketch]** Open Loop \u2014 scrubber exhaust, exhaust gas in, seawater in, washwater treatment, separated residue, scrubber overboard.\n\nAn Open Loop system uses seawater's natural alkalinity to neutralise SOx: exhaust gas is directed into a scrubber tower where sprayed seawater dissolves SO\u2082 (forming sulfurous acid, further oxidising to sulphuric acid), which the seawater's alkalinity neutralises into calcium sulphate and other harmless salts. Treated exhaust is released to atmosphere; washwater passes through a treatment unit separating solids/sludge for port disposal, with remaining treated water discharged overboard under MARPOL Annex VI limits (pH, turbidity, PAH). Advantages: no chemical additives, lower complexity/cost. Limitations: reduced efficiency in low-alkalinity waters, and many ports/ECAs restrict or ban open-loop discharge.\n\n**[Sketch]** Closed Loop \u2014 exhaust gas, scrubber, NaOH unit, fresh water, process tank, water treatment, sludge tank, holding tank, cooler, pumps.\n\nAlternatively, a Closed Loop system recirculates fresh washwater dosed with NaOH, reacting with SO\u2082 to form dissolved sodium sulphate; washwater passes to a process tank for filtration/treatment, is recirculated, with sludge sent to a holding tank for port disposal (any overboard discharge must still meet MARPOL Annex VI). A cooling system maintains scrubber temperature. Advantages: works in low-alkalinity/ECA waters where open-loop is restricted, minimal direct discharge. Trade-offs: NaOH replenishment, sludge-related maintenance, higher operating cost.\n\n**(b) Systems to monitor to ensure IMO compliance (6)**\n\nExhaust gas emissions (continuous emission monitoring systems measuring SO\u2082/CO\u2082 ratio against the 0.50% global or 0.10% ECA sulphur cap); washwater quality (pH \u22656.5 at the overboard discharge point, turbidity, PAH concentration); scrubber flow rate (accurate pumping/recirculation control for effective SOx removal); in closed-loop systems, NaOH concentration (proper neutralisation); and sludge/residue management (logged collection and disposal to port reception facilities). All monitoring data is logged and made available to port state control for compliance verification.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q4",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source guide's diet tags/entry imply Q2 for this diet; the archived paper confirms it is actually Q4 \u2014 corrected here."
+        }
+      ],
+      "canonical_id": "open-closed-loop-scrubber-describe-either-monitoring"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Open Loop System (In Open Waters) + Closed Loop System (Stating When Used) \u2014 Both Described",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Open loop system for reducing SOx, explaining operation whilst the vessel is in open waters (6)**\n\nSeawater is pumped into the scrubber and sprayed over the exhaust gas; its natural alkalinity in open ocean waters neutralises the dissolved SO\u2082/sulphuric acid into harmless salts, with treated washwater discharged overboard \u2014 viable specifically because open-water seawater alkalinity is high enough for effective, compliant neutralisation without chemical additives.\n\n**(b) Closed loop scrubber system for removing SOx, and stating when it would be used (10)**\n\nA closed-loop system recirculates freshwater dosed with an alkaline additive (NaOH) to neutralise SO\u2082 into dissolved sodium sulphate, with the washwater treated and recirculated rather than continuously discharged; sludge is collected for port disposal, and a cooling system keeps the scrubber within operating temperature limits. It is used specifically in areas where open-loop discharge is restricted or seawater alkalinity is too low for effective open-loop scrubbing \u2014 Emission Control Areas, ports, and freshwater/low-salinity waters \u2014 since it does not depend on ambient seawater chemistry.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2022",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2018",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "open-loop-water-closed-loop-when-used"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "NOx Formation Mechanism + ONE External Reduction Method (Efficiency Trade-Off)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How NOx is formed, and why the aim of high engine efficiency increases the problem (6)**\n\nNOx forms from the high-temperature combustion process: intake air (~78% N\u2082, 21% O\u2082) reacts above ~1,300\u00b0C via the Zeldovich mechanism, which is strongly temperature-dependent. Higher efficiency is typically achieved by raising combustion temperature and pressure (better fuel atomisation, higher thermal efficiency) \u2014 but this directly intensifies NOx formation, and efficient engines' leaner air-fuel mixtures (excess oxygen) further promote it. So while higher efficiency cuts fuel consumption and CO\u2082, it worsens NOx, creating an inherent efficiency/NOx trade-off.\n\n**(b) ONE external means of reducing NOx to meet current regulations (10)**\n\nSelective Catalytic Reduction (SCR): ammonia or a urea-based solution is injected into the exhaust upstream of a catalytic reactor. Urea decomposes to ammonia at high temperature; the ammonia then reacts with NOx over the catalyst (4NO + 4NH\u2083 + O\u2082 \u2192 4N\u2082 + 6H\u2082O; 6NO\u2082 + 8NH\u2083 \u2192 7N\u2082 + 12H\u2082O), converting it to harmless nitrogen and water and meeting IMO Tier III limits. SCR operates optimally within a specific exhaust temperature range (roughly 270\u2013450\u00b0C), making temperature monitoring essential; NOx sensors, ammonia-slip monitors and exhaust-temperature control regulate injection and prevent excess ammonia escaping. SCR is widely used in marine applications, capable of NOx reductions up to ~90%, but requires careful maintenance (urea consumption monitoring, preventing injection-system crystallisation, catalyst condition) to remain effective.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2022",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "nox-formation-mechanism-one-external-reduction-method"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Diesel Engine Exhaust Emissions \u2014 Causes & Effects of CO, CO2, Hydrocarbons & Particulate Matter",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Carbon Monoxide (CO) (4)**\n\nProduced by incomplete combustion when insufficient oxygen is available (poor air-fuel mixing, low excess-air ratio, faulty injectors). Highly toxic \u2014 reduces the blood's oxygen-carrying capacity, causing CO poisoning; in the atmosphere it contributes to ground-level ozone formation, harming air quality.\n\n**(b) Carbon Dioxide (CO2) (4)**\n\nA natural product of complete combustion (carbon in fuel fully reacting with oxygen). CO\u2082 output is directly proportional to fuel consumption. Its major effect is contribution to global warming/climate change as a greenhouse gas trapping atmospheric heat.\n\n**(c) Hydrocarbons (HC) (4)**\n\nUnburned hydrocarbons result from incomplete combustion (poor fuel atomisation, low combustion temperature, malfunctioning injectors). They react with NOx in sunlight to form photochemical smog, harmful to health and the environment; some hydrocarbons are also carcinogenic.\n\n**(d) Particulate Matter (PM) (4)**\n\nSoot \u2014 fine carbon particles, metal oxides and unburned hydrocarbons from incomplete combustion, associated with poor fuel quality, excessive load, or inefficient combustion. Fine particles penetrate deep into the lungs, causing respiratory disease (asthma, lung cancer), and contribute to atmospheric haze reducing visibility.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2016",
+          "question_number": "Q9",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "exhaust-emissions-co-co2-hc-pm"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Exhaust Gas Recirculation (EGR) System \u2014 Sketch, Operating & Thermal Efficiency Problems",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) EGR system, with a sketch, and how it reduces NOx (12)**\n\n**[Sketch]** Exhaust Gas Recirculation system \u2014 turbocharger, exhaust, intake, scrubber with sea-water inlet/outlet, gas cooler for EGR with S.W. inlet/outlet, EGR blower, cylinder, air cooler.\n\nExhaust gas leaves the cylinder and passes through the turbocharger; part is diverted through a control valve into the EGR system, entering a scrubber where seawater removes SOx and particulate matter. The scrubbed gas passes through a gas cooler (seawater-cooled) before the EGR blower, which recirculates the cleaned, cooled gas into the engine's air intake, through the air cooler, and into the cylinder for combustion. By diluting intake air with cooled exhaust gas, the system lowers oxygen concentration and peak combustion temperature \u2014 since NOx formation is highly temperature-dependent, this significantly suppresses thermal NOx formation, helping meet IMO Tier III limits.\n\n**(b) Operating and thermal-efficiency problems with EGR (4)**\n\n- **Increased soot/carbon deposits**: recirculated exhaust raises unburned hydrocarbon/particulate levels in the combustion chamber, fouling the turbocharger and intake valves, raising maintenance costs and reducing performance.\n- **Reduced combustion efficiency**: lower intake oxygen reduces combustion efficiency, raising fuel consumption for the same power output \u2014 indirectly increasing CO\u2082 emissions.\n- **Higher exhaust/thermal stress**: recirculating exhaust increases heat retention, raising thermal stress on components and potentially shortening part life/reducing cooling-system efficiency.\n- **Potential power loss**: less available oxygen can reduce power output, particularly at high load, requiring fuel-injection strategy adjustments that can further hurt fuel economy.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2016",
+          "question_number": "Q7",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "egr-system-sketch-operating-thermal-problems"
+    },
+    {
+      "topic_id": "emission-control",
+      "title": "Dual-Fuel Four-Stroke Combustion Process (Pilot Injection) + Exhaust Gas Recirculation Explained",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Gas combustion process in a dual-fuel medium-speed main engine with pilot injection (10)**\n\n**[Sketch]** Dual-fuel gas combustion process \u2014 intake of air and gas / compression of air and gas / ignition by pilot diesel fuel.\n\nA dual-fuel four-stroke engine uses both gaseous fuel (e.g. natural gas) and a small pilot quantity of liquid diesel to guarantee reliable ignition, across the standard intake/compression/power/exhaust strokes. During intake, the intake valve opens first for scavenge air; once air flow is positive, the gas admission valve opens to introduce gaseous fuel, ensuring proper mixing and preventing manifold gas accumulation. Near the end of induction, the gas valve closes first, then the intake valve, for precise fuel control.\n\nDuring compression (both valves closed), the piston compresses the air-fuel mixture; since the gaseous fuel doesn't auto-ignite at this temperature, a small pilot diesel injection just before TDC ignites under high pressure/temperature, and this flame front then ignites the gas-air mixture \u2014 the power stroke. During exhaust, the exhaust valve opens and burnt gases are expelled before the cycle repeats.\n\nThe fuel control system continuously balances gas and pilot-fuel quantity for optimal power/emissions, and can automatically switch to diesel-only mode if gas supply is interrupted; electronic control optimises delivery for load and operating conditions.\n\n**(b) What Exhaust Gas Recirculation means, and how it reduces air pollution (6)**\n\nEGR recirculates a controlled portion of exhaust gas back into the intake, diverted from the exhaust manifold and mixed with fresh air (typically cooled via an EGR cooler) before combustion. This dilutes intake oxygen and lowers peak combustion temperature \u2014 since NOx formation rises sharply with temperature, the cooler, slower burn significantly reduces NOx output, helping the engine meet emission regulations.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2016",
+          "question_number": "Q4",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "pre_catalog_or_unverified",
+          "matched_cluster": null,
+          "note": "Pre-dates the archived paper range \u2014 attested only by the compiled guide's own repeat-tracking. Note: part (a) sits closer to the 'Alternate fuels' app tag than 'Emission control'; kept here since part (b) is the emissions-specific content and this is where the source guide places it, but the topic assignment could reasonably go either way."
+        }
+      ],
+      "canonical_id": "dual-fuel-combustion-pilot-injection-egr"
+    }
+  ]
+}

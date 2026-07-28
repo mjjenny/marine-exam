@@ -1,0 +1,10 @@
+Single-database Alembic configuration managed by Flask-Migrate.
+
+Common commands (run from backend/, with FLASK_APP=wsgi.py and DATABASE_URL set):
+
+  flask db upgrade            apply migrations
+  flask db downgrade base     revert to empty schema
+  flask db migrate -m "msg"   autogenerate a new revision from model changes
+  flask db history            list revisions
+
+The initial revision (0001_initial_schema) is hand-written to match the spec's data model.

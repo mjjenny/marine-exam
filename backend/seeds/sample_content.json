@@ -1,0 +1,75 @@
+{
+  "_README": "SAMPLE / illustrative content for DEV & DEMO use only. These are realistic SQA/MCA-style question prompts with brief, high-level indicative answers on well-established fundamentals. They are NOT authoritative model answers — verify every technical detail against official SQA/MCA materials, Class rules and current IMO requirements before any study use. Do NOT run this against a database that already holds your real ingested content.",
+  "subjects": {
+    "ek-naval": {
+      "is_oral": false,
+      "entries": [
+        {"slug": "sample-naval-panting-pounding", "topic": "Hull Stresses & Structure", "diet": "Jul 2025", "q": "Q12",
+         "question": "Explain the causes and effects of panting and pounding, and describe the constructional arrangements provided to resist them.",
+         "answer": "Panting is the in-and-out flexing of the shell plating at the ends of the ship, caused by the cyclic variation of water pressure as the vessel pitches. Pounding is an impact load on the fore bottom when the bow emerges from and re-enters heavy seas. Panting is resisted forward by panting stringers/beams, breasthooks and closely spaced frames; pounding is resisted by deep solid floors, additional side girders and increased bottom plating thickness in the pounding region (roughly the forward 0.25L)."},
+        {"slug": "sample-naval-watertight-bulkheads", "topic": "Hull Stresses & Structure", "diet": "Mar 2025", "q": "Q13",
+         "question": "State the purpose of transverse watertight bulkheads and describe how their watertight integrity is verified.",
+         "answer": "They subdivide the hull to limit flooding, preserve reserve buoyancy and provide damage stability, and they add transverse strength. A ship normally has at least a collision (fore-peak) bulkhead, an after-peak bulkhead and bulkheads at the ends of the machinery space. Integrity is confirmed by hose testing of completed bulkheads and by testing the closing appliances (watertight doors) for correct operation and sealing."},
+        {"slug": "sample-naval-drydock-prep", "topic": "Surveys & Drydocking", "diet": "Jul 2025", "q": "Q14",
+         "question": "List the information required before drydocking and the principal items inspected once the vessel is on the blocks.",
+         "answer": "Beforehand: the docking plan, the ship's weight and centre of gravity, tank/soundings and stability condition, and known hull defects. On the blocks: shell plating and welds, sea chests and gratings, rudder and pintle clearances, propeller and shaft weardown/seal, anodes/ICCP, bilge keels, and all underwater openings."}
+      ]
+    },
+    "ek-general": {
+      "is_oral": false,
+      "entries": [
+        {"slug": "sample-general-steering-gear", "topic": "Steering Gear", "diet": "Jul 2025", "q": "Q3",
+         "question": "State the SOLAS requirements for a ship's main and auxiliary steering gear.",
+         "answer": "The main steering gear must be able to put the rudder from 35 degrees on one side to 35 degrees on the other with the ship at maximum service speed, and from 35 to 30 degrees within 28 seconds. An auxiliary means of steering is required (unless the main gear has redundant power units). Two independent control systems are required from the bridge, with power-unit failure and low-level alarms, and the gear must be tested before departure."},
+        {"slug": "sample-general-plate-hx", "topic": "Heat Exchangers", "diet": "Mar 2025", "q": "Q4",
+         "question": "Explain how the design of a plate heat exchanger promotes heat transfer, and how a leak between the two fluids is detected.",
+         "answer": "Thin corrugated plates create turbulent flow at low velocity, present a large surface area in a small volume, use a thin wall of high conductivity, and are arranged for true counter-flow — all of which raise the heat-transfer rate. Cross-contamination is prevented and revealed by the gap and drain (tell-tale) path between adjacent plate gaskets, so a leaking plate weeps to atmosphere rather than mixing the fluids."},
+        {"slug": "sample-general-refrig-air", "topic": "Refrigeration & AC", "diet": "Jul 2025", "q": "Q6",
+         "question": "Describe how the presence of air (non-condensable gases) in a refrigeration system is detected and removed.",
+         "answer": "Non-condensables collect in the top of the condenser and raise the condenser pressure above the value corresponding to the condensing temperature (pressure/temperature no longer agree with the saturation table). They are removed by purging from the highest point of the condenser, ideally through a purge unit, with the compressor stopped and the refrigerant allowed to settle."}
+      ]
+    },
+    "ek-electrical": {
+      "is_oral": false,
+      "entries": [
+        {"slug": "sample-elec-paralleling", "topic": "Generators & Distribution", "diet": "Jul 2025", "q": "Q9",
+         "question": "Describe the conditions that must be satisfied to parallel two a.c. generators and the sequence of operations.",
+         "answer": "Before closing the breaker the incoming machine must match the busbar in voltage, frequency, phase sequence and be in phase (checked with a synchroscope or synchronising lamps, closing at the point of synchronism). Once connected, the governor is used to take up real (kW) load and the AVR to balance reactive (kVAr) load between the machines."},
+        {"slug": "sample-elec-insulation-resistance", "topic": "Testing & Maintenance", "diet": "Mar 2025", "q": "Q10",
+         "question": "Explain how insulation resistance is measured and state typical acceptable values.",
+         "answer": "Insulation resistance is measured with an insulation tester (megger), commonly at 500 V d.c. for low-voltage equipment, between conductors and earth with the circuit isolated and discharged. A common minimum guide is about 1 megohm for general LV circuits (a rule of thumb is (rated kV + 1) megohms); results are temperature- and moisture-dependent and are most useful trended over time."},
+        {"slug": "sample-elec-earth-fault", "topic": "Testing & Maintenance", "diet": "Jul 2025", "q": "Q11",
+         "question": "Describe how an earth fault is detected and located on an insulated (unearthed) marine distribution system.",
+         "answer": "An insulated system continues to operate with one earth fault, so faults are monitored continuously by earth-fault indicating lamps or an earth-fault monitor at the switchboard. The faulty feeder is located by systematically switching off circuits (with due care) until the indication clears, then tracing the affected circuit."}
+      ]
+    },
+    "ek-motor": {
+      "is_oral": false,
+      "entries": [
+        {"slug": "sample-motor-crankcase-explosion", "topic": "Engine Safety", "diet": "Jul 2025", "q": "Q1",
+         "question": "Explain the sequence of events leading to a crankcase explosion and the measures taken to prevent it.",
+         "answer": "A local hot spot (e.g. a hot bearing) vaporises lubricating oil; the vapour condenses into a fine mist that can ignite, giving a primary explosion. The pressure rise can draw in fresh air and, if the crankcase is opened too soon, cause a larger secondary explosion. Prevention: oil-mist detection with shutdown, crankcase relief doors/flame traps, good bearing monitoring, and not opening the crankcase until the engine has cooled after a suspected overheat."},
+        {"slug": "sample-motor-fuel-injection", "topic": "Fuel Systems", "diet": "Mar 2025", "q": "Q3",
+         "question": "State the requirements for good fuel injection and describe the effects of a leaking or dribbling injector.",
+         "answer": "Good injection requires correct atomisation, penetration, timing and distribution of fuel in the combustion space for the engine condition. A leaking or dribbling injector gives poor atomisation and after-burning, producing high exhaust temperature, carbon deposits, and burning of the nozzle tip and exhaust valves, with loss of performance."},
+        {"slug": "sample-motor-turbocharger-surging", "topic": "Turbocharging", "diet": "Jul 2025", "q": "Q9",
+         "question": "Describe the causes of turbocharger surging and the immediate action to be taken.",
+         "answer": "Surging is a periodic breakdown of airflow through the compressor. Causes include fouled turbine or compressor, choked air filters or grids, a fouled exhaust-gas economiser or gas passages, rapid load changes, and dirty/heavily fouled engine gas passages. Immediate action is to reduce engine load to stop the surging, then investigate and clear the underlying cause (filters, cleaning, load pattern)."}
+      ]
+    },
+    "ek-oral": {
+      "is_oral": true,
+      "entries": [
+        {"slug": "sample-oral-enclosed-space", "topic": "Safety", "q": "Q1",
+         "question": "What is the procedure for entering an enclosed space?",
+         "answer": "Carry out a risk assessment and raise an enclosed-space entry permit to work. Test the atmosphere before and during entry for oxygen (about 21%), and for the absence of toxic and flammable gases. Ventilate continuously, post a trained standby person at the entrance with communications, provide rescue equipment and a rescue plan, and use appropriate PPE. Do not enter on the strength of ventilation alone without atmosphere testing."},
+        {"slug": "sample-oral-ism", "topic": "Management", "q": "Q2",
+         "question": "Explain the purpose of the ISM Code and your responsibilities under it as Chief Engineer.",
+         "answer": "The ISM Code provides an international standard for the safe management and operation of ships and for pollution prevention, implemented through the company's Safety Management System (SMS). As Chief Engineer you are responsible for the safe operation and maintenance of machinery, running the planned maintenance system, carrying out drills, keeping records, reporting non-conformities/accidents/near-misses, and working to the SMS procedures."},
+        {"slug": "sample-oral-marpol-annex-vi", "topic": "MARPOL", "q": "Q3",
+         "question": "What does MARPOL Annex VI cover, and what certificate is required to demonstrate compliance?",
+         "answer": "Annex VI addresses the prevention of air pollution from ships — including SOx and NOx emissions, ozone-depleting substances, volatile organic compounds, shipboard incineration, and energy-efficiency measures (EEDI/SEEMP). Compliance is shown by the International Air Pollution Prevention (IAPP) Certificate, with additional controls in designated Emission Control Areas and applicable fuel-sulphur limits."}
+      ]
+    }
+  }
+}

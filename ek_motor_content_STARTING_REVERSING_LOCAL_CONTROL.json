@@ -1,0 +1,549 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "starting-control",
+      "title": "Starting Air System \u2014 Description, Components & Safety Devices",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Describe, with the aid of a sketch, a main engine/diesel engine starting air system, stating the safety devices incorporated (8)**\n\n**[Sketch]** Main engine starting air system with safety devices \u2014 air bottle, auto/main valve, distributor, NRV, slow-turning valve, per-cylinder air-start valves, with bursting disc, relief valve and flame arrester on the manifold.\n\n**System components**: Air bottle (stores starting air at ~30 bar); Start block valve (7 bar, supplies the control circuit); Auto/Main valve (pneumatically operated master valve admitting high-pressure air to distributor and starting air valves); NRV (prevents back-flow of combustion gases into the air line); Distributor (timed to the crankshaft, sequences air to the correct cylinder starting air valves in firing order); Starting air valves (on each cylinder head, admit high-pressure air at the correct timing); Slow turning valve (allows slow rotation before full start, checking for hydraulic lock); Block valve for main valve (controls pilot air); Fuel pump puncture valve (holds fuel pumps off-load during air start); Local/Remote control panel; T/G interlock (prevents starting if turning gear engaged).\n\n**Safety devices fitted**: Bursting disc (ruptures to relieve manifold overpressure); Relief valve (limits manifold/pipeline pressure); Flame arrester (prevents flame propagating back into the air-start valve and pipework); NRV (prevents combustion-gas backflow into the distributor/main air line); Fuel pump puncture valve (cuts fuel if an air-start valve leaks, preventing combustion gas entering the air line); Distributor stop valve (isolates the distributor for maintenance); T/G interlock (prevents the start signal if turning gear is engaged).\n\n**Key fact**: the air bottle sits at ~30 bar; the control circuit runs on the 7 bar start block valve; the distributor is timed to the crankshaft and sends air-start pulses to each cylinder in firing order.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8"
+          ],
+          "total_marks": 8,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'air-start-explosion-how-occurs-ceo-prevention' - filed against both with the same diet/Q-number."
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'air-start-explosion-how-occurs-ceo-prevention' - filed against both with the same diet/Q-number."
+        },
+        {
+          "diet": "October 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same combined pattern as October 2022 Q5 (system description + fault-tracing)."
+        },
+        {
+          "diet": "December 2021",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'air-start-explosion-how-occurs-ceo-prevention' - filed against both with the same diet/Q-number."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same combined pattern as the other Dec/Oct diets (system description + explosion causes/CEO prevention, see the paired canonical)."
+        },
+        {
+          "diet": "October 2022",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: previously mis-assigned elsewhere. CROSS-TOPIC QUESTION: part (a) (starting air system description + safety devices) matches this canonical; part (b) (tracing the cause of a failure to turn over on air) matches the fault-finding canonical - filed against both with the same diet/Q-number."
+        }
+      ],
+      "canonical_id": "starting-air-system-description-components-safety-devices"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Slow Turning System \u2014 Why Fitted, When It Operates, How It Works",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why a slow turning system is fitted (4)**\n\nBefore starting, a cylinder may have accumulated liquid (water from condensation, fuel, or lube oil). If the engine is barred over slowly first, any hydraulic lock is detected \u2014 liquid cannot be compressed and will cause catastrophic damage (bent connecting rod, cracked cover) if a full air start is applied directly. It confirms free rotation of the engine and that no mechanical obstruction exists, protecting the crankshaft, bearings and cylinder covers from damage.\n\n**(b) When slow turning operates (2)**\n\nAfter a prolonged shutdown (port stay, repairs, standby periods) \u2014 liquid ingress risk is highest. It is automatically triggered when the engine has been stationary for a set period (typically 30 minutes on modern engines) \u2014 the interlock requires the engine to complete slow turning before full start air is admitted.\n\n**(c) How the slow turning system operates, with a sketch (10)**\n\n**[Sketch]** Air starting system with slow turning arrangement \u2014 the slow turning valve admits a small, controlled flow directly to the manifold, bypassing the main distributor.\n\nSequence: start signal received (bridge or local) \u2192 T/G interlock checked, blocking the start if turning gear is engaged \u2192 slow turning valve opens, admitting a small controlled flow of air directly to the starting air manifold, bypassing the main distributor \u2192 engine rotates slowly (one full revolution or as set) \u2192 if rotation is free with no hydraulic lock detected, indicator cocks are closed \u2192 the slow turning interlock clears, energising the Auto/Main valve \u2192 full starting air is admitted via the distributor, sequenced to cylinder air start valves in firing order \u2192 engine fires and accelerates to running speed \u2192 fuel admitted, starting air cut off, engine runs on fuel.\n\n**Key fact**: slow turning uses a small controlled flow that bypasses the distributor; the main start is interlocked behind a successful slow turn.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2022",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "2",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "December 2025",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "2",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        }
+      ],
+      "canonical_id": "slow-turning-system-why-when-how"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Air Start System Explosion \u2014 How It Occurs & CEO Prevention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(b) How an explosion in a diesel engine air start system might occur (4)**\n\nA leaking or seized-open air start valve allows high-temperature combustion gases to flow back into the air start manifold. Lubricating oil mist present in compressed air (from the compressor) accumulates in the manifold. Hot gases or sparks from the cylinder ignite the oil/fuel mist in the manifold, causing an explosion. Separately, if slow turning is not done and a cylinder has accumulated fuel/water (hydraulic lock), sudden admission of air can cause a pressure explosion.\n\n**(c) Chief Engineer actions to avoid explosion (4)**\n\n*Operational precautions*: always slow-turn the engine before a full air start (checks for hydraulic lock, purges cylinders); verify flame arresters are clean and in place before starting.\n\n*Maintenance regime*: regularly overhaul and test air start valves for leakage (a leaking valve is the primary cause); inspect and maintain NRVs to ensure correct seating; drain air start lines and bottles regularly to remove moisture/oil; keep air compressors well maintained to minimise oil carryover.\n\n*Checks and procedures*: check the bursting disc and relief valve condition regularly; ensure the distributor stop valve is closed when the engine is on standby for maintenance; follow SMS/PMS schedules; brief watchkeepers on correct starting procedures.\n\n**Key point**: the primary cause is a leaking air-start valve \u2014 it is the component to overhaul and test first, since it is what lets hot combustion gas back into an oil-laden manifold.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "4"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'starting-air-system-description-components-safety-devices' - filed against both with the same diet/Q-number."
+        },
+        {
+          "diet": "October 2025",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "4"
+          ],
+          "total_marks": 8,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'starting-air-system-description-components-safety-devices' - filed against both with the same diet/Q-number."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "4"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same combined pattern as the other Dec/Oct diets (system description + explosion causes/CEO prevention)."
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "4"
+          ],
+          "total_marks": 8,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's Q5 combines multiple sub-parts spanning this canonical and 'starting-air-system-description-components-safety-devices' - filed against both with the same diet/Q-number."
+        }
+      ],
+      "canonical_id": "air-start-explosion-how-occurs-ceo-prevention"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Engine Fails to Start/Turn Over on Air \u2014 Fault-Finding & Avoidance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Why an engine may fail to start on air when the receiver is fully charged and outlet is open (10); how such problems are avoided (6); tracing the cause of a failure to turn over on air (8)**\n\n*Main air supply path faults*: main start air valve not opening (solenoid fault, seized valve, control air failure); starting air distributor faulty (not sending timed pulses); control air pressure too low (below ~7 bar).\n\n*Cylinder faults*: start air valves seized/stuck closed (carbon deposits, corrosion, spring failure).\n\n*Timing/control faults*: remote start signal not reaching the main valve (broken circuit, faulty solenoid); telegraph/ECR selector in the wrong position; reversing servo failure (start interlock remains active).\n\n*Safety interlocks preventing start*: overspeed trip not reset; low LO pressure interlock active; OMD or bearing high-temperature alarm active; turning gear engaged interlock; open cylinder cocks (start inhibit on some engines).\n\n*Mechanical faults*: hydraulic lock; broken/jammed piston; excessive exhaust back pressure.\n\n*Air system specific*: faulty control/pilot air (no pilot signal, blocked strainer/filter, corroded/blocked pipework).\n\n**Fault-finding trace (step-by-step)**: 1) check air bottle pressure (min ~17\u201320 bar, normal 30 bar); 2) check start block valve (7 bar) fully open; 3) check auto/main valve pilot air signal; 4) check NRV not stuck closed; 5) check turning gear interlock fully withdrawn; 6) check slow turning valve operates; 7) check the distributor receiving air with correct timing; 8) check individual cylinder starting air valves (crack the airline to test); 9) check for hydraulic lock (crack indicator cocks, bar manually); 10) switch to local control \u2014 if it starts, the fault is in the remote/telegraph system.\n\n**Avoiding air start problems**: regular overhaul of the main valve, distributor and cylinder valves; daily draining of air receivers; test/overhaul automatic drain traps; regularly test safety interlocks; inspect valve seats for erosion; test control/pilot air pressure; service compressors regularly (worn rings cause oil carry-over); fit/maintain oil-water separators and filters; ensure turning gear is disengaged and interlocked before starting; open indicator cocks and bar the engine before starting after a prolonged shutdown; fit flame/bursting disc arrestors per SOLAS.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same combined pattern as October 2022 Q5 (system description + fault-tracing)."
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q1",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q1",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "December 2024",
+          "question_number": "Q3",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's question combines THREE distinct sub-topics in one 16-mark question - (a) starting-air fault-finding (this canonical, 6 marks), (b) preparing a starting air receiver for survey (6 marks, see Compressed Air System topic), (c) compressor inter-stage cooling/condensate drainage (4 marks, see Compressor topic). Filed against all three relevant canonicals with the same diet/Q-number."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: this diet's question combines THREE distinct sub-topics in one 16-mark question - (a) starting-air fault-finding (this canonical, 6 marks), (b) preparing a starting air receiver for survey (6 marks, see Compressed Air System topic), (c) compressor inter-stage cooling/condensate drainage (4 marks, see Compressor topic). Filed against all three relevant canonicals with the same diet/Q-number."
+        },
+        {
+          "diet": "October 2022",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: part (b) of this combined question (tracing the cause of failure to turn over on air despite sufficient receiver pressure) matches this canonical; part (a) (starting air system description) matches the separate starting-air-system-description canonical."
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: same 3-way combined pattern as December 2017 Q4/October 2017 Q9."
+        }
+      ],
+      "canonical_id": "engine-fails-start-turn-over-air-fault-finding"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Dangers of the Starting Air System, Failure to Fire on Fuel & Transfer to Local Control",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Dangers associated with a main engine starting air system, and mitigations (9)**\n\n1. **Starting air line explosion/blowback** \u2014 a misfiring fuel-injected cylinder passes burning gases back through the open starting air valve into the line; fuel/oil contamination creates an explosive mixture. *Mitigations*: bursting discs on the main line, flame traps/NRVs on branch lines, automatic drain valves, relief valves, regular draining and inspection.\n2. **Air receiver over-pressure** \u2014 compressor malfunction or blocked relief path. *Mitigations*: safety relief valves set to SWP, fusible plugs, pressure gauges and high-pressure alarms.\n3. **Main starting valve leakage (weeping)** \u2014 hot combustion gases enter the manifold during firing strokes, risking manifold fire/explosion. *Mitigations*: valve overhaul and seat lapping at intervals, non-return features on individual valves, temperature monitoring.\n4. **Hydraulic lock** \u2014 water ingress from a leaking head/liner jacket accumulates in the cylinder; starting causes catastrophic failure (bent con-rod, cracked head). *Mitigations*: always crack indicator cocks and turn on air first (\"gas free\" turn), inspect cocks before starting, maintain cooling joints and liner O-rings.\n5. **Inadvertent starting/uncontrolled movement** \u2014 the engine can turn over unexpectedly if pressurised during maintenance. *Mitigations*: turning gear interlock, shut/vent the manifold during maintenance, lock-out/tag-out (ISM Code).\n6. **High-pressure air injury** \u2014 leaks from HP connections (up to 30 bar) are a direct hazard. *Mitigations*: regular hydraulic pressure testing per class survey, proper jointing/torquing, PPE, no standing in line with flanges during pressurisation.\n\n**(b) THREE causes of failing to fire on fuel after a successful air turn-over (3)**\n\nFuel supply issues (faulty pumps, blocked lines, insufficient pressure); incorrect fuel injection timing (faulty camshaft timing, sticking pump racks, improper governor settings); air in the fuel system (recent maintenance, line leakage, or inadequate priming introducing air, preventing proper atomisation).\n\n**(c) Transfer to local (engine-side) control on remote control failure (4)**\n\n1. Contact the bridge and request main engine stoppage. 2. Proceed to the local control station and confirm bridge communication. 3. Switch the control transfer changeover valve/cock from \"remote\" to \"local\". 4. Engage the clutch changeover mechanism (anti-clockwise), disengaging fuel rack control from the governor and connecting the manual hand control. 5. Unlock the local hand control lever, setting it to zero-fuel/start position. 6. On bridge telegraph orders, select ahead/astern via the selector switch, confirming direction via indicator lights. 7. Press the start button manually at the local station, adjusting fuel quantity with the hand control lever as required.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": "Q8",
+          "marks_parts": [
+            "9",
+            "3",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "CORRECTION: this was recorded as Q5 earlier in this build, which conflicted with the Fuel-Water-Emulsification canonical also claiming March 2026 Q5. Re-checking the original screenshot batch (images 7-9 for March 2026) confirms the correct layout is Q4/Q5/Q6 on one image (four-stroke dual fuel / FWE / impeller vane) and Q7/Q8/Q9 on the next (crankshaft deflections / starting-air dangers / boiler water hammer) - so this canonical's correct Q-number is Q8, not Q5."
+        },
+        {
+          "diet": "July 2022",
+          "question_number": "Q5",
+          "marks_parts": [
+            "9",
+            "3",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "dangers-starting-air-fail-fire-fuel-transfer-local"
+    },
+    {
+      "topic_id": "compressed-air-system",
+      "title": "Starting Air Receiver \u2014 Entry, Inspection, Survey & Closing Up",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Procedure for entry into and inspection of a starting air receiver, stating defects and causes (12); closing up and initial pressurisation (4); preparing for survey (6)**\n\n**Pre-entry procedure**: isolate the receiver (shut all inlet/outlet valves, lock off/tag out; depressurise fully, open drain/vent, confirm zero on the gauge; blank-flange all connections); obtain an Enclosed Space Entry Permit and appoint a standby man; test the atmosphere with a calibrated gas detector (O\u2082 20.8%, range 19.5\u201323.5% acceptable; CO/hydrocarbon within safe limits); ventilate for a minimum of 15 minutes before entry; entry team in PPE (no naked flames), continuous atmosphere monitoring, harness/lifeline if needed.\n\n**Inspection points and defects, with causes**: internal corrosion/pitting (moisture carried over with compressed air, ineffective separator/auto-drain, salt-laden intake); scale/rust deposits (long-term moisture accumulation, infrequent draining); oil contamination/carbon deposits (compressor piston-ring blow-past, excessive cylinder lubrication, unloader oil carryover); cracking at welds/seams (fatigue from pressure cycling, poor original weld quality, corrosion-assisted cracking); blistering of paint/lining (moisture beneath coating); thinning of shell walls (corrosion wastage \u2014 requires UT gauging); defective/corroded drain valve seat (condensate erosion); distortion/dents (overpressure event, mechanical impact); cracked/deteriorated manhole gasket or seat (age, thermal cycling). Measure shell thickness with a UT gauge against original/class minimum, recording and photographing findings; notify the class surveyor if wall thinning or cracking is found.\n\n**Preparing for survey**: inspect shell/end plates for corrosion, pitting, cracking, deformation; check welds/seams; inspect manhole/flange facings and gasket condition; check the safety relief valve (correct set point, lifts freely, reseats, certification date); check the drain valve, pressure gauge, and fusible plug if fitted; note oil contamination as a compressor piston-ring/seal failure indicator (fire/explosion risk).\n\n**Closing up and initial pressurisation**: ensure the interior is clean and dry, all tools/rags/equipment removed (toolbox check); renew the manhole gasket if deteriorated; fit the manhole cover, tighten bolts evenly in a cross pattern to correct torque; remove all blanks/spades; leave the drain valve cracked open initially; crack open the inlet valve slowly, raising pressure in stages (25%\u219250%\u219275%\u2192100% working pressure), checking for leaks with soapy water/leak detector and listening for hissing/creaking at each stage; once satisfied, close the drain valve, bring to full working pressure, confirm the safety/relief valve lifts and reseats correctly, and log the inspection.\n\n**Key fact**: O\u2082 20.8% (range 19.5\u201323.5%), minimum 15 minutes ventilation before entry, staged pressurisation 25\u219250\u219275\u2192100% with leak checks at each stage; oil inside a receiver indicates compressor blow-past \u2014 a fire/explosion risk.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q5",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot: the real graded question is (a) entry/inspection/defects (12) + (b) closing up/pressurisation (4) = 16 marks. The source guide's extra 'preparing for survey' component (6 marks) is not part of the graded question on this diet; that content is retained in answer_markdown as supplementary depth."
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Same total-marks flag as the July 2024 occurrence above."
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same 3-way combined pattern as December 2017 Q4/October 2017 Q9 (starting-air fault-finding + receiver survey-prep + compressor inter-stage cooling)."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: part (b) of this combined question (preparing a starting air receiver for survey) matches this canonical; see the fault-finding and compressor-cooling canonicals for the other two parts of the same question."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: part (b) of this combined question (preparing a starting air receiver for survey) matches this canonical; see the fault-finding and compressor-cooling canonicals for the other two parts of the same question."
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q5",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: previously mis-assigned elsewhere. Direct full-text re-check confirms this diet matches this canonical exactly (entry/inspection/defects (12) + closing up/pressurisation (4))."
+        }
+      ],
+      "canonical_id": "starting-air-receiver-entry-inspection-survey-closing"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Compressor Inter-Stage & After-Cooling, Condensate Drainage",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Why cooling is required between compressor stages and after the final stage, and the condensate drainage arrangement (4)**\n\nAir temperature rises significantly at each compression stage (adiabatic heating); without cooling, temperatures entering subsequent stages would be dangerously high. Cooling protects compressor components \u2014 excess heat breaks down lubricating oil, causing carbon deposits and increased fire/explosion risk in the air lines, and can seize components (piston, rings) or cause liner wear. Inter-stage cooling reduces air volume before the next stage works on a denser charge, approaching isothermal (more efficient) compression. The after-cooler cools final delivery air before the receiver, reducing thermal stress on the receiver/pipework and minimising moisture carryover.\n\nAs hot compressed air cools, moisture condenses at each cooler; each inter-cooler and after-cooler has a separator/moisture trap at its lowest point. Condensate is removed via automatic float-operated drain traps (opening when water accumulates, discharging to a safe drain) and manual drain cocks (opened periodically as watchkeeping routine). Drains lead to a safe location \u2014 not directly to bilge, due to oil-contamination risk \u2014 typically to an oily water separator or holding tank.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: confirmed via direct full-text check - same 3-way combined pattern as December 2017 Q4/October 2017 Q9 (starting-air fault-finding + receiver survey-prep + compressor inter-stage cooling)."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: part (c) of this combined question (inter-stage cooling and condensate drainage) matches this canonical; see the fault-finding and starting-air-receiver-survey canonicals for the other two parts of the same question."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CROSS-TOPIC QUESTION: part (c) of this combined question (inter-stage cooling and condensate drainage) matches this canonical; see the fault-finding and starting-air-receiver-survey canonicals for the other two parts of the same question."
+        }
+      ],
+      "canonical_id": "compressor-interstage-aftercooling-condensate-drainage"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Local Control of the Main Engine \u2014 Following Failure of the Automatic Control System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Following failure of the automatic control system, explain how the main engine can be monitored and controlled locally (16)**\n\n*Context*: the automatic control system provides remote manoeuvring, automatic governing/load programs, sequencing of starts/reversals, and automatic monitoring/alarm/slowdown/shutdown. On failure, control transfers to the local (emergency) manoeuvring stand, and monitoring reverts to manual reading of local instruments plus physical checks, with increased manning.\n\n**1. Change-over and manning**: inform the bridge immediately, agreeing manoeuvres will be slower; notify the Chief Engineer and muster additional engineers (local control is labour-intensive); establish reliable communications (engine-room telegraph with backup, sound-powered telephone, agreed bell/repeat system); suspend UMS and man the engine room continuously.\n\n**2. Local control of the main engine** \u2014 *starting and reversing*: manual control of the starting-air master/automatic valve and distributor; for direct-reversing engines, shift the camshaft/reversing servo manually, confirming fuel cam and air-start timing before admitting air; use manual interlocks/blocking correctly since automatic sequencing is lost. *Speed and fuel control*: control speed via the local fuel regulating handwheel/lever, keeping the mechanical/hydraulic governor in service for speed holding; set speed in steps, letting parameters settle; apply slow, graduated load changes to avoid thermal shock/overload without automatic load programs. *Supporting auxiliaries*: start and control locally the normally auto-sequenced services (LO pumps, jacket/piston cooling water pumps, fuel supply/booster pumps, cylinder lubricators), confirming correct pressure before and during running; confirm independent protective devices (overspeed trip, low LO pressure trip, emergency stop) remain effective, ready to trip manually since automatic slowdown/shutdown may be inoperative.\n\n**3. Manual monitoring**: read local instruments at frequent intervals \u2014 LO pressure/temperature, jacket/piston cooling water pressures/temperatures, fuel pressure/temperature/viscosity, scavenge/charge-air pressure, turbocharger speed, per-unit exhaust temperatures (local pyrometer), engine RPM, cylinder peak pressures if time permits, bearing/thrust temperatures where gauges exist. Physical rounds: listen for knocking, feel bearing housings/crankcase doors for heat, observe exhaust colour/haze, check drains and sight-glass flows/gauge-glass levels. Log all readings and times, trending by eye since alarm coverage is reduced.\n\n**4. Responding to bridge manoeuvres**: repeat back each telegraph order, set speed/direction locally, confirm achieved RPM to the bridge; keep one engineer on telegraph/comms and another on fuel/speed control, with others on monitoring rounds.\n\n**5. Restoration**: do not revert to automatic/remote control until fully repaired, tested and certified by the Chief Engineer; log the fault, actions and restoration; raise a defect/PMS entry.",
+      "examiner_focus": [
+        "A basic marine engine-room operation question requiring candidates to explain how to manually monitor and control engine-room equipment \u2014 a fundamental requirement many candidates did not seem to understand. Marks hinge on showing you can (a) drive the engine by hand and (b) replace automatic monitoring with disciplined manual gauge reading and physical rounds, under increased manning with clear bridge communication."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": "Q8",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "local-control-main-engine-automatic-failure"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "CEO Report \u2014 Failure to Start in Reverse During Port Manoeuvring",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on two incidents of the main propulsion engine failing to start in the reverse direction during port manoeuvring (16)**\n\n*Details*: two separate incidents during the same port-entry manoeuvre; calm weather, congested waters, reduced speed under bridge control preparing for pilot boarding/berthing. The engine was under remote bridge control in manoeuvring mode \u2014 multiple ahead/astern commands succeeded before failure. On both occasions, an astern command from the bridge telegraph produced no astern rotation, despite adequate starting air pressure and successful ahead commands immediately prior \u2014 pointing the fault at the reversing/direction-selection path rather than the air supply.\n\n*Immediate actions for ship safety*: bridge informed immediately of the failure and loss of standby propulsion; anchor prepared for immediate deployment; control transferred from bridge to ECR for manual operation; engine successfully started ahead under local control and held at minimal RPM to maintain position pending tug assistance; engine-room staff on emergency standby.\n\n*Investigation and rectification*: starting air system confirmed within limits (30 bar, receivers/valves operational) \u2014 the distributor responded for ahead but wasn't triggering cylinder air valves for astern, isolating the fault from the air supply. The reversing camshaft actuator was inspected \u2014 the reversing control signal wasn't fully engaging the astern position. A faulty electro-pneumatic solenoid valve responsible for shifting the reversing mechanism was identified as intermittently sticking \u2014 the root cause. The valve was replaced with an onboard spare, with full functional testing of the reversing mechanism and starting in both directions verified satisfactory.\n\n*Preventive measures*: all electro-pneumatic valves and control-air components cleaned, lubricated and tested under load, with the full starting-air/reversing system tested through simulated manoeuvring cycles; a checklist introduced to verify camshaft position feedback before critical manoeuvres, with local ahead/astern responsiveness tests before every port entry; watchkeeping engineers briefed on emergency procedures, with joint bridge/engine drills for propulsion-loss scenarios; critical solenoid valves flagged for the critical-spare inventory, with a closer PM check frequency for electro-pneumatic control units.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q9",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "ceo-report-failure-start-reverse-port-manoeuvring"
+    },
+    {
+      "topic_id": "starting-control",
+      "title": "Slow Turning System \u2014 Checking & Routine Monitoring Instructions",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Instructions for checking the slow turning system and subsequent routine monitoring, covering standby and prior to starting (16)**\n\n*Purpose*: the slow turn proves the engine is free to rotate and vents any liquid accumulated above a piston before full starting air is admitted.\n\n**Part 1 \u2014 Functional check** (before standby, after work on cylinders/cooling/fuel/air systems, and at PMS intervals): obtain bridge permission before rotating the engine, confirming the propeller/shaft is clear and no personnel are on moving parts; confirm turning gear is disengaged and prove its interlock by attempting a slow turn with T/G engaged (must be blocked); confirm starting/control air is available within limits, draining condensate/oil first; confirm the automatic slow-turn function is enabled with the correct stopped-time threshold; open all indicator cocks so liquid can vent and be seen; initiate a slow turn and confirm at least one complete revolution; watch every indicator cock throughout, confirming no water/oil/fuel discharge and listening for abnormal knocking; confirm the slow turn completes within the set time and the system then permits (or correctly blocks) a normal start; confirm the slow-turn air valve/solenoid reseats with no leakage; record the test, pressures and result in the log.\n\n**Part 2 \u2014 Routine monitoring on standby**: keep the slow-turn function auto-enabled at all times, never bypassed to save time; maintain air pressure within limits, draining receivers/main at the start of each standby and at intervals; perform/confirm a slow turn with cocks open before each manoeuvring period or start once stopped beyond the set time; monitor the jacket cooling-water expansion tank level (a falling level indicates internal leakage \u2014 treat as a liquid-lock risk); watch for leak sources (jacket water past O-rings/cracked liner, dribbling fuel valve, over-lubrication, leaking exhaust-valve/cover cooling), isolating a suspect unit's fuel if a leaking injector is suspected; keep indicator cocks free and clear; confirm the turning-gear interlock remains healthy; keep compressors/air system ready so slow turn isn't left incomplete through low pressure; log each standby (time stopped, slow-turn completion, air pressures, any liquid observed); on UMS standby, confirm interlocks/alarms are functional, reporting any defect immediately.\n\n**Part 3 \u2014 Problem areas, required response**: if liquid is ejected at slow turn \u2014 DO NOT START; keep cocks open, turn slowly to expel the liquid, identify and isolate the source, inform the bridge, rectify before clearing (starting against a liquid lock can crack the cover, bend the con-rod, and damage the crosshead/bearings). If the engine fails to rotate or the slow turn doesn't complete \u2014 do not force a start; investigate low air pressure, distributor fault, turning gear still engaged, or mechanical seizure. Treat any cylinder that repeatedly discharges liquid as defective, keeping it under investigation. Report all findings to the Chief Engineer with appropriate log/defect entries.",
+      "examiner_focus": [
+        "Most candidates wrote an essay rather than providing actual instructions, and spent time explaining what a slow turning system is rather than answering what was asked \u2014 a checking routine and subsequent monitoring routine, written as instructions in the imperative."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2018",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2020",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q8; direct full-text re-check confirms this is actually Q7. (July 2020's real Q8 is the piston thermal-stress question, correctly filed elsewhere.)"
+        }
+      ],
+      "canonical_id": "slow-turning-system-checking-routine-monitoring"
+    }
+  ]
+}

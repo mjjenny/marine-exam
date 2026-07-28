@@ -1,0 +1,55 @@
+{
+  "subject": "EK General",
+  "topics": [
+    {
+      "topic_id": "centrifugal-pumps-pumping-systems",
+      "name": "Centrifugal Pumps & Pumping Systems",
+      "question_count": 15
+    },
+    {
+      "topic_id": "materials-failure-welding-auxiliary",
+      "name": "Materials, Failure Mechanisms, Welding & Auxiliary Systems",
+      "question_count": 23
+    },
+    {
+      "topic_id": "instrumentation-control",
+      "name": "Instrumentation & Control",
+      "question_count": 16
+    },
+    {
+      "topic_id": "fire-safety",
+      "name": "Fire Safety",
+      "question_count": 18
+    },
+    {
+      "topic_id": "heat-exchangers-fresh-water",
+      "name": "Heat Exchangers & Fresh Water Systems",
+      "question_count": 13
+    },
+    {
+      "topic_id": "sewage-systems-ce-duties",
+      "name": "Sewage Systems & Related Chief Engineer Duties",
+      "question_count": 23
+    },
+    {
+      "topic_id": "ows-hydraulics-fuel-oil",
+      "name": "OWS, Hydraulics & Fuel Oil",
+      "question_count": 17
+    },
+    {
+      "topic_id": "shafting-propellers-seals-bearings",
+      "name": "Shafting, Propellers, Seals & Bearings",
+      "question_count": 20
+    },
+    {
+      "topic_id": "refrigeration-air-conditioning",
+      "name": "Refrigeration & Air Conditioning",
+      "question_count": 15
+    },
+    {
+      "topic_id": "steering-gear-roll-stabilisation",
+      "name": "Steering Gear & Roll Stabilisation",
+      "question_count": 14
+    }
+  ]
+}

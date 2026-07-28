@@ -1,0 +1,210 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "engine-performance",
+      "title": "Cylinder Power Balance \u2014 Why Essential, Damaging Effects, Checking & How Achieved",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Why cylinder power balance is essential**\n\nCylinder power balance means each cylinder in a multi-cylinder engine develops approximately the same indicated power (MEP) under the same operating conditions. This matters for several reasons:\n\n- **Prevention of mechanical overload/damage** \u2014 an overloaded cylinder sees higher peak pressures and thermal/mechanical stress on piston, rings, liner, head, con-rod and crankshaft, risking cracking, scuffing, ring breakage or seizure; underloaded cylinders suffer incomplete combustion, fouling and cold corrosion.\n- **Reduction of torsional vibration and crankshaft stress** \u2014 uneven firing impulses excite torsional vibration in the shafting system, risking fatigue cracking (especially at crankshaft fillets), coupling fretting, and bearing stress.\n- **Optimal fuel efficiency (SFC)** \u2014 uneven power distribution causes inefficient combustion in some cylinders, raising SFC by 1\u20133 g/kWh or more; balance minimises unburnt fuel, smoke and emissions while maximising thermal efficiency.\n- **Control of exhaust gas temperature (EGT)** \u2014 imbalance causes high EGT in overloaded cylinders (risking exhaust valve/turbocharger/economiser damage) and low EGT in underloaded ones (deposits, after-burning). Balance keeps EGT within safe limits (typically <480\u2013520\u00b0C, \u00b110\u201315\u00b0C spread).\n- **Smooth running, reduced maintenance** \u2014 imbalance raises vibration, noise and bearing loads, complicates scavenge air distribution and cylinder lubrication, risking liner polishing or excess oil consumption.\n- **Compliance with maker/class limits** \u2014 engine makers specify maximum allowable power deviation (e.g. \u00b15% MEP); imbalance can void warranties or breach class rules.\n\n**How cylinder power balance is achieved**\n\n1. **Monitoring and measurement**: take indicator diagrams (power/compression cards) via mechanical indicator or electronic MIP system; calculate IMEP/MIP per cylinder; record per-cylinder EGT (pyrometers); monitor scavenge air pressure and peak/firing pressures. Target uniform MIP (\u00b13\u20135% or maker limit, e.g. \u00b12\u20133 bar) and EGT spread \u00b110\u201320\u00b0C.\n2. **Adjustment of fuel quantity**: in camshaft-controlled engines (e.g. MAN B&W MC-C), adjust individual fuel-pump VIT/spill timing (small changes, e.g. 0.5\u20131mm rack movement); in electronically controlled engines (ME-C/ME-B, WinGD RT-flex/X), adjust via the ECS interface (automatic balancing functions exist but manual fine-tuning is often needed). Adjust one cylinder at a time, run 15\u201330 minutes to stabilise, re-measure, repeat.\n3. **Secondary checks**: verify equal cylinder lubrication feed rates; check scavenge port condition and air cooler efficiency; confirm turbocharger performance is normal; adjust exhaust valve timing/VIT profile where fitted.\n4. **Frequency/best practice**: balance after overhaul, fuel change, prolonged low-load running, or on imbalance alarms; perform at steady load (70\u201390% MCR); follow maker guidance; use calibrated tools, and never adjust during manoeuvring.\n\n**Checking cylinder performance/power** (asked as a separate sub-part in some sittings): indicator diagrams (pressure variations reveal fuel injection/compression issues), compression pressure test (sealing efficiency of rings/liner/valves), exhaust gas temperature monitoring (uneven EGT signals over-fuelling, misfiring or afterburning), and a power balance test comparing each cylinder's contribution.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q4",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "April 2025",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot; single-block 16-mark framing similar to the December 2025 occurrence rather than the (a)/(b)/(c) split."
+        }
+      ],
+      "canonical_id": "cylinder-power-balance-essential-effects-checking"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "Performance Determination, Defective Fuel Injection Detection & Afterburning Causes",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How main engine performance is determined, and how information is analysed per cylinder vs overall (6)**\n\nContinuous trend-analysis logging of SFC, exhaust gas temperatures, cylinder pressures and compression pressures identifies gradual deterioration before it becomes critical. The indicator diagram is the primary tool \u2014 a pressure-crank-angle/pressure-volume graph revealing combustion timing and mechanical-loss issues per cylinder; deviations flag late injection, poor atomisation or compression loss. Power balance tests compare each cylinder's contribution to ensure even load distribution. SFC trending (rising SFC signals inefficient combustion, incorrect timing or mechanical losses) and EGT monitoring (abnormal temperature vs other cylinders can indicate afterburning, over-fuelling or poor air intake) complete the picture, alongside compression pressure tests (ring/liner/valve sealing) and turbocharger performance checks. All data is compared to maker specification and historical trend, allowing targeted maintenance (injection timing adjustment, pump/injector overhaul, component replacement).\n\n**(b) Detecting defective fuel injection, and its causes (6)**\n\nSymptoms: abnormal indicator diagrams (delayed pressure rise, erratic combustion curve); higher EGT in the affected cylinder vs others; rising SFC with reduced power; excessive smoke (black = incomplete combustion, white = fuel dribbling).\n\nCauses: clogged/eroded injector nozzles (poor atomisation, incomplete combustion); incorrect injection pressure (too high or low, poor fuel distribution); worn fuel pump plungers/barrels (inconsistent delivery); faulty injector needle seating (dribbling, afterburning, carbon deposits); incorrect fuel viscosity from temperature variation (over-fuelling or poor atomisation).\n\n**(c) Causes of afterburning in a single cylinder, and how it is brought to the duty engineer's attention (4)**\n\nCauses: poor fuel atomisation (delayed/incomplete combustion); late injection timing (fuel ignites too late, burning into the expansion stroke); low compression pressure (worn rings, liner wear, valve leakage) reducing combustion efficiency.\n\nDetected via: black smoke (incomplete combustion); higher EGT in the affected cylinder; knocking sounds from irregular combustion pressure; excessive carbon deposits on exhaust valve/piston crown. Regular monitoring of EGT, injection performance and indicator diagrams allows early detection, enabling injector cleaning, pump adjustment and compression checks before the problem worsens.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "performance-determination-defective-injection-afterburning"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "Indicator-Diagram Fault Library \u2014 Reference Set of Combustion & Valve-Timing Signatures",
+      "merged_from_duplicate": false,
+      "answer_markdown": "Reference material underpinning any indicator-diagram fault question (irregularities common to all units point to a shared fault \u2014 fuel oil system, intake air, turbocharger, air cooler, exhaust; irregularities confined to one unit point to that cylinder's injector, fuel pump, or exhaust valve):\n\n**Early Ignition** \u2014 abnormally high peak pressure at the top of stroke; knocking from shock loads on running gear; raises thermal efficiency but exhaust temperature falls (combustion starts early) while vibration/shock damages the engine. Causes: mistimed fuel pump, faulty fuel valve/injector, wrong fuel quality, overheated cylinder parts.\n\n**Late Ignition** \u2014 low peak pressure after TDC; combustion continues into the expansion stroke (incomplete combustion, energy loss, elevated EGT, black smoke); reduced power. Causes: faulty injector or over-tight injector spring, poor fuel quality, mistimed/leaking fuel pump, under-cooled cylinder parts, incorrect atomisation, low compression, insufficient combustion air.\n\n**After Burning** \u2014 rise in the expansion line late in the stroke; continued burning raises EGT/pressure and causes black smoke; unburnt carbon fouls the exhaust system, damaging valves/seats, causing turbocharger surge and uptake-fire risk in the economiser; elevated cylinder temperature breaks down lubrication and increases liner/ring wear, can burn the piston crown. Causes: slow fuel combustion, poor fuel quality, low fuel temperature (high viscosity).\n\n**Leaky Fuel Injector** \u2014 reduced power in the affected unit, high EGT, black smoke; possible knocking/pressure waves in the injection system; sudden ups-and-downs on the injection/expansion side of the diagram; afterburning from incomplete combustion. Causes: leaking injector, choked spray holes causing poor atomisation and dripping.\n\n**Partly Choked Fuel Valve** \u2014 low EGT in the unit; loss of engine power. Causes: fuel oil contamination/improper purification, carbon formation at the injector tip, carbon deposits on the fuel valve from overheating.\n\n**Low Compression** \u2014 low pressure on the indicator card; reduced power. Causes: improper combustion, insufficient combustion air, ring/liner wear allowing air leakage past the piston during compression.\n\n**Exhaust Valve Opening \u2014 Early/Late (light-spring diagram)** \u2014 *Early opening*: elevated EGT, exhaust-system fouling, power loss. *Late opening*: reduced blow-down effect and scavenging efficiency, poor exhaust gas quality reaching the turbocharger.\n\n**Choked Exhaust** \u2014 power loss, increased EGT, turbocharger surging, adversely affected scavenging efficiency.",
+      "examiner_focus": [],
+      "question_instances": [],
+      "canonical_id": "indicator-diagram-fault-library-reference"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "Indicator Diagram \u2014 Good Combustion vs Early/Late Injection & Poor Atomisation, With Fixes",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How diesel engine cylinder performance is checked (4)**\n\nTrend analysis (daily logging of cylinder pressure, EGT, compression pressure, fuel consumption) identifies gradual deterioration before failure. Direct methods: indicator diagrams (P-V or P-\u03b8 graph \u2014 combustion efficiency, injection timing, mechanical losses); exhaust gas analysis (O\u2082, CO\u2082, CO, unburnt HC \u2014 fuel-air mixture quality); EGT and cooling-water outlet temperature (power imbalance, inefficient combustion); compression pressure test (ring/valve/liner wear); fuel injector inspection (spray pattern, pressure, atomisation quality); and power balance tests (indicated power comparison across cylinders).\n\n**(b) Indicator diagram \u2014 good combustion vs three specific defects (6)**\n\n**[Sketch]** (i) Early fuel injection \u2014 Black: normal, Blue: early injection.\n**[Sketch]** (ii) Late fuel injection \u2014 Black: normal, Blue: late injection.\n**[Sketch]** (iii) Poor fuel atomisation \u2014 Black: normal, Blue: poor atomisation.\n\n**(c) Correcting the combustion defects drawn in (b) (6)**\n\n- **Early injection**: adjust fuel pump timing to delay injection slightly; check camshaft timing alignment.\n- **Late injection**: advance injection timing if retarded; check for worn cam profiles; clean/maintain injectors for correct opening pressure; inspect/replace worn pump plunger/barrel.\n- **Poor atomisation**: clean or replace clogged/worn injector nozzles; ensure correct fuel pump pressure; use correct fuel viscosity, preheating if necessary.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "indicator-diagram-early-late-injection-poor-atomisation"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "One Engine Showing Higher SFC in a Multi-Engine Installation \u2014 Causes & Detection",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Possible causes of one engine having higher SFC than identical sister engines on a shared fuel service tank (8)**\n\nFuel injection system issues (improper pump timing, worn injector nozzles, incorrect injection pressure); faulty governor setting (incorrect fuel delivery for the load); lower compression pressure (worn piston rings, liner wear, leaking head valves) requiring more fuel for the same power; turbocharger performance variation (fouled/damaged unit reducing air supply, causing incomplete combustion); air filter blockage or intake leaks (reduced air-to-fuel ratio); bearing/component wear (higher mechanical/frictional losses); incorrect fuel rack setting or control-system calibration; and cooling-system inefficiency (malfunctioning jacket cooling affecting combustion efficiency).\n\n**(b) How the cause of higher SFC can be detected (8)**\n\n- Indicator diagram analysis \u2014 compare P-V/P-\u03b8 diagrams against the other engines for injection timing, combustion efficiency and pressure-rise differences.\n- Compression pressure test \u2014 check for worn rings, liner wear, leaking head valves.\n- Fuel pump and injector testing \u2014 pump timing, injection pressure, atomisation quality.\n- Turbocharger performance check \u2014 air pressure, fouling, efficiency.\n- Air intake inspection \u2014 filters and ducts for blockage/leaks.\n- Governor and fuel rack setting comparison against the other engines.\n- Mechanical losses evaluation \u2014 bearings, lubrication, moving components.\n- Cooling system efficiency check \u2014 coolant temperatures, jacket cooling, heat exchanger performance.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q1",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "one-engine-higher-sfc-causes-detection"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "Analysing Cylinder Data \u2014 Recognising & Rectifying Performance Defects",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How information gathered from a cylinder is analysed (4)**\n\nTrend analysis and comparison against baseline data across indicator diagrams, peak/compression pressure, EGT, fuel injection timing and SFC. A normal indicator diagram shows a smooth pressure rise; delayed or premature combustion signals faulty injection or compression loss. Compression readings assess sealing efficiency; EGT signals combustion quality (high = over-fuelling/afterburning, low = misfiring/under-fuelling). Power balance tests confirm equal cylinder contribution \u2014 a consistently low-power cylinder suggests defective injection, compression loss, or mechanical wear.\n\n**(b) Recognising defects from the gathered data, and how they influence cylinder power (6)**\n\nLow peak pressure vs other cylinders \u2192 late injection, worn rings, or leaky exhaust valves (reduced effective power). High EGT in one cylinder \u2192 over-fuelling, poor atomisation, or afterburning (inefficient combustion, added thermal stress). Low EGT \u2192 misfiring, under-fuelling, or insufficient air (incomplete combustion, power loss). Power imbalance detected via performance testing \u2192 underperformance from injection issues, compression loss, or mechanical inefficiency. Disproportionately rising SFC in one cylinder \u2192 excessive frictional resistance from worn bearings or mechanical losses.\n\n**(c) Rectifying the identified defects (6)**\n\nFuel injection faults (late injection, poor atomisation) \u2192 test, recalibrate, or replace pumps/injectors. Compression loss (worn rings, liner wear, valve leakage) \u2192 overhaul or replace affected components. High EGT/afterburning \u2192 inspect and clean injector nozzles for proper spray/atomisation. Turbocharger/air intake problems \u2192 check for fouling/damage, clean or replace air filters. Increased SFC from mechanical losses \u2192 lubrication checks, alignment corrections, bearing inspection. Also assess cooling system performance to keep cylinder temperatures within optimal limits.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "August 2020",
+          "question_number": "Q2",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "August 2020 is the unusual makeup sitting replacing the cancelled March 2020 diet (see the exam-archive review earlier in this build); question text drawn directly from the source guide."
+        }
+      ],
+      "canonical_id": "analysing-cylinder-data-recognising-rectifying-defects"
+    },
+    {
+      "topic_id": "engine-performance",
+      "title": "2-Stroke Engine Load Diagram \u2014 Operating/Limit Lines, Clean vs Fouled Hull, MAN B&W Reference",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Large 2-stroke diesel engine load diagram \u2014 operating and limit lines (12)**\n\n**[Graph]** Load diagram \u2014 Engine Power (%) vs Engine RPM, numbered operating/limit lines 1\u20139.\n\n- **Line 1 \u2014 Optimum propeller curve**: ideal matched engine/propeller condition for efficient fuel consumption and minimal mechanical stress.\n- **Line 2 \u2014 Heavy running line**: engine under heavier-than-normal load (fouled hull, adverse weather, high resistance) \u2014 increased fuel consumption and overload risk.\n- **Line 3 \u2014 Maximum speed line**: highest permissible RPM at full load; exceeding it risks overspeed, excess wear and damage.\n- **Line 4 \u2014 Torque/thermal limit**: maximum torque without excessive thermal stress; exceeding it risks piston overheating and thermal damage.\n- **Line 5 \u2014 Maximum MEP line**: crossing it stresses pistons, liners and bearings, accelerating wear.\n- **Line 6 \u2014 Light running line**: under-loaded conditions (small propeller, light ship, favourable current); prolonged running below it risks incomplete combustion, turbocharger surging, carbon deposits.\n- **Line 7 \u2014 Maximum power line**: absolute highest power; sustained operation near it raises wear, fuel consumption and failure risk.\n- **Line 8 \u2014 Thermal overload line**: beyond this, EGT rises excessively, risking piston seizure, liner scuffing, turbocharger damage.\n- **Line 9 \u2014 Mechanical overload line**: structural limit; beyond it, catastrophic failure of major components (con-rods, crankshaft, bearings) is possible.\n\nThe load diagram optimises fuel consumption (stay near the optimum propeller curve), prevents overloading (avoid thermal/mechanical limits), ensures efficient propulsion (adjust to sea conditions), and improves longevity (avoid low-load carbon buildup) \u2014 regular monitoring against it allows early detection of abnormal conditions.\n\n**(b) Marking clean-hull and fouled-hull points, fully ballasted, constant load, calm weather (4)**\n\n**[Sketch]** Load diagram with the vessel fully ballasted at constant load in calm weather \u2014 point positions for clean hull and fouled hull marked on the operating lines. A clean hull sits closer to the light-running line (Line 6); as the hull and propeller foul over time, the propeller curve moves left (heavier running, toward Line 2), requiring extra power for the same speed \u2014 the extent of this shift indicates the need for hull cleaning/propeller polishing.\n\n---\n\n**Reference: MAN B&W Diesel A/S Service Letter SL91-287/OG (August 1991) \u2014 Load Diagram, MC Engines**\n\nTwo diagram families are defined: Diagram II for ships delivered up to and including 1991, Diagram I for later installations. In both, the key recommendation is not exceeding the diagram's left-hand limitation (torque-rich operation). Operators should regularly plot the observed speed/power combination against the diagram, and plot the actual clean-hull/calm-weather propeller curve (actual Line 6) and design point for reference.\n\n*Limits for continuous operation* \u2014 bounded by four lines: Line 3 (max continuous speed); Line 4 (torque/speed limit set by available air supply for combustion); Line 5 (max continuous MEP); Line 7 (max continuous power). Continuous operation without limitation is allowed only within the area bounded by lines 3, 4, 5 and 7.\n\n*Limits for overload operation* \u2014 Line 8 marks the overload boundary; the area between lines 4, 5, 7 and line 8 is available for overload only for limited periods (1 hour per 12 hours).\n\nThe area between lines 1 and 4 is available for non-steady running (shallow water, heavy weather, acceleration) without an explicit time limit, though lines 4 and 5 must not be exceeded except during limited overload. As the hull and propeller foul with time in service, the propeller curve moves left from line 6 toward line 2 (heavier running), signalling the need for hull/propeller cleaning. Point A is the 100% speed/power reference; Point M (normally equal to A) may sit to the right of A on line 7 if a shaft generator is fitted.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2016",
+          "question_number": "Q2",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "pre_catalog_or_unverified",
+          "matched_cluster": null,
+          "note": "Pre-dates the archived paper range \u2014 attested only by the compiled guide's own repeat-tracking."
+        }
+      ],
+      "canonical_id": "2-stroke-load-diagram-clean-fouled-hull-manbw"
+    }
+  ]
+}

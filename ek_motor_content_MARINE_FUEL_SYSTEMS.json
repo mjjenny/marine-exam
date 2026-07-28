@@ -1,0 +1,656 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "electronic-engine-common-rail",
+      "title": "Electronically-Controlled & Common-Rail Fuel Injection \u2014 Layout, Quantity & Timing Control",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**System layout and the two fluid rails**\n\n**[Sketch]** Electronically-controlled common-rail system: control oil rail, rail valves, injection control valves, fuel oil rail and fuel-quantity piston generating the fuel-quantity signal.\n\nModern slow-speed engines (MAN B&W ME, WinGD/Sulzer RT-flex/X) replace the cam-driven jerk pump with a common-rail system keeping fuel pressurised independently of engine speed. Two separate rails are used: the fuel oil rail (high-pressure accumulator feeding the injectors) and the control/servo oil rail (\u2248200 bar) that actuates the valves.\n\n**How fuel quantity is changed**: the ECU reads engine load and speed, sending a signal to the fuel quantity piston, which adjusts the volume of fuel delivered to the injectors.\n\n**How injection timing is changed**: rail valves and injection control valves open/close according to ECU commands, deciding when fuel is sent to the injectors; timing can be advanced or retarded dynamically based on speed, load and fuel quality.\n\n**Why fuel injection timing is changed**: different fuels have varying ignition delays (especially low-sulphur or alternative fuels); higher load calls for advanced timing (better power/efficiency), lower load for retarded timing (reduced fuel consumption/emissions); retarding timing lowers peak cylinder temperature and reduces NOx; cold-start conditions call for retard, high-speed operation for advance, for smooth performance.\n\n**Key numbers**: common-rail injection pressure 1000\u20132200 bar (up to 2500); control/servo oil \u2248200 bar; start of injection \u22485\u201315\u00b0 BTDC held to \u00b10.5\u20131\u00b0 crank angle; peak firing pressure \u2248180\u2013220 bar in modern engines.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q5",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2021",
+          "question_number": "Q6",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2021",
+          "question_number": "Q6",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: previously mis-assigned elsewhere. Direct full-text re-check confirms this diet asks about a common-rail fuel system (sketch, fuel pump/rail pressure operation, injection timing/quantity regulation) matching this canonical."
+        }
+      ],
+      "canonical_id": "electronically-controlled-common-rail-fuel-injection"
+    },
+    {
+      "topic_id": "fuel-oil-system",
+      "title": "Fuel Injection Fundamentals \u2014 Excess Air, Droplet Size & Injection Timing",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Why diesel engine cylinders are supplied with excess air (air-fuel ratio 20:1\u201360:1 vs stoichiometric \u224814.5:1)**\n\nEnsures complete combustion (diesel is injected late with limited mixing time, so surplus O\u2082 burns all droplets, reducing smoke/soot/HC); dilutes the charge to control peak flame temperature and reduce thermal NOx; allows load variation without throttling (diesel is quantity-governed by fuel alone, so excess air prevents over-rich mixtures and black smoke at high load); improves scavenging and cools cylinder components (liner, piston crown, exhaust valves), especially important in 2-stroke engines.\n\n**Why fuel droplet size must be within narrow limits (target Sauter Mean Diameter \u224810\u201350\u00b5m, most droplets 5\u2013100\u00b5m)**\n\nToo large (>50\u2013100\u00b5m): slow evaporation, poor mixing, long ignition delay, incomplete combustion, high smoke/soot/carbon deposits, wall-wetting (liner washing, oil dilution). Too small (<5\u201310\u00b5m): excessive penetration loss, short spray reach, poor distribution in large-bore cylinders, wall impingement, possible knock or high NOx from over-rapid evaporation. The correct size balances evaporation rate against penetration depth for consistent ignition delay, controlled heat release, low emissions and high thermal efficiency.\n\n**How fuel injectors produce the desired droplet size**\n\nHigh injection pressure (1000\u20132200 bar in common-rail systems) creates high velocity/shear across the nozzle holes, breaking fuel into fine droplets; nozzle geometry (8\u201312 holes, 0.2\u20130.5mm diameter, optimised length-to-diameter ratio, sac-less/mini-sac design) shapes the spray; controlled needle-lift dynamics and internal turbulence/cavitation further improve atomisation.\n\n**Why fuel injection timing must be controlled within narrow limits**\n\n*Economic operation*: correct timing places peak cylinder pressure near TDC for maximum crankshaft leverage, highest thermal efficiency, lowest SFC, and complete combustion before the expansion stroke. *Avoiding bearing overload*: too-advanced timing creates excessively high peak firing pressure and rapid pressure-rise rate, overloading the piston, con-rod, crosshead and main bearings (wiping/fatigue risk); too-retarded timing causes late burning, high EGT and after-burning, indirectly stressing components.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2021",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2022",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "4",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "fuel-injection-fundamentals-excess-air-droplet-timing"
+    },
+    {
+      "topic_id": "fuel-pump-injectors",
+      "title": "Fuel Injector Nozzle Cooling \u2014 Why Needed & How Achieved",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why fuel injector nozzle cooling is necessary (4)**\n\nTo prevent overheating and burning of the nozzle tip from the high combustion flame temperature, to maintain correct fuel viscosity at the nozzle for good atomisation, and to reduce carbon deposit formation on the tip.\n\n**(b) Operation of a nozzle cooling system for a generator engine, with a sketch (8)**\n\nA dedicated cooling circuit (water or oil) circulates around the nozzle holder. The cooling medium enters and leaves through separate pipes, carrying heat away from the tip area \u2014 kept independent of the main jacket-water circuit so cooling can continue even if the engine is stopped.\n\n**(c) How nozzles are cooled on engines not fitted with a separate cooling system (4)**\n\nThe fuel itself acts as the coolant. Leak-off fuel or excess circulating fuel absorbs heat from the nozzle tip and returns to the fuel tank or mixing column, providing continuous cooling as fuel flows through the injector body.",
+      "examiner_focus": [
+        "The source verbatim guide's compiled answer for this exact question (July 2025 Q7) is mismatched \u2014 it discusses causes of nozzle burning and an investigation procedure (a related but genuinely different question) rather than nozzle cooling. The guide's own compiler flagged this and supplied a standard concise cooling answer separately, which is what's used here. The actual archived paper confirms the real July 2025 Q7 question is specifically about nozzle cooling (as answered here), not nozzle burning \u2014 see the separate Fuel Injector Nozzle Burning canonical for that distinct topic."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Verified directly against the archived July 2025 paper text (not just the guide) \u2014 confirms this is a nozzle-cooling question, resolving the content mismatch noted in examiner_focus."
+        }
+      ],
+      "canonical_id": "fuel-injector-nozzle-cooling"
+    },
+    {
+      "topic_id": "fuel-pump-injectors",
+      "title": "Fuel Injector Nozzle Burning \u2014 Causes, Investigation & Prevention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Causes of fuel injector nozzle burning**\n\nPoor atomisation (worn/clogged nozzle producing large droplets, incomplete combustion, localised overheating and tip burning); incorrect injection timing (too advanced/retarded causing flame impingement and excess heat on the tip); high EGT (turbocharger, charge-air-cooler or air-fuel fault raising exhaust temperature, causing thermal fatigue and tip erosion); contaminated fuel (cat-fines, water, deposits causing abrasive wear/carbon, degrading the spray); improper cooling (blocked/inefficient nozzle cooling causing prolonged high temperature, burning or failure).\n\n**Investigation \u2192 prevention**\n\n*Investigate*: visual inspection of the tip for burn/erosion/deposits; fuel-quality check (water, viscosity, sulphur, cat-fines); verify injection timing and pressure; review EGT trends; inspect cooling passages; examine the combustion chamber/piston crown for related damage.\n\n*Prevent*: precise electronic fuel-injection monitoring and control; EGT monitoring; efficient nozzle cooling; fuel treatment (heating/viscosity control of HFO); ISO 8217 fuel-quality checks; scheduled ultrasonic cleaning and calibration of injectors.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2022",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "This canonical has numerous further cross-referenced sittings per the source guide, not all individually itemised here."
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q5",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        }
+      ],
+      "canonical_id": "fuel-injector-nozzle-burning-causes-investigation-prevention"
+    },
+    {
+      "topic_id": "fuel-oil-system",
+      "title": "Main Engine Fuel-Oil Circulating System & HFO/MGO Fuel Changeover",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**The circulating system \u2014 flow and valves**\n\n**[Sketch]** Main-engine fuel-oil circulating system \u2014 MGO/HFO service tanks, 10\u00b5 auto & bypass filters, supply pumps (4\u20135 bar), heaters, gas-oil cooler, viscometer, circulating pumps (8\u201310 bar), mixing column and tank return.\n\nFuel is drawn from MGO/LSFO or HFO service tanks via a common manifold, through supply pumps (4\u20135 bar) and 50\u00b5 inlet filters, into a mixing column (buffer/de-aeration), then circulating pumps (8\u201310 bar), through heaters (HFO) or a gas-oil cooler (MGO), a viscometer (controls heating to target viscosity), and to the engine. Excess fuel returns to the mixing column; a pressure-regulating valve set at \u22488 bar prevents over-pressure.\n\n**HFO \u2192 LSFO/MGO changeover \u2014 timed procedure**\n\n*Pre-changeover (\u224824 hours before)*: confirm LSFO quality/quantity and sulphur content; inspect filters, strainers and pumps; plan the compliance time (before ECA entry) and work backwards.\n\n*Initiating changeover (4\u20136 hours before)*: reduce HFO temperature gradually (\u224810\u00b0C per 15\u201320 minutes) to avoid pump cavitation and thermal shock; watch viscosity/pressure/temperature at the viscometer; watch pumps for vibration.\n\n*Switching tanks (2\u20133 hours before)*: open the LSFO outlet while HFO remains open initially; gradually close the HFO valve; redirect the mixing-column return to the LSFO tank before shutting HFO (prevents cross-contamination and sulphur-limit breach); turn off the heater once LSFO circulates; keep the PRV at 8 bar.\n\n*Post-changeover (up to 1 hour after)*: check engine performance, EGT and emissions; inspect the 50\u00b5 inlet filters; log start/stop times, consumption and compliance in the Engine Log and Fuel Oil Changeover Record.\n\n**ECA/MARPOL Annex VI cross-contamination control**: complete the main engine changeover 1\u20132 hours before the ECA boundary, auxiliaries 3\u20134 hours before (switching one at a time to avoid blackout); use dedicated service tanks, fully drain/flush HFO before refilling MGO, flush fuel lines and change filters after transition; log time/date/position of changeover.\n\n**Generators to MDO while the main engine stays on HFO**: separate MDO service/flushing pumps let generators run clean MDO while the main-engine loop keeps HFO hot and circulating (booster pumps/heaters running) for quick reactivation; a mixing unit and compressed-air purge prevent cross-contamination. Revert by re-introducing HFO while throttling MDO, purging MDO before restart.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q5",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "This occurrence's version emphasises the generator-changeover-to-MDO variant rather than the full HFO/LSFO procedure."
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via screenshot: main/auxiliary engine fuel changeover procedure moving into an ECA, with approximate timings and cross-contamination avoidance where MGO is the low-sulphur fuel \u2014 same substance as the HFO/LSFO changeover content already in this canonical's answer_markdown (ECA/MARPOL Annex VI section)."
+        },
+        {
+          "diet": "October 2022",
+          "question_number": "Q7",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed as the primary occurrence of the 'generators to MDO while main engine stays on HFO' variant already covered in this canonical's answer_markdown; July 2019 is a repeat of this same question per the app."
+        }
+      ],
+      "canonical_id": "fuel-oil-circulating-system-changeover"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "Two-Stroke Gaseous Fuel Injection System \u2014 Why Injected Direct, Not Premixed",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Gaseous fuel system for a two-stroke diesel engine, with a sketch (12)**\n\n**[Sketch]** Two-stroke gaseous-fuel injection system \u2014 300-bar gas supply, gas accumulator, window valve, gas injectors, FIVA, ELGI/ELWI valves, blow-off & purge valves, hydraulic-oil actuation and silencer vent.\n\nHigh-pressure gas (\u2248300 bar) is stored and buffered in a gas accumulator, metered by a window valve, and injected directly into the cylinder by electronically-timed ELGI (gas) and ELWI valves; a FIVA valve controls the pilot diesel. Safety devices: blow-off valve (over-pressure protection), purge valve (clears residual gas at shutdown/transition), hydraulic-oil actuation, and a vent to a silencer.\n\n**Why gas is injected directly into the cylinder rather than premixed with combustion air outside (4)**\n\nPremixing gas with air before the cylinder risks pre-ignition or knocking, since the gas-air mixture can ignite prematurely from high compression temperatures. In a two-stroke engine specifically, intake and exhaust overlap during scavenging, so a premixed charge would blow straight through to exhaust (fuel loss, uncontrolled exhaust combustion) \u2014 direct injection avoids this while giving precise control of timing and quantity, improving combustion efficiency and significantly reducing methane slip.\n\n**Methane slip \u2014 definition and why undesirable**\n\nMethane slip is unburned methane escaping to atmosphere through the exhaust, caused by incomplete combustion (poor mixing, low-load operation, leaking exhaust valves) \u2014 more common in low-pressure premixed systems. Methane is a potent greenhouse gas (global warming potential >25\u00d7 CO\u2082), so even small amounts significantly erode the climate benefit of using gas fuel. Mitigated by optimised injection timing, improved air-fuel mixing, high-pressure direct injection, and oxidation catalysts in exhaust after-treatment.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q2",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q3",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "MOVED: was previously mis-assigned to the Otto-vs-Diesel-cycle canonical based on an aggregated source-guide \"Covers:\" line that bundled several distinct sub-questions together without individual verification. Direct full-text check confirms this is actually the cylinder-arrangement/gas-delivery question matching this canonical, not the Otto/Diesel comparison."
+        },
+        {
+          "diet": "December 2018",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "12"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "MOVED: was previously mis-assigned to the Otto-vs-Diesel-cycle canonical based on an aggregated source-guide \"Covers:\" line. Direct full-text check confirms this is actually about why 2-stroke engines cannot premix gas/air (vs 4-stroke) plus the 2-stroke high-pressure gas injection cylinder arrangement - matching this canonical, with the two parts in reverse order (4/12 rather than 12/4) to the other occurrences."
+        }
+      ],
+      "canonical_id": "two-stroke-gaseous-fuel-injection-direct-vs-premix"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "Dual-Fuel 4-Stroke Engine \u2014 Gas & Liquid Fuel Systems at the Cylinder, Controller I/O & Gas-Piping Safety",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Gas and liquid fuel systems at the cylinder of a 4-stroke dual-fuel engine, with controller signals**\n\n**[Sketch]** Dual-fuel 4-stroke cylinder arrangement \u2014 common fuel rail and common gas rail with solenoid-actuated valves; controller fed by crankshaft-RPM and crank-angle-encoder signals.\n\nA common diesel fuel rail and a common gas rail feed solenoid-operated valves. Gas admits into the intake air with fresh scavenge air; near TDC, a small pilot diesel injection ignites the charge, since gas cannot auto-ignite due to its high ignition temperature.\n\n*Controller (ECU) inputs*: crankshaft RPM sensor, crank-angle encoder, fuel pressure sensor, gas pressure sensor, EGT sensor, knock sensor, oxygen (O\u2082) sensor. *Outputs*: control signals to the gas admission solenoid valve (timing and duration) and pilot diesel injector; the ECU also trims the air-fuel ratio and triggers alarms/emergency shutdown on abnormal conditions (excessive knock, gas leak, etc.).\n\n**Gas fuel piping system safety features**\n\nDouble-wall gas piping (an inner-pipe failure is contained and detected); gas leak detection sensors at critical points (supply line, engine inlet) with automatic alarms and shutdown; ventilation system plus inert gas (nitrogen) purging to disperse leaks and eliminate oxygen; explosion-proof electrical components in hazardous areas; continuous temperature/pressure monitoring plus an Emergency Shutdown (ESD) system.\n\n**Why a 2-stroke engine can't premix gas with air but a 4-stroke engine can**\n\nIn a 2-stroke, intake and exhaust overlap during scavenging, so a premixed charge would blow straight through to exhaust (fuel loss, uncontrolled combustion downstream). A 4-stroke has separate intake and compression strokes, so a premixed charge stays in the cylinder \u2014 port injection/fumigation is practical and efficient there.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2026",
+          "question_number": "Q4",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot; may be a slightly different framing ('problems overcome') than the Dec 2024 controller-I/O framing but same core subject matter."
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "MOVED: was previously mis-assigned to the Otto-vs-Diesel-cycle canonical based on an aggregated source-guide \"Covers:\" line. Direct full-text check confirms this is actually about the 4-stroke dual-fuel engine's gas/liquid fuel supply arrangement and controller, matching this canonical rather than an Otto/Diesel cycle comparison."
+        }
+      ],
+      "canonical_id": "dual-fuel-4-stroke-cylinder-controller-gas-piping-safety"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "Direct Injection of Liquid Gas (LNG) into Cylinders \u2014 Advantages Over Conventional Gaseous Admission",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Diesel engine fuel system employing direct injection of liquid gas into engine cylinders, with a sketch**\n\n**[Sketch]** Direct liquid-gas (LNG) injection for a 2-stroke \u2014 gas accumulator, FIVA controlling pilot diesel, ELWI & ELGI valves and gas injectors, with blow-off/purge/window valves and hydraulic-oil control.\n\nHigh-pressure LNG accumulator (~300 bar) feeds through a window valve and ELGI/ELWI valves to direct gas injectors in the combustion chamber; pilot diesel is supplied via the FIVA valve when needed. Safety devices: blow-off valve, purge valve, silencer; the ECU controls injection timing and quantity.\n\n**Advantages of direct liquid gas injection compared with low-pressure gaseous fuel admission**\n\nHigher energy density \u2014 liquid LNG has much higher energy per unit volume than compressed gas, allowing smaller tanks or greater range for the same power output; better combustion efficiency \u2014 high-pressure liquid injection gives superior atomisation and more complete combustion than low-pressure gas admission; lower methane slip \u2014 much less unburned methane escapes, since the fuel is injected directly and burns more completely; and it allows higher gas substitution rates with a better overall performance/emissions profile.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "direct-injection-liquid-gas-lng-advantages"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "LNG Engine Installations \u2014 Gas Valve Unit, Ventilation/Inert Gas & Pilot Injection",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Gas Valve Unit (GVU) \u2014 purpose and location (8)**\n\n**[Sketch]** Gas Valve Unit in the LNG gas train \u2014 bunker line, gas tank, pressure build-up unit, evaporator, glycol heating, double-walled pipe, GVU and supply piping to the cylinder gas valves.\n\nThe GVU is the final control unit located between the high-pressure gas supply and the engine's fuel injection system. It regulates and stabilises gas pressure, controls gas flow to match engine demand, acts as a safety shut-off valve (emergency stop), and facilitates purging/venting of the system. It contains shut-off valves, pressure regulators, venting lines and sensors.\n\n**(b) Why ventilation and inert gas systems must be installed with the engine fuel gas system (4)**\n\nLNG is cryogenic \u2014 any leak rapidly vaporises and forms flammable gas-air mixtures. Without ventilation, these mixtures can accumulate in enclosed spaces and create an explosion hazard; the ventilation system continuously disperses leaked gas. The inert gas system (nitrogen or CO\u2082) replaces oxygen in tanks, lines and spaces so that even if gas leaks, it cannot ignite, and is also used to purge lines before maintenance or shutdown.\n\n**(c) Why pilot injection must be provided, and how it operates (4)**\n\nNatural gas has a high ignition temperature and poor auto-ignition properties, so it will not reliably ignite by compression alone in a diesel engine. A small quantity of pilot diesel (MDO/MGO, typically 1\u20135% of total fuel energy) is injected first; it ignites under compression, creating the high-temperature flame kernel needed to ignite the main gas charge. The pilot injector is electronically controlled, with timing and quantity adjusted by engine load \u2014 ensuring stable combustion, preventing misfiring/knocking, and enabling smooth dual-fuel operation.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q2",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q8; direct PDF text extraction of the archived July 2024 paper confirms this is actually Q2. (July 2024's real Q8 is the separate \"why turbochargers are fitted\" question, correctly filed under the Turbocharger topic.)"
+        },
+        {
+          "diet": "March 2026",
+          "question_number": "Q1",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot repeat-history."
+        }
+      ],
+      "canonical_id": "lng-engine-installations-gvu-ventilation-pilot-injection"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "Otto vs Diesel Cycle Dual-Fuel Operation & Problems Burning Gaseous Fuel",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Otto (premixed, low-pressure) vs Diesel (direct high-pressure gas injection) dual-fuel cycles**\n\n**[Sketch]** Diesel-cycle (direct high-pressure gas injection) dual-fuel arrangement \u2014 gas accumulator, ELWI/ELGI valves, FIVA, gas injectors and window/blow-off/purge valves.\n\nIn the Otto-cycle approach, gas is mixed with air before compression and a pilot injection ignites the premixed charge \u2014 giving high thermal efficiency and low NOx (lower peak temperature) but being more prone to knock and methane slip. In the Diesel-cycle approach, gas is injected late at high pressure with no premixing, again ignited by a pilot \u2014 giving a higher effective compression ratio, better efficiency/power and lower methane slip, but higher NOx due to higher peak temperature.\n\n**THREE problems with burning gaseous fuel, and fixes**\n\n- **Methane slip** \u2014 mitigated by high-pressure gas injection and oxidation-catalyst after-treatment.\n- **Knock/pre-ignition** (high auto-ignition temperature, incorrect air-fuel ratio) \u2014 mitigated by electronic fuel injection, optimised pilot timing, EGR or charge-air cooling.\n- **Power/efficiency loss at low load** (unstable combustion, misfire risk) \u2014 mitigated by raising the pilot fuel ratio, or running diesel-only at low load.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2021",
+          "question_number": "Q8",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "otto-vs-diesel-cycle-dual-fuel-gas-burning-problems"
+    },
+    {
+      "topic_id": "alternate-fuels",
+      "title": "Methanol as a Marine Fuel \u2014 Properties, Hazards/Handling & Four-Stroke Use",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Why methanol can be used as fuel \u2014 key properties**\n\nHigh oxygen content (\u224850% by mass) promoting complete combustion with very low soot/PM/HC/CO; low cetane number (<5) but high octane (\u2248109), requiring ignition assistance (pilot diesel or glow plugs); zero sulphur, eliminating SOx emissions and helping meet IMO 2020 and future regulations; liquid at ambient temperature (boiling point \u224865\u00b0C), so it's easy to store and bunker like conventional fuels without cryogenic handling; high hydrogen-to-carbon ratio giving lower CO\u2082 emissions per unit energy (lifecycle impact depends on green/e-methanol production).\n\n**Why methanol must be treated with caution \u2014 storage and preparation**\n\n*Hazards*: highly toxic (ingestion, inhalation or skin absorption can cause blindness or death); wide flammable range (6\u201336.5% in air); low flash point (\u224811\u201312\u00b0C); burns with a nearly invisible flame; corrosive to aluminium, zinc and some plastics/rubbers; very low lubricity.\n\n*Storage*: dedicated tanks with nitrogen inert-gas blanketing; methanol-resistant tank coating (epoxy or stainless steel); flame arrestors on vents; located away from accommodation; spill containment to slop tanks; alcohol-resistant AFFF foam for firefighting.\n\n*Preparation for use*: filtration plus addition of lubricity improvers and ignition enhancers (typically 200\u2013500 ppm); double-wall fuel lines with leak detection; strict PPE, gas detection, emergency showers/eyewash, and crew training per IGF Code interim guidelines for low-flashpoint fuels.\n\n**Use in four-stroke marine diesel engines**\n\nMainly used in dual-fuel mode because of the low cetane number, via two methods: **Port Fuel Injection (PFI)/fumigation** \u2014 methanol injected into the intake manifold as a premixed charge, with a small pilot diesel injection (5\u201350% energy share, often 10\u201320%) near TDC igniting the mixture; **direct injection dual-fuel** \u2014 high-pressure methanol injected directly into the cylinder late in compression, allowing higher methanol substitution (up to 95% in tests) with better knock control. Engine modifications required: corrosion-resistant pumps/injectors, an additional methanol rail, retained pilot diesel system, modified ECU mapping, and knock sensors. Benefits: 50\u201385% NOx reduction, near-zero SOx/PM, good efficiency at many loads, and seamless switch to 100% diesel if needed. Challenges: knock risk at high loads (mitigated by timing retard, EGR or water addition), ~2\u20132.5\u00d7 larger fuel tanks needed due to lower energy density, and cold start may require diesel-only mode.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "methanol-marine-fuel-properties-hazards-four-stroke-use"
+    },
+    {
+      "topic_id": "fuel-oil-system",
+      "title": "Poor Ignition-Quality Fuel (Low Cetane) \u2014 Effects on Slow-Speed vs Medium-Speed Engines & Mitigation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**How poor ignition quality fuel affects combustion**\n\n*Slow-speed (2-stroke crosshead) engines*: long ignition delay causes late combustion, high peak pressures, and possible knocking/detonation; incomplete combustion raises exhaust gas temperature, smoke, soot and SFC; thermal overloading of the piston crown, rings and liner risks scuffing and hot spots; reduced power output and efficiency, with higher maintenance from carbon deposits.\n\n*Medium-speed (4-stroke trunk) engines*: more pronounced knocking due to higher engine speed and shorter time for combustion; higher thermal and mechanical loading on valves, pistons and bearings; risk of turbocharger surging or overload from irregular combustion; increased NOx/particulate emissions and potential after-burning in the exhaust.\n\n**Mitigation (both engine types)**\n\nUse fuel additives/ignition quality improvers (cetane boosters); slightly advance injection timing to compensate for the longer delay; ensure fuel is heated to correct viscosity for good atomisation; maintain high injection pressure and good nozzle condition for fine droplets; improve air supply (turbocharger, charge air cooler) to aid combustion; use pilot fuel injection or switch to better-quality fuel where possible; carry out regular maintenance of the fuel treatment plant (purifiers, filters) to remove water/contaminants; keep cylinder-oil BN and feed rate correct to neutralise acids and limit liner polishing.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2018",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q4",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q8",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "poor-ignition-quality-fuel-slow-medium-speed-mitigation"
+    },
+    {
+      "topic_id": "fuel-pump-injectors",
+      "title": "Report \u2014 HP Fuel Pump Unit Failure on an Electronically Controlled Engine",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on failure of a high-pressure fuel pump unit on an electronically controlled engine**\n\n*Nature of failure*: seizure, internal leakage, loss of pressure, erratic operation, or complete breakdown of the HP fuel pump.\n\n*Detection*: alarms (low fuel pressure, injection deviation), performance monitoring (high EGT on affected units, power loss, unusual vibration/noise), ECU fault codes.\n\n*Immediate action*: reduce engine load/speed; isolate the affected pump if possible; switch to standby or manual mode if available; monitor remaining units closely; inform the bridge and superintendent.\n\n*Replacement actions*: prepare the spare pump; follow the maker's procedure for safe isolation and removal; bleed air from the system; calibrate the new pump; test on the engine at low load first.\n\n*Preventive measures*: regular inspection of pump internals during overhaul; strict fuel-quality control (water, particles); proper lubrication/cooling of the pump; timely replacement per running hours; monitoring of fuel-pressure trends.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2016",
+          "question_number": "Q2",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via direct PDF text extraction of the archived March 2024 paper."
+        }
+      ],
+      "canonical_id": "report-hp-fuel-pump-failure-electronically-controlled"
+    },
+    {
+      "topic_id": "fuel-pump-injectors",
+      "title": "Report \u2014 Fuel Injector Replacement Due to Erosion & Burning",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on fuel injector replacement due to erosion and burning**\n\n*Detection*: routine performance monitoring showed increased exhaust temperatures, fluctuating cylinder pressures, and poor combustion; during maintenance, visual inspection revealed eroded nozzle holes, burned tips, deposits and pitting.\n\n*Likely causes*: poor atomisation (worn nozzles); contaminated fuel (water, catalytic fines); excessive injection pressure; inadequate injector cooling; extended service life beyond recommended hours.\n\n*Actions taken*: replaced damaged injectors with new OEM units; checked and improved fuel filtration/treatment; reviewed and adjusted injection pressure settings; inspected and maintained the injector cooling system; revised the overhaul schedule.\n\n*Preventive measures instituted*: continuous performance monitoring (cylinder pressure, EGT); periodic fuel-quality testing plus enhanced filtration; strict adherence to maker's service intervals; routine cooling-system checks; crew training on early signs of injector problems.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2019",
+          "question_number": "Q5",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "report-fuel-injector-replacement-erosion-burning"
+    },
+    {
+      "topic_id": "instrumentation-control",
+      "title": "Electronically Controlled Engines \u2014 Fuel, Exhaust Valve & Starting Air Control Mechanisms",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Fuel injection quantity and timing adjustment**\n\nThe ECU uses inputs from multiple sensors (engine load, speed, fuel rail pressure, EGT, crank angle, etc.), calculating and controlling Start of Injection (SOI), injection duration, and rail pressure. This enables multi-stage injection (pilot + main + post) for better combustion, lower emissions and smoother operation. Injection is independent of engine speed (unlike cam-driven systems), with real-time feedback allowing continuous optimisation.\n\n**Variable exhaust valve timing**\n\nControlled by a hydraulic actuation system: the ECU signals a rail valve, high-pressure servo oil moves a slide rod, which actuates the exhaust valve piston; a position sensor provides feedback. The ECU varies opening/closing timing based on load and speed (e.g. earlier opening for better scavenging at high load, or a Miller-cycle effect for efficiency/emissions reduction at part load); spring air assists closing.\n\n**Starting air valve regulation**\n\nECU-controlled via solenoid valves (pneumatic or hydraulic actuators) instead of mechanical cams. A crank-angle sensor tells the ECU exact cylinder positions, so air is directed only to the correct cylinders at the precise crank angle for smooth, efficient starting with minimal air consumption. Once the engine reaches self-sustaining speed, the ECU closes all starting air valves \u2014 preventing backfiring and starting-air explosions, and reducing wear.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2018",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check of the archived paper (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "electronically-controlled-engines-additional-controls"
+    }
+  ]
+}

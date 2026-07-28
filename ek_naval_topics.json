@@ -1,0 +1,50 @@
+{
+  "subject": "EK Naval",
+  "topics": [
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "name": "Watertight Integrity, Bulkheads & Load Line",
+      "question_count": 10
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "name": "Hull Strength, Stresses & Distortion",
+      "question_count": 8
+    },
+    {
+      "topic_id": "roll-reduction-stability",
+      "name": "Roll Reduction & Stability Aids",
+      "question_count": 2
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "name": "Ship Types & General Construction",
+      "question_count": 8
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "name": "Rudders, Propulsion & Propellers",
+      "question_count": 8
+    },
+    {
+      "topic_id": "fire-protection",
+      "name": "Fire Protection",
+      "question_count": 3
+    },
+    {
+      "topic_id": "hatch-covers",
+      "name": "Cargo Hatch Covers",
+      "question_count": 2
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "name": "Drydocking, Survey & Classification",
+      "question_count": 8
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "name": "Enclosed Spaces, Cargo Safety & Conventions",
+      "question_count": 7
+    }
+  ]
+}

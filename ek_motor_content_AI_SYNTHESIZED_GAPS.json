@@ -1,0 +1,459 @@
+{
+  "subject": "EK Motor",
+  "content_origin_warning": "EVERY canonical_answer in this file is ORIGINAL CONTENT WRITTEN BY CLAUDE \u2014 NOT transcribed or verified against any UMTC/exam verbatim source. Unlike every other file in this build, these answers did not exist anywhere in the source material; they were written from scratch to fill confirmed content gaps, scaled to the mark weighting shown in the app. Treat these as a first-pass study aid to be cross-checked against a real reference (textbook, class notes, or an instructor) before treating them as exam-ready model answers \u2014 they carry none of the verbatim-fidelity guarantee that applies to the rest of this library.",
+  "canonical_answers": [
+    {
+      "topic_id": "fuel-oil-system",
+      "title": "Report \u2014 Proposing Onboard HFO Sample Testing (Properties & Operational Benefits)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**To**: Owners / Fleet Technical Superintendent\n**From**: Chief Engineer Officer, MV [Vessel Name]\n**Date**: [Date]\n**Subject**: Proposal for Adoption of Onboard HFO Sample Testing\n\n**1. Purpose**\n\nThis report proposes the adoption of an onboard heavy fuel oil (HFO) sample-testing programme, setting out which fuel properties would be tested and the operational benefits this would provide.\n\n**2. Background**\n\nAt present, fuel quality is confirmed only by shore laboratory analysis of the MARPOL retained sample, with results typically returned some days after bunkering \u2014 by which time a significant quantity of the fuel may already have been consumed. An onboard rapid-test kit would allow screening within hours of receipt, before the fuel is committed to service.\n\n**3. Properties that would be tested onboard**\n\n- **Density** (kg/m\u00b3 at 15\u00b0C) \u2014 needed to correctly set purifier gravity discs and to reconcile bunkered mass against volume delivered.\n- **Kinematic viscosity** (cSt at 50\u00b0C) \u2014 confirms the correct heating and pumping requirements for the injection system.\n- **Water content** (% by volume, e.g. crackle test or portable distillation kit) \u2014 high water content risks injector damage, corrosion, and combustion instability.\n- **Compatibility/stability** (spot test) \u2014 detects incompatibility between the new bunker and existing tank residuals, which can precipitate asphaltenes and choke filters/purifiers.\n- **Total sediment** \u2014 an early indicator of sludge formation and filter-blocking tendency.\n- **Sulphur content** (rapid test strip or portable analyser) \u2014 critical for MARPOL Annex VI/ECA compliance verification before the fuel is burned.\n- **Flash point** \u2014 a safety-critical check confirming the fuel is safe to store and handle per SOLAS requirements.\n- **Catalytic fines (Al + Si)** \u2014 abrasive refinery-catalyst contaminants that cause severe wear to injectors, fuel pumps, piston rings and liners if not adequately removed by purification.\n\n**4. Operational benefits**\n\n- **Early detection before full consumption**: off-spec or incompatible fuel can be identified within hours rather than days, allowing the suspect batch to be segregated before it reaches the engine.\n- **Protection of machinery**: early warning of high water content, cat fines or poor stability allows purifier settings to be adjusted (reduced throughput, increased temperature) before the fuel is burned, reducing the risk of injector, pump, piston and liner damage.\n- **Regulatory compliance support**: immediate sulphur confirmation protects against MARPOL Annex VI violations, particularly before ECA entry, and supports verification against the Bunker Delivery Note.\n- **Reduced dependency on shore laboratories**: valuable on long ocean passages or at ports with limited laboratory turnaround, reducing schedule risk while awaiting results.\n- **Cost avoidance**: the cost of a single injector, pump or turbocharger failure from contaminated fuel typically far exceeds the cost of a testing kit and consumables, and avoids unplanned off-hire time.\n- **Fleet-wide quality trending**: logged results can be shared with the Technical Superintendent to identify recurring problem suppliers or ports over time.\n\n**5. Recommendation**\n\nIt is recommended that the vessel be supplied with an onboard fuel test kit (covering at minimum density, viscosity, water content, compatibility and cat-fines screening), that testing be carried out at every bunkering, and that results be logged with any adverse finding reported immediately to the Technical Superintendent before the fuel is committed to service tanks.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "report-onboard-hfo-sample-testing-proposal"
+    },
+    {
+      "topic_id": "fuel-oil-system",
+      "title": "Heavy-Weather Power Loss/Misfire from Water in Fuel \u2014 Immediate Actions, Sources & Standing Orders",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Immediate actions to ensure safe operation of the ship (6)**\n\n- Inform the Bridge/Master immediately of reduced engine reliability; in heavy weather, request a reduction in speed and/or a course alteration to ease motion and reduce propulsion demand.\n- Reduce engine load to a safe, stable level to minimise further misfiring, black smoke, or a complete loss of propulsion.\n- Drain water from the day tank/settling tank drain cocks and check any fuel oil water separators/coalescers.\n- Change over to a clean or alternative fuel source (a different tank, or MDO/MGO) if available, to restore reliable combustion.\n- Increase purifier desludging frequency and verify the gravity disc/bowl setting is correct for the degree of contamination.\n- Check fuel filters (likely blocking rapidly with water/sludge) and change over to the standby filter if differential pressure is rising.\n- Monitor exhaust temperatures per cylinder and indicator/power cards for continuing misfire; be prepared to reduce load further or stop if the situation worsens.\n- Once safe to do so, inform the Engineering Superintendent; if in coastal/restricted waters, advise the Bridge to have anchors ready and consider requesting sea room or tug standby in case of complete propulsion loss.\n\n**(b) Possible sources of water entering the fuel storage, handling and supply system, with reasons (5)**\n\n- **Contaminated bunker supply** \u2014 water already present in the fuel as delivered, from poor housekeeping of shore/barge tanks or water drawn up from the bottom of a bunker barge tank during delivery.\n- **Condensation in storage/service tanks** \u2014 warm, humid air entering through tank vents condenses on the tank walls with temperature cycling; being denser than fuel, water settles at the tank bottom and can be drawn into suction if tanks are not regularly sounded/drained.\n- **Leaking heating coils** in settling or service tanks \u2014 a failed steam or thermal-oil heating coil allows the heating medium to enter the fuel directly.\n- **Deck/weather ingress** \u2014 in heavy weather, green seas over the deck can force water through poorly sealed air-pipe heads, sounding-pipe caps, or tank access covers if not properly secured before the weather deteriorated \u2014 a strong candidate given the heavy-weather context of this scenario.\n- **Purifier heater/cooler leaks** \u2014 internal leaks in plate heat exchangers allowing the water side to mix into the fuel side.\n- **Incorrect valve line-up during maintenance** \u2014 a flushing or test-water line inadvertently left connected to a fuel system after work.\n\n**(c) Standing orders regarding operation of the fuel storage, handling and supply system (5)**\n\n- All fuel tanks to be sounded and drained (water-checked) at least once per watch, with results logged.\n- Air-pipe heads, sounding-pipe caps and tank access covers to be confirmed secure before any anticipated heavy weather, with draining frequency increased following any period of green seas on deck.\n- Purifiers to be run continuously with desludge intervals reviewed and shortened whenever fuel quality is in doubt; treated-fuel water content to be checked and logged each watch.\n- Fuel samples to be tested for water content at every bunkering and periodically thereafter, with results logged.\n- Fuel filters to be inspected and changed over promptly on any rise in differential pressure, with a clean standby filter always ready.\n- Any water detected in fuel to be reported immediately to the duty engineer/Chief Engineer, with the affected tank isolated from service until the cause is investigated and cleared.\n- Heating-coil integrity to be checked periodically, with any suspect coil isolated and repaired at the earliest opportunity.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2021",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 the QUESTION TEXT for this entry is independently confirmed verbatim against the archived October 2021 paper (source marked verified_catalog on that basis alone), but no verbatim ANSWER exists anywhere in the compiled guide. The answer_markdown here is entirely original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source material and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q1",
+          "marks_parts": [
+            "6",
+            "5",
+            "5"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "heavy-weather-misfire-water-in-fuel-actions-sources-orders"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "High Exhaust Temperature on a 4-Stroke Generator Engine (Single vs Multiple Cylinders) + Why Multiple Valves Are Fitted + Operating Arrangement",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i) Possible causes and actions for high exhaust temperature at a single cylinder (3)**\n\nCauses: a leaking or burnt exhaust valve; a faulty or worn fuel injector causing poor atomisation or dribbling (late/incomplete combustion); incorrect fuel pump timing on that unit; low compression from worn rings, liner wear, or a valve not seating; a partially blocked fuel supply to that injector.\n\nActions: reduce load; check the indicator/power card and compression for that cylinder; inspect the injector and exhaust valve at the next opportunity; isolate/cut out the cylinder if the condition is severe; continue close monitoring.\n\n**(a)(ii) Possible causes and actions for high exhaust temperature at more than one cylinder (3)**\n\nCauses (common-mode faults, since more than one unit is affected): turbocharger fouling or damage reducing overall air supply; charge air cooler fouling raising intake air temperature; increased exhaust back-pressure from a fouled economiser/silencer; general engine overload; poor fuel ignition quality affecting several cylinders; a governor or load-sharing fault causing sustained overload.\n\nActions: reduce overall engine load; check turbocharger boost pressure and charge air temperature; inspect air filters and charge air cooler; check fuel quality/viscosity; reduce load further or shut down if temperatures continue to rise; investigate common systems (turbocharger, air supply, fuel quality) rather than individual injectors.\n\n**(b) Why multiple air inlet and exhaust valves are fitted to highly rated 4-stroke engines (4)**\n\nA highly-rated engine (high BMEP, high speed) needs a large total valve-flow area to admit sufficient air and expel exhaust gas within the very short valve-open duration available per cycle at high rpm. A single valve of adequate flow area would need to be large and heavy \u2014 increasing valve and spring inertia to the point of valve bounce/float at high speed \u2014 and would leave too little cylinder-head material around a single large seat for adequate cooling passages and structural strength. Two (or more) smaller valves per function give the same or greater total flow area with much lower individual valve mass, reducing dynamic loading on the valve gear and permitting reliable high-speed operation without bounce, while also allowing better cooling around each smaller valve seat (reducing the risk of thermal cracking or hot-corrosion burn-out) and freeing up space at the centre of the cylinder head for a centrally-mounted fuel injector, improving combustion chamber symmetry and fuel spray distribution.\n\n**(c) Arrangement for operating multiple valves from a single cam, and how tappet clearance is set for both valves (6)**\n\n**[Sketch]** A single cam lobe drives a rocker arm (or pushrod-and-rocker arrangement), which bears down on a **valve bridge** (also called a valve yoke or crosshead) \u2014 a rigid bridge piece sitting across the tops of both valve stems for that function (e.g. both exhaust valves). The bridge is held in alignment by a central guide pin/spigot, with a central adjustable pivot screw allowing the two valves to be set to operate in unison from the single cam/rocker input, so that both valves open, close and lift together.\n\n**Setting tappet clearance**: with the engine on turning gear and the piston for that cylinder brought to TDC on its firing (compression) stroke \u2014 confirmed against the flywheel/timing marks, with both valves fully closed and the cam on its base circle \u2014 the bridge's own central adjusting screw is first set using a feeler gauge between the bridge and each individual valve stem tip, so that both valves carry an equal, correct clearance relative to the bridge itself. This equalises the load between the two valves so that neither is held slightly open by the other. With the bridge centralised and both valves individually equalised, the main tappet clearance \u2014 between the rocker arm and the top of the bridge \u2014 is then set to the maker's specified clearance using a feeler gauge, and the rocker adjusting screw locknut is tightened to the correct torque. The engine is then barred over by hand to confirm smooth valve operation before the rocker cover is closed up.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q3",
+          "marks_parts": [
+            "3",
+            "3",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 no verbatim source exists anywhere in the compiled guide for this question (dual-tagged 'Engine protection' + 'Cylinder head' in the app). This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source material and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q9",
+          "marks_parts": [
+            "3",
+            "3",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        }
+      ],
+      "canonical_id": "high-egt-4-stroke-generator-multiple-valves-cam-arrangement"
+    },
+    {
+      "topic_id": "cylinder-head",
+      "title": "Why Multiple Exhaust Valves Are Fitted to Medium-Speed Engines + Tappet Clearance Setting + Checking Procedure",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why multiple air inlet/exhaust valves are fitted to some medium-speed diesel engines (4\u20136)**\n\nMedium-speed engines run at higher rotational speeds than large slow-speed crosshead engines, so each valve has only a very short time window per cycle in which to admit air or expel exhaust gas. A single large valve capable of passing the required flow would need to be heavy, and the resulting valve-and-spring inertia risks valve bounce or float at higher speeds, along with excessive seating loads that accelerate seat wear and burning. Fitting two (or more) smaller valves per function gives the same or greater total flow area at much lower individual valve mass, permitting reliable high-speed operation, reducing dynamic loading on the valve train, and giving better cooling around each smaller valve seat (reducing the risk of thermal cracking and hot-corrosion burn-out) \u2014 while also leaving room in the cylinder head for a centrally-positioned fuel injector, improving spray distribution and combustion symmetry.\n\n**(b) How valve actuator (tappet) clearance is set for multiple-valve installations (4)**\n\nThe two valves for a given function (e.g. both exhaust valves) are linked by a rigid **valve bridge** (yoke/crosshead) that sits across both valve stem tips and is kept aligned by a central guide pin. With the engine on turning gear, the cylinder brought to TDC on its firing stroke (cam on the base circle, both valves closed), a feeler gauge is used at the bridge's own adjusting screw to set each valve's individual clearance to the bridge equally, so neither valve is held slightly open by the other. Only once the bridge is correctly centralised and equalised is the main tappet clearance \u2014 between the rocker arm and the top of the bridge \u2014 set to the maker's specification using a feeler gauge, with the rocker adjusting screw locknut then tightened to the correct torque.\n\n**(c) Procedure for checking the valve operating mechanism of a medium-speed engine (6\u20138)**\n\n1. Stop the engine, engage turning gear, and isolate per a permit to work.\n2. Bar the engine to bring the cylinder under test to TDC on its firing (compression) stroke, confirmed against timing marks/flywheel, with the cam on its base circle.\n3. Visually inspect the valve bridge, rocker arms, pushrods and cam followers for wear, cracking, or looseness.\n4. Check the valve bridge guide pin for excessive wear or play, and confirm the bridge sits square and level across both valve stems.\n5. Using a feeler gauge, check and, if necessary, adjust the individual valve-to-bridge clearance for each valve, equalising both before locking the bridge adjusting screw.\n6. Check and, if necessary, adjust the main tappet (rocker-to-bridge) clearance to the maker's specification using a feeler gauge, tightening the rocker adjusting screw locknut to correct torque.\n7. Visually check valve spring condition (corrosion, cracking) and, if fitted, confirm valve rotators are functioning correctly (checked by observing witness marks rotating between inspections).\n8. Repeat the above for each valve/cylinder in the firing order.\n9. Bar the engine through a complete cycle, listening and observing for smooth, correct valve operation with no unusual noise, before closing up the rocker covers.\n10. Record all clearances measured and any adjustments made in the engine log/PMS.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2020",
+          "question_number": "Q4",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 no verbatim source exists anywhere in the compiled guide for this question. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source material and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Same underlying question as the December 2020/October 2019 occurrences, but with a different mark split (6/4/6 rather than 4/4/8) as confirmed directly in the app screenshot \u2014 flagged per the standing rule on differing per-diet mark splits rather than silently assumed uniform."
+        }
+      ],
+      "canonical_id": "multiple-exhaust-valves-medium-speed-tappet-clearance-checking"
+    },
+    {
+      "topic_id": "compressed-air-system",
+      "title": "Starting Air Reservoir \u2014 Safety Devices, Preparing for Internal Inspection & Defects Found",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) FOUR safety devices fitted to a starting air reservoir, with reasons (4)**\n\n- **Safety/relief valve** \u2014 set to lift slightly above working pressure, relieving overpressure from a faulty compressor or unloader before the shell is overstressed.\n- **Bursting disc or fusible plug** (older designs) \u2014 a secondary/backup overpressure protection, rupturing at a set pressure should the relief valve fail to lift.\n- **Pressure gauge** \u2014 allows continuous monitoring, giving early warning of abnormal pressure build-up or loss.\n- **Isolating/non-return arrangement on the outlet** \u2014 prevents backflow of combustion gases into the reservoir in the event of a starting valve fault, and allows the reservoir to be isolated for maintenance.\n\n**(b) Procedure to prepare a reservoir for internal inspection (6)**\n\n1. Reduce reservoir pressure to zero via the drain valve and/or a vent cock \u2014 never rely on the gauge reading alone.\n2. Isolate the reservoir from the starting air system by shutting and locking/tagging the inlet and outlet valves.\n3. Confirm isolation by reopening the drain and checking for any residual pressure.\n4. Obtain a Permit to Work/Enclosed Space Entry Permit as appropriate, and carry out a risk assessment.\n5. Remove the manhole door/cover using correct tools and lifting arrangements given its weight.\n6. Ventilate thoroughly and test the atmosphere (O2 ~20.8%, no flammable/toxic gas) before entry; only enter once confirmed safe.\n\n**(c) Internal inspection \u2014 TWO defects which may be found, with possible causes (6)**\n\n- **Internal corrosion/pitting of the shell** \u2014 caused by moisture carried over from the compressor (inadequate after-cooling/draining) accumulating inside the reservoir over time.\n- **Oil/carbon deposit build-up on internal surfaces** \u2014 caused by compressor lubricating oil carryover (worn piston rings/seals in the compressor), creating a fire/explosion risk if ignited by a hot spot or spark.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2016",
+          "question_number": "Q3",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP - question text independently confirmed verbatim against the archived paper, but no verbatim answer exists anywhere in the compiled guide. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "October 2016",
+          "question_number": "Q5",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Identical question text confirmed verbatim against the archived paper (word-for-word repeat of the March 2016 occurrence)."
+        }
+      ],
+      "canonical_id": "starting-air-reservoir-safety-devices-internal-inspection-prep"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Cutting Out and Hanging Up a Two-Stroke Crosshead Cylinder Following Crosshead Pin Failure",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Procedure for cutting out and hanging up an engine cylinder following complete crosshead pin failure with no replacement available, with sketches (12)**\n\n1. Stop the engine and engage turning gear; isolate starting air, fuel and cylinder lubrication to the affected unit.\n2. Cut off fuel to the affected unit (lift the fuel pump roller / set VIT to zero per maker's procedure) so no fuel is injected to that cylinder.\n3. Where a hydraulic override/blocking arrangement is fitted, keep the exhaust valve for that unit closed; otherwise isolate its operation per maker's instructions.\n4. Isolate the starting air supply to that unit (blank or shut its starting air valve) to prevent air admission to the disabled cylinder.\n5. Bring the affected unit to the position specified by the maker (typically around TDC) where the piston/crosshead assembly can be safely supported.\n6. Since the crosshead pin itself has failed and cannot be operated, and no replacement is available, lift the piston/crosshead assembly clear using maker-supplied lifting screws/gear and secure it in the raised (hung-up) position with substantial chocks and lashings so it cannot descend under gravity or vibration - this isolates the crankpin/connecting rod from any load or contact with the piston assembly.\n7. Disconnect the connecting rod at the appropriate point per maker's instructions and secure it clear of the crankshaft so it cannot foul moving parts.\n8. Protect exposed running surfaces (crankpin, guide) from contamination with clean, lint-free covers.\n9. Close up the crankcase, reinstate lubrication to the remaining units, and bar the engine over by hand to confirm free rotation with no fouling before restarting.\n10. Restart on the remaining cylinders and increase load gradually, closely monitoring vibration, bearing temperatures and cylinder power balance.\n\n**(b) Factors which may inhibit starting and limit the operating speed with a cylinder cut out, with reasons (4)**\n\n- Reduced starting torque/turning effort - with one fewer cylinder contributing starting-air impulses, the engine may be harder to start (particularly against resistance from a cold engine or high friction), and starting-air consumption per successful start rises.\n- Increased torsional/mechanical vibration - the uneven firing pattern from a missing cylinder excites torsional vibration in the shafting, typically requiring a reduced maximum RPM (avoiding barred/critical speed ranges) to keep vibration within safe limits.\n- Reduced maximum available power - the remaining cylinders carry a higher relative load to compensate for the lost cylinder, but overall power is reduced and RPM is normally limited to avoid overloading the remaining units and bearings.\n- Increased thermal/mechanical stress on remaining units - sharing propulsion load among fewer cylinders raises the load per cylinder, requiring closer monitoring, which in practice caps the safe operating speed.",
+      "examiner_focus": [
+        "No source markers' feedback available - this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2018",
+          "question_number": "Q4",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP - question text independently confirmed verbatim against the archived paper, but no verbatim answer exists anywhere in the compiled guide. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        }
+      ],
+      "canonical_id": "cutting-out-hanging-up-cylinder-crosshead-pin-failure"
+    },
+    {
+      "topic_id": "bearings",
+      "title": "Crosshead Bearing Inspection - Risk Assessment Points, Lifting Equipment Fitness & Defects Found",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) SIX points that should be covered by a risk assessment for the inspection of a main engine crosshead bearing (6)**\n\n1. Isolation and lock-out of the engine (turning gear engaged and locked, starting air isolated) to prevent inadvertent movement during the work.\n2. Enclosed/confined space entry considerations if crankcase entry is required (atmosphere testing, ventilation, standby person).\n3. Manual handling and lifting hazards - bearing shells, keeps and associated tools are heavy, requiring correctly assessed lifting equipment and technique.\n4. Hot surfaces/residual heat - the bearing and surrounding structure may still be hot from recent running; a cooling-down period must be allowed and confirmed before hands-on work.\n5. Sharp edges/pinch points - risk of cuts or crushing injuries from the bearing shell, crankpin, or adjacent moving-part clearances.\n6. PPE requirements and competency of personnel - appropriate protective equipment and ensuring only trained, competent persons carry out the task.\n\n**(b) How it can be ensured that the lifting equipment used for the inspection is fit for the purpose intended (4)**\n\nLifting equipment (chain blocks, slings, shackles, lifting beams) must be selected from the vessel's Register of Lifting Appliances and Loose Gear, confirming each item's safe working load (SWL) is adequate for the load; each item must carry a current, valid test certificate (thorough examination by a competent person - typically within the last 12 months for loose gear, or 5 years for appliances) and be visually inspected before use for wear, corrosion, deformation or damage. Any item found defective, uncertified, or without a legible SWL marking must be withdrawn from use immediately and not substituted with unapproved alternatives.\n\n**(c) THREE defects which might be detected during inspection of a crosshead pin and bearing, stating the probable cause of such defects (6)**\n\n- Wiping/scoring of the white metal bearing surface - caused by lubrication failure (oil starvation, contaminated oil, or incorrect clearance) leading to breakdown of the hydrodynamic oil film.\n- Excessive bearing clearance beyond maker's limits - caused by normal progressive wear over running hours, or accelerated wear from misalignment or inadequate lubrication.\n- Cracking or fatigue damage to the crosshead pin or bearing shell - caused by cyclic loading over an extended service life, often initiated at a stress concentration (oil holes, fillets) or by a prior overload event.",
+      "examiner_focus": [
+        "No source markers' feedback available - this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2018",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP - question text independently recovered via OCR from the archived paper (native text extraction failed on this page - same silent-extraction gotcha documented elsewhere in this build), but no verbatim answer exists anywhere in the compiled guide. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "July 2025",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Identical question text confirmed verbatim against the archived July 2025 paper - a genuine word-for-word repeat of the October 2018 question."
+        }
+      ],
+      "canonical_id": "crosshead-bearing-risk-assessment-lifting-equipment-defects"
+    },
+    {
+      "topic_id": "cooling-system-fwg",
+      "title": "Main Engine Fresh Water Cooling System (HT/LT) + Charge Air Supply System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Main engine fresh water cooling water system incorporating HT and LT systems, with a sketch (10)**\n\n**[Sketch]** HT circuit: jacket water pump \u2192 cylinder jackets, cylinder heads, exhaust valve cooling \u2192 HT cooler \u2192 back to jacket pump, with a thermostatic three-way valve maintaining jacket outlet at a set temperature (typically ~80-90\u00b0C) and a preheater for standby/starting conditions. LT circuit: LT pump \u2192 charge air cooler, lube oil cooler \u2192 LT cooler (central seawater-cooled heat exchanger) \u2192 back to LT pump, typically operating at a lower temperature (~25-36\u00b0C) than the HT circuit.\n\nThe HT (jacket) system circulates fresh water through the cylinder jackets, cylinder heads and exhaust valve cages to remove combustion heat, operating at a relatively high, closely controlled temperature to minimise thermal shock and maintain efficient combustion. A three-way temperature control valve blends cooled and uncooled water to hold the jacket outlet temperature within a narrow band regardless of load. The LT (low-temperature) system runs at a lower temperature, primarily cooling the charge air cooler and lubricating oil cooler, since these components need a lower coolant temperature to achieve their cooling duty efficiently (e.g. maximising charge air density, keeping LO viscosity in range). Both circuits ultimately reject heat to a central seawater-cooled heat exchanger (or a central cooler system), keeping seawater away from direct contact with engine components and reducing corrosion risk.\n\n**(b) Charge air supply system for a turbocharged engine, explaining the purpose of each main part (6)**\n\nAir is drawn from the engine room (or a dedicated intake) into the turbocharger compressor, where it is compressed, raising both its pressure and temperature. The compressed air then passes through the **charge air cooler**, which removes the heat of compression (using LT cooling water), increasing air density and therefore the mass of oxygen delivered to the cylinders for a given volume \u2014 improving combustion efficiency and power output. A **water separator** downstream of the cooler removes condensate formed as the air is cooled, preventing water from entering the cylinders. The cooled, dried air then passes into the **scavenge air receiver/manifold**, which acts as a buffer evening out pressure pulsations before the air enters each cylinder through the scavenge ports (two-stroke) or inlet valves (four-stroke). On some installations, an **auxiliary blower** supplies scavenge air at low load/starting, when exhaust gas energy is insufficient to drive the turbocharger effectively.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2024",
+          "question_number": "Q2",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 question text independently confirmed verbatim against the archived paper, but no verbatim answer exists anywhere in the compiled guide (this topic never appeared as its own section in the source material at all). This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q8",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Same substance as March 2024 Q2 (main engine FW cooling explained via why different parts of the system run at different operating temperatures, plus the same charge-air supply system part), confirmed via OCR of the archived paper."
+        }
+      ],
+      "canonical_id": "main-engine-fw-cooling-hlt-charge-air-supply"
+    },
+    {
+      "topic_id": "cooling-system-fwg",
+      "title": "HT/LT Cooling Water Systems for a Combined Pair of Medium-Speed Engines + Shutdown-Engine Temperature Maintenance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) HT and LT cooling water systems for a combined pair of medium-speed engines in an installation, with a sketch (12)**\n\n**[Sketch]** Two medium-speed engines (e.g. a running engine and a standby/shut-down engine) sharing common HT and LT cooling water circuits via a manifold arrangement, with cross-connection valves, common coolers, and a keep-warm circulation line to the stopped engine.\n\nWhere two or more medium-speed engines share a common cooling water system, each engine has its own HT (jacket) and LT circuit, but these connect to shared header/manifold pipework so that either engine's pumps and coolers can serve the installation, and so that a stopped engine can still receive circulated warm water from the running engine's system. Isolating valves at each engine allow individual engines to be taken out of the common circuit for maintenance without affecting the other. Common HT and LT coolers (heat exchangers to seawater or a central cooling system) serve both engines, sized for combined running load. Standby pumps are cross-connected so that either engine's pump can supply the whole system if one engine's own pump is unavailable.\n\n**(b) How a shut-down engine is maintained at the correct temperature for immediate starting, both when the associated engine is also stopped and when it is running (4)**\n\nWhen the associated (running) engine is operating, its own HT system circulates warm jacket water through the shared header, and a keep-warm branch line (with a small circulating pump or by natural thermosiphon, depending on design) draws some of this warm water through the stopped engine's jacket, keeping it at an elevated standby temperature without the stopped engine needing its own heater running. This allows the stopped engine to be started quickly without thermal shock, since its jacket is already close to normal operating temperature. When both engines are stopped (neither running), an electric jacket-water heater and a small circulating pump maintain the shared HT water \u2014 and hence both engines' jackets \u2014 at a preheat temperature (typically 60\u201370\u00b0C) so that whichever engine is called upon can be started promptly without excessive cold-start wear or thermal stress, in line with standard standby-generator/engine keep-warm practice.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q4",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 question text independently confirmed verbatim against the archived paper via OCR, but no verbatim answer exists anywhere in the compiled guide. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "October 2024",
+          "question_number": "Q6",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Identical question text confirmed via OCR of the archived October 2024 paper (word-for-word repeat of the July 2024 occurrence)."
+        }
+      ],
+      "canonical_id": "hlt-cooling-combined-pair-medium-speed-shutdown-temp"
+    },
+    {
+      "topic_id": "bearings",
+      "title": "Crosshead Bearing & Guide Clearances \u2014 How Checked + Procedure for Checking Bottom-End Bearing Surface Condition",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) How crosshead bearing and guide clearances can be checked (6)**\n\nWith the engine stopped and on turning gear, the piston/crosshead for the unit under test is barred to the appropriate position specified by the maker (typically with the crosshead at or near the bottom of its stroke, where access is best). Crosshead **guide clearance** is checked by inserting feeler gauges between the crosshead shoe and the guide face at top and bottom (or port/starboard, depending on design), comparing the measured clearance against the maker's specified limits; this can also be checked using a dial gauge to measure lateral movement of the crosshead when a lever/jack is used to rock it against the guide. Crosshead **bearing (pin) clearance** is typically checked by lifting the crosshead slightly with a jack while a dial gauge records the vertical lift \u2014 the reading corresponds to the bearing clearance \u2014 or by removing the bearing cap/keep and directly measuring the shell-to-pin clearance with feeler gauges or lead-wire crush method (a soft lead wire is placed across the bearing, the cap re-torqued, then removed and the flattened wire measured with a micrometer to give the clearance).\n\n**(b) Procedure for checking the condition of a crosshead engine bottom-end bearing surface, with a sketch (10)**\n\n**[Sketch]** Bottom-end (crankpin) bearing assembly \u2014 bearing cap, upper and lower shells, crankpin, retaining bolts/studs.\n\n1. Stop the engine, engage turning gear, and isolate starting air/fuel per permit to work; allow the unit to cool if recently run.\n2. Drain or isolate the lubricating oil supply to the bearing as required, and open the crankcase per the enclosed-space entry procedure if entry is needed.\n3. Remove the bearing cap retaining bolts/studs in the sequence specified by the maker, and carefully lift off the cap, noting its orientation for correct reassembly.\n4. Withdraw the lower bearing shell (and, where design permits, roll out the upper shell) for inspection.\n5. Visually examine the white-metal (or equivalent bearing) surface under good lighting for wiping, scoring, pitting, discolouration (bluing from overheating), or fatigue cracking.\n6. Inspect the crankpin journal surface for scoring, corrosion, or heat damage, checking for smoothness and roundness.\n7. Measure the bearing shell thickness (e.g. with a ball micrometer at the crown) and compare against the maker's minimum permissible thickness.\n8. Measure the running clearance using feeler gauges or the lead-wire method, comparing against the maker's specified limits.\n9. Check the journal for ovality/taper using a micrometer at several circumferential and axial positions.\n10. If within limits and serviceable, clean and reassemble with fresh lubricating oil, torque the bearing cap bolts to the maker's specification in the correct sequence, and confirm free rotation on turning gear before returning the unit to service. If defects are found beyond acceptable limits, renew the shells and/or refer the crankpin for reconditioning as appropriate.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 question text independently recovered via OCR from the archived paper, but no verbatim answer exists anywhere in the compiled guide. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Identical question text confirmed verbatim via OCR of the archived March 2019 paper \u2014 a genuine word-for-word repeat of the April 2025 question."
+        }
+      ],
+      "canonical_id": "crosshead-bearing-guide-clearances-bottom-end-checking-procedure"
+    },
+    {
+      "topic_id": "fuel-pump-injectors",
+      "title": "Checking/Adjusting Fuel Injection Pump Timing \u2014 Restored (Previously Removed as Pre-2016-Only)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Checking/adjusting FI-pump timing (spill method)**\n\nStop, lock out and allow the engine to cool; refer to the maker's timing specification in degrees BTDC; turn the engine on turning gear to the timing mark (flywheel/dial gauge); slacken the HP pipe and rotate until fuel just spills, comparing against the specification. Adjust via camshaft/cam-follower repositioning or shims (mechanical systems) or via the ECU (electronic systems); tighten, bleed, test-run and check exhaust/power; document the work.\n\n**Power balance**\n\nAll cylinders should contribute equally: set equal fuel per pump/injector, ensure uniform compression (valve clearance, ring condition), and monitor EGT and load-indicator (Pmax/Pcomp) cards \u2014 electronic engines trim automatically via the ECU. This is essential to avoid overloading individual units, excess vibration/bearing stress, and to keep SFC/emissions low.",
+      "examiner_focus": [
+        "No source markers' feedback available for this restored canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2025",
+          "question_number": "Q6",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "IMPORTANT: this canonical was originally built (as 'fuel-pump-timing-power-balance') with its only occurrence at March 2013, and was therefore REMOVED entirely during the pre-2016 diet cleanup requested earlier in this build. This December 2025 occurrence, confirmed via app screenshot, shows the same content is genuinely needed for a current (2016+) diet \u2014 the canonical has been restored here rather than left deleted. This is exactly the risk flagged at the time of that cleanup: removing pre-2016-only content can delete the only copy of something that turns out to still be live in the question bank."
+        }
+      ],
+      "canonical_id": "fuel-pump-timing-power-balance-restored"
+    },
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "Crankcase Explosion \u2014 Probable Events, Effects & Hazards + OMD Standing Orders \u2014 Restored (Previously Removed as Pre-2016-Only)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Probable events leading to a crankcase explosion, effects and hazards (12)**\n\n*Stage 1 \u2014 hot spot formation*: defective/overheated bearing (main, crankpin or crosshead); piston rod/stuffing box blow-past; misaligned or seized running gear; inadequate lubrication.\n\n*Stage 2 \u2014 oil mist generation*: hot spot (typically >200\u00b0C) vaporises LO droplets; vapour condenses on cooler surfaces into fine white oil mist, initially too rich to ignite.\n\n*Stage 3 \u2014 explosive mixture formation*: as mist density increases and disperses, it reaches the LEL and becomes ignitable \u2014 white mist may be seen escaping from crankcase doors/vents.\n\n*Stage 4 \u2014 ignition (primary explosion)*: the hot spot (or a spark) ignites the mixture; pressure wave blows open crankcase relief doors, which then reseat.\n\n*Stage 5 \u2014 secondary explosion*: rush of fresh air into the crankcase mixes with remaining oil mist/vapour, creating a second, far more violent explosion \u2014 the main cause of catastrophic damage.\n\n*Effects*: crankcase doors blown off/relief valves lifted; crankcase structure fractured/distorted; engine room fire from ejected burning oil/gases; damage to bearings, con-rods, crank webs; engine rendered unserviceable.\n\n*Hazards*: fire/explosion risk to personnel; burns and blast injuries; fatalities from the (far more lethal) secondary explosion; structural damage to the ship; loss of propulsion endangering the vessel; engine room flooding risk if sea water systems are damaged.\n\n**(b) Standing orders \u2014 OMD activation (4)**\n\nOMD must be in continuous operation whenever the main engine runs. Any alarm is to be treated as a crankcase explosion risk \u2014 do not investigate immediately. On activation: reduce engine load and inform the bridge to stop the engine at the earliest safe opportunity; do not open crankcase doors for a minimum of 20 minutes after shutdown (allow cooling); keep all personnel clear of the doors. The OMD must be tested/calibrated per manufacturer schedule; defective units reported and repaired immediately, with enhanced manual rounds required if operation continues with a non-functional OMD. Every activation is logged in the engine room logbook with actions taken.",
+      "examiner_focus": [
+        "No source markers' feedback available for this restored canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2026",
+          "question_number": "Q4",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "IMPORTANT: this canonical was originally built with its only occurrence at July 2015, and was therefore REMOVED entirely during the pre-2016 diet cleanup requested earlier in this build. This July 2026 occurrence, confirmed via app screenshot, shows the same content is genuinely needed for a current diet \u2014 the canonical has been restored here rather than left deleted. Content is verbatim-identical to the original July 2015 answer and is treated as verified in substance (not re-derived), since it was sourced from the compiled guide originally."
+        }
+      ],
+      "canonical_id": "crankcase-explosion-probable-events-omd-standing-orders-restored"
+    },
+    {
+      "topic_id": "scavenging-turbocharger",
+      "title": "Turbocharger Surging on a Two-Stroke Engine with Two Turbochargers \u2014 Checking & Rectifying",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Actions to be taken for checking and rectifying surging at one of two main engine turbochargers on a two-stroke engine (16)**\n\n**Recognising and confirming surging**: surging is heard as a repetitive, cyclic banging/rumbling from the affected turbocharger, often accompanied by fluctuating scavenge air pressure, fluctuating exhaust gas temperature on the associated cylinders, and possible momentary drops in engine RPM or vibration. Confirm which of the two turbochargers is affected by listening/feeling at each unit and comparing scavenge pressure and speed readings between them.\n\n**Immediate action**: reduce engine load \u2014 surging is far more likely at low load/light running where the compressor operates close to its surge line, so reducing load (or, if load cannot be reduced, closely monitoring for escalation) is the first step to move the operating point away from the surge region. Increase monitoring of exhaust temperatures across all cylinders, since surging disturbs air distribution and can cause temporary overheating or incomplete combustion on the affected cylinders.\n\n**Investigating the cause \u2014 checks to carry out**:\n- **Air-side fouling**: inspect and clean the compressor side (salt, oil, dust deposits reduce effective flow area and shift the compressor's operating point toward surge); check air filters for blockage.\n- **Gas-side fouling**: inspect and clean the turbine side (carbon deposits on the nozzle ring/turbine blades restrict and unbalance gas flow, altering the turbocharger's operating point).\n- **Charge air cooler condition**: check for fouling or blockage, which raises resistance on the air side and can push the compressor toward surge.\n- **Uneven cylinder loading**: check indicator cards/power balance \u2014 if one or more cylinders are under-fuelled or over-fuelled, the resulting uneven exhaust gas flow can upset turbocharger operation and provoke surging even when the turbocharger itself is clean and undamaged.\n- **Mechanical condition of the turbocharger**: check for bearing wear, rotor imbalance, or blade damage, any of which can alter the compressor's stable operating range.\n- **Load-sharing between the two turbochargers**: on a twin-turbocharger arrangement, check for uneven distribution of exhaust gas or scavenge air between the two units (e.g. a partially blocked crossover duct or manifold), which can overload one turbocharger relative to the other and induce surging in the more heavily loaded unit.\n\n**Rectification**: clean the fouled compressor and/or turbine side (water-washing on the compressor side while running, or grit-blasting/manufacturer-approved cleaning on the turbine side, as applicable); clean or renew air filters and clear any charge air cooler fouling; rebalance cylinder fuelling/power via indicator cards if uneven loading is found; if the turbocharger itself is mechanically defective (worn bearings, damaged blades, rotor imbalance), plan for overhaul or renewal of the affected components at the earliest opportunity, operating at reduced load in the meantime to avoid worsening the condition; correct any ducting/manifold restriction causing uneven load-sharing between the twin turbochargers.\n\n**Follow-up**: after rectification, gradually increase load while monitoring scavenge pressure, exhaust temperatures and for any recurrence of surging noise/vibration; log the incident, findings and corrective action taken, and update the planned maintenance schedule if fouling or wear is found to be recurring.",
+      "examiner_focus": [
+        "No source markers' feedback available \u2014 this content was written to fill a confirmed gap, not transcribed from an exam source."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2026",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "GENUINE CONTENT GAP \u2014 confirmed via app screenshot, but no verbatim answer exists anywhere in the compiled guide, and this is distinct from the separately-catalogued (and withheld) 'Report \u2014 Turbocharger Vibration & Surging Incident' canonical elsewhere in this build, which is a different, report-style question. This entire answer is original content written by Claude to fill the gap, scaled to the given mark weighting. It has NOT been verified against any UMTC/exam source and should be cross-checked before being treated as an exam-ready model answer."
+        }
+      ],
+      "canonical_id": "turbocharger-surging-two-turbochargers-checking-rectifying"
+    },
+    {
+      "topic_id": "cylinder-liner",
+      "title": "Procedure - Changing a Cylinder Liner (Cover Removal Through Liner Replacement) - Restored (Previously Removed as Pre-2016-Only)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**As Chief Engineer Officer, outline a procedure for the changing of a cylinder liner in a large crosshead diesel engine, from removal of the cylinder cover to replacement of the liner (16)**\n\n1. **Preparation**: stop and cool the engine; shut fuel/LO/CW to the unit; drain cooling water; ventilate and clear the area. Disconnect HP fuel pipes, indicator cocks, CW connections; remove the exhaust valve and its connections.\n2. **Cover**: slacken nuts gradually in a crisscross pattern; use certified gear on designated lifting points; lift vertically and smoothly; land on a clean, stable surface.\n3. **Piston**: disconnect piston-cooling oil pipes; fit the piston lifting tool; draw the piston upward through the liner; protect it on a clean bench.\n4. **Liner removal**: remove holding rings/clamps and old sealing rings; secure the liner lifting tool; apply slight upward crane force to break the seating (heat the block if needed); lift slowly and vertically; land in prepared storage.\n5. **Preparation of the seating**: clean and inspect the block seating for carbon, cracks and wear; clean the CW passages; fit new rubber sealing rings with the recommended lubricant.\n6. **New liner installation**: lower slowly and evenly; align and seat; measure liner protrusion against maker's spec; secure with retaining rings/clamps.\n7. **Reassembly**: piston (mind ring orientation) -> cooling connections -> cover (crisscross torque) -> fuel/CW/LO pipes, checking for no leaks.\n8. **Checks and restart**: slow-turn the engine to confirm free movement; CW pressure test; area cleared; start at low RPM, monitoring temperatures, pressures, vibration and lubrication of the new liner.\n9. **Closing**: monitor liner wear with calibrated tools, CW flow and cylinder lubrication, and carry out timely piston/ring maintenance.",
+      "examiner_focus": [
+        "No source markers' feedback available for this restored canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "IMPORTANT: this canonical was originally built with its only occurrence at October 2013, and was therefore REMOVED entirely during the pre-2016 diet cleanup requested earlier in this build. This April 2025 occurrence, confirmed via direct OCR of the archived paper, shows the same content is genuinely needed for a current diet - the canonical has been restored here rather than left deleted. This is the fourth instance of a pre-2016-only canonical turning out to still be a live, current question - the same risk flagged at the time of that cleanup. Content is verbatim-identical to the original October 2013 answer and is treated as verified in substance, since it was sourced from the compiled guide originally."
+        }
+      ],
+      "canonical_id": "procedure-changing-cylinder-liner-restored"
+    }
+  ]
+}

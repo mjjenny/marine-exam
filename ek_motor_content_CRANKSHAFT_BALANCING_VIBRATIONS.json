@@ -1,0 +1,566 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "Crankcase Explosion Sequence + Oil Mist Detector Description & Accuracy Check",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Sequence of events leading to a crankcase explosion (6)**\n\n1. **Hot spot formation** \u2014 a friction source develops (wiped bearing, ring blow-by, misaligned components), reaching ~200\u2013300\u00b0C.\n2. **Primary mist formation** \u2014 heat vaporises lubricating oil, condensing into a white oil mist that builds up in the crankcase atmosphere.\n3. **Flammable mixture** \u2014 mist concentration enters the LEL (~40 mg/L) to UEL range, making the atmosphere ignitable.\n4. **Primary explosion** \u2014 ignition at the hot spot causes a moderate-pressure deflagration; crankcase relief valves lift and vent the burning gases.\n5. **Secondary (major) explosion** \u2014 fresh air rushes back in through the relief valves as pressure drops, mixing with remaining rich mist for a far more violent explosion \u2014 this causes structural damage, blown-off crankcase doors, and fatalities.\n\n**(b) Oil mist detector \u2014 description and operation (8)**\n\n**[Sketch]** Oil Mist Detector \u2014 rotating sampling disc feeds each bay in turn; measuring tube (mist) compared optically against a clean-air reference tube via photo-electric cells.\n\nSampling pipes lead from multiple crankcase compartments to a rotating sampling disc/sequential valve, drawing samples via an extraction pump. A reference cell (clean air) and measuring cell (crankcase sample) are compared optically: a light source projects a beam through the sample; oil mist particles scatter/attenuate the light; a photoelectric detector measures the reduction in intensity versus the reference, expressed as % obscuration. When this exceeds the alarm threshold (~2.5% or as set), an alarm triggers, with visual/audible alarm on bridge and engine room, automatic slowdown/shutdown on modern systems, and identification of the affected compartment via sequential sampling. Additional features: self-monitoring for lamp failure/blocked pipes, and temperature compensation to avoid false alarms from normal mist levels.\n\n**(c) Checking OMD accuracy (2)**\n\nA calibrated test filter (neutral density filter of known obscuration value) is inserted into the optical path; the reading is checked against the known filter value, which must fall within manufacturer tolerance. Some detectors have a built-in test button simulating a set obscuration level electronically to verify alarm activation, confirming the alarm set point triggers at the correct threshold.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "8",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "April 2025",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "8",
+            "2"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "crankcase-explosion-sequence-omd-description-accuracy"
+    },
+    {
+      "topic_id": "crankshaft",
+      "title": "Crankshaft Deflections \u2014 Why Taken, Procedure & Out-of-Limit Action",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Why crankshaft deflections are taken (4)**\n\nTo check crankshaft alignment \u2014 detecting hogging, sagging, or athwartship misalignment of main bearings; to identify worn/damaged main bearings causing the crankshaft to drop; to prevent crankshaft fatigue cracking or failure from excessive bending stress; and to confirm alignment is within builder's/class limits \u2014 required periodically and after dry-docking, grounding, or heavy weather.\n\n**(b) Procedure for taking main engine crankshaft deflections (8)**\n\n*Preparation*: obtain the builder's deflection record and acceptable limits; shut down the engine, engage turning gear, isolate starting air, issue a permit to work; confirm engine temperature (warm readings preferred); fit the dial gauge into the split-pin hole at each crank web cheek, correctly zeroed.\n\n*Taking readings (per unit)*: rotate to BDC \u2014 zero/note the reading (B1); rotate to port (90\u00b0) \u2014 record P; rotate to TDC \u2014 record T; rotate to starboard (270\u00b0) \u2014 record S; return to BDC \u2014 note reading (B2); repeat for every crank unit in sequence.\n\n*Recording*: record readings as +/- relative to the BDC reference; calculate vertical deflection T\u2212(B1+B2)/2 (sagging/hogging) and horizontal deflection P\u2212S (athwartship); compare against class-approved limits and previous trend records.\n\n**(c) Action if readings are outside acceptable limits (4)**\n\nDo not operate the engine \u2014 risk of crankshaft cracking or bearing failure. Notify the Chief Engineer, Class Surveyor and ship's management. Investigate the probable cause: worn/damaged/wiped main bearing (inspect and renew); soft foot or shifted engine seating (check and re-chock); hull deflection (verify loading/ballast condition, re-measure afloat and in dock). Drop the relevant main bearing keep and measure clearances with feeler gauge/lead wire. After remedial work, re-take deflections to confirm return within limits before restarting, and record all findings in the engine log and Class survey report.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": "Q7",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2025",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q4; direct PDF text extraction of the archived July 2025 paper confirms this is actually Q8. (July 2025's real Q4 is the crosshead-bearing-risk-assessment question, correctly filed under Bearings.)"
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q4",
+          "marks_parts": [
+            "4",
+            "8",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "crankshaft-deflections-why-procedure-out-of-limit"
+    },
+    {
+      "topic_id": "bearings",
+      "title": "Report \u2014 Bottom-End Bearing Check After High-Temperature Alarm & Return to Full Service",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Report on checking a bottom-end bearing on a crosshead main diesel engine after a high-temperature alarm, and return to full service (16)**\n\n**1. Incident details**: high-temperature alarm on the unit's bottom-end bearing LO outlet; alarm set point and recorded temperature noted; vessel position/weather logged; Master informed, logged in Engine Room and Deck Logs.\n\n**2. Immediate actions**: engine speed reduced progressively (Full Away \u2192 Slow Ahead \u2192 Dead Slow); standby generator online, electrical load transferred; LO parameters checked; engine stopped when temperature kept rising, turning gear engaged.\n\n**3. Pre-entry checks & safety**: crankcase ventilated per maker's instructions, allowed to cool to safe entry level; enclosed-space entry procedure followed (O\u2082/HC/CO tested); risk assessment and permit to work issued; non-sparking tools used, extinguisher stationed.\n\n**4. Crankcase inspection**: doors opened, interior inspected for overheating/wiping/mist residue; affected bearing cap removed; shell surfaces inspected for wiping/scoring/overlay loss; crankpin journal inspected for scoring/blueing; oil feed hole checked for blockage; clearance measured (feeler gauge) and shell thickness measured (micrometer).\n\n**5. Findings & root cause**: minor wiping on the lower shell; slight, repairable crankpin scoring; oil feed hole partially blocked with carbonised deposit \u2014 restricted LO flow, elevated friction, and thermal alarm activation; no crack/fracture found.\n\n**6. Remedial actions**: feed hole cleared (approved cleaning agent, compressed air); oil passages flushed and confirmed clear; wiped shell renewed as a matched pair; crankpin polished and re-measured; new shells fitted with clearance confirmed to maker's data; cap torqued to spec in sequence; locking device fitted.\n\n**7. Post-repair checks**: crankcase confirmed clean, all tools/materials accounted for, doors secured; turned on turning gear for abnormal noise/resistance check; slow-turned on air; LO primed, temperature/flow monitored; started on low load, run at slow/half ahead, re-entered after initial run for a satisfactory re-check.\n\n**8. Return to full service**: progressively loaded per maker's running-in procedure; Full Away resumed after graduated loading with all parameters (bearing temp, LO pressure, EGT, cylinder pressures) confirmed normal.\n\n**9. Recommendations**: LO filters/strainers cleaned and inspected at next port; increased crankcase inspection frequency as precaution; all unit oil feed holes inspected at next scheduled maintenance; LO analysis records reviewed; incident reported under ISM Code non-conformity/near-miss system.\n\n**10. Supporting documents**: Engine Room Log extract, bearing clearance record, torque record sheet, LO outlet temperature trend, enclosed-space entry permit, risk assessment, PMS job card, photograph record.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "report-bottom-end-bearing-check-alarm-return-to-service"
+    },
+    {
+      "topic_id": "engine-protection",
+      "title": "Two Automatic Slowdown + Two Automatic Shutdown Parameters, With Testing",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) TWO automatic slowdown parameters (4)**\n\n- **Low lubricating oil pressure (main/crosshead)**: applied to reduce engine load and bearing friction heat before seizure occurs, giving time to investigate without a full shutdown.\n- **High jacket cooling water (JCW) temperature**: applied to reduce heat input from combustion, allowing the cooling system to recover and preventing liner cracking, piston seizure, or thermal stress damage.\n\n**(b) TWO automatic shutdown parameters (4)**\n\n- **Crankshaft overspeed**: exceeding ~10\u201315% above MCR RPM risks catastrophic mechanical failure of con-rods, crankshaft and pistons \u2014 immediate fuel cut-off is the only safe response.\n- **Low-low lubricating oil pressure**: pressure falling critically below the slowdown set-point indicates imminent bearing failure \u2014 shutdown prevents crankshaft/bearing seizure and engine destruction.\n\n**(c) Testing each parameter for correct operation (8)**\n\n- *Slowdown \u2014 low LO pressure*: throttle the LO supply valve gradually, or use the pressure transmitter's test cock, or the AMS/IAS simulation function, to simulate falling pressure. Confirm alarm activates \u2192 slowdown signal \u2192 engine reduces to preset RPM; restore pressure and reset.\n- *Slowdown \u2014 high JCW temperature*: use the temperature transmitter/AMS test function (or a calibrator at low load). Confirm alarm \u2192 slowdown command \u2192 RPM reduces; restore cooling flow and reset.\n- *Shutdown \u2014 overspeed*: with the engine stopped/dead slow, manually actuate the mechanical overspeed trip (test button on governor) or simulate via the electronic safety-system test panel without raising actual RPM. Confirm fuel cuts off immediately, engine stops, alarm/shutdown logged; reset trip and confirm the engine won't restart until manually reset.\n- *Shutdown \u2014 low-low LO pressure*: continue reducing pressure past the slowdown set-point (test cock or AMS simulation) to the shutdown set-point. Confirm shutdown signal \u2192 fuel cut-off \u2192 engine stops, logged on AMS; restore pressure and verify a manual reset is required before restart.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "April 2025",
+          "question_number": "Q4",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2025",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Confirmed verbatim against the archived July 2025 paper. Uses a different mark split (FOUR slowdown params (8) / TWO shutdown params (4) / testing (4)) than the April 2025 occurrence (TWO slowdown (4) / TWO shutdown (4) / testing (8)) - flagged per the standing rule on differing per-diet mark splits."
+        }
+      ],
+      "canonical_id": "auto-slowdown-shutdown-parameters-testing"
+    },
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "Minimising Scavenge Residue Buildup + Scavenge-Fire Damage",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Minimising residue buildup in the scavenge space by design, operation and maintenance (10)**\n\n*Sources of residue*: cylinder oil blow-past from worn rings; crankcase oil migrating up the piston rod past the stuffing box; condensate from scavenge air coolers; carbon particles and unburnt fuel.\n\n*By design*: piston rod stuffing box fitted with scraper/wiper rings preventing crankcase oil migrating upward, with a drain-back arrangement to sump; scavenge box with self-draining pipes and water-seal traps; moisture separators after scavenge air coolers; scavenge spaces enclosed by diaphragm plates to contain drainage zones.\n\n*By operation*: maintain correct cylinder lubrication feed rates (avoid over-lubrication); control scavenge air temperature (higher temp reduces condensation); maintain correct fuel injection to prevent dribbling/poor atomisation; avoid prolonged low-load/slow-steaming (promotes incomplete combustion and blow-past); monitor stuffing box drain quantity/appearance; clear scavenge drains during watches.\n\n*By maintenance*: periodically inspect/clean scavenge spaces via access covers; clear scavenge ports of carbon deposits; renew worn piston rings; renew stuffing box seals/scraper rings at recommended intervals; clean air coolers and renew moisture-trap elements; inspect/clear scavenge drain piping.\n\n**(b) Damage caused by a scavenge fire (6)**\n\nStuffing box damage (seals/scraper rings burned, crankcase no longer protected); piston rod damage (scoring, distortion, loss of surface hardness); piston rings seizing in grooves (blow-past, liner damage); scavenge trunk/diaphragm distortion from sustained heat; scavenge relief valves lifting (engine room fire risk if venting there); air cooler element damage (fouling/corrosion from heat and soot); turbocharger damage (contaminated hot air degrading blading, possible surging); crankcase explosion risk (if fire penetrates the stuffing box, hot gases/burning oil enter the crankcase); bearing damage (heat conducted through the piston rod degrading crosshead/bottom-end bearing lubricant film).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q5",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q5",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "scavenge-residue-minimising-scavenge-fire-damage"
+    },
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "Oil Mist Alarm \u2014 Full Procedure From Activation to Return to Normal Operation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Procedure for actions on activation of an engine oil mist alarm, covering activation to return to normal operation, with reasons for each action (16)**\n\n**Phase 1 \u2014 Immediate actions on activation**: inform the bridge immediately (so they can reduce speed/manoeuvre clear/prepare for propulsion loss); reduce engine load/speed (lowers crankcase pressure differential and mist-generation rate, reducing explosion risk); activate slow-turn/standby (safe transition, no sudden shutdown); identify the triggered OMD cell (localises the fault to a compartment); do NOT open crankcase doors (hot mist + oxygen = explosion risk \u2014 allow cooling first).\n\n**Phase 2 \u2014 Controlled shutdown**: stop the engine (eliminates continued mist generation and heat source); keep LO circulating pumps running (continues cooling bearings/running gear, prevents seizure, removes heat from the hot spot); keep turning gear engaged after stopping (prevents shaft bow, allows even cooling); allow a minimum 20 minutes cooling (ensures mist disperses, no hot spot capable of ignition remains); post a fire watch/have CO2 ready (precaution in case of crankcase fire on opening).\n\n**Phase 3 \u2014 Inspection of crankcase**: check for white smoke/smell before opening (indicates internal fire/continued vaporisation); open doors carefully and partially at first (pressure equalisation \u2014 sudden full opening risks flashback); inspect the identified bay for overheated/wiped bearings, discoloured/scored crankpin or journal, excessive carbonisation or burnt smell, damaged piston/con-rod.\n\n**Phase 4 \u2014 Fault rectification**: record findings in the engine log (ISM Code defect reporting/root cause analysis); renew or recondition the damaged bearing (removes the mist-generating heat source); check the LO system (sample for contamination, verify pressure/cooling to the affected bearing); inspect and clean OMD cells (oil deposits cause spurious alarms \u2014 must be verified clean and functional before restart); verify crankcase relief valves are operational (last line of defence against crankcase explosion; SOLAS requires them in good order).\n\n**Phase 5 \u2014 Return to normal operation**: test the OMD and confirm no alarm; start on no-load/slow speed, monitoring oil pressure, temperature and OMD readings before loading; gradually increase to normal RPM, watching OMD, bearing and exhaust temperatures at each step; inform the bridge the engine is available; complete the defect/near-miss report (required under ISM Code SMS, triggering a PMS review of the OMD and bearings).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q9",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q7",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q5",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q-number confirmed via direct full-text check (was previously unconfirmed/null)."
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q9",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "oil-mist-alarm-full-procedure-normal-operation"
+    },
+    {
+      "topic_id": "materials",
+      "title": "Fatigue \u2014 S/N Curve for Steel, Design Avoidance & Poor Maintenance/Operation Causes",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) S/N curve for steel, with fatigue limit and two stress-cycle conditions (4)**\n\n**[Graph]** S/N (W\u00f6hler) curve \u2014 Curve A = steel with a clear Endurance Limit (S\u2091); Curve B = non-ferrous material with no defined endurance limit; two representative stress-cycle conditions marked on Curve A (one at ~10\u2074 cycles/high stress/short life, one at the endurance plateau ~10\u2076\u201310\u2077 cycles).\n\n**(b) Designing to avoid fatigue failure using the S/N curve (4)**\n\nThe endurance limit (S\u2091) is identified as the stress level below which steel endures infinite cycles without failure; the component is designed so maximum operating stress stays below S\u2091 with an adequate safety factor. Stress concentration factors (notches, keyways, holes) are accounted for so actual local stress still falls below S\u2091. For a finite design life, the corresponding fatigue strength at that cycle count is read off the curve and operating stress kept below it. Surface finish, heat treatment and material selection are chosen to raise fatigue strength, effectively lifting the S/N curve.\n\n**(c) How poor maintenance and operation cause fatigue failure below the design limit (8)**\n\n*Poor maintenance*: corrosion/pitting (surface pits act as stress raisers, pushing local stress above S\u2091 even if nominal stress is below it); fretting corrosion (micro-movement at joints/bearings removing protective oxide, creating crack sites); improper fastening tightness (loose bolts introduce unaccounted cyclic bending); worn/misaligned bearings (added dynamic loads and vibration); undetected cracks (propagate under cyclic load, extreme stress concentration at the crack tip); inadequate lubrication (increased friction/heat/surface damage initiating cracks).\n\n*Poor operation*: overloading (pushes stress above the endurance limit); running at/near critical/resonant speed (vibration amplification, dynamic stresses far exceeding steady-state design values); frequent start/stop cycles (each is a high-stress cycle \u2014 fatigue accumulates faster per Miner's Rule if underestimated in design); shock loading/water hammer (transient stress spikes on top of the cyclic baseline); thermal cycling (thermal stresses combine with mechanical cyclic stress, accelerating crack growth); operating in a corrosive environment without protection (corrosion fatigue significantly lowers the effective endurance limit used in design).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2023",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2020",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "fatigue-sn-curve-steel-design-poor-maintenance-operation"
+    },
+    {
+      "topic_id": "materials",
+      "title": "Fatigue \u2014 S/N Curve Relationship, Stress Raiser Definition & Fatigue Limit",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) S/N curve \u2014 relationship between applied stress and cycles to failure (5)**\n\nThe S/N (W\u00f6hler) curve plots stress amplitude (S) against cycles to failure (N, log scale) \u2014 as applied stress increases, cycles-to-failure decrease (inverse relationship). Curve A (ferrous metals, e.g. steel) flattens at the Endurance Limit (S\u2091), below which the material can theoretically withstand infinite cycles. Curve B (non-ferrous, e.g. aluminium, copper) never flattens \u2014 fatigue strength is instead quoted at a specific cycle count (N\u2081). Crack propagation follows three stages: initiation \u2192 propagation \u2192 final fracture, all driven by cyclic stress above the endurance/fatigue limit.\n\n**(b) Stress raiser \u2014 definition, examples, influence on crack propagation (5)**\n\nA stress raiser (stress concentrator) is a geometric discontinuity or surface irregularity causing localised stress amplification far exceeding nominal stress. Examples: keyways, splines, shaft shoulders; holes, notches, grooves; corrosion pits and surface scratches; weld toes/undercuts; threaded sections (bolt roots); sharp internal corners/insufficient fillet radius. Stress at the raiser tip can be 2\u20134\u00d7 (or more) the nominal stress (Stress Concentration Factor, Kt); fatigue cracks almost always initiate at a raiser, and once initiated, the crack tip itself becomes a new stress raiser, accelerating propagation until sudden fracture. Smooth, well-radiused transitions and polished surfaces reduce Kt and extend fatigue life significantly.\n\n**(c) Fatigue limit definition, and how poor maintenance/operation cause cracking below the design limit (6)**\n\nThe Fatigue (Endurance) Limit is the maximum stress amplitude below which a ferrous material can endure infinite cycles without failure \u2014 but a component designed below it assumes ideal, unchanging conditions.\n\n*Poor maintenance*: corrosion/corrosion fatigue (can reduce the fatigue limit by 25\u201350% in a corrosive environment like seawater); fretting corrosion at press-fitted/bolted interfaces (removes the protective oxide layer); worn/loose bearings (shaft whip and vibration adding unplanned cyclic bending); inadequate lubrication (surface wear, heat, micro-cracks); improper repairs (weld repairs without stress relief introducing residual tensile stress and weld-toe raisers).\n\n*Poor operation*: running at critical speed/resonance (dynamic stresses many times nominal, far exceeding the endurance limit); overloading/shock loading (a single overload event can initiate a crack that normal cyclic loading then propagates); thermal cycling/thermal fatigue (repeated heating/cooling adding cyclic thermal stress); propeller cavitation (high-frequency stress fluctuations from bubble collapse); misalignment (additional cyclic bending moment every revolution, raising effective stress amplitude above design value).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2023",
+          "question_number": "Q2",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: originally filed as Q1 based on an assumption during the initial build; a direct full-text cross-check of the archived paper confirms this is actually Q2 on the March 2023 diet."
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q1",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2023",
+          "question_number": "Q8",
+          "marks_parts": [
+            "12",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Same core content (fatigue/fatigue limit definition + stress raiser) but a different mark split and framing than the other occurrences: (a) fatigue term + fatigue limit combined (12) + (b) stress raiser with THREE examples (4), rather than the 5/5/6 three-part S/N-curve structure elsewhere. Flagged per the standing rule on differing per-diet mark splits."
+        }
+      ],
+      "canonical_id": "fatigue-sn-curve-stress-raiser-fatigue-limit"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Crankcase Oil Mist Eliminator/Oil Box + Trunk-Piston Crankcase LO Properties & Maintenance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Purpose and operation of a crankcase oil mist eliminator/oil box (6)**\n\nThe crankcase contains oil mist, vapour and air from churning rotating parts and hot surfaces; if mist concentration reaches the LEL, an ignition source (hot bearing/spot) can cause a crankcase explosion. The eliminator removes oil mist particles from the crankcase atmosphere, keeping concentration below explosive levels and preventing pressure build-up.\n\nOperation: a motor-driven extraction fan continuously draws crankcase gases through the system; gases pass through a coalescing/demisting element (mesh pads, baffles, or centrifugal separator) where oil droplets coalesce and drain back to the sump; cleaned air is discharged back into the crankcase (closed loop) or to a safe external location; a flame trap/gauze at inlet and outlet prevents flame propagation on ignition; a separately-fitted OMD triggers alarm and automatic slowdown/shutdown if mist rises above threshold; the oil box/drain pot collects separated oil, draining back to the sump by gravity.\n\n**(b) Properties required of trunk-piston crankcase LO, and maintaining it in good condition (10)**\n\n*Properties and reasons*: correct viscosity (SAE 30\u201340, forms a hydrodynamic film across the operating temperature range \u2014 too thin causes film breakdown, too thick causes poor circulation/pumping losses); high viscosity index (minimises viscosity change cold-start to full load); detergency (keeps combustion deposits/carbon/lacquer in suspension); dispersancy (keeps soot/contaminants finely dispersed for filter removal rather than agglomerating into sludge); alkalinity/TBN (neutralises acidic combustion by-products blowing past rings, matched to fuel sulphur content); anti-wear/EP additives (protect bearing and cam/follower surfaces under boundary lubrication); oxidation resistance (inhibits oxidation from high crankcase temperature, 80\u201390\u00b0C); corrosion inhibitors (protect bearing metals from acidic attack); anti-foam additives (prevent aeration from churning, which weakens the oil film); good demulsibility (sheds water from condensation/coolant leaks rather than emulsifying).\n\n*Maintaining LO condition*: regular sampling/analysis (viscosity, TBN, water content, metal particles, soot/insolubles \u2014 trend monitoring); continuous filtration (full-flow 10\u201325\u00b5m filters plus bypass depth filters, changed on condition/hours); centrifugal purification (continuous slip-stream removal of water, sludge, fine particles); LO temperature control (thermostatic cooler, ~40\u201345\u00b0C inlet to bearings \u2014 excess temperature accelerates oxidation/viscosity loss); water detection/removal (crackle test/sampling, purifier removal of free water); top-up with correct grade only; monitoring TBN (renewal if it drops below half the new-oil value or maker's limit); crankcase inspections (sludge, strainer condition, dilution signs); oil renewal based on condition monitoring or running-hour interval, whichever is sooner, with the crankcase flushed before refilling.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2022",
+          "question_number": "Q5",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "crankcase-oil-mist-eliminator-trunk-piston-crankcase-lo"
+    },
+    {
+      "topic_id": "crankshaft",
+      "title": "Torsional Vibration Causes/Effects + Critical Speed + Fatigue Cracking Factors",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Causes and effects of torsional vibration (4)**\n\n*Causes*: each power stroke applies a sudden, periodic torque impulse to the crankshaft; the elastic crankshaft twists and untwists with each impulse (torsional oscillation); when impulse frequency matches the shaft system's natural frequency, resonance amplifies the vibration; multi-cylinder engines produce multiple impulse sources that can combine and reinforce.\n\n*Effects*: cyclic stress reversals causing fatigue cracking at stress-concentration points (fillets, oil holes); excessive vibration risking crankshaft fracture; damage to coupling, flywheel and driven machinery (pumps, alternators); gear tooth damage on timing/PTO drives.\n\n**(b) Critical speed \u2014 definition and why continuous operation must be avoided (6)**\n\nCritical speed is the engine speed at which torsional impulse frequency coincides with the natural frequency of the crankshaft-flywheel system, causing resonance \u2014 energy is fed into the vibration at the same rate it oscillates, so amplitude builds rapidly since system damping (oil films, friction) can't absorb the input. Continuous operation must be avoided because oscillation amplitude is greatly magnified, stress levels far exceed design limits, and prolonged running causes crankshaft fatigue failure. Critical speeds are identified by the maker and marked as barred/restricted ranges on the telegraph/governor \u2014 brief transit through is permitted, but sustained running within the barred range is prohibited.\n\n**(c) Fatigue cracking \u2014 definition and two influencing factors (6)**\n\nFatigue cracking is progressive crack growth under repeated cyclic loading at stress below the material's ultimate tensile strength: initiation at a stress concentration \u2192 slow propagation with each cycle \u2192 sudden brittle fracture.\n\n*Factor 1 \u2014 stress concentration points*: oil holes, fillet radii, keyways and surface defects create localised stress amplification; cracks always initiate here. Sharper fillets or rough finish raise stress concentration and fatigue risk \u2014 makers specify minimum fillet radii and surface finish to reduce it.\n\n*Factor 2 \u2014 mean stress level/engine loading*: higher mean stress (combustion loads, firing pressure, misalignment) raises the working stress range; per the Goodman diagram, higher mean stress reduces the allowable alternating stress before fatigue occurs. Overloading or a bent/misaligned crankshaft increases mean stress, accelerating crack propagation; poor main bearing alignment concentrates bending stress at specific journals, compounding the risk.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2021",
+          "question_number": "Q1",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2020",
+          "question_number": "Q1",
+          "marks_parts": [
+            "4",
+            "6",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "torsional-vibration-critical-speed-fatigue-factors"
+    },
+    {
+      "topic_id": "crankshaft",
+      "title": "Torsional Vibration Definition/Effects + Engine Deterioration Risk + TV-Alarm Reasons",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Torsional vibration \u2014 definition and effects on the crankshaft (6)**\n\nTorsional vibration is the oscillatory twisting/untwisting of the crankshaft about its longitudinal axis, caused by cyclic, uneven torque impulses from successive power strokes; between impulses the crankshaft elastically springs back, superimposing torsional oscillation on normal rotation. Resonance occurs when impulse frequency matches the crankshaft's natural torsional frequency, greatly amplifying twist amplitude.\n\nEffects of high torsional vibration: fatigue cracking at stress concentrations (fillet radii, oil drillings, crankpin/journal transitions); crankshaft fracture (often sudden, at crankpin or main journal fillets); severe bearing damage from fluctuating dynamic loads; damage to the torsional vibration damper; damage to flexible couplings, PTO drives and driven machinery.\n\n**(b) How engine deterioration increases TV risk, and minimisation measures (4)**\n\nDeterioration effects: worn injectors/pumps (poor atomisation/mistimed injection \u2192 uneven combustion torque impulses \u2192 increased excitation); worn rings/liner (blow-past \u2192 uneven cylinder pressures \u2192 torque imbalance); misfiring cylinders (irregular impulse pattern, higher excitation amplitude); degraded/worn TV damper (reduced damping, increased resonance amplitude).\n\nMinimisation: regular indicator card analysis (confirm even cylinder power distribution); maintain fuel injection equipment in good condition; scheduled TV damper inspection/replacement; observe barred speed ranges; maintain flexible coupling elements.\n\n**(c) TWO reasons for a TV alarm activating after start with no prior history and no maintenance during the stop (6)**\n\n- **Change in fuel oil grade/quality (bunkered while stopped)**: a different fuel batch (viscosity, density, ignition quality) alters combustion characteristics and torque impulse profile, potentially exciting a torsional resonance mode not previously encountered.\n- **Propeller fouling or damage during the stop**: marine growth, debris, or impact damage alters the mass-elastic system of the shafting (effective inertia of the driven end), shifting the natural torsional frequency into resonance with the firing impulse frequency at normal operating speed.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2018",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2016",
+          "question_number": "Q8",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "torsional-vibration-definition-deterioration-alarm-reasons"
+    },
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "Secondary Crankcase Explosion Sequence + CEO Management to Minimise Risk & Effects",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Sequence of events leading to a secondary crankcase explosion (6)**\n\n1. **Hot spot formation** \u2014 overheated bearing, piston/liner seizure, or defective piston rod gland; contacting LO vaporises into fine oil mist.\n2. **Primary explosion** \u2014 mist concentration rises within the LEL and ignites at the hot spot, a small primary explosion consuming oxygen and creating a localised pressure surge; crankcase relief doors lift and reseat momentarily.\n3. **Conditions for secondary explosion** \u2014 the opening of relief doors draws fresh air (oxygen) back in while hot, partially-burned oil residue and fresh mist are still present, re-entering the explosive range.\n4. **Secondary explosion** \u2014 a far larger, more violent explosion occurs; relief doors may fail to contain the blast; burning gases and flame are ejected outward, causing structural damage and crew casualties \u2014 the principal cause of severe crankcase casualties.\n\n**(b) Management as Chief Engineer Officer \u2014 minimising risk and managing effects (10)**\n\n*Minimising risk \u2014 monitoring/detection*: maintain and regularly test the OMD (calibrate per maker's instructions, never bypass alarms); continuous bearing temperature monitoring; monitor piston cooling oil outlet temperature (rise indicates a developing hot spot); regular crankcase inspections at anchorage/slow speed (bearing clearances, dipper clearances, piston rod gland blow-past).\n\n*Maintenance*: maintain crankcase ventilation (slight negative pressure, clean flame traps); ensure relief doors are in good condition, move freely and reseat correctly; maintain piston rod gland packing (prevents hot gas ingress); keep LO in correct condition (sampled, correct viscosity/cleanliness); prevent excessive crankcase oil spray.\n\n*Operational practices*: never ignore OMD alarms \u2014 treat every alarm as genuine until proven otherwise; investigate and rectify abnormal running parameters promptly; train crew in crankcase explosion procedure.\n\n*Managing the effects if an explosion occurs*: on OMD alarm/explosion indication, immediately reduce to dead slow or stop; do NOT open crankcase doors (secondary explosion risk); sound the general alarm, muster crew, keep personnel clear of the doors; allow at least 20 minutes cooling before any approach; ensure no personnel stand in front of relief doors (they operate automatically to vent pressure); after safe cooling, cautiously crack open doors with CO2 extinguisher ready; identify and isolate the hot spot before any restart attempt; enter the crankcase only after enclosed-space entry procedures; report the incident under ISM Code (non-conformity/near-miss) and to flag state authority.",
+      "examiner_focus": [
+        "Candidates who could explain the events leading to the explosion often struggled with part (b) \u2014 distinguishing between genuine engine-factor risk controls (OMD maintenance, bearing monitoring, relief door condition) and generic operating/maintenance requirements that don't specifically address crankcase-explosion risk."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2018",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "secondary-crankcase-explosion-ceo-management-effects"
+    },
+    {
+      "topic_id": "engine-protection",
+      "title": "CEO Standing Instructions \u2014 High-Temperature Scavenge Alarm During UMS Operation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Standing instructions for actions on a high-temperature scavenge alarm (rapid rise) during UMS operation, with reasons for each action (16)**\n\n*Immediate actions*: acknowledge the alarm and proceed to the ECR (UMS means no watchkeeper is present \u2014 the on-call engineer must attend immediately to assess severity); inform the Bridge, requesting reduced engine load/speed (lowers combustion pressure and heat input, limiting scavenge fire spread and further temperature rise); cancel UMS mode and man the engine room (the situation requires continuous human monitoring).\n\n*Investigative actions*: identify the affected unit(s) from the alarm panel (localises the problem); carefully check scavenge inspection covers from a safe distance for smoke/sparks/oil mist (confirms whether a scavenge fire is present); check indicator cocks and bar the engine slowly if safe (detects blow-past of combustion gases into the scavenge space); inspect turbocharger and air cooler outlet temperatures (elevated charge air temperature can raise scavenge trunk temperature \u2014 faulty cooler or fouled T/C may be the root cause); check cylinder exhaust temperatures for the affected unit (high EGT indicates poor combustion/late injection/faulty injector causing afterburning into the scavenge space); check crankcase OMD readings (scavenge fire can transfer heat to the crankcase \u2014 early mist detection prevents explosion risk).\n\n*If scavenge fire is confirmed*: shut cylinder lubrication to the affected unit (removes a combustible fuel source); increase scavenge air flow if possible without opening inspection covers (starves the fire of oxygen \u2014 opening covers introduces fresh air and risks flare-up); activate a fixed smothering system or inject steam if fitted; cut off fuel to the affected unit; continue running at reduced load to maintain airflow through the scavenge space (sudden stop traps heat and gases, worsening the situation).\n\n*Post-incident/recovery*: allow cooling before opening inspection covers (prevents rush of air into a hot space causing re-ignition/flare-back); inspect for damage (burnt deposits, ring condition, ports, diaphragm seals); log the event and raise a Non-Conformity Report under ISM Code; notify the Company/DPA and flag state if damage is significant (statutory obligation under SOLAS/ISM).\n\n*Common root causes to investigate*: blow-past of piston rings (high EGT + crankcase mist); faulty fuel injector (irregular combustion, high EGT); excess cylinder lubrication (oil accumulation in the scavenge space); fouled/choked scavenge ports (restricted airflow, uneven temperatures); defective air cooler (elevated charge air temperature).",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2017",
+          "question_number": "Q6",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q4",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "ceo-instructions-high-temp-scavenge-alarm-ums"
+    },
+    {
+      "topic_id": "crankcase-explosion-omd",
+      "title": "CEO Standing Instructions \u2014 E/R Monitoring/Alarm System Failure & Repeated OMD Alarm",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Standing instructions for the watchkeeping engineer \u2014 failure of the engine room monitoring and alarm system (8)**\n\n*Immediate actions*: notify the Chief Engineer and Master immediately; inform the OOW on the bridge; log the time and nature of the failure in the Engine Room Log.\n\n*Manning/watchkeeping*: revert to manual watchkeeping (continuous engine room attendance); post additional watchkeepers as directed; suspend UMS/AMS operation until restored.\n\n*Monitoring*: manually check and record all critical parameters at regular intervals (minimum every 30 minutes or as directed) \u2014 main/auxiliary engine temperatures, pressures, RPM; boiler levels/pressures; bilge levels; fuel oil and LO pressures/temperatures \u2014 using local gauges, sight glasses and thermometers.\n\n*Safety*: maintain a strict fire and flooding watch; never leave the engine room unattended; monitor all alarms locally.\n\n*Communication/documentation*: report system status to the Chief Engineer regularly; record all manual readings; inform the Chief Engineer immediately of any parameter deviation.\n\n*Restoration*: do not attempt repairs beyond competence; the system must be fully tested and certified restored before reverting to UMS, with Chief Engineer sign-off required.\n\n**(b) Procedure for repeated activation of an OMD alarm (8)**\n\n*First activation*: reduce engine load/speed immediately; notify the bridge (request permission to reduce speed/stop); notify the Chief Engineer.\n\n*On repeated activation*: shut down the main engine \u2014 do not continue running; engage turning gear once at rest, do not enter the crankcase immediately; allow at least 20 minutes cooling; maintain forced ventilation if fitted, keep crankcase doors closed during this period; keep ignition sources clear.\n\n*Investigation (after cooling)*: open crankcase doors carefully, standing clear of the opening; inspect all bearings (main, crankpin, crosshead) for overheating signs (blued/wiped metal, carbonisation); check crankcase oil mist concentration with a portable detector if available; identify the hot bearing or defective component; check the OMD unit itself for contamination or malfunction (dirty sampling tubes, faulty detector head).\n\n*Rectification*: if a hot bearing/defect is found, do not restart until repaired; if the OMD unit is faulty, replace/clean and re-test to ensure a genuine fault isn't masked; record findings and notify the Chief Engineer.\n\n*Restart conditions*: only restart on the Chief Engineer's authority; continuous manual monitoring of the crankcase area during initial restart; increase load gradually, monitoring OMD readings closely.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2017",
+          "question_number": "Q7",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2025",
+          "question_number": "Q2",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        }
+      ],
+      "canonical_id": "ceo-standing-instructions-er-monitoring-repeated-omd"
+    },
+    {
+      "topic_id": "crankshaft",
+      "title": "Balance Weights (Medium-Speed Engine) \u2014 Purpose, Maintenance Checks & Composite Pistons",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Purpose of balance weights fitted to a medium-speed crankshaft (8)**\n\n**[Sketch]** Balance weight positioned diametrically opposite the crankpin; its centrifugal force resolves into a vertical component Vc (opposing the primary inertia force F1) and a horizontal component Hc (a residual, unavoidable trade-off).\n\nThe crankshaft has rotating unbalanced masses (crankpin, crank webs, big-end bearing) and reciprocating unbalanced masses (piston assembly, upper con-rod), the latter generating primary (1st order) and secondary (2nd order) inertia forces. Balance weights, positioned diametrically opposite the crankpin, fully counteract the rotating masses and partially counteract the primary reciprocating inertia force \u2014 the weight's centrifugal force splits into a vertical component (opposing the primary force) and an unavoidable residual horizontal component; a single counterweight cannot fully balance reciprocating forces without introducing this new horizontal imbalance. Without balance weights: high main bearing loads and accelerated wear, excessive vibration transmitted to the hull/structure, crankshaft/bedplate fatigue cracking, and increased noise. Multi-cylinder crank-throw arrangement also helps forces/couples from different cylinders cancel each other.\n\n**(b) Maintenance checks for detachable balance weights (4)**\n\nFastening bolts (check torque to spec, inspect for stretch/thread damage, replace stretch bolts exceeding limits); locking arrangements (lock wire, tab washers, thread-locking devices \u2014 renew every overhaul); mating/contact faces (check for fretting corrosion, scoring, micro-movement marks); NDT inspection (dye penetrant or MPI on the weight body and fastening holes for cracks); dowels/keys (check wear, deformation, looseness); mass verification (weigh and confirm against the stamped/recorded value \u2014 no material added or removed); correct reassembly (refit in the same marked position/orientation).\n\n**(c) Composite pistons in medium-speed engines \u2014 why, and material reasons (4)**\n\nA composite piston joins a steel/nodular cast iron crown to an aluminium alloy skirt/body. Crown material reasons: exposed to high combustion temperature (~400\u2013450\u00b0C) and pressure \u2014 steel retains strength at temperature, resists thermal fatigue/cracking, allows machining of an oil cooling gallery, and better resists ring-groove wear under high ring loads. Skirt material reasons: aluminium is lightweight (reduces reciprocating mass, hence inertia forces and bearing loads \u2014 critical at medium-speed RPM), has good thermal conductivity and bearing properties against the liner, and is cost-effective/easy to machine. Composite rather than single material: aluminium alone can't withstand crown temperatures (would soften/crack/suffer ring-groove collapse); steel alone would be too heavy (raising inertia loads, bearing wear and vibration) \u2014 the composite gives crown thermal strength plus skirt low mass, with differential thermal expansion accounted for in the joint design.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2016",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "balance-weights-medium-speed-maintenance-composite-pistons"
+    }
+  ]
+}

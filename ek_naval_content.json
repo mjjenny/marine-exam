@@ -1,0 +1,2380 @@
+{
+  "subject": "EK Naval",
+  "canonical_answers": [
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.13 \u00b7 Load line \u2014 conditions of assignment",
+      "merged_from_duplicate": false,
+      "answer_markdown": "To ensure compliance with load line assignment under ICLL 1966 and the UK Merchant Shipping (Load Line) Regulations 1998, inspection focuses on the vessel's watertight/weathertight integrity, structural strength and crew protection \u2014 together the \"conditions of assignment\" that must be maintained for the assigned freeboard to remain valid:\n\n1. **Load line markings** \u2014 deck line, load line marks and draught marks clearly visible, correctly painted and positioned for the assigned freeboard.\n2. **Hatchways and closures** \u2014 hatch covers on exposed decks weathertight, closing appliances/tarpaulins/securing devices sound; coaming heights correct for Position 1 vs Position 2.\n3. **Machinery space openings** \u2014 engine room skylights, fiddley openings and casings with efficient weathertight closures.\n4. **Manholes and flush scuttles** \u2014 watertight, capable of being secured.\n5. **Ventilators and air pipes** \u2014 weathertight closing devices fitted and operable, coamings to required height.\n6. **Side scuttles and deadlights** \u2014 watertight below the freeboard deck, packing free of cracks.\n7. **Cargo ports and watertight doors** \u2014 all shell openings below the freeboard deck securely watertight.\n8. **Scuppers, inlets and discharges** \u2014 non-return valves on overboard discharges functional.\n9. **Freeing ports** \u2014 correct area for the length of bulwark served, non-return flaps free to operate.\n10. **Bulwarks, guardrails and crew protection** \u2014 guard rails, lifelines, gangways and walkways sound, giving safe access between accommodation and machinery spaces.\n11. **Structure and stability** \u2014 hull/frame/bulkhead integrity verified, stability documentation current.\n\nFinally, confirm the assigned marks agree with the freeboard on a valid Load Line Certificate: check the certificate, the stability book, and confirm no structural alteration has changed the assigned freeboard.",
+      "examiner_focus": [
+        "The marks sit in naming the specific ICLL/Load Line \"conditions of assignment\" checklist -- closing appliances, freeing ports, guard rails, deck line marks -- not a generic seaworthiness survey."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2020",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 2
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 2
+        },
+        {
+          "diet": "October 2024",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 2
+        },
+        {
+          "diet": "December 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        }
+      ],
+      "canonical_id": "load-line-conditions-of-assignment"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.12/Q.13 \u00b7 Panting & pounding",
+      "merged_from_duplicate": false,
+      "answer_markdown": "Panting and pounding are distinct local, dynamic stresses acting forward of the collision bulkhead, caused by the ship's interaction with waves.\n\n**Panting** \u2014 cyclic in-and-out flexing of the shell plating as the bow (and, less severely, the stern) alternately immerses and emerges while pitching. Affects the fore end from stem to collision bulkhead (~forward 15% L) and, to a lesser degree, the aft peak. Effects: fatigue cracking of plating/welds, separation of plating from stiffeners, structural deformation.\n\n**Pounding (slamming)** \u2014 the bow lifts clear of the water in heavy head seas, especially light/ballast condition, then strikes the surface as a sudden impact load (not a pressure cycle). Affects the flat of bottom forward (~25\u201330% L) and the forward shoulder. Effects: dents, buckling, rupture of bottom plating, deformed floors/girders, and **whipping** \u2014 transient high-frequency vibration of the whole hull girder from the slam, raising stress throughout the length.\n\n*Structure resisting panting:* panting stringers (triangular, ~2 m vertical spacing, to the collision bulkhead); panting beams at alternate frames tying port/starboard stringers; breast hooks at the stem; wash plates/wash bulkhead in the peak tank.\n\n*Structure resisting pounding:* thickened bottom shell over the forward ~25\u201330% L; solid plate floors at every frame in that zone; intercostal side girders (\u2264~2.2 m apart); reduced frame spacing (~700 mm forward vs ~900 mm typical).\n\n*Sketch variant (Oct 2024):* draw the forepeak elevation at centreline labelling panting stringers, panting beams, breast hooks, wash plates, deep floors and the solid round stem bar \u2014 marks are for correct labelling, not just outline accuracy.",
+      "examiner_focus": [
+        "Panting is a cyclic pressure effect from pitching; pounding is a sudden slam impact, not a pressure cycle -- conflating the two mechanisms, or their affected zones (fore-end shell vs flat-of-bottom), is the main error."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2022",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 4
+        },
+        {
+          "diet": "July 2018",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 4
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 4
+        },
+        {
+          "diet": "October 2024",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 4
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 4
+        },
+        {
+          "diet": "July 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        }
+      ],
+      "canonical_id": "panting-pounding"
+    },
+    {
+      "topic_id": "roll-reduction-stability",
+      "title": "Q.13 \u00b7 Bilge keels \u2014 damage prevention, testing, length",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i)** Bilge keels are attached via a **ground bar** (an intercostal flat-bar doubler) continuously double-fillet welded to the shell plating over an internal longitudinal or frame \u2014 never directly to unsupported shell. The bilge keel is then welded to this ground bar, and that keel-to-ground-bar weld is the deliberately weaker joint: on impact the keel shears off there, leaving the shell plating intact. Design features protecting the shell:\n- **Doubler/ground bar** \u2014 sacrificial buffer between keel and shell.\n- **Weakened connection (\"soft nose\")** \u2014 the keel-to-doubler weld is the designed breaking point.\n- **Internal stiffening alignment** \u2014 the ground bar lands on supported structure (frames/longitudinals), not flexible unsupported plating.\n- **Soft, rounded/snipped ends** \u2014 tapered and aligned with internal structure, avoiding a hard spot and crack initiation.\n- **Limited length** \u2014 restricted to ~30\u201360% of the ship's length amidships, avoiding the high stresses of the ends, and kept inside the moulded line of the bilge so it doesn't increase the ship's extreme breadth or draught.\n\n**(a)(ii)** Testing: a solid bilge keel cannot be leak- or pressure-tested. Integrity is judged by visual inspection at dry dock plus crack testing (MPI or dye-penetrant) of the welds, hammer/percussion testing for detached sections, and checking weld toes for fatigue cracking.\n\n**(b)** Reasons bilge keels don't run the full length:\n1. Full-length keels would cause excessive frictional drag, raising fuel consumption and reducing speed.\n2. The bow/stern are more exposed to damage (slamming, manoeuvring, docking) \u2014 full-length keels risk being torn off there.\n3. Maximum roll damping occurs midships, where relative velocity between hull and water is greatest.\n4. The keel must stay inside the moulded line of the bilge, avoiding any increase to extreme breadth/draught (grounding/quay-contact protection).",
+      "examiner_focus": [
+        "A solid bilge keel cannot be leak- or pressure-tested -- examiners specifically check that candidates don't claim a hydrostatic test; the real answer is visual inspection plus NDT (MPI/dye-penetrant) at the welds."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2023",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "2",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 6
+        },
+        {
+          "diet": "October 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "2",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 6
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "2",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 6
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "2",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 6
+        }
+      ],
+      "canonical_id": "bilge-keels-damage-prevention-testing-length"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.13 \u00b7 Ship-construction terms (purpose & location)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a) Duct keel** \u2014 a longitudinal watertight tunnel in the double bottom of bulk carriers/container ships, running along the centreline from the collision bulkhead to the forward engine room bulkhead. Strengthens the bottom against longitudinal stress and houses ballast/fuel/bilge pipework. Clear width commonly limited to ~2 m so the double bottom either side stays effective; not carried under the machinery space (a solid centre girder is fitted there instead). An enclosed space \u2014 entry requires the full enclosed-space-entry procedure.\n\n**b) Bilge keel** \u2014 a narrow fin/plate along the turn of the bilge, both sides, amidships. Increases hydrodynamic resistance (via eddy/vortex shedding) as the vessel rolls, damping roll amplitude.\n\n**c) Collision bulkhead** \u2014 the foremost, heavily reinforced transverse watertight bulkhead, bottom to freeboard deck, restricting flooding from the forepeak in a head-on collision. Per SOLAS II-1/ICLL: sited not less than 0.05L (or 10 m, whichever is less) and not more than 0.08L (or 0.05L + 3 m) from the forward perpendicular at the load line \u2014 the loose \"5\u20138% of L or 10 m max\" phrasing conflates these two separate limits. No openings/doors below the freeboard deck; only one pipe penetration, with a screw-down valve operable from above, is allowed.\n\n**d) Camber** \u2014 slight parabolic transverse curvature of exposed weather decks (classically B/50 at midships; modern ships often use straight-line camber), higher at centreline. Drains water off deck, adds structural strength against bending, and offsets the visual \"hog\" illusion.\n\n**e) Flare** \u2014 outward curvature of the hull side shell rising from waterline to main deck, greatest at the bow. Deflects water from the deck, increases reserve buoyancy/deck area/stability \u2014 but excessive flare aggravates bow-flare slamming in head seas. Opposite of flare is tumblehome (side shell curves inward as it rises).",
+      "examiner_focus": [
+        "Precision on the collision bulkhead's position (0.05L to 0.08L abaft the forward perpendicular, or 0.05L+3m) beats a vague \"5-8% of length\" -- these are two distinct regulatory limits, not one range."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q13",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 1
+        }
+      ],
+      "canonical_id": "ship-construction-terms-purpose-location"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.14 \u00b7 Survey of a hollow rudder & possible effects/repairs",
+      "merged_from_duplicate": true,
+      "answer_markdown": "**(a) Survey of a hollow rudder** (common to both sittings):\n- Visual inspection for cracks/corrosion, and alignment \u2014 checked against the **rudder-stock/pintle axis and the jumping (lifting) clearance**, not against the ship's mast.\n- Water-entry check in dry dock: open top and bottom plugs; water draining out indicates a breach.\n- Pressure/leak test: rudder filled via the plug to a specified head (classically ~2.45\u20132.46 m, often referenced to the deepest waterline as required by class), watched for a pressure drop or water issuing from the lower plug. An air/vacuum test is a common alternative.\n- Thickness gauging on older vessels/visible rust, to measure corrosion loss.\n- Clearance measurements \u2014 pintle-to-bush (longitudinal/transverse), jumping clearance at the pintle, rudder-carrier bearing wear-down.\n- Sacrificial anode condition, replaced if wasted.\n- Stock keyway condition and coupling-bolt tightness.\n- Percussion (hammer) testing for delamination/weakness.\n- Freedom-of-movement / hard-over-to-hard-over check.\n\n**(b-i) Effects if watertight integrity is compromised** (Dec 2017 framing): water floods the hollow rudder, greatly increasing its submerged weight and overloading the pintle/bearings and steering gear (higher torque demand, risk of overload or seizure); internal corrosion accelerates unseen; trapped water can produce a free-surface/list-trim effect if the volume is significant; and in freezing conditions, ice expansion within the rudder can split the plating.\n\n**(b-ii) Repairs that may need to be carried out** (Jul 2021 framing):\n- Corrosion treatment or plate section replacement.\n- Gouging/grinding of cracked welds/plating, re-welding to a class-approved procedure with controlled pre-/post-heat, NDT after repair.\n- Bearing/bush/sleeve replacement where wear or clearances exceed limits.\n- Straightening of bent (unfractured) stocks \u2014 hot or cold, in an approved workshop.\n- Twisted stocks: <10\u00b0 may be reused (possibly new keyway); more severe requires annealing/replacement.\n- Anode renewal, and a re-pressure-test before undocking, witnessed by the surveyor.",
+      "examiner_focus": [
+        "Alignment is checked against the rudder-stock/pintle axis and jumping clearance, not the ship's mast -- a commonly wrong answer. Also note the (b)-part genuinely differs by sitting: sometimes \"effects of lost integrity,\" sometimes \"repairs required.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2017",
+          "question_number": "Q14",
+          "marks_parts": [
+            "7",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 24
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q14",
+          "marks_parts": [
+            "7",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 24
+        },
+        {
+          "diet": "December 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        }
+      ],
+      "canonical_id": "survey-of-a-hollow-rudder-possible-effects-repairs"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.12 \u00b7 Watertight/weathertight doors & bilge injection valve",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i) Watertight doors** are critical barriers preventing flooding spread between compartments, maintaining buoyancy/stability. A watertight door withstands a static head of water from either side without leakage, sized to the pressure at its location (per the subdivision/damage-stability calculation). Fitted below the bulkhead/freeboard deck \u2014 shaft tunnels, ballast tanks, engine room bulkheads, pipe tunnels.\n\n**(ii) Weathertight doors** ensure water won't penetrate the ship in any sea condition (gaskets/cleats), but aren't designed for a sustained head \u2014 only brief submersion \u2014 and also give fire/smoke containment. Fitted on the freeboard/weather deck and superstructure \u2014 main decks, accommodation entrances, bridge entrances, engine room entrances.\n\n**(b)** A bilge injection valve gives emergency bilge-pumping capacity: it lets the main sea water pump remove high volumes of floodwater directly from the engine room in a collision/grounding. It's a normally closed, screw-down non-return (SDNR) valve (often red-handled) on the suction of the largest-capacity sea water pump, diameter typically \u22652/3 of the main sea suction, handwheel high and accessible.\n\nTesting: screen the strainer at the bilge injection suction; open the valve and confirm free operation/spindle condition; start the main sea water pump and close the main sea chest valve to draw suction from the bilge; monitor pressure gauges and confirm overboard discharge; close the bilge injection valve, re-open the sea chest, log the test, replace the valve seal. Never leave the valve cracked open in service \u2014 if the non-return element passes, the sea floods the bilge \u2014 confirm it shuts tight after testing.",
+      "examiner_focus": [
+        "The bilge injection valve must be described as a screw-down non-return valve on the main SW pump suction, never left cracked open in service -- stating why (a passed non-return element would flood the bilge) is the mark-earning detail."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "October 2023",
+          "question_number": "Q12",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 28
+        }
+      ],
+      "canonical_id": "watertight-weathertight-doors-bilge-injection-valve"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.13 \u00b7 Five terms for hull distortion in heavy seas",
+      "merged_from_duplicate": false,
+      "answer_markdown": "1. **Hogging** \u2014 longitudinal bending, midship: a wave crest amidships lifts the centre, producing tensile stress at the deck and compressive at the bottom.\n2. **Sagging** \u2014 longitudinal bending, midship: waves lift the ends while the midship sinks, producing compressive stress at the deck and tensile at the bottom.\n3. **Racking** \u2014 transverse shear/deformation from rolling or uneven wave action, the rectangular midship section trying to distort into a parallelogram. Concentrates at the corners \u2014 beam knees, tank-side brackets, frame/beam connections \u2014 worst rolling in light/ballast condition.\n4. **Panting** \u2014 localized dynamic stress: in-and-out flexing of shell plating near bow/stern from changing water pressure while pitching.\n5. **Whipping** \u2014 transient, high-frequency longitudinal vibratory bending of the hull girder (2-node mode), triggered by slamming/bow-flare impact, decaying afterward; the hull vibrates at its natural frequency. (Springing describes steady, wave-excited vibration rather than transient.)\n\nPounding/slamming or pitching are also accepted as a sixth \"condition of distortion\" if a different term is wanted.",
+      "examiner_focus": [
+        "Distinguishing whipping (transient, slam-triggered vibration) from springing (steady, wave-excited vibration) is what separates a strong answer from a bare list of five terms."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "October 2022",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 36
+        },
+        {
+          "diet": "December 2024",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 36
+        }
+      ],
+      "canonical_id": "five-terms-for-hull-distortion-in-heavy-seas"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.12 \u00b7 Distortion effects & the structure that resists them",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a) Racking** \u2014 dynamic transverse deformation from rolling. Resisted by transverse bulkheads, side frames, beam knees and pillars, tank-side brackets, web frames and deck transverses \u2014 the corners are where it bites hardest.\n\n**b) Panting** \u2014 in-and-out shell flexing near bow/stern from pitching. Resisted by panting beams/stringers, breast hooks and panting frames in the fore/aft peaks, deep (panting) floors in the peaks, reduced frame spacing forward.\n\n**c) Pounding** \u2014 repetitive bow slamming, localized stress. Acts over the flat of bottom in the forward ~25\u201330% L. Resisted by solid plate floors at every frame, intercostal side girders (\u2264~2.2 m apart), increased bottom-shell thickness, reduced frame spacing (~700 mm).\n\n**d) Water pressure effect** \u2014 hydrostatic pressure increasing with depth, perpendicular to the hull below the waterline. Resisted by hull plating/stiffeners (longitudinal and transverse framing) and transverse bulkheads/internal framing.\n\n**e) Drydocking stresses** \u2014 imposed by keel/bilge blocks in dry dock, peaking at the keel during the critical period as the stern lands first. Resisted by the keel structure (centre girder, floors), strong transverse framing, and the double bottom acting as a stiff grillage with the side girders.",
+      "examiner_focus": [
+        "Drydocking stress peaking at the keel during sternframe touch-down is the point most candidates miss when the question extends beyond the usual racking/panting/pounding trio."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2025",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 48
+        }
+      ],
+      "canonical_id": "distortion-effects-the-structure-that-resists-them"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.14 \u00b7 Ballast Water Management Convention",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** The BWM Convention 2004 aims to prevent the spread of invasive aquatic species and pathogens via ballast water, and to protect marine biodiversity and coastal environments from non-native species introduction.\n\n**b) D-1 vs D-2:**\n- **D-1 (exchange)** \u2014 open-sea exchange, \u2265200 NM from land and \u2265200 m depth (or, where impracticable, as far as practicable but never less than 50 NM/200 m depth), with volumetric exchange efficiency \u226595% (flow-through method, \u22653\u00d7 tank volume pumped through). D-1 is being phased out.\n- **D-2 (treatment)** \u2014 approved BWMS meeting discharge limits: <10 viable organisms/m\u00b3 (\u226550 \u00b5m); <10 viable organisms/mL (10\u201350 \u00b5m); <1 CFU/100 mL toxicogenic *V. cholerae*; <250 CFU/100 mL *E. coli*; <100 CFU/100 mL intestinal enterococci. Full D-2 compliance required from **8 September 2024**.\n\n**c) Documentation:**\n1. **IBWM Certificate** \u2014 confirms compliance, issued by RO on behalf of flag state, states the standard (D-2) met.\n2. **Ballast Water Management Plan** \u2014 vessel-specific procedures in a language the crew understands.\n3. **Ballast Water Record Book** \u2014 logs all operations and deviations.\n4. **Type Approval Certificate** for the BWMS.\n5. **Ballast Water Reporting Form** \u2014 required by some ports on arrival.\n6. Additional: Certificate of Calibration, training records, and (post-2020 amendments) a **Commissioning Test Report** (validation sampling) recorded before the BWMS is relied on for compliance; exemption documentation where applicable.",
+      "examiner_focus": [
+        "The D-2 full-compliance date (8 September 2024) and the exact discharge limits by organism size class are what separate a full-marks answer from a vague \"meets IMO standards.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "July 2020",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "2",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 30
+        },
+        {
+          "diet": "October 2022",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "2",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 30
+        }
+      ],
+      "canonical_id": "ballast-water-management-convention"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.13 \u00b7 Anchor cable attachment & chain locker",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** The bitter end is secured via a bracket/retaining-pin arrangement (e.g. a weak-link bracket or slip \u2014 a senhouse slip or clenched ring with a release pin) that can be operated from **outside** the enclosed chain locker, usually from the deck/compartment above. Emergency release: remove a safety pin and drive out the locking pin with a dedicated red emergency sledgehammer. The release must not require entering the locker, since it's an enclosed space.\n\n**b)** Chain lockers are emptied via a dedicated drainage eductor \u2014 a high-velocity fire-main jet creates suction drawing water/mud/silt from the sump, effluent mixing with motive water before overboard discharge, with fire main water flushing remaining sediment. Restrictions:\n- Chain washed down thoroughly as hauled out, removing sediment/organisms.\n- Rinsing/pumping prohibited in port (non-native species risk).\n- At least monthly, rinsing/pumping as far from shore as possible and, where feasible, not in US federally protected waters/special areas.\n\n**c)** Dangers entering a chain locker (COSWP): oxygen deficiency/asphyxiation \u2014 chiefly from rusting of chain/locker steel consuming oxygen; toxic/flammable gas accumulation; inadequate ventilation; slip/trip/fall/entrapment (especially shifting chain). Entry requires a full enclosed-space-entry permit (gas test, ventilation, standby man).",
+      "examiner_focus": [
+        "The bitter-end release must be operable from outside the enclosed locker (never requiring entry) -- stating this explicitly, plus naming rusting of chain/locker steel as the oxygen-depletion cause, are the key marking points."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2025",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "3",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 37
+        },
+        {
+          "diet": "December 2012",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "3",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 37
+        }
+      ],
+      "canonical_id": "anchor-cable-attachment-chain-locker"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.14 \u00b7 In-water survey of a very large carrier",
+      "merged_from_duplicate": false,
+      "answer_markdown": "An In-Water Survey (IWS) inspects underwater hull parts while afloat, replacing one of the two required 5-year bottom inspections within the special-survey cycle, generally for ships under 15 years old (older vessels at class discretion). The ship must carry the IWS class notation, an approved high-resistance coating, and marked draught/ID points; the survey cannot proceed if significant damage is suspected or hull Conditions of Class are outstanding.\n\n- **Preparation** \u2014 plans of external hull features below the sheer strake plus a key plan (frames/bulkheads/weld lines/openings); procedure pre-approved by the Classification Society; hull markings identified.\n- **Cleaning** \u2014 diver-towed, hydraulically operated Brush Kart (three brushing heads) clears fouling.\n- **Internal inspection** \u2014 complementary tank/space examination confirming no significant damage.\n- **Documentation** \u2014 Master's declaration of no damage/grounding/unreported incidents; no outstanding hull CoC.\n- **Vessel condition** \u2014 light draught, sheltered waters.\n- **Survey vehicle** \u2014 self-propelled, steerable; long-range low-light TV camera (steering/distortion), close-view high-res colour camera (coating/weld seams), 35 mm still camera, ultrasonic thickness probe, depth/speed indicators, umbilical to the survey boat, buoyancy spheres/compressed air for recovery.\n- **Survey boat** \u2014 control console (monitor, thickness printer, recording), diver communication, vehicle control.\n- **Method** \u2014 certified divers, two-way CCTV, guide the vehicle along the shell expansion plan following weld runs/features; record video and thickness readings. Divers also measure stern tube bearing wear-down, rudder bearing/pintle clearances, and inspect sea chests, valves, propeller, shaft, stern seals, anodes, rudder and coupling bolts. Thickness gauging of suspect areas and rudder/stern-tube wear-down by divers is **mandatory**; the surveyor must witness in real time.\n- **Outcome** \u2014 diving company submits a final report; surveyor reviews and, if requirements are met, endorses the Class Certificate for the Intermediate Bottom Inspection. Significant damage requires dry-docking instead.",
+      "examiner_focus": [
+        "Stating that thickness gauging and rudder/stern-tube wear-down by divers is mandatory and witnessed in real time by the surveyor -- not just \"video is recorded\" -- is what earns full marks here."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2025",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 5
+        },
+        {
+          "diet": "March 2017",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 5
+        },
+        {
+          "diet": "August 2020",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 5
+        },
+        {
+          "diet": "July 2022",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 5
+        },
+        {
+          "diet": "July 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        }
+      ],
+      "canonical_id": "in-water-survey-of-a-very-large-carrier"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.13 \u00b7 Classification of ships & the notation +100A1",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Ships are built to classification society rules for:\n- **Safety and integrity standards** \u2014 rules for design/construction/inspection ensure sound hulls, machinery and propulsion.\n- **Regulatory compliance** \u2014 SOLAS, MARPOL, Load Line, Tonnage, COLREGS require adherence to a recognized class society.\n- **Insurance and finance** \u2014 lower premiums; required by banks financing the vessel.\n- **Quality control and certification** \u2014 surveyors monitor construction against approved drawings/rules.\n- **Operational requirements** \u2014 the certificate proves seaworthiness, needed by charterers, bankers, ports.\n\n**b) +100A1** (Lloyd's Register) \u2014 highest classification for a seagoing ship, steel, special survey, unrestricted worldwide service, approved equipment:\n- **+ (Maltese Cross)** \u2014 built under special survey to the Society's Rules, to the Committee's satisfaction.\n- **100** \u2014 historically LR's character figure for a ship built and eligible as first-class in the Register, suitable for sea-going service at the structural strength standard for unrestricted navigation.\n- **A** \u2014 hull and appendages built to the society's rules and maintained in good, efficient condition.\n- **1** \u2014 anchoring/mooring equipment (cables, hawsers) in good, efficient condition, complying with the Rules.\n\nThe notation is usually followed by a service/type notation (e.g. \"Oil Tanker, ESP\") and sometimes (E) for equipment to rule. Other societies use equivalent symbols (e.g. DNV's \"\u27201A\").\n\n**c)** A ship remains in class via initial, annual, intermediate, periodic, renewal and special surveys on a 5-year cycle, with maintenance/repairs/upgrades approved by class (PMS compliance) \u2014 plus no overdue surveys or outstanding Conditions of Class, prompt repair of damage affecting class, and ISM/audit-regime compliance. Otherwise class may be suspended or withdrawn.",
+      "examiner_focus": [
+        "Breaking the notation into its four distinct elements (+/100/A/1), each with its own meaning, is required for full marks -- a single-sentence \"it means the ship is classed\" answer loses most of the available marks."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2024",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "4",
+            "1"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 47
+        },
+        {
+          "diet": "July 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "March 2016",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "classification-of-ships-the-notation-100a1"
+    },
+    {
+      "topic_id": "fire-protection",
+      "title": "Q.13 \u00b7 Class A bulkheads & ventilation (structural fire protection)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** A Class A bulkhead is a structural division of steel/equivalent non-combustible material, suitably stiffened, preventing passage of smoke and flame for a designated time in the standard fire test (SOLAS **II-2**). Requirements: steel/equivalent non-combustible, securely stiffened; capable of holding smoke/flame for the full 60-minute fire test regardless of insulation suffix; insulated so the average unexposed-side temperature doesn't rise more than 139\u00b0C, and no single point (incl. joints) more than 180\u00b0C, within: A-60 (60 min), A-30 (30 min), A-15 (15 min), A-0 (0 min). **The suffix number is the insulation period only \u2014 flame/smoke integrity is held for the full 60 minutes regardless of suffix.**\n\n**b)** Ventilation design to prevent fire/smoke spread:\n- Division by Main Vertical Zones \u2014 ducts serving one MVZ shouldn't pass through another; where they must, robust fire-resistant insulation prevents heat transfer across the boundary.\n- Automatic fire dampers with manual operation from both sides and open/closed indicators, on ducts through fire divisions.\n- Steel (or equivalent non-combustible) duct material.\n- Atriums within Class A enclosures with smoke extraction (detector-activated, manual override, sized to exhaust the volume in \u226410 min).\n- Ability to shut fans down immediately, cutting oxygen and preventing smoke circulation; a dedicated safety centre (SOLAS II-2 Reg 23) manages doors/dampers/detection.\n\n**c)** Integrity at ventilation penetrations is maintained by insulated steel sleeves, ducts welded directly to the bulkhead, insulation matched to the bulkhead rating, or automatic fire dampers \u2014 preserving the boundary for the full 60 minutes. Ducts >0.02 m\u00b2 require an insulated steel sleeve unless the duct itself is steel; ducts >0.075 m\u00b2 require automatic fire dampers, manually operable from both sides with an open/closed indicator.",
+      "examiner_focus": [
+        "The insulation suffix (A-60/A-30/A-15/A-0) is only the TIME the 140 degC/180 degC temperature limit is held -- flame and smoke integrity itself is always maintained for the full 60 minutes regardless of suffix, a distinction frequently missed."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2024",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 7
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q12",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 7
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q14",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 7
+        },
+        {
+          "diet": "December 2022",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 7
+        }
+      ],
+      "canonical_id": "class-a-bulkheads-ventilation-structural-fire-protection"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.12 \u00b7 Bulkheads, wing tanks & double-bottom purposes",
+      "merged_from_duplicate": false,
+      "answer_markdown": "*(Note: the Jul 2025 sitting uses a slightly different mark split \u2014 3/3/1/3 instead of 2/2/2/4 \u2014 for the same four question parts; content below already covers all four parts and needs no change.)*\n\n**a)** Liquid carriers are divided by longitudinal bulkheads to improve structural strength, reduce free-surface effect, and allow multiple cargo grades \u2014 strengthening against bending/racking, preventing excessive listing, aiding cargo weight distribution and damage stability.\n\n**b)** Ore carriers are fitted with wing tanks primarily because dense ore stows low, making the ship excessively stiff with a very short, violent roll period; ballasting the upper wing/topside tanks raises KG, lengthening the roll period and easing accelerations. Wing tanks also give self-trimming hopper geometry, ballast space, and double-skin protection against grounding/collision.\n\n**c)** Double-bottom tanks in dry cargo ships, beyond liquid carriage, provide longitudinal strength, protect the hull in grounding, improve stability, give a foundation for cargo/machinery, and enable damage control by preventing flooding of the holds above.\n\n**d)** Transverse watertight bulkheads:\n1. Subdivision for flood control.\n2. Structural strength/rigidity, resisting racking.\n3. Fire subdivision.\n4. Structural support for decks above.\nThe collision bulkhead and after-peak bulkhead are themselves SOLAS-required examples; total number is set by the floodable-length/subdivision calculation.",
+      "examiner_focus": [
+        "For ore carriers, the real reason for wing tanks is raising KG to lengthen an otherwise dangerously short, stiff roll period -- \"extra ballast space\" alone misses the stability-physics point being tested."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 8
+        },
+        {
+          "diet": "December 2010",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "March 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "August 2020",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 8
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 8
+        },
+        {
+          "diet": "July 2025",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "1",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 8
+        }
+      ],
+      "canonical_id": "bulkheads-wing-tanks-double-bottom-purposes"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.13 \u00b7 Single vs twin propeller/rudder (wide-beam vessel)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** A single propeller/rudder is often unsuitable for a large, wide-beam cargo vessel because a wide, full hull produces a very non-uniform (high-block) wake at a single centreline screw \u2014 driving vibration, cavitation and reduced open-water efficiency, while the rudder behind it is partly shadowed. Achieving the required thrust would also need an exceptionally large screw diameter, risking cavitation and possibly exceeding available draught/immersion; a correspondingly massive single rudder would impose impractical bending moments on the stock and hydraulic loads on the steering gear.\n\n**b)** Twin propeller/twin rudder offers superior manoeuvrability and low-speed handling (crabbing via differential thrust), redundancy (one set compensates if the other fails), better wake equalization (screws sit further outboard in cleaner flow) reducing fuel consumption/vibration, and shallower required draught per propeller. Trade-offs worth noting: higher build/maintenance cost, extra appendage drag, and a single screw is usually more efficient per kW in deep water. The \"improved stability/roll\" claim is weak \u2014 twin shafts give little roll damping \u2014 so lead with redundancy, manoeuvring and shallow-draught benefits rather than stability.",
+      "examiner_focus": [
+        "Leading with \"improved stability/roll\" as a twin-screw advantage is weak -- twin shafts give little roll damping. Examiners want redundancy, wake-field uniformity, and shallow-draught benefit foregrounded instead."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "7"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 21
+        },
+        {
+          "diet": "July 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "single-vs-twin-propeller-rudder-wide-beam-vessel"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.14 \u00b7 Container-ship strength with large hold openings",
+      "merged_from_duplicate": false,
+      "answer_markdown": "Removing the deck for cargo access leaves an open hull section with low torsional stiffness, vulnerable to twisting (warping) in oblique/quartering seas. Strength is built in as follows:\n\n- **Torsion box (wing tanks)** \u2014 box girders running longitudinally along the top of the side shells, re-closing the section for torsional rigidity.\n- **Transverse box sections at hatch ends** \u2014 join the torsion boxes together at each hatch, closing the loop and restoring torsional strength along the length \u2014 the central mechanism the question tests.\n- **Double hull and double bottom** \u2014 rigid base/side structure for damage stability and longitudinal strength (keel, bottom shell, tank top, side shell, deck stringer plates, deck longitudinals).\n- **Longitudinal framing** throughout, in high-tensile steel, for large bending moments.\n- **Deep transverse bulkheads/webs** between holds for transverse strength.\n- **Minimized bilge strake** \u2014 angled/rounded bottom-to-side transition to maximize stowage.\n\nConstruction uses the \"box girder\" method, verified by FEM. Hatch corners are a known fatigue hot-spot from stress concentration \u2014 radiused and insert-plated, checked by FEM.",
+      "examiner_focus": [
+        "The core mechanism is torsional warping from the open deck section -- transverse box sections at the hatch ends closing the loop is the actual answer, not just naming \"torsion box\" without explaining why one is needed."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 9
+        },
+        {
+          "diet": "December 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 9
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 9
+        }
+      ],
+      "canonical_id": "container-ship-strength-with-large-hold-openings"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.12 \u00b7 IMDG hazard classes & dangerous-goods documentation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** IMDG hazard classes (five required; all nine given): Class 1 Explosives (1.1\u20131.6); Class 2 Gases (2.1 flammable/2.2 non-flammable non-toxic/2.3 toxic); Class 3 Flammable Liquids; Class 4 Flammable Solids (4.1 flammable solids/4.2 spontaneously combustible/4.3 dangerous when wet); Class 5 Oxidizing Substances & Organic Peroxides (5.1/5.2); Class 6 Toxic & Infectious Substances (6.1/6.2); Class 7 Radioactive Materials; Class 8 Corrosive Substances; Class 9 Miscellaneous.\n\n**b)** Documentation: Dangerous Goods Declaration (shipper's signed confirmation of proper packing/marking/labelling); Container/Vehicle Packing Certificate; special list or manifest (classification and stowage location); Material Safety Data Sheet; plus UN number, Proper Shipping Name, Class/Division/Compatibility Group, description with gross mass/volume, TREM cards and emergency contacts, all handed to the Master before loading. The ship itself must carry a Document of Compliance for the carriage of dangerous goods (SOLAS II-2 Reg 19), and (SOLAS VII/MARPOL Annex III) a special list/manifest or stowage plan.\n\nPurpose: enables safe emergency response; ensures compliant stowage/segregation from incompatible goods; certifies legal compliance across jurisdictions.",
+      "examiner_focus": [
+        "Naming the ship's own Document of Compliance (SOLAS II-2 Reg 19) as distinct from the shipper's Dangerous Goods Declaration is what separates full marks from a partial list of paperwork."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "December 2021",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 34
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 34
+        }
+      ],
+      "canonical_id": "imdg-hazard-classes-dangerous-goods-documentation"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.14 \u00b7 Noise levels on ships",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** The unit is the decibel, expressed as **dB(A)** \u2014 A-weighted to match human ear frequency response, filtering low/high frequencies people hear poorly.\n\n**b)** Per the IMO Code on Noise Levels (MSC.337(91), mandatory under SOLAS II-1/3-12): hearing protection mandatory at/above **85 dB(A)** with warning signage; 80\u201385 dB(A) requires protectors available and information given; daily exposure limit LAeq(24) = 85 dB(A). Space limits: manned machinery spaces \u2264110 dB(A) (with protection), unmanned \u2264115 dB(A), cabins \u226460 dB(A).\n\n**c)** Crew awareness: mandatory regulatory compliance, PPE training (earmuffs/plugs), warning signage, routine inspections \u2014 covering noise-induced hearing loss, fatigue and stress risks.\n\n**d)(i) Diesel generators** \u2014 modern low-noise engine/fan design, optimized cooling-fan blades, high-performance exhaust silencers, vibration isolation (rubber/spring mounts). Strongest single measure: resilient/double-elastic mounting on a common raft with floating floor plus an acoustic enclosure/lagging.\n\n**(ii) Ventilation fans/trunkings** \u2014 high-efficiency low-noise aerodynamic fan blades on anti-vibration mounts, flexible duct connectors preventing vibration transmission, acoustic duct linings, plus splitter/attenuator silencers with reduced air velocity.",
+      "examiner_focus": [
+        "The 85 dB(A) mandatory-protection threshold and the separate 80-85 dB(A) \"protectors available\" band are two different figures for two different obligations -- frequently confused as one."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2024",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "1",
+            "2",
+            "3",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 12
+        },
+        {
+          "diet": "December 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "March 2016",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2018",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "1",
+            "2",
+            "3",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 12
+        },
+        {
+          "diet": "October 2021",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "1",
+            "2",
+            "3",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 12
+        }
+      ],
+      "canonical_id": "noise-levels-on-ships"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.12 \u00b7 Six degrees of motion & the structure that resists them",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Three translational \u2014 surge (fore-aft), sway (side-to-side), heave (vertical); three rotational \u2014 roll (longitudinal axis), pitch (transverse axis), yaw (vertical axis). Only heave, roll and pitch have a hydrostatic restoring force; surge, sway and yaw have none and are instead resisted/controlled by propulsion, the rudder/steering gear and mooring \u2014 not by structure.\n\n**b)** Roll \u2192 bilge keels, fin stabilisers, anti-roll tanks. Pitch and heave (and the slamming/panting they cause) \u2192 strengthened bottom forward, bulbous bow, panting stringers/beams, deep floors. Yaw \u2192 rudder and steering gear (a control-device response, not structural resistance). Surge/sway have no dedicated resisting structure \u2014 managed by propulsion/mooring, though the double hull/bottom and continuous strength members (sheer/bilge/garboard/keel strakes) give general support through all motions.",
+      "examiner_focus": [
+        "Only heave, roll and pitch have a hydrostatic restoring force -- surge, sway and yaw are managed by propulsion/rudder/mooring, not resisted by structure. Treating all six as \"structurally resisted\" is the main trap."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q12",
+          "marks_parts": [
+            "6",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 32
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q12",
+          "marks_parts": [
+            "6",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 32
+        }
+      ],
+      "canonical_id": "six-degrees-of-motion-the-structure-that-resists-them"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.12 \u00b7 Hull stresses in heavy weather & the structure that resists them",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Longitudinal \u2014 hogging/sagging. Transverse \u2014 racking (worst at beam knees, tank-side brackets). Local \u2014 panting (fore-end shell flexing) and pounding (slamming impacts forward). Water pressure effect \u2014 hydrostatic pressure perpendicular to the hull below the waterline, increasing with depth.\n\nThe dominant heavy-weather case is longitudinal bending of the hull girder \u2014 stillwater bending moment + wave bending moment (hogging on a crest amidships, sagging in a trough) \u2014 together with shear (greatest near the quarter-length points) and, in oblique seas, torsion (important for open-deck ships). Deck/bottom section modulus is sized to this combined bending moment \u2014 why continuous longitudinal material is provided.\n\n**b)**\n1. Hogging/sagging \u2192 continuous longitudinal members: thickened sheer/bilge/garboard/keel strakes, deck stringers, HT steel, longitudinal bulkheads, deep double-bottom girders.\n2. Racking \u2192 reinforced transverse bulkheads with large brackets, deep web frames, beam knees, deck/bilge brackets, rounded sheer strake, torsion-box double-bottom.\n3. Panting/pounding \u2192 panting stringers/beams, reduced frame spacing (900\u2192700 mm), deep plate floors, intercostal stringers on strengthened pillars/wash bulkhead, thickened bottom shell with intercostal girders (\u2264~2.2 m apart).\n4. Water pressure \u2192 V-shaped hull sections, reduced forward flare, robust welding with combined longitudinal/transverse framing.",
+      "examiner_focus": [
+        "The dominant heavy-weather case is combined longitudinal bending (hogging/sagging) plus shear near the quarter-length points -- many answers jump straight to panting/pounding and skip this primary loading case."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 25
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 25
+        }
+      ],
+      "canonical_id": "hull-stresses-in-heavy-weather-the-structure-that-resists-th"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.12/Q.13 \u00b7 Watertight-door classification, hazardous closure & safe passage",
+      "merged_from_duplicate": true,
+      "answer_markdown": "**(a) Classification.** Two schemes answer this, and stating both covers either reading of the question. SOLAS II-1 classifies watertight doors by *operating type*: **Class 1** (hinged), **Class 2** (power- or hand-operated), **Class 3** (power-operated, also closable remotely from the bridge). Separately, doors are categorised by *how they may be used at sea*: **Type A** \u2014 may be left open, closed only in an emergency; **Type B** \u2014 normally kept closed, may be opened for access to the adjacent compartment; **Type C** \u2014 kept closed at all times, opened only briefly for personnel to pass through; **Type D** \u2014 closed before the voyage commences and kept closed throughout navigation.\n\n**(b) Circumstances requiring all watertight doors closed** when conditions are potentially hazardous: heavy weather, or where depth of water is less than three times the draught; proximity to underwater hazards, port limits, or compulsory pilotage waters; restricted visibility, high traffic density, or any other factor constituting a hazard.\n\n**(c) Safety features of the operating system** (Dec 2020 framing): audio/visual warning \u2014 an alarm sounds and a light flashes for a few seconds before, and throughout, a remote closure; dual-position controls on both sides of the bulkhead so personnel can open and pass through from either side, with a local override to hold the door open; delayed/controlled closure \u2014 each power door takes 20\u201340 seconds to close under local/hand operation, while the bridge master switch must still be able to close *all* doors within about 60 seconds; a local control lever on either side that can open the door even while remote bridge closing is active; bridge position-indication for every door; and closure force/edges limited to avoid trapping personnel.\n\n**(c-variant) Safe passage through a hydraulically operated watertight door** (Dec 2023 framing \u2014 explaining to a new crew member): confirm the bridge master mode switch is at \"local control\" before opening (else the door re-closes on releasing the local handle); locate controls, check local and remote indicators; open and wait until fully open; pass through quickly using the handles, watching footing; close after passing and wait for full closure/green light; **never pass through a moving door** (fatal crush risk); **never attempt to stop a closing door**. Emphasise doors stay closed at sea for watertight integrity, and confirm the crew member can operate it safely before leaving them to it.",
+      "examiner_focus": [
+        "The 20-40 second single-door closure time and the ~60 second bridge-master-switch all-doors time are two different figures for two different situations -- conflating them is the most commonly flagged error."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2017",
+          "question_number": "Q14",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 10
+        },
+        {
+          "diet": "December 2020",
+          "question_number": "Q12",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 10
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 10
+        }
+      ],
+      "canonical_id": "watertight-door-classification-hazardous-closure-safe-passag"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.14 \u00b7 Overhaul of ship-side valves in dry dock",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Information for the docking company: a comprehensive valve list (location/frame number, type, ID, means of closure, diameter, flange PCD) with a marked-up sea-chest plan; scope of work (cleaning/inspection/packing/full overhaul including seat grinding/testing); materials/spares split (ship vs workshop); isolation and safety procedure; critical timing for opening and refitting valves against the docking schedule.\n\n**b)** Overhaul: dismantle (isolate, remove cover/gland packing/spindle, remove the valve chest if needed); clean/inspect (remove rust/corrosion, check seating face, lap the seat/disc until a continuous contact band is achieved \u2014 engineer's-blue check); reassemble (coat exposed steel, renew studs/nuts/joints to correct grade/torque, anti-seize on threads); function-test (smooth operation, hydrostatic test at test pressure).\n\nPrecautions before returning to service: since ship-side valves below the deepest waterline are classed items, the Classification Society surveyor should witness the open-up, seat condition, reassembly and hydrostatic test before the dock is flooded \u2014 the single most important precaution. Also: confirm positive isolation/lock-off while open; refit and prove blanks/spectacle isolation are removed; record test pressures in the dry-dock/class report; secure the valve in its required position with locking washer/nut tight and handle greased; final tally confirming every sea connection is closed and locked before flooding.",
+      "examiner_focus": [
+        "The single most important precaution is class surveyor witnessing of the open-up, seat condition and hydrostatic test before the dock floods -- omitting the surveyor's role is the main source of lost marks."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "October 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 11
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 11
+        },
+        {
+          "diet": "December 2023",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 11
+        }
+      ],
+      "canonical_id": "overhaul-of-ship-side-valves-in-dry-dock"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.14 \u00b7 Drydocking \u2014 pre-docking information & items to inspect once dry",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Docking plan (underwater hull structure \u2014 keel, bilge keels, stabilizers, propeller, rudder, sea chests, ICCP anodes, transducers, drain plugs); General Arrangement/Capacity/Shell Expansion plans; stability data (arrival GM, drafts, trim, tank soundings \u2014 full or empty to minimize free surface); repair list; tank arrangement. Also: the ship's weight and LCG/VCG for landing, declared trim on landing (small stern trim preferred), a block/bilge-block plan noting appendages/transducers/stabiliser fins/sea-chest projections the blocks must clear, and confirmation the ICCP is switched off and isolated before docking.\n\n**b)** Hull plating/paint (corrosion, pitting, deformation, coating/antifouling condition); propeller and rudder (blade damage, fouling, rope guard, rudder damage/plug tightness \u2014 plus dry-only measurements: pintle/stern-tube bearing wear-down via poker gauge, rudder/pintle clearances, propeller-cone/rope-guard security); sea chests/valves (gratings/valves clear and secure, internal anode/grating condition); anodes and transducers (sacrificial anode wastage, ICCP electrodes, echo sounder/speed log transducers); general structure/anchor/cable (bow thruster tunnel, stern frame, anchor, bilge keels, appendages); a tank-plug tally sheet recorded as plugs are removed/refitted.",
+      "examiner_focus": [
+        "Declaring the intended docking trim/condition and confirming the ICCP is isolated before docking are the specific details that separate a strong answer from a generic \"give the dock the ship's particulars.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 29
+        },
+        {
+          "diet": "October 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 29
+        }
+      ],
+      "canonical_id": "drydocking-pre-docking-information-items-to-inspect-once-dry"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.13 \u00b7 Tank inspections, erosion in ballast tanks & enclosed-space entry",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Structural integrity (cracks/fractures/grooving); general corrosion, pitting, blistering, coating condition; condition of cargo equipment; sacrificial anode condition; internal pipework/fittings condition; tank opening/manhole integrity.\n\n**b)** Erosion is found beneath the bell-mouth \u2014 strictly **erosion-corrosion**, where high-velocity suction flow/vortex action mechanically sweeps away the protective coating/scale and bare steel then corrodes; at the bottom plating and suction wells, where sediment retention promotes microbiologically induced corrosion; and \u2014 the point most often missed \u2014 along the **waterline/part-full band**, where the tank is alternately wet and dry, typically the worst corrosion zone in a ballast tank.\n\n**c)** Enclosed space entry (COSWP): risk assessment (oxygen depletion, toxic/flammable gas, slip/trip/entrapment) and entry plan; ventilate, isolate connecting pipelines/machinery, lock-out/tag-out; test atmosphere at top/middle/bottom with calibrated detectors, keep ventilation running, re-test periodically and after breaks \u2014 proceed only once O\u2082 reads 20.9% and hydrocarbon/toxic gases (H\u2082S, CO) are within limits; permit time-limited, re-validated after breaks. Rescue equipment ready (tripod, stretcher, SCBA, first aid) with a designated rescue party; entrants wear PPE (personal gas monitor, harness, lifeline, torch, EEBD). Complete an Enclosed Space Entry Permit with a toolbox meeting. Trained attendant posted at the entrance maintaining communication; evacuate immediately if anyone feels unwell or an alarm sounds. Secure the space and close the permit on completion.",
+      "examiner_focus": [
+        "Erosion beneath the bell-mouth is technically erosion-corrosion -- mechanical stripping of the protective layer by high-velocity flow, not simple wear -- and precision on this mechanism is what examiners look for."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2023",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "2",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 26
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q14",
+          "marks_parts": [
+            "3",
+            "2",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 26
+        }
+      ],
+      "canonical_id": "tank-inspections-erosion-in-ballast-tanks-enclosed-space-ent"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.14 \u00b7 Repair of defects on a solid propeller in dry dock",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a) Bent blades** \u2014 hot or cold straightening with a hydraulic press/alignment tools, propeller secured, worked back to shape without over-stressing (manganese/nickel-aluminium bronze propellers are straightened with local pre-heat rather than truly cold, to avoid cracking). Inspect for fatigue/damage, then balance.\n\n**b) Damaged blade tips** \u2014 metal-arc welding, building up material (cast steel/copper alloys as appropriate), shaped/finished to match. Must comply with **IACS UR W24** (the propeller-repair rule \u2014 UR W27 relates to stern-tube/shafting, so W24 is the correct citation); welding below the 0.7 radius needs class approval. Post-repair dye-penetrant NDT (the propeller is non-magnetic, so MPI isn't used).\n\n**c) Missing blade pieces** \u2014 assess salvageability first. Blades divide into three stress zones: Zone A (highest \u2014 root/lower radii, ~0.4\u20130.6R on the driving face) \u2014 welding prohibited or needs special approval; Zone B (intermediate \u2014 approved procedure); Zone C (outer/tip \u2014 most freely repairable). If salvageable, build up by metal-arc welding with compatible material, or cast a new piece to fit.\n\nCommon to (b)/(c): approved welding procedure and a welder qualified for the specific alloy, controlled pre-heat/interpass temperature, stress-relief after major build-up, dye-penetrant NDT, then balance the whole propeller (static normally, dynamic for high-speed/CPP) before class sign-off.",
+      "examiner_focus": [
+        "The propeller blade's three stress zones (A/B/C by radius) determine whether welding is prohibited, needs special approval, or is freely permitted -- omitting the zone-based restriction is the main gap in weaker answers."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2023",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "4",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 31
+        },
+        {
+          "diet": "December 2020",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "4",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 31
+        }
+      ],
+      "canonical_id": "repair-of-defects-on-a-solid-propeller-in-dry-dock"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.12 \u00b7 Double-bottom fuel tanks \u2014 sounding pipes, air pipes & vent design",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Weighted cocks are self-closing when not in use, keeping water out (preventing fuel contamination), while the weight allows smooth operation when sounding. The sounding pipe runs from the tank top to a striking plate on the tank bottom (absorbing the rod's impact), stays as straight as practicable, and terminates at an accessible deck level with the self-closing weighted cock.\n\n**b)** Air pipes equalize pressure (preventing build-up/vacuum during pumping) and ventilate the tank (letting gases escape, reducing explosive-atmosphere risk). Cross-sectional area must be \u22651.25\u00d7 the filling-line area, so the air pipe is never the restriction during bunkering.\n\n**c)** i. **Heavy weather** \u2014 gooseneck shape, the upward bend preventing water entry in heavy seas. ii. **Fire** \u2014 flame arresters/screens preventing external flame reaching flammable vapour inside. iii. **Bunkering** \u2014 vents at the tank's highest point, terminating on open deck with suitably sized save-all trays at the base; per ICLL, coamings at least 760 mm on the freeboard deck and 450 mm on the superstructure deck, before a float-type automatic self-closing device plus flame screen.",
+      "examiner_focus": [
+        "The air pipe cross-sectional-area rule (at least 1.25x the filling-line area) is a specific figure worth quoting exactly, ensuring the vent is never the bottleneck during bunkering."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 46
+        }
+      ],
+      "canonical_id": "double-bottom-fuel-tanks-sounding-pipes-air-pipes-vent-desig"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.13 \u00b7 Watertight doors \u2014 factors, operating requirements & hazards",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**a)** Number/size factors: subdivision/damage-stability requirement (a door only where genuinely needed for access through a bulkhead); operational function/access (restricted to essential points \u2014 shaft tunnel, duct keel, passenger passage \u2014 opening kept minimal); structural strength of the bulkhead (limited so proper framing/reinforcement is maintained).\n\n**b)** Below the weather deck: kept closed at sea, used only for passage and closed immediately after; two power sources including independent emergency power giving at least three complete open-close cycles against a 15\u00b0 list with no main power (~1 hour independent operation). Capable of closing simultaneously from the bridge master switch within **60 seconds** with the ship listed to 15\u00b0 \u2014 this is the *all-doors-together* time. An individual power-operated sliding door, operated alone, must close in **20\u201340 seconds** with the ship upright \u2014 examiners specifically check that these two closure times aren't conflated. Doors also operable locally from both sides, with a bridge master mode switch offering \"local control\" vs \"doors closed.\" Audible alarm 10 seconds before and during closure; remote visual open/closed indicators at bridge and control station.\n\n**c)** Hazards and mitigations:\n1. **Crushing injury/fatality** \u2014 never pass through a moving door; never stop a closing door.\n2. **Hand/body pinch points** \u2014 mandatory two-handed, hold-to-open local handle operation.\n3. **Sudden automatic re-closure** \u2014 confirm the bridge master switch is at \"local control\" before opening; check indicators.\n4. **Lack of situational awareness** in noisy spaces \u2014 adherence to procedure/signage, no carrying loads alone while passing, regular training/familiarization.",
+      "examiner_focus": [
+        "The 20-40 second single-door time versus the ~60 second bridge master-switch all-doors time recurs here too -- state both explicitly rather than one figure covering both situations."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2022",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 33
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 33
+        }
+      ],
+      "canonical_id": "watertight-doors-factors-operating-requirements-hazards"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.13 \u00b7 Watertight & weathertight doors \u2014 function/location; scuppers & freeing ports",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i) Watertight doors.** Critical safety barriers fitted below the waterline/freeboard deck,\nin any opening that would otherwise compromise the ship's watertight subdivision \u2014 shaft\ntunnels, ballast tank access, engine room bulkheads, pipe tunnels. Function: contain flooding to\nthe damaged compartment, limiting its spread and preserving buoyancy and stability. Defined as\nwithstanding a design head of water from either side without leakage.\n\n**(a)(ii) Weathertight doors.** Fitted above the waterline, in exposed positions subject to\nadverse weather \u2014 main decks, accommodation entrances, navigation bridge entrances, engine room\nentrances \u2014 designed so water will not penetrate the ship in any sea condition, including brief\nsubmersion. They do **not** provide fire or smoke containment; that is the separate function of an\nA- or B-class fire division, and should not be attributed to a weathertight door.\n\n**(b) Why scuppers and freeing ports must be operational at all times.** Water drainage \u2014 scuppers\ndrain water accumulating on deck before it adds weight, promotes waterlogging, or causes\ncorrosion/structural damage. Stability \u2014 if freeing ports fail, water pools on an enclosed deck,\nincreasing free-surface effect, raising the centre of gravity, and reducing effective freeboard by\nthe added weight. Safety during operations \u2014 a clear, drained deck reduces slip/fall risk for crew\nin rough weather. Regulatory compliance \u2014 scuppers and discharges are governed by **ILLC\nRegulation 22**, and freeing ports separately by **ILLC Regulation 24** (these are two distinct\nregulations, not both Reg 24); non-compliance risks penalty and detention.",
+      "examiner_focus": [
+        "Weathertight doors do NOT provide fire/smoke containment -- that is a commonly stated but incorrect claim; that function belongs specifically to A- or B-class fire divisions."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2019",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 28
+        }
+      ],
+      "canonical_id": "watertight-weathertight-doors-function-location-scuppers-fre"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.13 \u00b7 Double-hulled oil tankers \u2014 mid-ship section, evolution, disadvantages",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** [Sketch \u2014 mid-ship cross-section: main deck/deck stringer plate/sheer strake; port and\nstarboard cargo tanks either side of the longitudinal bulkhead; topside and hopper wing water\nballast tanks; inner shell and inner-bottom shell; double bottom with centre and side girders,\nfloor plating; bilge strake, garboard strake, keel strake, duct keel \u2014 as per original figure.]\n\n**(b)** Double-hulled tankers evolved to minimise the risk of a massive oil spill following\ngrounding, collision, or internal tank rupture. **MARPOL Annex I, Regulation 19** mandates\ndouble-hull (or equivalent) construction for oil tankers, with single-hull tankers phased out\nunder **Regulation 20**; the US **OPA 90** imposed an equivalent domestic requirement \u2014 both driven\nby the 1989 **Exxon Valdez** grounding. The extra, protective inner layer prevents cargo-tank\nrupture during lower-energy impacts.\n\n**(c) Four disadvantages** (the strongest, examiner-credited points, ahead of the weaker\ncost/stability framing): explosion/atmosphere risk in the double-hull void spaces, which must be\ninerted, ventilated and gas-monitored \u2014 the *Bow Mariner* incident is the cautionary reference;\ndifficult access for survey, and a high incidence of corrosion in the narrow, poorly-accessible\nballast voids; greater steel weight, reducing deadweight/cargo capacity for a given displacement;\nand the cost of coating and maintaining the additional ballast spaces, on top of the general\nincrease in construction and operational cost.",
+      "examiner_focus": [
+        "The disadvantages examiners actually credit are explosion/atmosphere risk in the void spaces and corrosion in the inaccessible ballast voids -- not the weaker \"reduced stability/high centre of gravity\" reasoning."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2022",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "1",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 27
+        },
+        {
+          "diet": "October 2012",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2018",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "1",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 27
+        }
+      ],
+      "canonical_id": "double-hulled-oil-tankers-mid-ship-section-evolution-disadva"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.12 \u00b7 Construction of refrigerated spaces \u2014 insulation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Suitable insulating materials:** cork, fibreglass, mineral wool, foam \u2014 modern practice is\ndominated by **closed-cell rigid foams**, principally **polyurethane (PUF)** and\n**polyisocyanurate (PIR)**, usually as factory-bonded panels.\n\n**(b) Properties required of the insulation:** low thermal conductivity; resistance to mould and\nvermin; resistance to moisture, and specifically an effective **vapour/moisture barrier** \u2014 this\nis the property most often left out, and it matters because cold-side condensation wetting the\ninsulation destroys its R-value; non-hazardous/non-toxic; non-corrosive; non-combustible; also\ndimensionally stable, low water-absorption, odourless, light, and fire-retardant.\n\n**(c)** [Sketch \u2014 cross-section through a cold-storage wall: frame, insulation material, lug, wood\nground, sealing strips, sheet-metal facing, attached to the ship's structure.] The sealing strips\nand sheet-metal facing shown are precisely what provide the vapour seal called for in part (b).",
+      "examiner_focus": [
+        "The vapour/moisture barrier is the property most often left out -- without it, cold-side condensation destroys the insulation's R-value regardless of which material is chosen."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2022",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "3",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 35
+        },
+        {
+          "diet": "July 2025",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "3",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 35
+        }
+      ],
+      "canonical_id": "construction-of-refrigerated-spaces-insulation"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.13 \u00b7 Bulk carrier \u2014 inspection of the upper topside areas (as Chief Engineer)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "As Chief Engineer, inspection of the upper topside areas focuses on mitigating corrosion, ensuring\nwatertight integrity and confirming structural reliability: hatch covers and coamings \u2014 cracks,\ndeformation and wastage, particularly at hatch corners, a high-stress area; watertight integrity \u2014\ncondition of rubber gaskets, packing and sealing arrangements on all hatch covers; securing\ndevices \u2014 cleats, hinges and quick-acting cleats operational and well-greased; air pipes and\nsounding pipes to the topside tanks \u2014 corrosion, particularly at the threads, and verification that\nthe **automatic (float) closing devices** function correctly to prevent water ingress; deck\nstructures \u2014 wasting or pitting of deck plating around crane foundations, pedestal mounts and\nwindlasses; ventilation and access \u2014 manholes, ladders and tank access safe, clean and\nunobstructed; underside of the upper deck \u2014 buckling or corrosion of deck stiffeners; load line\nmarks \u2014 clearly visible, unaltered, not obscured by corrosion or paint, and still compliant;\nfirefighting system \u2014 hoses, nozzles and sprinklers ready and compliant; lighting \u2014 emergency and\nwork lighting functioning.\n\nWhat converts this from a generic deck inspection into a genuinely bulk-carrier-specific answer is\nnaming the structure unique to bulkers: the **topside (sloping) tank internal structure and\nbrackets**; the **cross-deck strips and hatch-end beams**; and especially the **transverse\ncorrugated bulkheads and lower stools between holds** \u2014 the classic No.1/No.2 hold\nprogressive-flooding failure mode on bulk carriers. On a single-side-skin bulker, add the\n**side-shell frames and their end brackets**, a known wastage hotspot.",
+      "examiner_focus": [
+        "Naming the transverse corrugated bulkhead between Nos. 1 and 2 holds -- the classic progressive-flooding failure point on bulkers -- is what converts a generic deck inspection into a genuinely bulk-carrier-specific answer."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 20
+        },
+        {
+          "diet": "July 2012",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 20
+        }
+      ],
+      "canonical_id": "bulk-carrier-inspection-of-the-upper-topside-areas-as-chief-"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.12 \u00b7 Scuppers vs freeing ports; tanker handrails",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** Scuppers sit close to the superstructure to drain water away from weathertight doors and\nvertical structures instantly \u2014 superstructures create corners and obstructions where water\ngathers, so scuppers protect entrances and deckhouses from waterlogging there. Freeing ports are\nsited along open bulwarks at open areas of the weather deck: large openings sized to rapidly\nrelease large volumes of shipped seawater before it can pool and compromise stability. Both are\ncritical to maintaining stability and preventing structural damage.\n\n**(b)** Essential at all times for: water drainage (scuppers clear deck water before it adds\nweight or causes waterlogging/corrosion); stability (failed freeing ports let water pool,\nincreasing free-surface effect, raising COG, and reducing freeboard by the added weight); crew\nsafety in rough seas (a clear deck reduces slip/accident risk); and regulatory compliance \u2014\nscuppers/discharges fall under **ILLC Regulation 22**, freeing ports under **ILLC Regulation 24**\n(two separate regulations).\n\n**(c)** Beyond personnel safety, tankers fit **open handrails rather than solid bulwarks** on the\nmain cargo deck because open rails let any green sea clear the low-freeboard deck edge\nimmediately rather than trapping it. This avoids the extra stress a retained mass of water would\nadd to the hull, and prevents the raised COG, free-surface effect and reduced freeboard that\nretained water would otherwise cause; it also saves steel compared with a solid bulwark. (Note:\nthe usual credit of freeing-port area as a fraction of bulwark length does not apply where open\nrails are fitted instead of a bulwark.)",
+      "examiner_focus": [
+        "Scuppers fall under ILLC Regulation 22 and freeing ports under Regulation 24 -- two separate regulations. Citing both under one regulation number is a recurring error across several questions in this topic area."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2021",
+          "question_number": "Q12",
+          "marks_parts": [
+            "3",
+            "4",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 45
+        },
+        {
+          "diet": "July 2026",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        }
+      ],
+      "canonical_id": "scuppers-vs-freeing-ports-tanker-handrails"
+    },
+    {
+      "topic_id": "hatch-covers",
+      "title": "Q.13 \u00b7 Container-ship cargo hatch covers \u2014 testing, load transfer, wear",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Water-tightness testing.** The primary method is a **hose test**: a nozzle of \u226512 mm bore,\nheld \u22641.5 m from the hold/cover joint, delivering a water jet at **\u22652 bar**, traversed slowly along\nthe full joint \u2014 any leak into the hold indicates a gap. Supplementary methods: a **chalk test**\n(checks compression of the sealing rubber against the landing bar, but proves compression, not\ntightness, on its own), an **ultrasonic tightness test** (the preferred method at sea \u2014 gives a\nquantitative leak reading, is independent of weather, and can be run with cargo already loaded),\nand visual inspection from inside the closed hold for light penetration.\n\n**(b) Load transfer.** The weight of the lift-away pontoon-type cover and stacked containers is\ncarried through **weight-bearing pads** fitted between the hatch cover and the coaming, which\nrelieve the elastomeric neoprene seal of load. These pads are local, separate supports \u2014 not a\ncontinuous rigid connection \u2014 so the cover can move slightly relative to the coaming as the hull\ndeflects in a seaway, without transmitting damaging stress into the surrounding structure.\n\n**(c)** [Sketch \u2014 hatch-cover support: weight-bearing pads at the cover/coaming interface, cleat,\nneoprene rubber seal.] Type and location of wear damage: **hatch support (bearing) pads**, at the\ncover/coaming interface \u2014 repeated container-stack loading and vibration wears steel or specialty\n(elastomeric/copper-alloy) pads, reducing pad height, causing improper cover seating, uneven load\ndistribution and stress cracking in adjacent steelwork; **hatch cover stoppers (restraining\ndevices)**, the longitudinal/transverse stoppers at the sides and ends \u2014 buffeting wear enlarges\nclearances, letting the cover shift and deforming the stoppers and surrounding plate; **sealing\narrangement (periphery)**, the rubber gasket and compression/landing bar on the coaming \u2014 uneven\ncompression from pad wear causes permanent set, hardening or tearing of the seal, while the\ncompression bar itself thins from corrosion and friction.",
+      "examiner_focus": [
+        "The hose test's actual figures (nozzle at least 12mm, held within 1.5m, at least 2 bar pressure) are frequently misquoted -- stating a velocity instead of the pressure figure is the specific error examiners flag."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2021",
+          "question_number": "Q13",
+          "marks_parts": [
+            "2",
+            "3",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 22
+        },
+        {
+          "diet": "October 2010",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "3",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 22
+        }
+      ],
+      "canonical_id": "container-ship-cargo-hatch-covers-testing-load-transfer-wear"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.14 \u00b7 Essential information to supply to drydock management before docking",
+      "merged_from_duplicate": false,
+      "answer_markdown": "As Chief Engineer, information to be supplied includes: **vessel specifications** \u2014 dimensions,\ntype, any characteristics affecting the docking process; the **docking plan** itself, the single\nmost important document, showing keel- and bilge-block positions matched to the ship's bottom\nstructure (landing under floors/girders, clear of sea chests, transducers, log/echo-sounder,\nanodes and the propeller/rudder); the **general arrangement plan** \u2014 machinery spaces,\naccommodation, cargo holds; **stability information**, including expected draught and trim during\ndocking and the intended final docking condition \u2014 even keel or a small trim, minimum free\nsurface, and positive GM maintained throughout, with particular attention to the critical instant\nof sternframe touch-down, when the virtual rise of G is greatest; a **repair list** for the\ndocking period; **tank soundings** \u2014 ballast and fuel contents established before entering dock;\n**safety certificates**, including gas-free certificates where relevant; **utilities\nrequirements** \u2014 electrical power, fire-fighting water supply, other services; **communication\nprotocols** between ship's staff and dock management; **emergency procedures** in force during\ndocking; and the ship's **LBP, extreme breadth, light docking displacement**, and the position of\nall overboard discharges and sacrificial anodes.",
+      "examiner_focus": [
+        "The docking plan itself, showing keel/bilge block positions matched to the ship's bottom structure, is the single most important document -- name it explicitly rather than a generic \"give them the ship's plans.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2010",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2017",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 23
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 23
+        }
+      ],
+      "canonical_id": "essential-information-to-supply-to-drydock-management-before"
+    },
+    {
+      "topic_id": "hatch-covers",
+      "title": "Q.12 \u00b7 Hydraulically operated folding hatch cover",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** [Sketch \u2014 folding hatch cover, hydraulic cylinder, chain track.] The cover comprises a pair\nof leaves operated by a hydraulic cylinder: one end of the cylinder is connected to the first\nleaf, the other secured to the deck. Pressurising and de-pressurising the cylinder moves the first\nleaf; a roller-and-chain-track arrangement connects it to the second leaf, transferring motion for\nopening and closing and acting as a guide. When closing, part of the rail retracts so the end\nwheel is lowered, pressing the neoprene seal down onto the coaming rail.\n\n**(b)** Before proceeding to sea, tightness and security should be ascertained by: a **hose test\n(\u22652 bar)** or **ultrasonic test** of the perimeter seal; confirming rubber-to-compression-bar\ncontact and correct compression via a chalk/witness-line check (rubber not over-compressed or\npermanently \"set\"); checking that drainage channels and non-return drain valves in the coaming are\nclear; and verifying that all cleats, cross-joint wedges and locating/landing pads are correctly\nset so the cover cannot lift or \"pant\" at sea.",
+      "examiner_focus": [
+        "Part (b) on watertightness verification is frequently under-answered -- a full-marks response names the hose/ultrasonic test AND the drainage-channel and cleat checks, not just \"check the seal is intact.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2020",
+          "question_number": "Q12",
+          "marks_parts": [
+            "7",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 14
+        },
+        {
+          "diet": "December 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2016",
+          "question_number": "Q12",
+          "marks_parts": [
+            "7",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 14
+        }
+      ],
+      "canonical_id": "hydraulically-operated-folding-hatch-cover"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.13 \u00b7 Aluminium alloy in shipbuilding & welding aluminium panels",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Advantages:** light weight, corrosion resistance (aluminium forms a self-protecting oxide\nfilm \u2014 it is not in fact rapidly corroded in seawater), high versatility, recyclability.\n**Disadvantages:** softer than steel; expensive; requires specialised welding technique; low\nmelting point and loss of strength in fire, requiring A-class insulation protection where used\nin fire-rated divisions; higher thermal expansion than steel; and, the genuine corrosion risk,\n**galvanic corrosion at aluminium-to-steel joints** \u2014 which must be isolated with insulation or an\nexplosion-bonded (bi-metallic) transition strip rather than joined directly.\n\n**(b)** [Sketch \u2014 TIG welding: tungsten electrode, filler wire, shielding gas, arc, molten/solidified\nweld metal.] Gas tungsten arc (TIG) welding uses a non-consumable tungsten electrode with separate\nfiller wire, shielded by an inert gas \u2014 argon or helium \u2014 fed through an annular nozzle around the\nelectrode. It suits shop fabrication better than field work, since the gas blanket must be\nmaintained. DC (usually electrode-negative) or AC current may be used depending on material and\ndesired weld quality; for aluminium specifically, **AC TIG (or MIG) is used** so the cathodic\nhalf-cycle of the AC waveform breaks up aluminium's tenacious oxide film. The work must be cleaned\nof oxide beforehand, and pre-heat/interpass temperature controlled to avoid porosity and\nlack-of-fusion. Argon suits general use; helium gives a hotter arc for thicker sections.",
+      "examiner_focus": [
+        "\"Corrodes rapidly in seawater\" is a common but misleading claim -- aluminium is actually corrosion-resistant via its own oxide film. The real risk is galvanic corrosion at aluminium-to-steel joints, which needs isolation."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2020",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 42
+        }
+      ],
+      "canonical_id": "aluminium-alloy-in-shipbuilding-welding-aluminium-panels"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.13 \u00b7 Fatigue cracks in a ship's hull & drydock hull inspection",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** Fatigue cracks arise from repeated cyclic loading \u2014 wave, wind and manoeuvring forces\nproducing fluctuating stress that accumulates damage over the vessel's operational life; poor\ndesign or inadequate reinforcement at critical areas creates stress concentrations that promote\ncrack initiation. The locations where cracks are actually found, and the ones that score marks,\nare: hatch-corner and deck-opening-corner radii; bracket toes and the ends/heels of longitudinals;\nintersections of longitudinals with transverse webs; lightening-hole edges; side-shell-frame end\nbrackets on bulk carriers; and weld toes with undercut or poor profile. The underlying driver is\n**stress concentration combined with cyclic stress range**, not primarily material weakness.\n\n**(b)** A comprehensive drydock hull inspection: thorough visual examination of the entire hull\nsurface for corrosion, pitting, deformation, visible cracks or weld defects; inspection of\nprotective coating condition (peeling, blistering, or wear exposing bare metal); **ultrasonic\nthickness gauging** at representative locations to identify wastage below acceptable limits;\nclose-up inspection of welded joints, brackets and supports \u2014 using a borescope where access is\ndifficult \u2014 with **MPI or dye-penetrant** for surface-crack detection and **UT** for thickness and\nembedded defects; assessment for deformation from grounding or collision, including hogging or\nsagging along the ship's length; opening sea chests for cleaning/inspection and checking sea\nvalves for wear or corrosion; and systematic recording of all findings, referenced to the class\n**Enhanced Survey Programme (ESP)** close-up survey and thickness-measurement reporting\nrequirements.",
+      "examiner_focus": [
+        "Naming specific high-incidence locations (bracket toes, longitudinal/web intersections, lightening-hole edges) scores far better than the generic \"areas of stress concentration.\""
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2016",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "7"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 17
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "7"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 17
+        }
+      ],
+      "canonical_id": "fatigue-cracks-in-a-ship-s-hull-drydock-hull-inspection"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.12 \u00b7 Aft-end vibration at full-service speed \u2014 report to the Engineer Superintendent",
+      "merged_from_duplicate": false,
+      "answer_markdown": "*(Original answer format retained: a report to the Superintendent Engineer.)*\n\n**Possible causes:** propeller issues (imbalance, damage, cavitation); shaft misalignment between\nthe propulsion shaft and stern tube bearings; structural resonance in the aft section (stern\nframe, hull, supporting structures prone to resonance/harmonic amplification); machinery imbalance\nin rotating equipment; insufficient vibration damping. The technically decisive cause to name is\n**blade-rate (blade-passing frequency) resonance**: the propeller's exciting frequency = shaft rpm\n\u00d7 number of blades, and when this coincides with a natural frequency of the aft hull/sterngear the\nresonance and harmonic amplification described above results \u2014 cavitation-induced pressure pulses\non the hull plating above the propeller are the usual driving mechanism.\n\n**Recommendations for this vessel:** propeller inspection and balance/cavitation check; alignment\ncheck between propulsion shaft and stern tube bearings; structural analysis of the aft section to\nidentify and address resonance; machinery alignment and balancing; enhanced vibration damping; sea\ntrial and performance monitoring after remedial work.\n\n**Recommendations for sister vessels under construction:** increase propeller tip clearance from\nthe hull; fit a highly-skewed propeller to soften pressure pulses; adjust the number of blades to\nshift blade-rate frequency away from the hull's natural frequencies; run a finite-element vibration\nanalysis at the design stage; standardise machinery alignment/balancing procedures; fit real-time\nvibration monitoring; document lessons learned for future construction projects. These specific\nmeasures are what earn the marks, rather than a generic \"reinforce the structure.\"",
+      "examiner_focus": [
+        "Naming blade-rate (blade-passing frequency) resonance explicitly -- shaft rpm times number of blades -- is the technically decisive point; a vague \"propeller imbalance\" answer misses the resonance mechanism being tested."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2019",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 19
+        },
+        {
+          "diet": "July 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 19
+        }
+      ],
+      "canonical_id": "aft-end-vibration-at-full-service-speed-report-to-the-engine"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.13 \u00b7 Transverse watertight bulkheads \u2014 reasons, definition, minimum number/location, testing",
+      "merged_from_duplicate": false,
+      "answer_markdown": "*(These are the same core topic asked in two slightly different part-breakdowns across the source\nsittings; merged into a single canonical answer covering every part asked in either version.)*\n\n**Reasons for fitting transverse watertight bulkheads:** flood prevention/containment \u2014 dividing\nthe ship into separate compartments limits the spread of water if the hull is breached, preserving\nbuoyancy and survivability; structural integrity \u2014 bulkheads act as strength members, effectively\nas pillars supporting deck and tank tops and helping resist the hull's overall bending and shear;\nstability improvement \u2014 additional support and reduced free-surface effect; fire containment \u2014\nbulkheads can serve as fire barriers restricting spread between compartments.\n\n**What constitutes a watertight bulkhead:** a vertical partition designed to prevent water passing\nfrom one compartment to another, built with minimal openings, of reinforced steel (or equivalent)\nplating able to withstand the hydrostatic head of a flooded adjacent compartment without leakage\nor structural failure.\n\n**Minimum number and location:** for a ship with machinery amidships, typically **four** watertight\nbulkheads minimum \u2014 collision bulkhead, after peak bulkhead, and one bulkhead at each end of the\nmachinery space; a ship with machinery aft needs a minimum of **three**. The number required\nincreases with ship length under class rules. The **collision bulkhead** is positioned not less\nthan **0.05L** and not more than **0.08L** (in some cases 0.05L + 3 m) abaft the forward\nperpendicular, extending from the bottom of the hull to the upper (bulkhead) deck. The **after\npeak bulkhead** encloses the stern tube and extends to at least the first deck above the load\nwaterline.\n\n**Testing:** a **hose test** (water sprayed onto joints/seams) proves joint and seam tightness\nonly. The proper strength/boundary test of the bulkhead structure itself is a **fill (head) test**\n\u2014 filling the compartment, or a test tank, to reproduce the design hydrostatic head \u2014 or an\n**air/leak test** using a leak-indicating solution. State explicitly that the test reproduces the\ndesign head; a hose test alone does not validate structural strength.",
+      "examiner_focus": [
+        "A hose test only proves joint tightness, not structural strength -- the actual strength/boundary test is a fill (head) test to the design hydrostatic pressure, a distinction frequently missed."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2016",
+          "question_number": "Q12",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 16
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 16
+        }
+      ],
+      "canonical_id": "transverse-watertight-bulkheads-reasons-definition-minimum-n"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.14 \u00b7 Dry-dock specification \u2014 repair of ballast-tank shell damage, and costing factors",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Scope of work:** removal and replacement of the damaged shell plating (~2 m\u00b2, 15 mm thick\nsteel), repair or replacement of the relevant damaged stiffeners, NDT inspection of adjacent areas\nfor hidden damage, and surface preparation/recoating to the vessel's approved coating system.\n\n**Repair procedure:** preparation \u2014 schedule docking, allocate resources, obtain permits; removal\n\u2014 cut out the damaged shell plating and stiffeners with clean, precise edges, disposing of removed\nmaterial per environmental regulations; replacement \u2014 fit and weld new 15 mm plate of the\n**correct grade and thickness to class**, supported by mill/material certificates and class\napproval of the repair, using an **approved welding procedure (WPS)** with certified welders;\nNDT inspection of repaired and adjacent sections (**UT/MPI** to a stated acceptance standard);\nsurface preparation and coating to the approved system; quality assurance throughout, with regular\ninspection and testing.\n\n**Factors to consider when costing:** material costs (plate/stiffener procurement, transport,\ncertification); labour costs (hours, complexity, accessibility, shipyard rates); equipment and\ntools; subcontracted services (NDT, surface preparation, painting); dry-docking expenses; **class/\nflag surveyor attendance** for the repair; **staging and tank access**; **gas-freeing and\ncontinuous ventilation** \u2014 hot work in a ballast tank is enclosed-space work requiring a hot-work\npermit; and a contingency allowance for unforeseen circumstances.\n\n**Documentation:** a detailed repair report (work performed, materials used, QC measures), NDT\ninspection reports, coating application records (type, thickness, method), and copies of relevant\ncertificates, permits and approvals.",
+      "examiner_focus": [
+        "Requiring an approved welding procedure (WPS) with certified welders, and confirming the correct plate grade/thickness to class, are the specification details that separate a full-marks answer from a generic repair list."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "October 2016",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 18
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 18
+        }
+      ],
+      "canonical_id": "dry-dock-specification-repair-of-ballast-tank-shell-damage-a"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.13 \u00b7 Large bulk carriers \u2014 mid-ship cross-section & anti-failure design features",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** [Sketch \u2014 mid-ship cross-section: strength deck plating with hatch coaming; topside tank\nwith sloping plating and transverse ring web; side-shell frame and longitudinals; hopper tank\nsloping plating and transverse ring web; cargo hold; double-bottom tank with centre and side\ngirders; duct keel; keel plate; bilge plating \u2014 as per original figure.]\n\n**(b)** Design features that have evolved to minimise the possibility of failure, tied to the\n**SOLAS Chapter XII** bulk-carrier safety measures introduced following the heavy bulk-carrier\nlosses of the 1980s\u201390s (the *Derbyshire* era): **mandatory water-ingress detection alarms** in\nholds and forward spaces; a strengthened **No.1 hold and the transverse corrugated bulkhead\nbetween Nos. 1 and 2 holds** \u2014 the critical progressive-flooding interface; **loading-instrument\nverification with restricted/alternate-hold loading** to limit hull shear and bending stress; and\nthe move to **double-side-skin construction**, giving an extra layer of protection against breach.\nThe topside and hopper ballast tanks visible in the section give the design both its strength and\nits self-trimming cargo geometry.",
+      "examiner_focus": [
+        "Tying the design features explicitly to the SOLAS Chapter XII post-Derbyshire safety measures (water-ingress alarms, strengthened No.1 hold) scores over a generic \"double hull makes it safer\" answer."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 41
+        }
+      ],
+      "canonical_id": "large-bulk-carriers-mid-ship-cross-section-anti-failure-desi"
+    },
+    {
+      "topic_id": "watertight-integrity-load-line",
+      "title": "Q.14 \u00b7 Recently purchased older vessel \u2014 report on conditions of assignment to the Superintendent",
+      "merged_from_duplicate": false,
+      "answer_markdown": "*(Note: distinct from the main 5\u00d7-repeated Load Line \"conditions of assignment\" cluster \u2014\n2011/2020/2022/2024/2025 Dec, filed in the Part 1 canonical answers \u2014 this is a separately-framed\nquestion specific to a recently purchased older vessel.)*\n\nAs Chief Engineer, the answer should be built around the **Load Line conditions of assignment**\nspecifically \u2014 the items on which the vessel's assigned freeboard depends \u2014 rather than a generic\nmachinery/safety condition survey: watertight/weathertight integrity of all closing appliances\n(hatch covers, doors, companionways, ventilators and air pipes with automatic closing devices);\nfreeing ports, scuppers and overboard discharges; guard rails/bulwarks and safe means of access\n(gangway, lifelines); machinery-space opening closures; correctness and visibility of the deck\nline, load-line marks and draught marks; hull structural integrity (visual inspection, thickness\nmeasurements) and up-to-date stability information; and maintenance records confirming these items\nhave been kept in proper working order.\n\nA broader vessel-condition survey remains relevant context for a recently purchased older ship \u2014\nmachinery spaces (main engine, auxiliary generators, lubrication, cooling), fuel systems,\nelectrical systems (main switchboard, emergency power), safety equipment (lifesaving appliances,\nfirefighting), pollution-prevention equipment (OWS, sewage treatment), navigation equipment\n(radar, comms, EPIRB), cargo/ballast systems, ventilation systems, and documentation review (class\ncertificates, maintenance records) \u2014 but the marks in this specific question sit in the Load Line\nitems listed above, and the answer should be reframed around them.",
+      "examiner_focus": [
+        "This is a Load-Line question in disguise -- the marks sit in the same conditions-of-assignment checklist as the main Load Line question, not a general vessel condition survey, despite the \"older vessel\" framing."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 2
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 2
+        }
+      ],
+      "canonical_id": "recently-purchased-older-vessel-report-on-conditions-of-assi"
+    },
+    {
+      "topic_id": "fire-protection",
+      "title": "Q.12 \u00b7 Standing orders \u2014 serious fire in machinery spaces while in dry dock",
+      "merged_from_duplicate": false,
+      "answer_markdown": "Standing orders should cover: **immediate response** \u2014 raise the alarm, notify bridge and dry dock\nmanagement with location and extent; **evacuation** \u2014 clear machinery spaces and adjacent areas,\nmuster at the designated assembly point and report to the supervisor; **firefighting equipment**\n\u2014 use portable extinguishers (CO2 or foam) only if trained and it is safe to do so, without taking\nundue risk; **isolation of equipment** \u2014 shut down machinery/electrical systems if safe, close\nfuel oil, lube oil and other flammable-liquid valves; **communication** \u2014 maintain contact\nthroughout, reporting conditions and any trapped personnel to emergency services; **fire control**\n\u2014 activate fixed firefighting systems if available, and assist firefighters with vessel layout and\nhazard information; **post-incident actions** \u2014 account for all personnel, do not re-enter until\ndeclared safe; plus training/drills, reporting procedures and safety-equipment checks as ongoing\nmeasures.\n\nThe point that specifically carries marks for this question: **in dry dock, the ship's own fixed\nCO2/sea-water fire main is normally out of action** \u2014 sea suctions exposed, systems isolated for\nhot work \u2014 so primary fire cover comes from the **shore/yard fire main and the dock fire party**,\nand the standing orders must state who supplies fire-fighting water in that condition. A hot-work\npermit, continuous fire watch and boundary-cooling regime should be in force; the alarm must alert\nboth ship and yard; and escape routes and the muster point differ in dock \u2014 via staging/gangways\nand typically a single brow. These dry-dock-specific points, not the generic fire drill, are where\nthe marks lie.",
+      "examiner_focus": [
+        "In dry dock the ship's own fixed fire main is normally out of action (sea suctions exposed for the docking) -- stating that primary fire cover comes from the shore/yard fire main and dock fire party is the dry-dock-specific point that earns marks, not a generic fire drill."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2018",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 40
+        },
+        {
+          "diet": "July 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "standing-orders-serious-fire-in-machinery-spaces-while-in-dr"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.13 \u00b7 Defects in ballast-tank steelwork \u2014 causes, areas affected, minimisation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Causal factors:** corrosion \u2014 general corrosion, pitting, and microbially-influenced\ncorrosion (MIC), worsened by inadequate coating and contaminants; poor maintenance \u2014 inadequate\ntank cleaning/inspection, poorly secured manhole covers allowing water ingress; stress\nconcentrations at welds, fittings, or points where temporary lifting devices were used during\nconstruction, compounded by repeated loading/unloading fatigue cycles; and operational practice \u2014\nimproper or too-rapid ballasting/deballasting causing pressure surges and excessive force.\n\n**(b) Areas most likely to be affected, and how indicated:** tank bottom plating \u2014 erosion/\ncorrosion from sediment accumulation and stagnant water, shown by visible rust/pitting and\nconfirmed by ultrasonic thickness measurement; weld seams \u2014 stress-concentration points, shown by\nvisible cracks/deformation and confirmed by dye-penetrant or ultrasonic NDT; tank-top/under-deck\nplating and especially the **air\u2013water interface (\"waterline band\")**, where alternating wet/dry\nexposure with oxygen produces the worst pitting; horizontal surfaces \u2014 flange faces, brackets,\nstiffener tops \u2014 that hold standing water; and around heating coils and the suction bell-mouth,\nwhere erosion-corrosion is common.\n\n**(c) Methods to minimise damage:** a rigorous inspection and maintenance schedule with routine\ncleaning to remove sediment and contaminants; high-quality protective coatings as the primary\nbarrier \u2014 referencing the **IMO PSPC (Performance Standard for Protective Coatings)**, a 15-year\ntarget-life coating system mandated for dedicated seawater ballast tanks; and **cathodic\nprotection** (sacrificial anodes or impressed current) as a complementary measure, not an\nalternative \u2014 anodes only protect bare/holiday areas where the steel is wet, so coating and anodes\nwork together.",
+      "examiner_focus": [
+        "The waterline/part-full band -- where alternating wet/dry exposure with oxygen gives the worst pitting -- is the area most often missed in favour of the more obvious tank bottom."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2018",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "4",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 39
+        }
+      ],
+      "canonical_id": "defects-in-ballast-tank-steelwork-causes-areas-affected-mini"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.12 \u00b7 Hazards in enclosed spaces (oily bilge tank, ballast tank, refrigerated space) & entry procedure",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Hazards.** All three named spaces are, first and foremost, **oxygen-deficiency/enclosed-space\nrisks**, each with a specific additional hazard layered on top: **oily bilge tank** \u2014 oxygen\ndepletion from rusting/oxidation of the steel, plus flammable hydrocarbon vapour as a fire hazard\nin contact with hot surfaces or sparks, the oil itself acting as an added fuel source; **ballast\ntank** \u2014 stagnant water and organic material generating toxic gases such as hydrogen sulphide or\nmethane, posing a serious health risk; **refrigerated space** \u2014 often limited ventilation risking\nlow oxygen levels, worsened by any refrigerant leak, which is asphyxiant, or toxic if ammonia.\n\n**(b) Procedures prior to entering enclosed spaces (per COSWP 2025):** pre-entry planning \u2014 a risk\nassessment identifying hazards, and an entry plan; ventilation and isolation \u2014 ventilate\nthoroughly, isolate connecting pipelines/machinery with lock-out/tag-out; atmosphere testing \u2014 test\nwith calibrated gas detectors at top, middle and bottom of the space, **in the fixed order O\u2082 \u2192\nflammable \u2192 toxic**, entering only when **O\u2082 = 20.9% by volume**, flammable gas **< 1% LFL**,\n**H\u2082S < 5 ppm** and **CO < 30 ppm**, keeping ventilation running and re-testing periodically;\nsafety equipment \u2014 rescue equipment ready at the entrance with a designated rescue party, and PPE\nincluding a personal gas monitor, harness, lifeline, safety torch and EEBD; and an enclosed-space\nentry permit with a toolbox meeting, plus a trained attendant posted at the entrance maintaining\nradio communication and continuous monitoring.",
+      "examiner_focus": [
+        "All three spaces are fundamentally oxygen-deficiency risks first -- treating the oily bilge tank as purely a fire hazard, without naming oxygen depletion from rusting, is the most common omission."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2017",
+          "question_number": "Q12",
+          "marks_parts": [
+            "2",
+            "2",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 15
+        },
+        {
+          "diet": "July 2016",
+          "question_number": "Q13",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 15
+        }
+      ],
+      "canonical_id": "hazards-in-enclosed-spaces-oily-bilge-tank-ballast-tank-refr"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.13 \u00b7 Twin skeg rudders \u2014 reasons for fitting & advantages of the installation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "A **skeg** is a structural extension of the hull that carries or encloses the propeller shaft and\nsupports the rudder. A **twin-skeg** arrangement places two shafts and propellers beneath a wide,\nshallow, full-form hull \u2014 used on large bulkers, car carriers and LNG ships, where a single screw\nwould be too large or too heavily loaded for the available draught.\n\n**(a) Reasons for fitting:** improved manoeuvrability at low speed \u2014 two rudders give more\neffective directional control for docking and narrow channels; redundancy \u2014 loss of one\nrudder/propeller line still leaves propulsion and steering available via the other; and \u2014 the\ndominant genuine reason \u2014 a shallower draught than a single-screw arrangement of equivalent power\nwould require.\n\n**(b) Advantages for modern large-cargo-capacity vessels:** a better, more uniform wake field\ngiving higher propulsive efficiency with less cavitation and vibration; the ability to fit two\nsmaller-diameter propellers under limited draught; true propulsion redundancy; more even\ndistribution of structural load across the bottom; reduced vulnerability to losing all propulsion\nor steering to a single incident; and flexibility for naval architects to optimise the hull form\nfor cargo capacity while still achieving good propulsive efficiency. (\"Increased stability against\nrolling\" is a weak claim for twin skegs \u2014 they add little roll damping, and should not be led\nwith.)",
+      "examiner_focus": [
+        "\"Increased stability against rolling\" is a weak claim for twin skegs -- they add little roll damping. Lead instead with the genuine advantages: wake-field uniformity, shallower draught, and propulsion redundancy."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2017",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "7"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 21
+        },
+        {
+          "diet": "July 2024",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "twin-skeg-rudders-reasons-for-fitting-advantages-of-the-inst"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.13 \u00b7 Propulsion efficiency \u2014 ducted propeller (Kort nozzle) and vane/Grim wheel",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Ducted propeller (Kort nozzle).** [Sketch \u2014 cylindrical duct surrounding the propeller.] A\nKort nozzle surrounds the propeller with a cylindrical duct that streamlines inflow, accelerates\nwater through the propeller disc, and reduces tip-vortex losses. It is most beneficial on\n**heavily-loaded propellers at low speed/high thrust** \u2014 tugs, trawlers, DP vessels \u2014 where it\nraises bollard pull; on a fast, lightly-loaded merchant ship, the duct's own drag at speed can\ncancel the gain. Advantages: increased thrust, reduced power consumption, improved low-speed\nmanoeuvrability. Disadvantages: added weight and complexity, cost, potential for cavitation if\npoorly designed.\n\n**(b) Vane or Grim wheel aft of the propeller.** [Sketch \u2014 vane wheel mounted aft of the\npropeller.] The Grim vane wheel is **free-running, not fixed**: its smaller inner radius acts as a\nturbine driven by the propeller's rotational slipstream, while its larger outer radius acts as a\npropeller, adding thrust \u2014 recovering rotational (swirl) energy that would otherwise be lost as\nwake turbulence. Advantages: energy recovery, reduced wake turbulence, enhanced thrust at low\nspeed. Disadvantages: increased drag, maintenance requirements, space constraints, and a known\nweakness of **blade fatigue/fracture in service**.",
+      "examiner_focus": [
+        "The Kort nozzle only helps heavily-loaded propellers at low speed/high thrust -- on a fast, lightly-loaded merchant ship its own drag at speed can cancel the gain, a nuance often left out of a purely descriptive answer."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2017",
+          "question_number": "Q13",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 38
+        },
+        {
+          "diet": "March 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "propulsion-efficiency-ducted-propeller-kort-nozzle-and-vane-"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.12 \u00b7 Five methods to prevent distortion of plates and frames during welded hull repairs",
+      "merged_from_duplicate": false,
+      "answer_markdown": "[Sketch \u2014 five methods illustrated.] For a 10-mark sketch question, the marks sit in annotating\neach method with its distortion-control *principle*, not just naming it:\n\n1. **Weld both sides (balanced/double-sided welding)** \u2014 equalises shrinkage about the neutral axis.\n2. **Back-step welding** \u2014 short runs deposited in the reverse direction so each run's contraction\n   opposes the last.\n3. **Skip or wandering technique** \u2014 spreads heat input to avoid local build-up.\n4. **Toggle-plate welding (tack/strongback restraint)** \u2014 holds the plates to the set gap.\n5. **Sequence welding** \u2014 a balanced welding sequence working outward from the centre.\n\nFurther recognised methods worth adding for completeness: **pre-setting/pre-cambering** the plates\nbefore welding, and **controlled heat input** (low-hydrogen consumables, correct run size).\nWriting the principle beside each sketch is what earns the marks.",
+      "examiner_focus": [
+        "For a 10-mark sketch question, the marks sit in annotating each method with its distortion-control principle beside the sketch, not just labelling the method name."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2016",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2013",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "five-methods-to-prevent-distortion-of-plates-and-frames-duri"
+    },
+    {
+      "topic_id": "hull-strength-stresses-distortion",
+      "title": "Q.14 \u00b7 Preventing hull fractures due to corrosion fatigue in modern shipbuilding practice",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Corrosion fatigue** is fatigue cracking accelerated by a corrosive environment, so the measures\nadopted must address stress and corrosion together, not separately: **material selection** \u2014\nhigh-tensile steel, corrosion-resistant alloys, and corrosion-resistant coatings; **design** \u2014\neliminating stress concentrations at source through generous radii at hatch corners, soft/scarfed\nbracket toes, and avoiding notches; **assembly sequence** \u2014 prefabricated, pre-cut plates aligned\nand welded using established procedures, approved consumables and controlled parameters, via\nstandard shipbuilding processes such as **submerged-arc, flux-cored, or manual metal arc welding**\n(laser welding is not standard practice for ship hulls); **weld quality** \u2014 good weld profile and\nfull penetration, avoiding undercut, and grinding or peening weld toes at fatigue-critical details;\n**post-weld treatment** \u2014 stress relieving, heat treatment, or shot blasting to remove surface\nirregularities; and **surface protection on completion of construction** \u2014 thorough surface\npreparation (abrasive blasting or high-pressure water jetting to remove contaminants, rust and mill\nscale), followed by a **multi-layer coating system** (primer, intermediate coat, topcoat, typically\nepoxy-based) referenced to the **IMO PSPC** standard for ballast tanks, plus **cathodic protection**\n(sacrificial anodes or impressed current). Ongoing regular inspection, maintenance and periodic\nrecoating complete the picture \u2014 keeping the surface coated is what prevents corrosion pits from\ninitiating the cracks in the first place.",
+      "examiner_focus": [
+        "The question specifically asks about corrosion FATIGUE -- a strong answer addresses stress-concentration design and corrosion protection together as one mechanism, not as two separate lists."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "August 2020",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 43
+        }
+      ],
+      "canonical_id": "preventing-hull-fractures-due-to-corrosion-fatigue-in-modern"
+    },
+    {
+      "topic_id": "drydocking-survey-classification",
+      "title": "Q.13 \u00b7 Harmonised System of Survey & Certification (HSSC); load-line certificate inspection items",
+      "merged_from_duplicate": false,
+      "answer_markdown": "*(Separate cluster from the main Load Line \"conditions of assignment\" question \u2014 this is the\nshorter 4+6-mark HSSC-plus-certificate question, predating the Marine Samraj catalog's Jul 2016\nstart date, and lives here in the older Part 2 file rather than merged with the Part 1 cluster.)*\n\n**(a) HSSC.** An IMO initiative that aligns survey and certification requirements across\nconventions \u2014 SOLAS, MARPOL, Load Line and others. Its defining mechanism, and the point examiners\nlook for, is that it sets a **5-year certificate cycle** with annual/intermediate/renewal surveys\ntimed so that the different conventions' surveys fall together within a survey window of roughly\n**\u00b13 months** about the certificate's anniversary date. This delivers efficiency (fewer redundant\nsurveys), consistency (uniform assessment regardless of flag state), simplification (clearer\nadministrative requirements), and interoperability (mutual recognition of surveys and certificates\nbetween classification societies and regulators).\n\n**(b) Load-line certificate \u2014 items inspected and how kept in compliance.** The load-line renewal\nsurvey occurs every 5 years, with annual surveys in between. Items inspected: hull condition\n(corrosion, damage, structural integrity affecting buoyancy and stability); load-line marks\n(correctly displayed, visible, accurately reflecting the assigned freeboard); hatch covers and\nother closing appliances (watertight, in good working order); freeing ports and scuppers\n(unobstructed, functioning); up-to-date stability information; and maintenance records confirming\nregular inspection. These items are, precisely, the **conditions of assignment** of freeboard, and\ncompliance is maintained through the regular survey cycle, ongoing maintenance protocols for all\nload-line fittings, documentation updates, and crew training/awareness.",
+      "examiner_focus": [
+        "HSSC's defining mechanism is aligning survey timing across conventions within a roughly plus-or-minus 3 month window of the certificate anniversary -- naming this window, not just \"it harmonises surveys,\" is the examiner-credited point."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "harmonised-system-of-survey-certification-hssc-load-line-cer"
+    },
+    {
+      "topic_id": "ship-types-construction",
+      "title": "Q.12 \u00b7 TBT antifouling ban; alternative coatings; underwater coating selection",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** The IMO has banned tributyltin (TBT) antifouling coatings under the **AFS Convention**\n(International Convention on the Control of Harmful Anti-fouling Systems on Ships, 2001; in force\n2008), because TBT is highly toxic to non-target marine organisms, causes hormone disruption \u2014\n**imposex** (masculinisation) in molluscs such as the dog whelk, and shell malformation in\noysters \u2014 and bioaccumulates up the food chain.\n\n**(b) Alternative coatings:** **copper-based coatings** (base element copper, releasing copper\nions toxic to fouling organisms \u2014 a biocide, but less harmful than TBT); **biocide-free\nfoul-release coatings** (based on silicone or fluoropolymer \u2014 non-toxic, low-surface-energy\npolymers that prevent firm attachment without leaching any chemical).\n\n**(c) Considerations in selecting an underwater coating:** environmental impact and regulatory\ncompliance (minimal harmful leaching, AFS Convention compliance); fouling resistance and\ndurability over the intended drydocking interval; self-polishing versus hard/ablative behaviour;\napplication process (surface preparation, curing time); compatibility with the existing coating\nsystem; cost-effectiveness; and the ship's speed and activity profile \u2014 a slow-moving or\nfrequently-idle vessel fouls faster and needs a coating matched to that duty cycle.",
+      "examiner_focus": [
+        "Naming the specific mechanism (imposex -- hormone-driven masculinisation in molluscs such as the dog whelk) rather than a vague \"harmful to marine life\" is what separates a strong part (a) answer."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "tbt-antifouling-ban-alternative-coatings-underwater-coating-"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.13 \u00b7 Propeller slip \u2014 definition, calculation, conditions affecting it",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)** Propeller slip is the difference between the theoretical distance a propeller should\nadvance in one revolution, based on its pitch, and the distance it actually advances through the\nwater, expressed as a percentage of the theoretical distance. Two distinct figures should be\ndistinguished: **apparent slip** = (engine speed \u2212 ship's speed) / engine speed, where engine\nspeed = pitch \u00d7 rpm and ship's speed is read from the log; **real slip** = (engine speed \u2212 speed of\nadvance Va) / engine speed, where Va = V(1 \u2212 w) and w is the wake fraction. Real slip is always\npositive; apparent slip can go negative in a following current or sea \u2014 the **wake fraction** is\nwhat makes apparent and real slip differ.\n\n**(b) Conditions affecting slip, with reasons:** hull condition \u2014 fouling or damage increases drag\nand hence slip; vessel speed \u2014 for a displacement ship, slip typically falls as speed rises;\npropeller design \u2014 diameter, pitch and blade shape affect efficiency, with a larger-diameter\npropeller generally showing less slip; environmental conditions \u2014 wind, current and sea state, a\nhead sea or adverse current increasing resistance and hence slip; and draught/displacement, since\na deeper, heavier ship experiences more slip. (Reasoning based on displacement-versus-planing\nmode belongs to fast planing craft, not a normal displacement merchant ship, and should not be\napplied here.)",
+      "examiner_focus": [
+        "Distinguishing apparent slip from real slip (via the wake fraction) is the key technical point -- many candidates only know one definition and conflate the two."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2014",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        }
+      ],
+      "canonical_id": "propeller-slip-definition-calculation-conditions-affecting-i"
+    },
+    {
+      "topic_id": "rudders-propulsion-propellers",
+      "title": "Q.14 \u00b7 Large fixed-bladed propellers \u2014 effect of hull fouling, clean/ballast operation, light propeller",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i) Effect of hull fouling.** Marine growth \u2014 barnacles, algae \u2014 accumulating on the hull and\npropeller increases drag and reduces propeller efficiency, so more power is needed to achieve the\nsame thrust, resulting in decreased speed and increased fuel consumption at a given rpm.\n\n**(a)(ii) Operation in clean hull, ballast condition.** With minimal drag and the ship in a\nbalanced ballast condition, the propeller achieves optimal thrust with lower power requirements,\nenhancing both speed and fuel efficiency. [Sketch \u2014 engine power (% kW) vs %rpm, showing\nclean/ballast, fouled, and light-running curves about MCR.] The diagram is read in terms of engine\nmargin: a propeller is **\"light\"** when it absorbs less torque for a given rpm, so its\npower-demand curve sits to the right (higher rpm) of the design curve, letting the engine reach MCR\nrpm and full power before the torque/overload limit is reached. The reserve between the running\npoint and that limit is the **Light Running Margin (LRM)**, typically **~4\u20137%**.\n\n**(b) Why fitting a light propeller may be beneficial.** As the hull and propeller foul, and in\nadverse weather, the demand curve shifts left into **\"heavy running\"** \u2014 the LRM is precisely what\nlets the engine still develop full power in that condition without exceeding the torque limit or\noverloading. Naming \"heavy running\" explicitly and quoting the LRM figure \u2014 rather than generic\nstatements about manoeuvrability and fuel economy \u2014 is what scores the marks. A light propeller\nalso helps vessels navigate critical speed ranges more safely, since the increased power margin\nreduces the risk of damaging vibration, adapting to hull fouling and adverse weather to ensure full\npower remains available when needed.",
+      "examiner_focus": [
+        "Naming \"heavy running\" explicitly and quoting the Light Running Margin figure (roughly 4-7%) is what scores the marks in part (b), rather than generic statements about fuel economy or manoeuvrability."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2015",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": null,
+          "source": "pre_catalog_or_unverified",
+          "note": "Predates catalog range or not found in catalog/screenshot -- Q-number/marks not verified."
+        },
+        {
+          "diet": "July 2019",
+          "question_number": "Q12",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 13
+        },
+        {
+          "diet": "March 2023",
+          "question_number": "Q14",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 13
+        },
+        {
+          "diet": "December 2024",
+          "question_number": "Q14",
+          "marks_parts": [
+            "3",
+            "3",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 13
+        }
+      ],
+      "canonical_id": "large-fixed-bladed-propellers-effect-of-hull-fouling-clean-b"
+    },
+    {
+      "topic_id": "enclosed-spaces-cargo-conventions",
+      "title": "Q.12 \u00b7 Hazards in enclosed spaces (oily bilge tank / ballast tank / chain locker) & entry guidance",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Hazards, with reasons:** **oily bilge tanks** \u2014 oxygen depletion from rusting/oxidation of the tank steel, compounded by flammable hydrocarbon vapour given off by residual oil and sludge, a fire/explosion risk in contact with hot surfaces or sparks, with the oil itself acting as an added fuel source; **ballast tanks** \u2014 oxygen deficiency from rusting of the large internal steel surface area, plus stagnant water and trapped organic material generating toxic gases such as hydrogen sulphide or methane; **chain lockers** \u2014 oxygen deficiency, chiefly from rusting of the chain and locker steel consuming oxygen, plus risk of toxic/flammable gas accumulation given poor natural ventilation in the enclosed, awkwardly-shaped space, and physical hazards from shifting chain, slip/trip and entrapment risk in a confined space with limited access.\n\n**(b) Guidance to be followed before entry into an enclosed space (per COSWP):** a pre-entry risk assessment and entry plan; thorough ventilation and isolation of connecting pipelines/machinery with lock-out/tag-out; atmosphere testing with calibrated gas detectors at top, middle and bottom, in the fixed order **O\u2082 \u2192 flammable \u2192 toxic**, entering only when **O\u2082 = 20.9% by volume**, flammable gas **< 1% LFL**, **H\u2082S < 5 ppm** and **CO < 30 ppm**, keeping ventilation running and re-testing periodically and after any break; rescue equipment ready at the entrance with a designated rescue party, and PPE including a personal gas monitor, harness, lifeline, safety torch and EEBD; a full **enclosed-space entry permit** with a toolbox meeting; and a trained attendant posted at the entrance maintaining continuous radio communication and monitoring throughout.",
+      "examiner_focus": [
+        "Chain lockers are an oxygen-deficiency risk chiefly from rusting of the chain itself -- easy to miss if a candidate defaults only to \"toxic gas\" reasoning for this space."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q14",
+          "marks_parts": [
+            "2",
+            "2",
+            "2",
+            "4"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 49
+        }
+      ],
+      "canonical_id": "hazards-in-enclosed-spaces-oily-bilge-tank-ballast-tank-chai"
+    },
+    {
+      "topic_id": "roll-reduction-stability",
+      "title": "Roll reduction systems (bilge keels, passive anti-roll tanks, fin stabilisers)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Roll reduction systems \u2014 bilge keels, passive anti-roll tanks, fin stabilisers**\n\n*Covers two mark-split variants seen across sittings: a 5/5 split (bilge keels + passive tanks only \u2014\nJul 2016, Mar 2018, Dec 2025) and a 4/6 split (\"bilge keels stating advantages\" + \"TWO other methods\nof roll reduction\" \u2014 Dec 2019, Mar 2022). The content below serves both: use (a)+(b) for the 5/5\nform, or (a)+(b)+(c) selecting any two of the \"other methods\" for the 4/6 form.*\n\n**(a) Bilge keels.** Narrow fins or plates attached longitudinally along the turn of the bilge, on\nboth sides of the hull, running roughly amidships. They work by increasing hydrodynamic resistance\n\u2014 generating eddies and vortex shedding \u2014 as the vessel rolls, which damps the roll amplitude by\ndissipating energy rather than by any restoring moment. Advantages: low maintenance compared with\nactive systems; no internal components, so no loss of cargo or operational space; relatively\ninexpensive to fit and maintain; and \u2014 the point examiners specifically look for in a\ncomparison \u2014 bilge keels work at **zero speed**, unlike fin stabilisers.\n\n**(b) Passive (uncontrolled) anti-roll tanks.** Free-flooding tanks, typically port and starboard\nor a U-tube arrangement, in which water shifts from side to side as the vessel rolls. The tank is\ntuned so that the water's natural sloshing period is close to the ship's natural roll period; the\nphase lag between the water's motion and the hull's motion creates a moment that opposes the roll\nand damps its amplitude. Advantages: mechanically simple, no power or control system required, and\nrelatively cheap to install. Disadvantages: the tank's free surface always **reduces GM** \u2014 it does\nnot increase stability, and any answer listing \"increased stability\" as an advantage of a passive\ntank is self-contradictory, since the same free-surface effect is also correctly listed as a\ndisadvantage. The real benefit is roll-amplitude damping near the tuned frequency, accepted at a\nsmall, known GM cost. A second trap worth stating explicitly: because the tank is tuned to a\n*specific* natural roll period, if that period shifts with a change in loading condition (a change\nin GM), the tank can become mismatched \u2014 losing its damping effect, or in the worst case,\nreinforcing rather than opposing the roll. Delayed response time and the significant space taken up\nby the tank are the other recognised disadvantages.\n\n**(c) Active fin stabilisers** (the usual choice for the second \"other method,\" 4/6-split variant).\nUnderwater, wing-like appendages fitted to both sides of the hull below the waterline. Sensors\ndetect the ship's roll and command hydraulic cylinders to tilt the fins, generating hydrodynamic\nlift that opposes the roll \u2014 analogous to how an aircraft wing generates lift, but here the \"angle\nof attack\" is actively commanded rather than fixed. Advantages: superior roll reduction compared\nwith passive systems, improving both safety and comfort, and highly efficient at cruising speed.\nDisadvantages: increased drag and fuel consumption from the extended fins; risk of damage\n(vulnerable to grounding, fishing gear, ice); and \u2014 the standard advantage/disadvantage comparison\nexaminers expect \u2014 **fins are ineffective at low speed and at anchor**, since they rely on forward\nway through the water to generate lift, whereas bilge keels and passive tanks continue to work at\nzero speed.",
+      "examiner_focus": [
+        "The passive anti-roll tank does NOT increase stability -- its free surface always costs some GM; the genuine benefit is roll-amplitude damping near the natural roll period. Listing \"increased stability\" as an advantage is a direct contradiction examiners catch."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2016",
+          "question_number": "Q14",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 1
+        },
+        {
+          "diet": "March 2018",
+          "question_number": "Q12",
+          "marks_parts": [
+            "5",
+            "5"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 1
+        },
+        {
+          "diet": "December 2025",
+          "question_number": null,
+          "marks_parts": null,
+          "total_marks": 10,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "note": "After the 37-diet catalog range; confirmed via app repeat-history screenshot, Q-number not archive-verified."
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q12",
+          "marks_parts": [
+            "4",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 1
+        },
+        {
+          "diet": "March 2022",
+          "question_number": "Q13",
+          "marks_parts": [
+            "4",
+            "6"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 1
+        }
+      ],
+      "canonical_id": "roll-reduction-systems"
+    },
+    {
+      "topic_id": "fire-protection",
+      "title": "Passenger ship fire/smoke spread prevention (Class A/B bulkheads, A-60 test, penetrations)",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**Passenger ship structural fire protection \u2014 Class A/B bulkheads, spread prevention, A-60 test, penetrations**\n\n*Covers three mark-split variants: the generic 10-mark \"describe the requirement for preventing the\nspread of fire and smoke\" (Jul 2018, Mar 2021, Mar 2022, Oct 2024); the 7/3-split \"spread prevention\n+ A-60 fire test\" (Mar 2019); and the 3/3/2/2-split \"Class A/B bulkhead definitions + penetrations\"\n(Oct 2020). All parts needed for any variant are covered below.*\n\n**Class A bulkheads (definition, 3 marks where asked separately).** Structural divisions\nconstructed of steel or an equivalent material, suitably stiffened, designed to prevent the passage\nof smoke and flame for the full standard fire test. Insulated with non-combustible material such\nthat the average temperature on the unexposed side does not rise more than 140\u00b0C above the original\ntemperature, and no single point (including joints) rises more than 180\u00b0C, within the time denoted\nby the class's insulation suffix: **A-60** (60 min), **A-30** (30 min), **A-15** (15 min), **A-0**\n(0 min). The suffix is the *insulation* time only \u2014 flame and smoke integrity itself is maintained\nfor the **full 60 minutes regardless of suffix**, a distinction worth stating explicitly since it's\nfrequently conflated.\n\n**Class B bulkheads (definition, 3 marks where asked separately).** Approved non-combustible\nmaterials (combustible veneers may be permitted under conditions), offering integrity against the\npassage of flame for at least **30 minutes**. The average unexposed-side temperature must not rise\nmore than 140\u00b0C above the original, and no single point may exceed **225\u00b0C**, within the class's\nsuffix time: **B-15** or **B-0**.\n\n**Penetrations \u2014 retaining integrity (2+2 marks where asked separately).** Where a Class A bulkhead\nmust be penetrated: **doors** must be of the same class rating as the division they penetrate (an\nA-60 bulkhead needs an A-60-rated door), self-closing, with hold-back permitted only via a fusible\nlink or remote-activated release \u2014 never a simple wedge or catch. **Ventilation trunking** is\nfitted with an insulated steel sleeve at the crossing; where the duct breaches an A-class boundary,\nan automatic, fail-closed fire damper is fitted, with position indication (open/closed) at the\ncontrol point.\n\n**Preventing the spread of fire and smoke generally (the 7- or 10-mark framing).** The ship is\ndivided into fire zones by continuous Class A (or B, as applicable) bulkheads and decks, with every\njoint, seam and penetration sealed to the same rating as the division itself \u2014 a single unsealed\ngap defeats the whole division. This passive structure is backed by active measures: fire detection\n(smoke and heat sensing giving early warning) and fire suppression (automatic sprinklers, foam\nsystems, or gas flooding in machinery and cargo spaces) to contain any outbreak within one zone\nbefore it can spread to the next.\n\n**Standard fire test for Class A-60 material (3\u20135 marks where asked separately).** The test\nspecimen must be representative of the actual construction, including any joints, built from the\napproved materials; exposed surface area at least 4.65 m\u00b2, with a minimum height of 2.44 m for\nbulkheads or length of 3.04 m for decks. Bulkheads are tested vertically, decks/ceilings\nhorizontally. Thermocouples are placed at multiple points on the unexposed face, including at joints\nand stiffeners, to monitor temperature throughout. The specimen is exposed in a furnace following\nthe standard **cellulosic (ISO 834) time\u2013temperature curve** \u2014 reaching approximately **576\u00b0C at 5\nminutes, 841\u00b0C at 30 minutes, and 945\u00b0C at 60 minutes**. (Note: \"927\u00b0C\" sometimes seen quoted as\n\"the\" test temperature is actually roughly the *30-minute* point on this curve, not a fixed test\ntemperature \u2014 state the curve, not a single figure.) For A-60, the test runs the full 60 minutes;\nthroughout, unexposed-side temperature is logged against the 140\u00b0C-average/180\u00b0C-point limit, and\nthe specimen is watched for any opening \u2014 flaming on the unexposed face, or ignition of a\ncotton-wool pad held against a gap, constitutes a failure of integrity regardless of the\ntemperature reading.",
+      "examiner_focus": [
+        "The standard fire test follows the cellulosic (ISO 834) curve reaching about 945 degC at 60 minutes -- quoting \"927 degC\" as the test temperature (rather than roughly the 30-minute point on the curve) is a specific, gradeable error."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2018",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q12",
+          "marks_parts": [
+            "7",
+            "3"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q13",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        },
+        {
+          "diet": "March 2022",
+          "question_number": "Q14",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        },
+        {
+          "diet": "October 2024",
+          "question_number": "Q12",
+          "marks_parts": [
+            "10"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q13",
+          "marks_parts": [
+            "3",
+            "3",
+            "2",
+            "2"
+          ],
+          "total_marks": 10,
+          "source": "verified_catalog",
+          "matched_cluster": 3
+        }
+      ],
+      "canonical_id": "passenger-ship-fire-smoke-spread"
+    }
+  ]
+}

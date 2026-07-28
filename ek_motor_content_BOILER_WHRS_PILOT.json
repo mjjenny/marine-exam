@@ -1,0 +1,367 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Exhaust-Gas Steam Generation System \u2014 No Bypass, Steam-Dump Condenser",
+      "merged_from_duplicate": false,
+      "answer_markdown": "The system is a single-pressure, natural-circulation exhaust gas boiler designed to recover waste heat from the main or auxiliary engine **without any exhaust gas by-pass arrangement**.\n\nHot exhaust gases from the engine enter the bottom of the boiler, flow vertically upward over finned or bare generating tubes and leave via the funnel. There is no by-pass damper; all exhaust gas is therefore forced through the heat transfer surface at all engine loads.\n\nFeed water is pumped from the hotwell/cascade tank by the feed water pump and is discharged directly into the water/steam drum, which is mounted above the generating tube bank. Because the drum is located at the highest point, natural circulation is established as follows:\n\n- Relatively cool water from the drum flows down the large-diameter downcomer pipes (usually at the sides of the boiler casing) to the bottom header of the generating bank.\n- Inside the generating tubes the water absorbs heat from the upward-flowing exhaust gas, partially evaporates and becomes a steam/water mixture of lower density.\n- This lighter mixture rises naturally through the riser tubes back to the steam drum, where steam is separated from water in the steam space and by the baffles/cyclone separators.\n- The continuous density difference between downcomer and riser circuits maintains steady circulation without the need for a circulating pump.\n\n**Steam pressure regulation and excess steam disposal**\n\nSaturated steam leaves the drum through the main steam stop valve to heating services, tank heating, fuel oil heaters, accommodation heating, etc.\n\nBecause there is no exhaust gas by-pass, the steam generation rate is directly proportional to engine load. When the engine load (and therefore exhaust gas temperature/flow) increases, more steam is produced than may be required by the consumers.\n\nTo prevent excessive pressure rise in the drum, an automatic pressure-controlled dump valve (surplus steam valve) is fitted on the steam outlet line from the drum. This valve is set to the required working pressure (usually 6\u20139 bar). As long as consumer demand keeps drum pressure below the set value, the dump valve remains closed.\n\nWhen consumer demand falls and drum pressure tends to rise, the dump valve opens automatically and diverts excess steam to the atmospheric surplus condenser (steam dump condenser). The surplus steam is condensed by sea water cooling and the condensate drains back to the hotwell, thus maintaining constant drum pressure irrespective of variations in engine load or consumer demand.\n\n**Feed water regulation and level control**\n\nThe water level in the steam drum is maintained automatically by a conventional feed water regulator (single- or two-element control) acting on the feed pump discharge valve or on the speed of the feed pump (if turbine-driven). A low water level would expose the generating tubes and risk overheating, while a high level would carry water over into the steam lines.\n\nPeriodic soot blowing (steam or compressed air) is carried out on the gas side to remove soot deposits and maintain high heat transfer efficiency.\n\nThus the system provides fully automatic, safe steam generation over the full engine load range with no exhaust gas by-pass, using natural circulation and an atmospheric dump condenser for pressure control.\n\n**[Sketch]** WHR unit using an oil-fired boiler as the steam-collecting drum; pressure controlled by atmospheric/dump steam condenser returning condensate to the hot well.",
+      "examiner_focus": [
+        "Candidates lost marks for describing a standard exhaust-gas boiler instead of the specific steam-generator-and-drum/feed-water-collector arrangement the question actually specified \u2014 read the exact configuration named, not the generic version memorised."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2025",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Near-verbatim repeat of July 2025 Q9. Not reflected in the source verbatim guide's diet list (guide compiled 3 Jul 2026, before this sitting) \u2014 added from the app screenshot directly."
+        }
+      ],
+      "canonical_id": "exhaust-gas-steam-generation-no-bypass"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Exhaust-Gas Boiler / Economiser Fire \u2014 Symptoms, Inspection & Operating After Damage",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Symptoms of an exhaust-gas boiler/economiser fire (5)**\n\n- Sparks, glowing soot or flames from the funnel\n- Rapid rise in exhaust gas temperature after economiser and high differential pressure across it\n- Turbocharger surging / hunting\n- Smoke or burning smell from uptake / paint blistering on casing\n- Abnormal increase in steam pressure (if composite boiler)\n\n**Causes**\n\n- Accumulation of oily/sooty deposits due to poor combustion, faulty injectors, leaking fuel valves or excessive cylinder oil\n- Failure to carry out regular soot blowing or water washing\n- Low water circulation leading to hot spots and ignition of soot\n- Prolonged low-load operation allowing unburnt fuel to deposit\n- Backflow of fuel into the uptake during starting/air running of engine\n\n**(b) Procedure for inspection and cleaning the gas side (5)**\n\n1. Stop main engine, open exhaust gas bypass damper (if fitted) or blank the uptake\n2. Stop circulating pumps, fully drain the water side, open vents and hand-hole doors to prevent pressure build-up\n3. Allow complete cooling, carry out risk assessment and issue enclosed-space entry permit\n4. Soot blow thoroughly (if still possible) then water-wash the tube bank using the fixed washing system or portable high-pressure jets; drain all soot/water to soot tank/bilges\n5. Enter with proper PPE and lighting; inspect tubes, fins, headers and baffles for corrosion, erosion, cracking, soot deposits and clear any blockages; check condition of sacrificial anodes if fitted\n6. On completion, close up, remove blanks/bypass, test soot blowers and confirm free operation of bypass damper before returning to service\n\n**(c) Operating the main engine and auxiliary steam plant if the economiser is rendered inoperable (6)**\n\n- Inform Master immediately, enter defect in log book and suspend UMS operation \u2013 revert to manned engine room 24 hrs\n- Isolate and fully drain the damaged economiser on water side; keep vents and drains open, remove hand-hole doors and safety valve easing gear to prevent pressure build-up\n- Thoroughly water-wash gas side to remove all soot and prevent secondary fire\n- If exhaust bypass damper is fitted \u2013 close damper to economiser and route exhaust through bypass\n- If no bypass is fitted \u2013 maintain engine on reduced load, keep exhaust temperature after economiser as low as practicable (usually <180\u2013200\u00b0C if heavily damaged) to prevent further damage\n- Light off and run auxiliary/oil-fired boiler to maintain full steam pressure for fuel heating, accommodation, purifiers and other essential services\n- Monitor funnel continuously for sparks/smoke, keep fire team and boundary cooling ready, gradually increase load while closely watching temperatures and prepare defect report for classification society / port state",
+      "examiner_focus": [
+        "Generally answered well, but a recurring mark-loser was drifting off the specific topic asked rather than staying tightly on the fire-symptoms/inspection/operate-after-damage structure."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2024",
+          "question_number": "Q9",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "exhaust-gas-boiler-economiser-fire"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Oil-Fired Boilers \u2014 Fuel & Pilot-Ignition System, Cold Flash-Up & HFO Changeover, Combined Air/Fuel Control",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Oil-fired boiler fuel system (6)**\n\n**[Sketch]** Service tank, filter, FO supply pumps, pressure-regulating/recirculation, fine filter, heaters, ignition pump, pneumatic valves, pilot burner & main burner; diesel-oil supply line for flash-up.\n\n**(b) Flashing up from cold on diesel oil and changeover to heavy fuel (6)**\n\n- Carry out pre-light-off checks: water level normal, all mountings free, circulation pumps tested, no leaks, forced-draught fan OK, fuel pumps tested on recirculation.\n- Select MDO mode at the control panel. Ensure fuel supply 3-way valve to MDO, return 3-way valve to MDO (both supply and return must be to diesel to prevent contamination).\n- Start fuel supply pump and circulate MDO through the system for at least 30\u201360 minutes to warm the fuel lines, burner, and furnace (warming-through period). Check pressure at burner is normal (20\u201330 bar).\n- Start forced-draught fan, purge furnace for minimum 3\u20135 minutes (or as per maker's instruction) to remove any explosive mixture.\n- Light off automatically or manually on pilot burner \u2192 main burner ignites on low fire. Raise steam pressure very slowly (maximum 3\u20134 bar per hour) to avoid thermal stress. Keep firing intermittent at low rate until working temperature is approached.\n- When steam pressure reaches approximately 6\u20138 bar and HFO tracing/heating lines are fully warmed: gradually open HFO heater steam inlet valve to raise HFO temperature to correct viscosity (11\u201314 cSt, usually 120\u2013140\u00b0C).\n- When HFO temperature and viscosity are correct, change over supply first, then return to HFO (supply before return to maintain pressure).\n- Increase firing rate as required. Confirm stable combustion, no smoke, correct atomisation.\n\n**(c) How air and fuel supplies are controlled together for optimum combustion at all loads (4)**\n\nThe air and fuel supplies are controlled together by a fully modulating combustion control system with air/fuel ratio control and oxygen trim:\n\n- The steam pressure transmitter senses boiler steam pressure and sends a demand signal to the master controller.\n- The master controller compares actual pressure with set pressure and outputs an increasing or decreasing signal to both the fuel control valve and air damper servo motor simultaneously.\n- A characterised cam (or electronic mapping) in the controller ensures that the air damper opens slightly in advance of the fuel valve (air-lead) and closes after the fuel valve (fuel-lead) \u2014 this is called cross-limiting and prevents black smoke during load changes.\n- A flue gas oxygen analyser continuously measures O\u2082 content in the uptake and automatically trims the air damper position (oxygen trim) to maintain optimum excess air (usually 3\u20135% O\u2082) at all loads, compensating for changes in fuel quality, atmospheric conditions, or fouling of the burner.\n\nThis system ensures optimum combustion, minimum smoke, and maximum efficiency at all firing rates from low fire to high fire.\n\n**[Sketch]** Combined air/fuel control \u2014 jackshaft (master drive unit) linking combustion-air damper and fuel valve, with automatic adjustment on the blower side of the shaft.",
+      "examiner_focus": [
+        "Part (b) is the recurring trap: many candidates describe the whole flash-up-from-cold operation when the question asks specifically about the fuel system and the MDO-to-HFO change \u2014 read exactly what's being asked, not the generic version."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2021",
+          "question_number": "Q9",
+          "marks_parts": [
+            "6",
+            "6",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "oil-fired-boiler-fuel-pilot-ignition-changeover"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Economiser Gas-Side Cleaning \u2014 Engine Running (Sootblowing) & Stopped (Water Washing), Running Dry",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a)(i) Engine RUNNING \u2014 Sootblowing procedure (5)**\n\n1. Inform bridge of your intentions to sootblow (ask permission) \u2014 wind direction/ship position is important.\n2. Ensure engine is at full load, for high gas velocity to carry away dislodged soot.\n3. Open steam supply to sootblowers, and warm through associated lines, slowly.\n4. Commence sootblowing \u2014 whether automatic or manual, the lowest sootblowers should be operated first, then work your way upwards.\n5. Once sootblowing is complete, close steam supply, and inform bridge.\n6. Check uptake temperatures before and after economiser. Temperature differential should increase after successful sootblowing, proving heat transfer is now improved within the unit.\n\n**(a)(ii) Engine STOPPED \u2014 Water washing procedure (5)**\n\n1. Safety sequence (risk assessment, engine isolation, enclosed space permit).\n2. Open access doors, allow sufficient time to cool.\n3. Stop circulating pumps.\n4. Open drain line from economiser to soot tank (for wash water).\n5. Start water washing with FW using dedicated washing line.\n6. Once soot removed, enter for visual inspection, ensuring gas paths clear, remove any remaining soot build-up, proceed with caution if using pressure washer.\n7. Clear any residues in the base of economiser.\n8. Return back to normal and replace door gaskets if necessary.\n9. Leave to dry, check no leakage from doors when next running up engine.\n\n**(b) Operating the main engine with the economiser inoperable \u2014 Running Dry (6)**\n\n- Safety considerations (risk assessment, engine shut down, isolated).\n- Stop and isolate circulating pumps.\n- Isolate and drain economiser unit. Close and lock inlet/outlet valves, open drain and vent. Economiser must be completely drained and dried out.\n- Inlets and outlets should be blanked and all mountings removed to ensure that no moisture could accumulate within the tubes. Remove safety valves and ensure pressure is zero.\n- Increased use of sootblowers should be considered and regular inspections carried out to ensure that there is no build-up of soot. Full water washing procedure beforehand for removal of soot deposits.\n- The Classification Society should be informed, in writing, if the intention is to run the unit dry. Consult with superintendent, original equipment manufacturer, etc.\n- Run on low load according to original equipment manufacturer recommendations. Keep eye on uptake temperatures. Implement full watchkeeping and ensure aux. boiler coping with steam demand.\n\n*Supplementary source note (second worked version of running-dry, kept alongside the first per the standing verbatim rule):*\n\n- When shutting off the water circulation, the main engine should also be shut down so the exhaust gas boiler can cool down and any smouldering soot deposits on the boiler tubes can die out.\n- The heating surface should be inspected carefully for soot deposits, and water washing performed, both for cleaning and cooling.\n- Make every effort to re-establish the water circulation to the boiler and thereby reduce the dry running period to a minimum.\n- Boiler manufacturers allow dry running of exhaust gas boilers only in the case of emergency and with a clean boiler. In addition they emphasise that every possible precaution must be observed to prevent soot fire.",
+      "examiner_focus": [
+        "This is a 'write a procedure' question \u2014 candidates who wrote essays or unordered lists lost marks even when the content was correct; the answer must read as a genuine numbered sequence."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2023",
+          "question_number": "Q9",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2022",
+          "question_number": "Q9",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q9",
+          "marks_parts": [
+            "5",
+            "5",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Q9 text was NOT recoverable from native PDF extraction (page returned zero text \u2014 same silent-extraction-failure gotcha the handoff describes for EK General). Recovered by rasterizing the source page at 200dpi and OCR'ing directly; Q-number and marks confirmed against the markers' report's explicit Q9 commentary on procedure-writing."
+        }
+      ],
+      "canonical_id": "economiser-gas-side-cleaning-running-stopped-dry"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Engineer-Manager Standing Instructions \u2014 In-Service Gas-Side Cleaning & Uptake Fire",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Standing instructions \u2014 in-service (online) gas-side cleaning of exhaust gas boiler/economiser (8)**\n\n*I. Soot blowing (using steam or air soot blowers)*\n\n- Only carry out soot blowing when main engine load is \u226565\u201370% MCR (or as per maker's instruction) to ensure sufficient exhaust gas velocity to carry soot clear of the funnel.\n- Inform Bridge at least 10 minutes before commencing \u2013 request course alteration to keep wind 15\u201320\u00b0 on either bow to prevent glowing soot falling on deck or superstructure.\n- Warm through soot blower steam supply lines for minimum 15\u201330 minutes to prevent thermal shock and water carry-over.\n- Open drain traps on steam supply lines and confirm dry saturated steam at correct pressure (usually 7\u201312 bar).\n- Open main soot blower steam isolating valve slowly.\n- Start automatic soot blowing sequence from control panel: sequence always starts from lowest soot blower (economiser section) and progresses upwards to prevent re-deposition; each blower rotates and retracts automatically.\n- Monitor exhaust gas temperature drop across economiser: a drop of 15\u201330\u00b0C after soot blowing indicates effective cleaning; record inlet/outlet temperatures and differential pressure before and after.\n- After completion, close steam isolating valve and inform Bridge \"Soot blowing completed\".\n- Whenever possible, perform final soot blow immediately before stopping main engine (best cleaning effect due to high load and temperature).\n\nFrequency: Normally every 24\u201348 hours at sea when on HFO, or as per PMS / maker's recommendation.\n\n*II. Out-of-service (offline) water washing of gas side*\n\nOnly to be carried out when main engine is stopped for more than 24 hours (e.g., in port, dry-dock or extended stoppage).\n\n- Stop main engine and open exhaust gas bypass damper (if fitted) OR blank the uptake.\n- Stop economiser circulating pumps, fully drain water side, open vents and hand-hole doors to release pressure.\n- Allow complete cooling (minimum 12\u201324 hours) until gas-side temperature <40\u00b0C.\n- Carry out risk assessment and issue Enclosed Space Entry Permit.\n- Test atmosphere inside uptake for O\u2082 \u226520.8%, LEL = 0%, no toxic gases.\n- From outside, visually inspect extent of soot deposits on tubes and fins.\n- Open bottom drains to soot collection tank / bilges.\n- Water wash from top downwards using fixed water-washing nozzles (preferred), OR portable high-pressure fresh water jets (150\u2013200 bar) with approved chemical detergent if heavily fouled with oily soot.\n- Wash section by section, ensuring all soot is flushed downwards.\n- After washing, allow complete draining and drying.\n- Enter with proper PPE and carry out detailed inspection: tube walls and fins for corrosion, erosion, cracking, pitting; headers and baffles for leakage; soot blower lances and nozzles for wear, blockage, alignment; sacrificial anodes (if fitted) \u2013 replace if <50% remaining; confirm all gas passages are clear.\n- Test soot blowers (live steam test) if accessible.\n- Close up all doors, remove blanks, refill water side, vent properly.\n- Enter completion in Planned Maintenance System and Official Log Book.\n\n**Never water-wash online with engine running** \u2013 risk of thermal shock, tube rupture, and steam explosion.\n\n**(b) Standing instruction \u2014 uptake fire in exhaust gas boiler/economiser & subsequent engine operation, no bypass damper fitted (8)**\n\n*I. Immediate actions on discovery of uptake fire*\n\n- Inform Bridge immediately \u2013 request reduction of main engine load to absolute minimum possible or stop engine if fire is severe.\n- Stop economiser circulating pumps.\n- Fully isolate and drain the economiser on the water side \u2013 open all vents, drains and hand-hole doors.\n- Remove all hand-hole doors and safety valve easing gear to ensure no possibility of pressure build-up from residual water turning to steam.\n- Boundary cooling \u2013 start fire pump and apply external cooling water to casing and bulkheads if fire is intense.\n- Thoroughly water-wash the gas side as soon as temperature permits to remove all burning and unburnt soot.\n- After fire is fully extinguished, inspect for tube damage/leakage and record findings.\n\n*II. Continued main engine operation after uptake fire (known tube leak, no exhaust bypass damper fitted)*\n\nDecision to continue operation is at Master's and Chief Engineer's discretion only after full risk assessment and with Class/Flag approval if required.\n\n- Inform Master and enter defect in Official Log Book \u2013 suspend UMS notation immediately.\n- Maintain economiser completely isolated and drained on water side at all times \u2013 keep all vents, drains and hand-hole doors open.\n- Restart main engine at dead slow or minimum controllable RPM and gradually increase load while strictly monitoring: exhaust gas temperature after economiser (must not exceed manufacturer's limit for dry operation, typically 180\u2013220\u00b0C maximum for short periods; never exceed 250\u00b0C); funnel for sparks or re-ignition; casing and bulkhead temperatures.\n- Operate auxiliary oil-fired boiler continuously to supply 100% of ship's steam demand (FO heating, accommodation, tank cleaning, etc.).\n- Establish continuous manned watch in engine room (24 hours) \u2013 no UMS operation permitted.\n- Regularly inspect economiser gas side (every watch) for hot spots, glowing soot or re-ignition.\n- Reduce engine load immediately if any rise in exhaust temperature after economiser is observed.\n- Prepare defect report for classification society and port-state authorities at next port.\n- Plan permanent repair (tube plugging or renewal) at earliest opportunity \u2013 prolonged dry running with leak will cause severe tube erosion and possible catastrophic failure.\n\n**Warning:** Running the main engine with exhaust gases passing through a leaking, dry economiser is an emergency measure only and must be limited to the minimum time necessary to reach a port of refuge or repair.",
+      "examiner_focus": [
+        "\"Write standing instructions\" is a specific, sequential document format \u2014 candidates who wrote essays or unordered lists lost marks regardless of technical accuracy, and each instruction should indicate the action to take if a step in the sequence fails."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2022",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2025",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "No markers' report available yet for this diet \u2014 screenshot-only source, question text and marks confirmed but no examiner commentary to add."
+        }
+      ],
+      "canonical_id": "engineer-manager-standing-instructions-gas-side-cleaning-uptake-fire"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Waste-Heat System \u2014 Water/Steam Circulation, Circulating Pump Cooling, Prolonged Low Load, Boiler Water Condition",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Water/steam circulation system for the waste-heat recovery section (5)**\n\nThe system is a composite steam plant consisting of an exhaust gas economiser installed in the main engine uptake and an oil-fired auxiliary boiler sharing a common steam and water drum.\n\n- Feed water is drawn from the feed water tank (atmospheric or pressurised) by the boiler feed pumps.\n- Feed water passes through the economiser where it is preheated by main engine exhaust gases (exhaust gas IN \u2192 OUT).\n- Preheated water leaves the economiser and enters the water side of the auxiliary boiler.\n- In the auxiliary boiler, water is heated and boiled by the oil burner when required. Any additional heat required to maintain steam pressure is supplied by firing the auxiliary boiler.\n- Saturated steam is taken from the common steam space of the auxiliary boiler and supplied to ship's services (accommodation heating, fuel oil heating, tank cleaning, etc.).\n- After use, steam condenses and drains are led to the atmospheric drain tank / hotwell via observing tank and drain condenser.\n- A condensate recirculation line with control valve maintains minimum flow through the feed pumps and prevents overheating.\n- Make-up water or excess condensate is transferred between the hotwell and the feed water tank to maintain correct level.\n\n**[Sketch]** Composite plant: economiser in ME uptake + oil-fired auxiliary boiler sharing common steam/water drum; feed-water tank, feed pumps, saturated steam to services.\n\n**(b) How the economiser circulation pumps are kept cool (3)**\n\nModern economiser circulating pumps are canned-motor type (or magnetically-driven sealless type) specifically designed for high-temperature boiler water (up to 160\u2013180\u00b0C).\n\n- The pump and electric motor are a single sealed unit \u2013 the rotor and impeller are immersed in the pumped water inside a corrosion-resistant stainless-steel can.\n- The circulating boiler water itself flows around the motor rotor and stator can, cooling the motor directly and eliminating the need for shaft seals or external cooling.\n- Heat from the motor windings is transferred to the circulating water, which then carries it away to the boiler \u2013 no separate cooling water system or fan is required.\n\nThis design ensures zero leakage, high reliability at high temperature, and prevents cavitation or flashing of the hot water.\n\n**(c) How system steam pressure is maintained at prolonged reduced load (8)**\n\nWhen the main engine operates at prolonged low load (typically below 30\u201340% MCR), exhaust gas temperature and mass flow drop significantly, reducing heat transfer in the economiser so the waste heat recovery system alone cannot maintain required steam pressure. The composite system then operates as follows:\n\n- Steam pressure transmitter on the common steam line senses falling pressure and sends a demand signal to the master steam pressure controller.\n- The auxiliary oil-fired boiler automatically lights off (or increases firing rate if already running) and supplies the shortfall in steam production, becoming the primary steam generator.\n- Economiser circulating pumps remain running continuously at normal speed to maintain forced circulation through the economiser tubes and prevent steaming, hot spots or thermal stress, even though steam generation from exhaust gas is minimal.\n- Exhaust gas temperature after economiser drops (often to 130\u2013160\u00b0C at low load), increasing the risk of acid dew-point corrosion (sulphuric acid) and heavy soot deposition.\n- Soot blowing frequency must be increased (sometimes every 8\u201312 hours instead of 24\u201348 hours) to prevent excessive soot build-up, high back pressure and uptake fire risk.\n- If an exhaust gas bypass damper is fitted, it may be partially or fully opened at very low loads (<20\u201325% MCR) to raise exhaust temperature and reduce cold-end corrosion; when fully bypassed the auxiliary boiler supplies 100% of demand.\n- Steam pressure is maintained automatically by the auxiliary boiler burner modulating in parallel with the reducing contribution from the waste heat section until full pressure is restored.\n\nResult: normal steam services continue with no loss of pressure, but specific fuel oil consumption rises because the auxiliary boiler now consumes fuel that would otherwise have been \"free\" waste heat.\n\n*Supplementary source content \u2014 boiler water condition (not directly attributed to a marked sub-part on the confirmed October 2022 paper; see note below):*\n\nBoiler water condition is maintained by external pre-treatment of make-up water together with internal chemical treatment, regular testing and blowdown: mixed-bed ion-exchange/mineraliser treatment of make-up water; deaeration to <0.02 ppm O\u2082; hydrazine or approved oxygen scavenger dosing (15\u201330 ppb reserve); pH 10.5\u201311.0 with P-alkalinity 100\u2013200 ppm via caustic soda/coordinated phosphate treatment; phosphate dosing (20\u201350 ppm) to precipitate hardness as sludge; polymer/starch dispersants to keep solids in suspension; daily testing of pH, alkalinity, phosphate, hydrazine reserve, chloride (<200 ppm) and conductivity/TDS (<1500 \u00b5S/cm); bottom and continuous surface blowdown to remove solids and prevent priming/carry-over.",
+      "examiner_focus": [
+        "The question specifically asks for an engine cooling-water/exhaust-gas waste heat recovery system \u2014 candidates who described a generic waste-heat steam system instead of reading the exact system named lost marks."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2022",
+          "question_number": "Q9",
+          "marks_parts": [
+            "5",
+            "3",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source verbatim guide's answer for this entry includes a 4th 'boiler water condition' section worth 8 marks in the guide's own text, but the confirmed October 2022 paper only carries 3 marked sub-parts summing to 16 (5+3+8) \u2014 no 4th part. That extra content's actual diet of origin is unconfirmed; kept in answer_markdown as supplementary depth per the 'never drop content' rule, but flagged here rather than silently presented as if it were part of this diet's graded answer."
+        },
+        {
+          "diet": "October 2021",
+          "question_number": "Q5",
+          "marks_parts": [
+            "5",
+            "3",
+            "4",
+            "4"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "CORRECTION: previously mis-assigned elsewhere. Direct full-text re-check confirms this diet's question matches this canonical (water/steam circulation for WHR system), with part (c) split into two 4-mark sub-items (low load / low steam demand) rather than the single 8-mark part (c) used in the October 2022 occurrence."
+        }
+      ],
+      "canonical_id": "waste-heat-system-circulation-boiler-water-condition"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Water Hammer \u2014 Causes, Avoidance & Port Emission-Compliant Boiler Fuel System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) The term water hammer, how it is caused and its possible consequences (4)**\n\nWater hammer occurs when condensate accumulates in steam systems and is then carried along by the steam flow. The steam flow causes ripples in the condensate until waves are formed, then slugs of condensate strike obstacles such as pipe bends, valves, etc. This can result in severe vibration, damaging pipelines, support brackets and causing wear on materials; it can also damage gaskets and valves and cause leakages.\n\n**(b) How water hammer can be avoided (4)**\n\n- Draining condensate regularly, not allowing it to accumulate within systems.\n- Efficient steam trap operation.\n- Warming through steam systems slowly.\n- Avoiding sudden high pressure increases.\n\n**(c) How the boiler fuel system may be operated in port to comply with local emission control regulations (8)**\n\n**[Sketch only in source]** HFO/MDO single-burner fuel supply system with re-circulation (3-way valves, cooler fitted on the MDO return line) \u2014 the sketch shows the arrangement for switching the burner supply between HFO and low-sulphur MDO ahead of port/ECA entry, with 3-way changeover valves on supply and return and a cooler on the MDO return line to protect the return-line components from residual heat.",
+      "examiner_focus": [
+        "Parts (a) and (b) were generally understood, though some candidates confused water hammer with boiler priming. Part (c) is where marks were lost most often \u2014 some candidates ignored the specific wording \"boiler fuel system\" and described a boiler uptake scrubber system instead."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2018",
+          "question_number": "Q6",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2019",
+          "question_number": "Q8",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2021",
+          "question_number": "Q9",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q9",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2026",
+          "question_number": "Q9",
+          "marks_parts": [
+            "4",
+            "4",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Word-for-word repeat \u2014 the single most persistent banker question found in this topic, five confirmed occurrences spanning Mar 2018 to Mar 2026."
+        }
+      ],
+      "canonical_id": "water-hammer-port-emission-boiler-fuel-system"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Waste-Heat Steam Generating System with Separate Oil-Fired Boiler & ME Exhaust-Gas Economiser",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Waste-heat steam generating system incorporating a separate oil-fired boiler and diesel-engine exhaust-gas heat-recovery unit (economiser) (10)**\n\n- Distilled water fills the hotwell, which is maintained at 80\u00b0C to remove oxygen & prevent thermal shock when entering the boiler.\n- Boiler fires to meet steam demand and its water is circulated by pumps through the economiser.\n- Here, it is heated by exhaust gas from the running engine.\n- Water then returns to the boiler where steam separates, and is fed to consumers.\n- Clean condensate returns back to the hotwell via a condenser (cooled by sea water).\n- Condensate from oil heaters returns via the observation tank, which allows clear indication of contamination.\n- Auto dump valve operates according to steam supply & demand, preventing excessive pressure.\n- Cross-connections to/from other boilers & economisers available for isolation and redundancy purposes.\n\n**[Sketch]** Economiser, boiler, circulating pump, condenser, observation tank, hotwell, feed pumps, auto dump valve, cross-connections.\n\n**(b) How the system maintains correct steam pressure during variations in engine load and steam consumption (6)**\n\nDuring steady condition at 85% load:\n\n- System is normally capable of meeting steam supply from exhaust gas heat recovery alone.\n\nIf load drops, or steam demand increases:\n\n- Boiler fires automatically, then load varies to meet the steam demand.\n\nIf steam demand drops or too much steam is produced:\n\n- Automatic dump valve opens and regulates, sending excess steam through the dump condenser, returning as condensate to the hotwell.\n\nAll of the above operates automatically, with manual control available when required.\n\n**[Sketch]** Steady 85% load, boiler firing on load/demand change, auto dump valve & dump condenser returning condensate to hotwell.",
+      "examiner_focus": [
+        "A recurring confusion: this is a waste-heat STEAM generating system, and some candidates instead described the different combined-cycle ELECTRICAL generating arrangement (see the separate combined gas/steam turbine entry) \u2014 the examiner's general comments note this exact question has appeared before, suggesting some candidates were pattern-matching from memory rather than reading the specific system named."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2018",
+          "question_number": "Q9",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "waste-heat-steam-generating-separate-oil-fired-boiler"
+    },
+    {
+      "topic_id": "whrs-boiler",
+      "title": "Combined Gas/Steam Turbine Waste-Heat Recovery for Electrical Generation",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Waste-heat recovery system for electrical generation using main-engine exhaust gas in combined gas/steam turbine systems (8)**\n\n- System consists of a gas (power) turbine driven by engine exhaust, geared to a steam turbine driven by superheated steam.\n- Superheated steam is generated from waste heat recovery \u2014 steam produced from the boiler and economiser system.\n- Condensate from the steam turbine and excess steam dumps to a condenser.\n- Exhaust gas returns to the engine uptake after passing through the gas turbine.\n- Turbines are geared to an alternator.\n\n**[Sketch]** Power (gas) turbine driven by ME exhaust geared with a steam turbine driven by superheated steam from boiler/economiser; turbines geared to an alternator; bypass valve to prevent turbo surging at high loads.\n\n**(b) Operation of the system whilst the associated main engine is running (8)**\n\n- Operation is controlled by automatic valves & a control system, regulating the flow of steam and exhaust gas accordingly.\n- Only when engine load is high enough can exhaust gas be spared for the power turbine \u2014 at lower loads it is needed for the main turbocharger.\n- A bypass valve is available for when the turbine is not running, to prevent turbocharger surging at high loads.",
+      "examiner_focus": [
+        "Sketches were generally accurate, but many candidates did not provide an adequate operational description to accompany the sketch \u2014 the question specifically asks to \"describe\", so the written explanation of how the system behaves is required, not just the diagram."
+      ],
+      "question_instances": [
+        {
+          "diet": "July 2018",
+          "question_number": "Q5",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "October 2025",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "combined-gas-steam-turbine-whr-electrical-generation"
+    }
+  ]
+}

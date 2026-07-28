@@ -1,0 +1,94 @@
+# Production stack: Postgres + MinIO + Flask/gunicorn backend + Nginx (SPA + proxy).
+# All secrets come from .env.prod (see .env.prod.example) — never commit that file.
+#
+#   docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+#
+# Only the "web" (Nginx) service publishes ports to the host. The database, object
+# storage and backend are reachable only on the internal Docker network.
+
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [internal]
+
+  minio:
+    image: minio/minio
+    restart: always
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${STORAGE_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${STORAGE_SECRET_KEY}
+    volumes:
+      - miniodata:/data
+    healthcheck:
+      test: ["CMD-SHELL", "mc ready local || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    # Console (:9001) intentionally NOT published. If you want it, add a mapped
+    # port here and firewall it — sketches are served to browsers via the backend's
+    # gated /api/sketches route, so MinIO itself stays private.
+    networks: [internal]
+
+  backend:
+    build: ./backend
+    restart: always
+    env_file: .env.prod
+    depends_on:
+      db:
+        condition: service_healthy
+      minio:
+        condition: service_started
+    networks: [internal]
+    # No host ports: Nginx proxies to it internally at http://backend:8000.
+
+  web:
+    build: ./frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Edit nginx.conf and restart "web" — no rebuild needed.
+      - ./frontend/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # Certbot webroot (ACME challenge) + issued certificates.
+      - ./certbot/www:/var/www/certbot:ro
+      - ./certbot/conf:/etc/letsencrypt:ro
+    # Reload nginx every 6h so renewed certificates are picked up automatically.
+    command: >-
+      /bin/sh -c "while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g 'daemon off;'"
+    networks: [internal]
+
+  certbot:
+    image: certbot/certbot
+    restart: always
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt        # where certs are written
+      - ./certbot/www:/var/www/certbot         # ACME HTTP-01 challenge webroot
+    # Attempt renewal twice a day (Let's Encrypt's recommendation); it's a no-op until
+    # a certificate is within 30 days of expiry. Initial issuance is done separately
+    # with init-letsencrypt.sh (see the HTTPS section of DEPLOYMENT.md).
+    entrypoint: >-
+      /bin/sh -c "trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot --quiet; sleep 12h & wait $${!}; done"
+    networks: [internal]
+
+volumes:
+  pgdata:
+  miniodata:
+
+networks:
+  internal:

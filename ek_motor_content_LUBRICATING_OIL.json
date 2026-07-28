@@ -1,0 +1,353 @@
+{
+  "subject": "EK Motor",
+  "canonical_answers": [
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Trunk-Piston Medium-Speed Engine \u2014 LO Properties & Lubrication System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Properties required of a lubricating oil for a trunk-piston medium-speed engine, and why some differ from a crosshead crankcase oil**\n\nA lubricating oil for a trunk piston type medium-speed engine must have the following properties:\n\n- **High detergency and dispersancy**: trunk-piston engines often burn residual fuels, generating carbon, soot and deposit formation; the oil must keep these contaminants in suspension to prevent sludge formation.\n- **Adequate alkalinity (high TBN, 20\u201340)**: to neutralise acidic combustion by-products, particularly with high-sulphur fuel.\n- **High thermal stability and oxidation resistance**: medium-speed engines run hot, so the oil must resist thermal breakdown and oxidation that form sludge and varnish.\n- **Wear protection / load-carrying ability**: a strong oil film to minimise metal-to-metal contact, reducing wear on rings, liners and bearings.\n- **Viscosity stability**: maintains viscosity over time and under varying load/temperature for a reliable film.\n- **Good water separation and anti-foaming properties**: marine engines pick up water from combustion/condensation; the oil must shed water and resist foaming to maintain lubrication efficiency.\n\n*Why it differs from crosshead crankcase oil*: a crosshead crankcase oil only lubricates bearings and running gear and never contacts combustion products, so it does not need high detergency or high TBN. The trunk-piston oil uses one charge for both cylinder and crankcase duties, so it must carry better detergency, higher TBN and stronger wear protection all at once.\n\n**(b) Lubrication system of a trunk-piston medium-speed engine, with automatic standby**\n\n**[Sketch]** 4-stroke trunk engine lubrication system \u2014 LO sump (60\u00b0C), LO pump (4.5 bar) + pre-lube pump, LO duplex filter, TCV, LO cooler (55\u00b0C), oil gallery to gears, camshaft bearings, cams & roller guides, rocker arms, fuel pump, main/bottom-end/gudgeon-pin bearings, piston cooling & liner splash (through con-rod).\n\nThe lubrication system ensures continuous oil supply, cooling, and impurity removal, with an automatic standby capability to enhance reliability. Lubricating oil is stored in the LO sump, where it is drawn by the main LO pump and pressurised to approximately 4.5 bar. This oil then passes through a duplex filter, ensuring continuous filtration even during maintenance. The thermostatic control valve (TCV) regulates the oil temperature, directing it either through the LO cooler for cooling or bypassing it when cooling is not required. The cooled oil at 55\u00b0C is then distributed through the main oil gallery to different engine components.\n\nFrom the oil gallery, lubrication is supplied to main bearings, bottom-end bearings, and gudgeon pin bearings. Oil also travels through the connecting rod to cool and lubricate the piston crown. Simultaneously, the oil is supplied to camshaft bearings, cams, roller guides, rocker arms, and the fuel pump. Gears and liner splash lubrication further ensure proper lubrication of the valve train and cylinder walls.\n\nImpurities are removed via the duplex filter (continuous filtration, cleanable during maintenance without stopping flow) and, in most installations, a centrifugal purifier taken on a slip-stream from the sump to remove water, sludge and fine solids continuously.\n\nThe system has an automatic standby pump, activated when the main pump fails or oil pressure drops below a set limit. Sensors continuously monitor oil temperature and pressure, triggering an alarm and switching to the standby pump when necessary. The lubrication system operates at an optimal sump temperature of 60\u00b0C to maintain viscosity and prevent excessive wear.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical across the confirmed sittings \u2014 content and structure verified against the paper but no per-question examiner commentary located."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2025",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2024",
+          "question_number": "Q4",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "trunk-piston-lo-properties-and-lubrication-system"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Trunk-Piston Auto-Standby Lubrication System + Crosshead Separate Cylinder LO System",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Lubrication system for a trunk-piston engine with automatic standby capability (8)**\n\n**[Sketch]** 4-stroke trunk engine lubrication system \u2014 LO sump (60\u00b0C), LO pump (4.5 bar) + pre-lube pump, LO duplex filter, TCV, LO cooler (55\u00b0C), oil gallery to gears, camshaft bearings, cams & roller guides, rocker arms, fuel pump, main/bottom-end/gudgeon-pin bearings, piston cooling & liner splash (through con-rod).\n\nThe lubrication system of a trunk piston medium-speed engine ensures continuous oil supply, cooling, and impurity removal, with an automatic standby capability to enhance reliability. Lubricating oil is stored in the sump, drawn by the main LO pump and pressurised to approximately 4.5 bar, passing through a duplex filter (continuous filtration even during maintenance) and a thermostatic control valve/cooler arrangement before distribution at 55\u00b0C through the main oil gallery to main, bottom-end and gudgeon-pin bearings, the piston (via the con-rod), camshaft bearings, cams, roller guides, rocker arms and the fuel pump. An automatic standby pump activates on main pump failure or low oil pressure, with sensors continuously monitoring temperature and pressure and triggering an alarm on switchover.\n\n**(b) Cylinder lubrication system for a cross-head engine, and why a separate cylinder LO system is fitted (8)**\n\n**[Sketch]** Crosshead cylinder lubrication (total-loss) \u2014 cylinder lubricating-oil service/day tank, cylinder lubrication box, distribution manifold, pumps, filters, strainer, seawater cooler, lubricating-oil drain tank.\n\nA crosshead engine physically separates combustion (cylinder) from the running gear (crankcase) via the diaphragm/stuffing box, so it needs two independent oils. The cylinder lubrication system is supplied from a cylinder lubricating oil (CLO) day tank positioned above the engine for gravity feed. Cylinder lubricators (an Alpha-type electronically-controlled system on modern engines) inject small, precisely timed quantities of high-TBN (70\u2013100) cylinder oil directly onto the cylinder liner and piston rings, synchronised to piston position via tacho/index signals. This oil is designed to withstand extreme combustion temperatures, reduce friction and neutralise the strongly acidic sulphuric-acid by-products of combustion. Unlike crankcase oil, cylinder oil is not reused \u2014 it is a total-loss/once-through system, and the oil is burnt and expelled with the combustion gases as sludge.\n\nA separate system is essential because cylinder oil and crankcase oil have fundamentally different duties: cylinder oil needs high alkalinity to counteract sulphuric acid at high temperature and is consumed in use, while crankcase oil (recirculated, filtered, cooled and purified) needs good oxidation stability, water separation and long-term wear protection at a much lower, more stable operating temperature. Mixing the duties in one oil (as a trunk-piston engine must) would compromise both.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical across the confirmed sittings."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2024",
+          "question_number": "Q8",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source verbatim guide mislabels this occurrence (and the March 2024 occurrence below) as Q9. The archived paper confirms both are actually Q8 \u2014 corrected here against the primary source."
+        },
+        {
+          "diet": "March 2024",
+          "question_number": "Q8",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Guide mislabels as Q9; archived paper confirms Q8 \u2014 corrected here."
+        }
+      ],
+      "canonical_id": "trunk-piston-auto-standby-crosshead-separate-cylinder-lo"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Bacterial Attack on LO Sumps \u2014 Chief Engineer's Report",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**As Chief Engineer Officer, report to the company superintendent engineer concerning bacterial attack of lubricating oil in the sumps of the main engine and one of the generator engines (16)**\n\nTo: Superintendent Engineer\nFrom: Chief Engineer Officer\nSubject: Report on Bacterial Attack in Lubricating Oil Sumps of Main Engine and Generator Engine\n\nThis report outlines the detection, investigation, and resolution of a bacterial attack on the lubricating oil in the sumps of the main engine and one of the generator engines, together with recommendations to prevent future occurrences.\n\n**Detection**: the issue was first detected during routine oil analysis, where increased acidity, emulsification, and the presence of sludge were noted in samples from both sumps. Visual inspection revealed milky, cloudy oil with an unusual odour, indicating microbial contamination. Increased filter clogging and degradation of oil viscosity were also observed.\n\n**Damage found**: the main engine exhibited signs of bearing wear, blocked oil passages, and corrosion in the oil cooler, with reduced lubricity leading to abnormal friction and increased bearing temperatures. In the generator engine, filters were heavily clogged with sludge, reducing oil flow and increasing wear on piston rings and bearings, with reduced efficiency in heat dissipation raising operational temperatures.\n\n**Investigation into cause**: water ingress was identified as the primary factor, with traces of cooling water leakage into the sump providing a favourable environment for microbial growth. Extended oil change intervals and low operating temperatures in the generator sump contributed to bacterial proliferation. Poor ventilation and stagnation of the oil further accelerated growth, and prior contamination during storage or filling may have introduced bacteria into the system.\n\n**Immediate action taken**: contaminated oil in both engines was drained and disposed of per environmental regulations. The system was flushed with biocide-treated flushing oil to eliminate bacterial residue. Clogged filters were replaced and oil coolers inspected for residual contamination. Water leakage points were identified and repaired. Fresh, antimicrobial-treated lubricating oil was refilled, and the engines run at higher temperature for a period to eliminate remaining moisture and microbial presence.\n\n**Prevention of future incidents**: regular oil sampling and analysis to detect early contamination; strict monitoring of water ingress with immediate rectification of leaks; use of biocide-treated lubricants in humid/high-risk environments; frequent cleaning and draining of sumps to remove water accumulation and sludge; proper ventilation and optimal oil operating temperatures to prevent stagnation and microbial growth; and adherence to proper oil storage/handling procedures.\n\nChief Engineer Officer, [Ship Name]",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical across the confirmed sittings."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q1",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2016",
+          "question_number": "Q4",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source verbatim guide mislabels this occurrence as Q1. The archived paper confirms it is actually Q4 \u2014 corrected here against the primary source."
+        },
+        {
+          "diet": "July 2016",
+          "question_number": "Q3",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "bacterial-attack-lo-sumps-chief-engineer-report"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Crosshead Separate LO Systems \u2014 Properties Compared with Trunk-Piston",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Lubrication systems of a crosshead-type slow-speed diesel engine (8)**\n\n**[Sketch]** Crosshead main-engine (crankcase) LO system \u2014 sump tank, main LO pumps, ME/E LO cooler, auto back-flush & bypass filters, sludge checker, distribution manifold to main/crosshead/camshaft/thrust bearings, piston-cooling oil outlet, drain to purifier & storage tanks.\n\n**[Sketch]** Crosshead cylinder lubrication (total-loss) \u2014 cylinder lubricating-oil service/day tank, cylinder lubrication box, distribution manifold, pumps, filters, strainer, seawater cooler, lubricating-oil drain tank.\n\nThe lubrication system of a crosshead-type slow-speed diesel engine maintains two separate systems for the crankcase and the cylinder liners, due to their very different operating conditions. The crankcase (main engine) system draws oil from an LO sump tank via main LO pumps, through filters and an LO cooler, to the main bearings, crosshead bearings, camshaft bearings and thrust bearings; a sludge checker and bypass filters remove contaminants, the piston-cooling oil outlet cools the piston, and used oil drains back to the sump for purification and reuse.\n\nThe cylinder lubrication system is independent, supplied from the CLO day tank positioned above the engine for gravity feed. Alpha-controlled cylinder lubricators inject small quantities of high-TBN cylinder oil directly onto the liner and rings; this oil is designed for high-temperature, high-alkalinity duty and \u2014 unlike crankcase oil \u2014 is not reused, being expelled as sludge with the combustion gases.\n\n**(b) Properties required in each system, compared with a trunk-piston crankcase oil (8)**\n\nThe cylinder lubrication system requires oil with high alkalinity (TBN) to neutralise acidic combustion by-products, particularly sulphuric acid from fuel sulphur, plus excellent high-temperature stability given exposure to combustion heat and pressure, and adequate detergency/dispersancy to prevent carbon/deposit buildup on the liner and rings. Since cylinder oil is consumed during operation, it does not need long-term oxidation stability or water-separation properties.\n\nThe crankcase lubrication system requires good oxidation stability and water-separation properties since it operates in a cooler environment. It should have a lower TBN than cylinder oil, as it is not exposed to combustion gases, but needs high film strength and anti-wear properties to protect bearings and moving parts, and excellent demulsibility for a long service life.\n\nBy comparison, the lubricating oil used in the crankcase of a **trunk-piston** engine must perform both cylinder and crankcase duties in one unified system: moderate TBN to handle acidic combustion by-products while maintaining oxidation stability for prolonged use, plus strong anti-wear and detergent properties to protect rings, liners and bearings simultaneously \u2014 balancing high-temperature resistance and long-term stability in a single, more complex formulation, unlike the two specialised oils of a crosshead engine.",
+      "examiner_focus": [
+        "Sketching was often patchy \u2014 with a crosshead engine the cylinder LO system is as fundamental to draw as the crankcase/turbocharger system, and the camshaft lubrication and thrust block are frequently omitted. Part (b) properties are often under-detailed relative to the marks on offer."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2023",
+          "question_number": "Q3",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2023",
+          "question_number": "Q7",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "December 2019",
+          "question_number": "Q9",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2021",
+          "question_number": "Q2",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "July 2026",
+          "question_number": "Q8",
+          "marks_parts": [
+            "8",
+            "8"
+          ],
+          "total_marks": 16,
+          "source": "confirmed_via_screenshot_repeat_history",
+          "matched_cluster": null,
+          "note": "Confirmed via app screenshot."
+        }
+      ],
+      "canonical_id": "crosshead-separate-lo-systems-properties-vs-trunk-piston"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Crosshead Separate LO Systems \u2014 Cylinder LO When Changing Between Fuels",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Lubrication systems for a crosshead engine, and the properties required in each (10)**\n\n**[Sketch]** Crosshead main-engine (crankcase) LO system \u2014 sump tank, main LO pumps, ME/E LO cooler, auto back-flush & bypass filters, sludge checker, distribution manifold to main/crosshead/camshaft/thrust bearings, piston-cooling oil outlet, drain to purifier & storage tanks.\n\n**[Sketch]** Crosshead cylinder lubrication (total-loss) \u2014 cylinder lubricating-oil service/day tank, cylinder lubrication box, distribution manifold, pumps, filters, strainer, seawater cooler, lubricating-oil drain tank.\n\nAs in the paired canonical on crosshead LO systems, the crankcase and cylinder systems are entirely separate: the crankcase system recirculates cooled, filtered oil to the main/crosshead/camshaft/thrust bearings, while the cylinder system is a gravity-fed, total-loss supply of high-TBN oil injected onto the liner and rings by Alpha-controlled lubricators, consumed and expelled as sludge.\n\n**(b) Ensuring cylinder LO properties are available when changing between fuels (including fuel oil and gas), and why the same cylinder LO should not be used across fuel types (6)**\n\nUsing the same cylinder LO for both high-sulphur and low-sulphur fuels (including gas) is undesirable because of differences in acid formation, lubrication requirements and deposit control:\n\n- High-sulphur fuels generate sulphuric acid, requiring high-TBN oil (70\u2013100 mg KOH/g) to neutralise acidity and prevent liner corrosion.\n- Low-sulphur fuels and gas produce minimal acidic by-products, making low-TBN oil (15\u201340 mg KOH/g) more suitable.\n- Using high-TBN oil with low-sulphur fuel leads to excessive calcium deposit buildup, causing ring sticking and abrasive wear.\n- Using low-TBN oil with high-sulphur fuel results in insufficient acid neutralisation, leading to corrosion.\n- Gas engines operate at higher combustion temperatures, requiring low-ash oils to prevent pre-ignition and fouling.\n\nTo manage this, modern engines use automated cylinder oil blending systems, automatically adjusting the TBN of the delivered cylinder oil to match the fuel sulphur content in use at any given time, ensuring the correct oil grade is always applied through a fuel change-over.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical across the confirmed sittings."
+      ],
+      "question_instances": [
+        {
+          "diet": "October 2021",
+          "question_number": "Q7",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2021",
+          "question_number": "Q5",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        },
+        {
+          "diet": "March 2019",
+          "question_number": "Q4",
+          "marks_parts": [
+            "10",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "crosshead-separate-lo-systems-changing-fuels"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Cylinder Lubricant Properties for HFO + Electronically-Controlled (Alpha) Cylinder Lubrication",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Three properties required of a cylinder lubricant for a main engine operating on HFO (6)**\n\n- **High alkalinity (high TBN)**: HFO contains sulphur, and its combustion produces sulphuric acid which corrodes cylinder liners and piston rings; the cylinder lubricant must have a high TBN to neutralise these acidic by-products and prevent excessive liner wear and damage.\n- **Thermal and oxidation stability**: the lubricant must withstand high combustion temperatures without breaking down or forming deposits, maintaining its lubricating properties and minimising ring sticking or scuffing under extreme conditions.\n- **Detergency and dispersancy**: strong detergent/dispersant properties keep combustion residues, soot and ash in suspension, preventing deposits on liners, piston rings and ring grooves and ensuring proper sealing.\n\n**(b) Electronically-controlled (Alpha) cylinder lubrication system \u2014 timing and quantity regulation (10)**\n\n**[Sketch]** Electronically-controlled (Alpha) cylinder lubrication \u2014 per-cylinder lubricators with solenoid valves + accumulator, sensors, pump station with standby pump & pump control unit, Alpha Cylinder Lubricator Control Unit (tacho & index signals, switchboard/backup/monitor units, alarm & safety systems), HMI panel.\n\nLubricating oil is stored in a sump tank and circulated by a pump station, which includes a standby pump for redundancy. Oil is distributed to per-cylinder lubricators, which inject it onto the liner. The Alpha Cylinder Lubricator Control Unit regulates oil flow based on signals from the engine's tacho and index sensors, synchronising injection precisely with piston position. Solenoid valves on each lubricator control the exact quantity of oil delivered per injection.\n\nLubrication rates (measured in g/kWh or g/bhp\u00b7h) are set through the HMI panel, and the system automatically adapts oil injection based on fuel type, sulphur content and engine load \u2014 modifying feed rate and, where a dual-oil system is fitted, the TBN of oil supplied, to prevent both under- and over-lubrication. In case of a control-unit failure, a backup control unit ensures continued operation, with an alarm system alerting the crew to any faults for timely maintenance. Electronic control of this kind improves feed-rate accuracy compared with fixed mechanical lubricators, extending liner life and reducing oil wastage.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical across the confirmed sittings."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2022",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "10"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "cylinder-lubricant-hfo-properties-alpha-lubrication"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Crankcase LO Bacterial/Microbial Attack \u2014 Causes, Detection & Return to Service",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**(a) Causes and effects of bacterial attack on crankcase lubricating oil (6)**\n\nBacterial attack is primarily caused by contamination with water and organic matter, creating an environment suitable for microbial growth. Poor maintenance \u2014 ineffective water separation, infrequent oil changes, inadequate heating \u2014 promotes bacterial proliferation. Condensation, fuel dilution, or coolant leaks further contribute. Hydrocarbon-degrading bacteria thrive at oil-water interfaces, forming biofilms and sludge within the crankcase.\n\nEffects include degradation of lubricating oil properties through microbial metabolic activity \u2014 increased acidity, reduced viscosity, loss of anti-wear additives. Slime and deposit formation clogs filters, restricts oil flow, and increases friction, leading to bearing damage, overheating, or even engine seizure. Hydrogen sulphide (H\u2082S) and organic acids produced by bacteria accelerate corrosion of metal surfaces.\n\n**(b) How bacterial attack may be detected (4)**\n\nVisual inspection may reveal sludge deposits, darkened oil, or biofilm in the crankcase, on filters and in piping. A rotten-egg (H\u2082S) or musty odour often indicates microbial activity. Oil analysis is the most reliable method \u2014 laboratory testing for low TBN, reduced viscosity, presence of water, and microbial growth. Microbial culture tests or ATP (adenosine triphosphate) bioluminescence tests specifically confirm bacterial contamination. Frequent filter clogging and increased bearing wear rates are further indicators.\n\n**(c) Returning a crankcase LO system to service following bacterial attack (6)**\n\nDrain the contaminated oil completely and remove all sludge deposits from the crankcase, sump, filters and pipelines. Flush the system with a cleaning agent or detergent-based flushing oil to dissolve residual biofilms; if severe, a biocide treatment may be required to eliminate bacterial spores. Once thoroughly cleaned, dry the system and refill with fresh, treated lubricating oil of correct viscosity, TBN, and water content below acceptable limits. Restart the engine at idle with gradual load increases, monitoring oil pressure, temperature and filter condition. Sample the oil regularly to confirm microbial contamination has been eliminated. Preventive measures: maintain oil temperature above 50\u00b0C, improve water separation and filtration, conduct routine oil analysis, and consider periodic biocide dosing in high-risk conditions.",
+      "examiner_focus": [
+        "A structural discrepancy worth flagging directly: this stored answer covers crankcase LUBRICATING OIL only. On at least the December 2021 sitting, the actual question is broader \u2014 \"With reference to diesel engine LUBRICATING OIL AND DISTILLATE FUEL OIL... describe the causes and effects of MICROBIAL attack\" \u2014 and that diet's own markers' report explicitly criticises candidates for concentrating on LO and never mentioning fuel oil. This answer does not yet address the distillate-fuel-oil half of that occurrence and should not be reused for it as-is without adding that content."
+      ],
+      "question_instances": [
+        {
+          "diet": "December 2021",
+          "question_number": "Q7",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The actual question on this diet is broader in scope than the stored answer: \"diesel engine lubricating oil AND distillate fuel oil\" / \"microbial attack\" (not \"crankcase lubricating oil\" / \"bacterial attack\" as in the other occurrences). See examiner_focus \u2014 content gap, not just a wording difference."
+        },
+        {
+          "diet": "October 2020",
+          "question_number": "Q2",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Guide's tagging implied Q7 for this diet by clustering; the archived paper confirms it is actually Q2 \u2014 corrected here."
+        },
+        {
+          "diet": "October 2018",
+          "question_number": "Q3",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "Guide's tagging implied Q7 for this diet by clustering; the archived paper confirms it is actually Q3 \u2014 corrected here."
+        },
+        {
+          "diet": "December 2017",
+          "question_number": "Q6",
+          "marks_parts": [
+            "6",
+            "4",
+            "6"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": "The source guide explicitly labels this occurrence Q7; the archived paper confirms it is actually Q6 \u2014 corrected here."
+        }
+      ],
+      "canonical_id": "crankcase-lo-bacterial-microbial-attack-causes-detection-return"
+    },
+    {
+      "topic_id": "lubricating-oil-system",
+      "title": "Crankcase LO Analysis \u2014 Water, Metal Particles & Falling Alkalinity/Antioxidant Reserve",
+      "merged_from_duplicate": false,
+      "answer_markdown": "**A slow-speed diesel engine crankcase LO analysis report shows fresh water, metal particles, and reduced alkalinity AND antioxidant reserve \u2014 causes and how each is found (16)**\n\n**Fresh water** can result from leaking cooling water systems (cracked cylinder liners, defective O-rings, faulty heat exchanger) or condensation from poor crankcase ventilation / inadequate draining of separators. Detected via visual inspection (milky/emulsified oil), pressure testing of the cooling system, monitoring expansion-tank levels for unexplained losses, and Karl Fischer titration or hot-plate tests to quantify water content.\n\n**Metal particles** suggest abnormal component wear: bearing wear releases lead, tin or copper; piston/liner scuffing introduces iron and aluminium; gear-train, camshaft or turbocharger bearing damage adds further metal contamination. Detected via spectrometric oil analysis (identifies specific metal elements), magnetic-plug or filter inspections for metallic debris, and vibration-based bearing condition monitoring for early-stage failures.\n\n**Reduced alkalinity (TBN depletion)** is commonly caused by fuel contamination, combustion by-products, and extended oil service life \u2014 sulphuric acid from fuel combustion reacting with and depleting the alkaline additives, raising corrosion risk. Detected via TBN testing, fuel-dilution analysis by gas chromatography, and monitoring cylinder drain oil for excessive acidity.\n\n**Reduced antioxidant reserve** occurs from high operating temperatures, prolonged oil use, fuel or water contamination, and exposure to catalytic metals like copper. Excessive oxidation leads to viscosity changes, sludge formation and increased acid content. Detected via oxidation-index measurement using infrared spectroscopy (FTIR), viscosity testing, and total acid number (TAN) analysis.\n\nRegular oil analysis, system-parameter monitoring, and scheduled maintenance allow early detection and prevention of major failures; where contamination is found, corrective actions include oil replacement, system flushing, and mechanical repairs to restore optimal lubrication performance.",
+      "examiner_focus": [
+        "No markers' feedback captured for this specific canonical."
+      ],
+      "question_instances": [
+        {
+          "diet": "March 2017",
+          "question_number": "Q9",
+          "marks_parts": [
+            "16"
+          ],
+          "total_marks": 16,
+          "source": "verified_catalog",
+          "matched_cluster": null,
+          "note": null
+        }
+      ],
+      "canonical_id": "crankcase-lo-analysis-water-metals-tbn-antioxidant"
+    }
+  ]
+}
