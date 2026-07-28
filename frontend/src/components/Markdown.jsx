@@ -8,7 +8,14 @@ import remarkBreaks from "remark-breaks";
 export default function Markdown({ children, className = "markdown" }) {
   return (
     <div className={className}>
-      <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm, remarkBreaks]}
+        components={{
+          img: ({ node, ...props }) => (
+            <img {...props} loading="lazy" decoding="async" />
+          ),
+        }}
+      >
         {children || ""}
       </ReactMarkdown>
     </div>

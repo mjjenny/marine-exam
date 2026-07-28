@@ -3,6 +3,10 @@ import { useEffect, useRef, useState } from "react";
 // Renders sketch thumbnails (with captions) that open a frosted full-screen lightbox.
 // In the lightbox, click the image to toggle 2.5× zoom; while zoomed, move the mouse
 // to pan. `refs` is an array of { path (storage key), caption }.
+//
+// Thumbnails use loading="lazy". Sources are whatever the API stores (often PNG);
+// browsers that send Accept: image/webp still get the original unless the server
+// negotiates — we keep width fluid via CSS aspect-ratio for mobile layouts.
 export default function SketchZoom({ refs }) {
   const [active, setActive] = useState(null); // the ref object being viewed
   const [zoomed, setZoomed] = useState(false);
@@ -45,6 +49,10 @@ export default function SketchZoom({ refs }) {
                 src={`/api/sketches/${r.path}`}
                 alt={r.caption || "sketch"}
                 className="sketch-thumb"
+                loading="lazy"
+                decoding="async"
+                width={160}
+                height={120}
               />
             </button>
             {r.caption && <figcaption className="sketch-caption">{r.caption}</figcaption>}
@@ -63,6 +71,8 @@ export default function SketchZoom({ refs }) {
               style={zoomed ? { transformOrigin: origin } : undefined}
               onClick={() => setZoomed((z) => !z)}
               onMouseMove={onMove}
+              loading="eager"
+              decoding="async"
             />
             {active.caption && <figcaption className="sketch-full-caption">{active.caption}</figcaption>}
             <button

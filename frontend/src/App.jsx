@@ -18,6 +18,7 @@ import AdminAddDiet from "./pages/AdminAddDiet.jsx";
 import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 import OfflineIndicator from "./components/OfflineIndicator.jsx";
+import MobileBackButton from "./components/MobileBackButton.jsx";
 import Profile from "./pages/Profile.jsx";
 import { useAuth } from "./auth/AuthContext.jsx";
 
@@ -79,6 +80,7 @@ export default function App() {
         </span>
         <HeaderNav />
       </header>
+      <MobileBackButton />
       <main className="container">
         <ErrorBoundary key={location.pathname}>
         <Routes>
