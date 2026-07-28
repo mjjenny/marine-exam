@@ -1,7 +1,8 @@
 """Application factory."""
 import logging
+import os
 
-from flask import Flask
+from flask import Flask, make_response, send_from_directory
 
 from .config import Config
 from .extensions import db, migrate
@@ -27,6 +28,36 @@ def create_app(config_object: type = Config) -> Flask:
     @app.get("/health")
     def health():
         return {"status": "ok"}, 200
+
+    # PWA assets at the site root so the service worker can claim full scope.
+    @app.route("/manifest.json")
+    def pwa_manifest():
+        return send_from_directory(
+            app.static_folder,
+            "manifest.json",
+            mimetype="application/manifest+json",
+        )
+
+    @app.route("/sw.js")
+    def pwa_service_worker():
+        response = make_response(
+            send_from_directory(
+                app.static_folder,
+                "sw.js",
+                mimetype="application/javascript",
+            )
+        )
+        response.headers["Service-Worker-Allowed"] = "/"
+        response.headers["Cache-Control"] = "no-cache"
+        return response
+
+    @app.route("/offline.html")
+    def pwa_offline():
+        return send_from_directory(app.static_folder, "offline.html")
+
+    @app.route("/icons/<path:filename>")
+    def pwa_icons(filename):
+        return send_from_directory(os.path.join(app.static_folder, "icons"), filename)
 
     # Blueprints
     from .blueprints.admin import bp as admin_bp
