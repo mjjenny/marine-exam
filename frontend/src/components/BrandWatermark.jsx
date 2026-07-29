@@ -1,5 +1,18 @@
+import { useLocation } from "react-router-dom";
+
+const AUTH_PATHS = new Set([
+  "/login",
+  "/signup",
+  "/forgot-password",
+  "/reset-password",
+  "/pending",
+]);
+
 // Fixed brand watermark behind all content (pre-animated WebP logo).
 export default function BrandWatermark() {
+  const { pathname } = useLocation();
+  if (AUTH_PATHS.has(pathname)) return null;
+
   return (
     <div className="app-bg" aria-hidden="true">
       <img

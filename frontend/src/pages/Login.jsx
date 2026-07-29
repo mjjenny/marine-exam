@@ -26,15 +26,17 @@ export default function Login() {
 
   return (
     <div className="card auth-card">
-      <img
-        className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-6 drop-shadow-2xl"
-        src="/branding/engine_room_academy_slow_spin.webp"
-        alt="Engine Room Academy"
-        width={192}
-        height={192}
-        decoding="async"
-        style={{ filter: "drop-shadow(0 0 18px rgba(180, 120, 60, 0.25))" }}
-      />
+      <div className="flex flex-col items-center justify-center mb-4 overflow-visible">
+        <img
+          className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl"
+          src="/branding/engine_room_academy_slow_spin.webp"
+          alt="Engine Room Academy"
+          width={192}
+          height={192}
+          decoding="async"
+          style={{ filter: "drop-shadow(0 0 18px rgba(180, 120, 60, 0.25))" }}
+        />
+      </div>
       <h1>Log in</h1>
       <form onSubmit={onSubmit}>
         <label>
