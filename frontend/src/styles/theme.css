@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* Dark "marine engineering" theme */
   --navy-900: #0b1a2b;   /* header bar + dark text on amber buttons */
@@ -46,27 +50,6 @@ a { color: var(--link); }
   justify-content: center;
   overflow: hidden;
 }
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.app-bg-logo {
-  width: min(70vw, 500px);
-  max-width: 90%;
-  height: auto;
-  opacity: 1;
-  object-fit: contain;
-  user-select: none;
-  -webkit-user-drag: none;
-  animation: spin 25s linear infinite;
-}
-@media (max-width: 48rem) {
-  .app-bg-logo {
-    width: min(80vw, 400px);
-    opacity: 1;
-  }
-}
-
 .app-header {
   background: var(--navy-900);
   color: var(--navy-100);
