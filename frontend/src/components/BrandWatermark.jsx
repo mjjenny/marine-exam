@@ -3,7 +3,7 @@ export default function BrandWatermark() {
   return (
     <div className="app-bg" aria-hidden="true">
       <img
-        className="w-[200px] sm:w-[280px] h-auto max-w-[90vw] pointer-events-auto transition-transform duration-300 ease-in-out hover:scale-105"
+        className="w-[350px] md:w-[500px] lg:w-[700px] max-w-[95vw] h-auto pointer-events-auto transition-transform duration-300 ease-in-out hover:scale-105"
         src="/branding/engine_room_academy_slow_spin.webp"
         alt=""
         width={512}
