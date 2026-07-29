@@ -6,9 +6,11 @@ export const USERS = {
   searchable: { email: "searchable@e2e.local", password: "E2eSearch1!" },
 };
 
+/** Log in and wait until the SPA leaves /login (session cookie ready). */
 export async function loginAs(page, { email, password }) {
   await page.goto("/login");
   await page.getByLabel("Email").fill(email);
   await page.getByLabel("Password").fill(password);
-  await page.getByRole("button", { name: /^Log in$/i }).click();
+  await page.getByRole("button", { name: "Log in", exact: true }).click();
+  await page.waitForURL((url) => !url.pathname.endsWith("/login"));
 }
