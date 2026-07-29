@@ -91,6 +91,27 @@ def me():
     return jsonify(_user_json(current_user())), 200
 
 
+@bp.post("/change-password")
+@login_required
+def change_password():
+    """Let a logged-in user set a new password (requires current password)."""
+    data = request.get_json(silent=True) or {}
+    current = data.get("current_password") or ""
+    new_password = data.get("new_password") or ""
+
+    user = current_user()
+    if not verify_password(current, user.password_hash):
+        return jsonify({"error": "current password is incorrect"}), 400
+
+    pw_error = validate_password(new_password)
+    if pw_error:
+        return jsonify({"error": pw_error}), 400
+
+    user.password_hash = hash_password(new_password)
+    db.session.commit()
+    return jsonify({"message": "Password updated."}), 200
+
+
 @bp.post("/forgot-password")
 def forgot_password():
     """Email a time-limited reset link. Always returns the same response so it never

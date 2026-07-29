@@ -8,6 +8,7 @@ const ROOT_PATHS = new Set([
   "/forgot-password",
   "/reset-password",
   "/pending",
+  "/account",
   "/admin/approvals", // admin dashboard root
 ]);
 

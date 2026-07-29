@@ -16,6 +16,7 @@ import AdminApprovals from "./pages/AdminApprovals.jsx";
 import AdminModeration from "./pages/AdminModeration.jsx";
 import AdminAddDiet from "./pages/AdminAddDiet.jsx";
 import AdminUsers from "./pages/AdminUsers.jsx";
+import MyAccount from "./pages/MyAccount.jsx";
 import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 import OfflineIndicator from "./components/OfflineIndicator.jsx";
@@ -52,6 +53,9 @@ function HeaderNav() {
           <Link to="/profile" className="header-nav-meta">
             {user.email}
             {user.is_admin ? " (admin)" : ""}
+          </Link>
+          <Link to="/account" className="header-nav-link">
+            My Account
           </Link>
           <button type="button" className="btn btn-ghost" onClick={logout}>
             Log out
@@ -100,6 +104,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Profile />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/account"
+            element={
+              <ProtectedRoute>
+                <MyAccount />
               </ProtectedRoute>
             }
           />

@@ -63,7 +63,7 @@ export default function BottomNav() {
               },
             ]
           : []),
-        { to: "/profile", label: "Profile", icon: <IconProfile />, end: true },
+        { to: "/account", label: "Account", icon: <IconProfile />, end: true },
       ]
     : [
         { to: "/login", label: "Log in", icon: <IconLogin />, end: true },

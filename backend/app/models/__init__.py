@@ -7,6 +7,7 @@ from .content import (
     Topic,
 )
 from .moderation import AnswerHistory, SuggestedEdit, SuggestedEditSketch
+from .study import Bookmark, UserProgress
 from .user import User
 
 __all__ = [
@@ -19,4 +20,6 @@ __all__ = [
     "SuggestedEdit",
     "SuggestedEditSketch",
     "AnswerHistory",
+    "UserProgress",
+    "Bookmark",
 ]

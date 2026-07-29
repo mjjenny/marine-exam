@@ -47,6 +47,10 @@ export default function Profile() {
           </div>
         )}
 
+        <Link className="btn" to="/account">
+          My Account
+        </Link>
+
         <button type="button" className="btn btn-ghost profile-logout" onClick={logout}>
           Log out
         </button>

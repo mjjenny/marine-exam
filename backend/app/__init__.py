@@ -63,12 +63,14 @@ def create_app(config_object: type = Config) -> Flask:
     from .blueprints.admin import bp as admin_bp
     from .blueprints.auth import bp as auth_bp
     from .blueprints.content import bp as content_bp
+    from .blueprints.study import bp as study_bp
     from .blueprints.suggestions import bp as suggestions_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(content_bp)
     app.register_blueprint(admin_bp)
     app.register_blueprint(suggestions_bp)
+    app.register_blueprint(study_bp)
 
     # CLI commands (e.g. `flask create-admin`)
     from .cli import register_cli

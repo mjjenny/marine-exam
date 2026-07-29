@@ -58,6 +58,34 @@ export const api = {
       method: "POST",
       body: JSON.stringify({ token, password }),
     }),
+  changePassword: (currentPassword, newPassword) =>
+    request("/api/auth/change-password", {
+      method: "POST",
+      body: JSON.stringify({
+        current_password: currentPassword,
+        new_password: newPassword,
+      }),
+    }),
+
+  // Study QoL — progress & bookmarks
+  listProgress: (contentType) =>
+    request(
+      `/api/progress${contentType ? `?content_type=${encodeURIComponent(contentType)}` : ""}`
+    ),
+  toggleProgress: (contentType, contentId) =>
+    request("/api/progress/toggle", {
+      method: "POST",
+      body: JSON.stringify({ content_type: contentType, content_id: contentId }),
+    }),
+  listBookmarks: (contentType) =>
+    request(
+      `/api/bookmarks${contentType ? `?content_type=${encodeURIComponent(contentType)}` : ""}`
+    ),
+  toggleBookmark: (contentType, contentId) =>
+    request("/api/bookmarks/toggle", {
+      method: "POST",
+      body: JSON.stringify({ content_type: contentType, content_id: contentId }),
+    }),
 
   // Content
   subjects: () => request("/api/subjects"),
