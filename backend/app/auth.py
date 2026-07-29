@@ -14,6 +14,17 @@ SESSION_KEY = "user_id"
 # very long inputs don't raise instead of hashing.
 _BCRYPT_MAX_BYTES = 72
 
+# Statuses that represent an active, usable account (non-admin gate).
+_ACTIVE_STATUSES = {UserStatus.approved}
+
+# Human-readable access-denied messages per status.
+_STATUS_ERRORS = {
+    UserStatus.pending:  ("account not yet approved", 403),
+    UserStatus.rejected: ("account not approved", 403),
+    UserStatus.expired:  ("your membership has expired — please contact the administrator to renew", 403),
+    UserStatus.revoked:  ("your account access has been revoked — please contact the administrator", 403),
+}
+
 
 def _encode(password: str) -> bytes:
     return password.encode("utf-8")[:_BCRYPT_MAX_BYTES]
@@ -88,15 +99,19 @@ def login_required(fn):
 
 
 def approved_required(fn):
-    """Gate: a logged-in user whose status is 'approved'. Use on all content routes."""
+    """Gate: a logged-in user whose status is 'approved'. Blocks expired/revoked with
+    clear, specific messages. Use on all content routes."""
 
     @wraps(fn)
     def wrapper(*args, **kwargs):
         user = current_user()
         if user is None:
             return _error("authentication required", 401)
-        if user.status != UserStatus.approved:
-            return _error("account not approved", 403)
+        if user.status not in _ACTIVE_STATUSES:
+            msg, code = _STATUS_ERRORS.get(
+                user.status, ("access denied", 403)
+            )
+            return _error(msg, code)
         return fn(*args, **kwargs)
 
     return wrapper

@@ -84,6 +84,7 @@ export const api = {
   adminPendingCount: () => request("/api/admin/pending-count"),
   approveUser: (id) => request(`/api/admin/users/${id}/approve`, { method: "POST" }),
   rejectUser: (id) => request(`/api/admin/users/${id}/reject`, { method: "POST" }),
+  revokeUser: (id) => request(`/api/admin/users/${id}/revoke`, { method: "POST" }),
 
   // Suggestions
   submitSuggestion: (answerId, suggestedText, files = []) => {

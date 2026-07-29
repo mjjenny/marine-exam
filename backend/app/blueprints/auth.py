@@ -33,6 +33,7 @@ def _user_json(user: User) -> dict:
         "email": user.email,
         "status": user.status.value,
         "is_admin": user.is_admin,
+        "expires_at": user.expires_at.isoformat() if user.expires_at else None,
     }
 
 

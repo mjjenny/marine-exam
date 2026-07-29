@@ -33,6 +33,7 @@ def _user_json(u: User) -> dict:
         "status": u.status.value,
         "is_admin": u.is_admin,
         "created_at": u.created_at.isoformat() if u.created_at else None,
+        "expires_at": u.expires_at.isoformat() if u.expires_at else None,
     }
 
 
@@ -86,6 +87,16 @@ def approve_user(user_id):
 @admin_required
 def reject_user(user_id):
     user, err = _set_status(user_id, UserStatus.rejected)
+    if err:
+        return err
+    return jsonify(_user_json(user))
+
+
+@bp.post("/users/<int:user_id>/revoke")
+@admin_required
+def revoke_user(user_id):
+    """Immediately revoke a user's access (plagiarism / abuse protection)."""
+    user, err = _set_status(user_id, UserStatus.revoked)
     if err:
         return err
     return jsonify(_user_json(user))

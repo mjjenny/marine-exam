@@ -20,6 +20,7 @@ import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 import OfflineIndicator from "./components/OfflineIndicator.jsx";
 import MobileBackButton from "./components/MobileBackButton.jsx";
+import AdminMobileNav from "./components/AdminMobileNav.jsx";
 import Profile from "./pages/Profile.jsx";
 import { useAuth } from "./auth/AuthContext.jsx";
 
@@ -85,6 +86,7 @@ export default function App() {
         <HeaderNav />
       </header>
       <MobileBackButton />
+      <AdminMobileNav />
       <main className="container">
         <ErrorBoundary key={location.pathname}>
         <Routes>

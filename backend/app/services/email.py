@@ -87,3 +87,42 @@ def notify_user_approved(user_email: str) -> None:
             "You can now log in and access all five subjects."
         ),
     )
+
+
+def notify_membership_expiry_reminder(user_email: str, days_remaining: int) -> None:
+    """Warn a user that their 365-day membership is about to expire."""
+    if days_remaining == 1:
+        urgency = "tomorrow"
+    elif days_remaining == 7:
+        urgency = "in 7 days"
+    else:
+        urgency = f"in {days_remaining} days"
+
+    send_email(
+        user_email,
+        subject=f"Your Engine Room Academy membership expires {urgency}",
+        body=(
+            f"Hi,\n\n"
+            f"This is a reminder that your Engine Room Academy membership expires {urgency}.\n\n"
+            f"To continue accessing all five subjects and exam diets, please contact the "
+            f"administrator to arrange a renewal before your access is removed.\n\n"
+            f"If you have any questions, simply reply to this email.\n\n"
+            f"Good luck with your studies,\n"
+            f"The Engine Room Academy Team"
+        ),
+    )
+
+
+def notify_membership_expired(user_email: str) -> None:
+    """Notify a user that their membership has now expired."""
+    send_email(
+        user_email,
+        subject="Your Engine Room Academy membership has expired",
+        body=(
+            "Hi,\n\n"
+            "Your Engine Room Academy membership has now expired and your account access "
+            "has been suspended.\n\n"
+            "To regain access, please contact the administrator to arrange a renewal.\n\n"
+            "The Engine Room Academy Team"
+        ),
+    )

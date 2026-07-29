@@ -1,6 +1,6 @@
-"""User table with the pending/approved/rejected approval gate."""
+"""User table with the pending/approved/rejected/expired/revoked approval gate."""
 import enum
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 from sqlalchemy import Enum as SAEnum
 from sqlalchemy import Index
@@ -8,11 +8,19 @@ from sqlalchemy.orm import Mapped, mapped_column
 
 from ..extensions import db
 
+MEMBERSHIP_DAYS = 365
+
 
 class UserStatus(str, enum.Enum):
-    pending = "pending"
+    pending  = "pending"
     approved = "approved"
     rejected = "rejected"
+    expired  = "expired"
+    revoked  = "revoked"
+
+
+def _default_expires_at() -> datetime:
+    return datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS)
 
 
 class User(db.Model):
@@ -30,5 +38,12 @@ class User(db.Model):
     created_at: Mapped[datetime] = mapped_column(
         db.DateTime(timezone=True), nullable=False, server_default=db.func.now()
     )
+    # Admins have no expiry (NULL = never expires).
+    expires_at: Mapped[datetime | None] = mapped_column(
+        db.DateTime(timezone=True), nullable=True, default=None
+    )
 
-    __table_args__ = (Index("idx_users_status", "status"),)  # approval queue
+    __table_args__ = (
+        Index("idx_users_status", "status"),
+        Index("idx_users_expires_at", "expires_at"),
+    )

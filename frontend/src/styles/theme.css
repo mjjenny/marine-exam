@@ -1374,6 +1374,25 @@ a.list-row,
   display: none;
 }
 
+/* Admin mobile tab strip */
+.admin-mobile-nav {
+  display: none;
+}
+.admin-mobile-nav-link {
+  white-space: nowrap;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.admin-mobile-nav-link.is-active {
+  color: var(--amber-500);
+  border-bottom-color: var(--amber-500);
+}
+
 .profile-page { max-width: min(32.5rem, 100%); }
 .profile-card {
   margin-top: 1.25rem;
@@ -1430,6 +1449,17 @@ a.list-row,
   .bottom-nav.mobile-only {
     display: flex !important;
   }
+
+  .admin-mobile-nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    border-bottom: 2px solid var(--border);
+    background: var(--surface);
+    padding: 0 0.5rem;
+    scrollbar-width: none;
+  }
+  .admin-mobile-nav::-webkit-scrollbar { display: none; }
 
   .bottom-nav {
     position: fixed;
