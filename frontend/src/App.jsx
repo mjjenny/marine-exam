@@ -15,6 +15,7 @@ import TopicView from "./pages/TopicView.jsx";
 import AdminApprovals from "./pages/AdminApprovals.jsx";
 import AdminModeration from "./pages/AdminModeration.jsx";
 import AdminAddDiet from "./pages/AdminAddDiet.jsx";
+import AdminUsers from "./pages/AdminUsers.jsx";
 import ProtectedRoute from "./auth/ProtectedRoute.jsx";
 import BottomNav from "./components/BottomNav.jsx";
 import OfflineIndicator from "./components/OfflineIndicator.jsx";
@@ -41,6 +42,9 @@ function HeaderNav() {
               </Link>
               <Link to="/admin/add-diet" className="header-nav-link accent">
                 Add Diet
+              </Link>
+              <Link to="/admin/users" className="header-nav-link accent">
+                Members
               </Link>
             </>
           )}
@@ -166,6 +170,14 @@ export default function App() {
             element={
               <ProtectedRoute requireAdmin>
                 <AdminAddDiet />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/users"
+            element={
+              <ProtectedRoute requireAdmin>
+                <AdminUsers />
               </ProtectedRoute>
             }
           />
