@@ -79,7 +79,7 @@ export default function App() {
     <div className="app-shell">
       <BrandWatermark />
       <OfflineIndicator />
-      <header className="app-header desktop-only">
+      <header className="app-header desktop-only" role="banner" aria-label="Desktop header">
         <span className="brand">
           Marine Engineer <span className="accent">Exam Prep</span>
         </span>

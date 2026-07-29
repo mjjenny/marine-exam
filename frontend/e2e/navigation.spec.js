@@ -9,6 +9,7 @@ test.describe("Responsive navigation", () => {
     test.skip(isMobile, "Desktop Chrome project only");
     await loginAs(page, USERS.admin);
     await page.goto("/admin/users");
+    await expect(page.getByRole("heading", { name: "Members", exact: true })).toBeVisible();
 
     const desktopNav = page.getByRole("navigation", { name: "Desktop" });
     await expect(desktopNav).toBeVisible();
@@ -28,6 +29,7 @@ test.describe("Responsive navigation", () => {
     test.skip(!isMobile, "Mobile Safari project only");
     await loginAs(page, USERS.admin);
     await page.goto("/admin/users");
+    await expect(page.getByRole("heading", { name: "Members", exact: true })).toBeVisible();
 
     await expect(page.getByRole("navigation", { name: "Desktop" })).toBeHidden();
 
@@ -38,7 +40,8 @@ test.describe("Responsive navigation", () => {
     await expect(adminNav.getByRole("link", { name: "Moderation" })).toBeVisible();
     await expect(adminNav.getByRole("link", { name: "Add Diet" })).toBeVisible();
 
-    // Horizontally scrollable strip (overflow-x: auto).
-    await expect(adminNav).toHaveCSS("overflow-x", /auto|scroll/);
+    // Horizontally scrollable strip (overflow-x set in theme.css).
+    const overflowX = await adminNav.evaluate((el) => getComputedStyle(el).overflowX);
+    expect(["auto", "scroll", "overlay"]).toContain(overflowX);
   });
 });

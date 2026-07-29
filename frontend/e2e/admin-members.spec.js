@@ -6,12 +6,12 @@ test.describe("Admin Members dashboard", () => {
     await loginAs(page, USERS.admin);
     await page.goto("/admin/users");
 
-    await expect(page.getByRole("heading", { name: "Members" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Members", exact: true })).toBeVisible();
 
     // Seeded searchable member appears in the table.
     await expect(page.getByText(USERS.searchable.email)).toBeVisible();
 
-    const search = page.getByPlaceholder(/Search by email/i);
+    const search = page.getByRole("searchbox", { name: /Search by email/i });
     await search.fill("searchable@e2e");
     await expect(page.getByText(USERS.searchable.email)).toBeVisible();
     await expect(page.getByText(USERS.member.email)).toHaveCount(0);

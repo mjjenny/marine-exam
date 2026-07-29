@@ -115,17 +115,18 @@ def _clean_db(app):
 
 # ── user / client helpers ────────────────────────────────
 @pytest.fixture
-def user_factory(app):
+def user_factory(app, _clean_db):
+    """Create users after DB truncate. Approved non-admins get a 365-day expires_at."""
     counter = {"n": 0}
 
     def _make(
         status="approved",
         is_admin=False,
-        password="password123",
+        password="Password1!",
         email=None,
         expires_at=None,
         *,
-        set_default_expiry=False,
+        set_default_expiry=None,
     ):
         from datetime import datetime, timedelta, timezone
 
@@ -133,6 +134,9 @@ def user_factory(app):
 
         counter["n"] += 1
         email = email or f"user{counter['n']}@test.local"
+        # Default: approved (active) members receive a membership window.
+        if set_default_expiry is None:
+            set_default_expiry = status == "approved" and not is_admin
         if set_default_expiry and not is_admin and expires_at is None:
             expires_at = datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS)
         with app.app_context():
@@ -159,7 +163,7 @@ def user_factory(app):
 
 @pytest.fixture
 def login(app):
-    def _login(email, password="password123"):
+    def _login(email, password="Password1!"):
         client = app.test_client()
         resp = client.post("/api/auth/login", json={"email": email, "password": password})
         assert resp.status_code == 200, resp.get_data(as_text=True)

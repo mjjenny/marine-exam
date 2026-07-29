@@ -106,9 +106,10 @@ export default function AdminUsers() {
           <input
             type="search"
             className="flex-1 min-w-[180px] border border-[var(--border)] rounded px-3 py-1.5 bg-[var(--surface-2)] text-[var(--ink)] text-sm focus:outline-none focus:border-[var(--amber-500)]"
-            placeholder="Search by email…"
+            placeholder="Search by email..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            aria-label="Search by email"
           />
           <select
             className="border border-[var(--border)] rounded px-2 py-1.5 bg-[var(--surface-2)] text-[var(--ink)] text-sm focus:outline-none focus:border-[var(--amber-500)]"

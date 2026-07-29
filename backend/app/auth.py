@@ -72,12 +72,21 @@ def login_user(user: User) -> None:
 
 def logout_user() -> None:
     session.pop(SESSION_KEY, None)
+    session.modified = True
+    # Drop any request-local cache so the next lookup sees the cleared session.
+    g.pop("current_user", None)
+    g.pop("_cached_user_id", None)
 
 
 def current_user() -> User | None:
-    """Return the logged-in User (cached on g for the request), or None."""
-    if "current_user" not in g:
-        user_id = session.get(SESSION_KEY)
+    """Return the logged-in User, or None.
+
+    Cache on ``g`` is keyed to the session's user_id so a stale user cannot leak
+    across nested request contexts (e.g. Flask test client under pytest-flask).
+    """
+    user_id = session.get(SESSION_KEY)
+    if getattr(g, "_cached_user_id", object()) != user_id:
+        g._cached_user_id = user_id
         g.current_user = (
             db.session.get(User, user_id) if user_id is not None else None
         )

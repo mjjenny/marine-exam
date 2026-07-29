@@ -79,9 +79,11 @@ def approve_user(user_id):
     user, err = _set_status(user_id, UserStatus.approved)
     if err:
         return err
-    # Start a fresh 365-day membership window on first approval.
+    # Start a fresh 365-day membership window on first approval
+    # (measured from account creation, matching the product rule).
     if not user.is_admin and user.expires_at is None:
-        user.expires_at = datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS)
+        base = user.created_at or datetime.now(timezone.utc)
+        user.expires_at = base + timedelta(days=MEMBERSHIP_DAYS)
         db.session.commit()
     notify_user_approved(user.email)
     return jsonify(_user_json(user))
