@@ -1,6 +1,6 @@
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary.jsx";
-import WireframeBackground from "./components/WireframeBackground.jsx";
+import BrandWatermark from "./components/BrandWatermark.jsx";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
@@ -72,7 +72,7 @@ export default function App() {
   const location = useLocation();
   return (
     <div className="app-shell">
-      <WireframeBackground />
+      <BrandWatermark />
       <OfflineIndicator />
       <header className="app-header desktop-only">
         <span className="brand">
