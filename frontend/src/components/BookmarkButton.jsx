@@ -45,9 +45,10 @@ export default function BookmarkButton({ contentType, contentId, label }) {
     <button
       type="button"
       className={`bookmark-btn ${on ? "is-on" : ""}`}
+      data-testid="bookmark-button"
       aria-pressed={on}
       aria-label={on ? "Remove bookmark" : "Bookmark for later"}
-      title={on ? "Saved — click to remove" : "Save for later"}
+      title={on ? "Saved - click to remove" : "Save for later"}
       disabled={busy}
       onClick={toggle}
     >

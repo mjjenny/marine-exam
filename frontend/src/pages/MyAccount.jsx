@@ -120,7 +120,9 @@ export default function MyAccount() {
         <dl className="grid gap-3 text-sm">
           <div className="flex flex-col gap-0.5">
             <dt className="muted">Email</dt>
-            <dd className="font-medium">{user?.email || "—"}</dd>
+            <dd className="font-medium" aria-label="Account email">
+              {user?.email || "—"}
+            </dd>
           </div>
           <div className="flex flex-col gap-0.5">
             <dt className="muted">Status</dt>

@@ -114,9 +114,10 @@ def check_expiries():
 @click.command("seed-e2e")
 @with_appcontext
 def seed_e2e():
-    """Upsert deterministic users for Playwright E2E tests (idempotent)."""
+    """Upsert deterministic users + sample content for Playwright E2E tests."""
     from datetime import datetime, timedelta, timezone
 
+    from .models import CanonicalAnswer, Subject
     from .models.user import MEMBERSHIP_DAYS
 
     specs = [
@@ -165,6 +166,34 @@ def seed_e2e():
         user.status = spec["status"]
         user.expires_at = spec["expires_at"]
         click.echo(f"E2E user {action}: {spec['email']} ({spec['status'].value})")
+
+    # Minimal subject + answer so bookmark / progress E2E has a real content page.
+    subject = db.session.execute(
+        db.select(Subject).filter_by(slug="e2e-motor")
+    ).scalar_one_or_none()
+    if subject is None:
+        subject = Subject(name="E2E Motor", slug="e2e-motor")
+        db.session.add(subject)
+        db.session.flush()
+        click.echo("E2E subject created: e2e-motor")
+    answer = db.session.execute(
+        db.select(CanonicalAnswer).filter_by(slug="e2e-sample-answer")
+    ).scalar_one_or_none()
+    if answer is None:
+        answer = CanonicalAnswer(
+            subject_id=subject.id,
+            topic_id=None,
+            slug="e2e-sample-answer",
+            title="E2E sample answer",
+            question_as_set="What is the E2E sample question?",
+            answer_text="This is a seeded answer for Playwright bookmark tests.",
+            sketch_refs=[],
+        )
+        db.session.add(answer)
+        db.session.flush()
+        click.echo(f"E2E answer created: id={answer.id}")
+    else:
+        click.echo(f"E2E answer ready: id={answer.id}")
 
     db.session.commit()
     click.echo("seed-e2e complete.")

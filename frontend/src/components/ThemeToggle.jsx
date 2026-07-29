@@ -46,17 +46,20 @@ export default function ThemeToggle({ className = "" }) {
   }
 
   const isDark = theme === "dark";
+  // Accessible name is ONLY the aria-label (visible label is decorative).
+  const ariaLabel = isDark ? "Switch to light mode" : "Switch to dark mode";
 
   return (
     <button
       type="button"
       className={`theme-toggle ${className}`}
+      data-testid="theme-toggle"
       onClick={toggle}
       aria-pressed={isDark}
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      title={isDark ? "Light mode" : "Dark mode"}
+      aria-label={ariaLabel}
+      title={ariaLabel}
     >
-      {isDark ? "Light" : "Dark"}
+      <span aria-hidden="true">{isDark ? "Light" : "Dark"}</span>
     </button>
   );
 }
