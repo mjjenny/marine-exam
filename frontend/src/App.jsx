@@ -22,7 +22,9 @@ import BottomNav from "./components/BottomNav.jsx";
 import OfflineIndicator from "./components/OfflineIndicator.jsx";
 import MobileBackButton from "./components/MobileBackButton.jsx";
 import AdminMobileNav from "./components/AdminMobileNav.jsx";
+import ThemeToggle from "./components/ThemeToggle.jsx";
 import Profile from "./pages/Profile.jsx";
+import Bookmarks from "./pages/Bookmarks.jsx";
 import { useAuth } from "./auth/AuthContext.jsx";
 
 function HeaderNav() {
@@ -50,12 +52,16 @@ function HeaderNav() {
               </Link>
             </>
           )}
-          <Link to="/profile" className="header-nav-meta">
-            {user.email}
-            {user.is_admin ? " (admin)" : ""}
+          <Link to="/bookmarks" className="header-nav-link">
+            Bookmarks
           </Link>
           <Link to="/account" className="header-nav-link">
             My Account
+          </Link>
+          <ThemeToggle className="header-nav-link" />
+          <Link to="/profile" className="header-nav-meta">
+            {user.email}
+            {user.is_admin ? " (admin)" : ""}
           </Link>
           <button type="button" className="btn btn-ghost" onClick={logout}>
             Log out
@@ -90,6 +96,9 @@ export default function App() {
         <HeaderNav />
       </header>
       <MobileBackButton />
+      <div className="mobile-utility-bar mobile-only">
+        <ThemeToggle />
+      </div>
       <AdminMobileNav />
       <main className="container">
         <ErrorBoundary key={location.pathname}>
@@ -112,6 +121,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <MyAccount />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/bookmarks"
+            element={
+              <ProtectedRoute>
+                <Bookmarks />
               </ProtectedRoute>
             }
           />

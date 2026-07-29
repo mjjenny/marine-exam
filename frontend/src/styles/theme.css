@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  /* Dark "marine engineering" theme */
+  /* Dark "marine engineering" theme (default) */
   --navy-900: #0b1a2b;   /* header bar + dark text on amber buttons */
   --navy-800: #12263a;
   --navy-700: #1c3a57;
@@ -27,6 +27,30 @@
   --radius: 10px;
   --shadow: 0 4px 22px rgba(0, 0, 0, 0.5);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Explicit light theme — toggled via ThemeToggle (html.light) */
+html.light {
+  --navy-900: #0b1a2b;
+  --navy-800: #12263a;
+  --navy-700: #1c3a57;
+  --navy-100: #dbe6f0;
+  --amber-500: #d97706;
+  --amber-400: #f59e0b;
+
+  --paper: #f4f6fa;
+  --ink: #152033;
+  --muted: #5c6b82;
+
+  --surface: #ffffff;
+  --surface-2: #eef2f8;
+  --border: #d5dee8;
+  --paper-book: #fdfbf7;
+  --book-ink: #2c2825;
+  --heading: #0b1a2b;
+  --link: #1c4f8f;
+
+  --shadow: 0 4px 18px rgba(11, 26, 43, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -987,6 +1011,58 @@ a { color: var(--link); }
 .reading-bar {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
   margin-bottom: 0.5rem;
+}
+.reading-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.bookmark-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  min-height: 44px;
+}
+.bookmark-btn.is-on {
+  color: var(--amber-500);
+  border-color: var(--amber-500);
+}
+.theme-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--navy-100);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-height: 44px;
+}
+html.light .theme-toggle {
+  border-color: var(--border);
+  color: var(--navy-100);
+}
+.mobile-utility-bar {
+  display: none;
+  justify-content: flex-end;
+  padding: 0.4rem 0.85rem;
+  background: var(--navy-900);
+}
+.mobile-utility-bar .theme-toggle {
+  color: var(--navy-100);
+}
+@media (max-width: 48rem) {
+  .mobile-utility-bar.mobile-only {
+    display: flex !important;
+  }
 }
 .back-to-index {
   font-family: Georgia, serif; text-decoration: none; font-size: 0.9rem;

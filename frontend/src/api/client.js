@@ -72,6 +72,7 @@ export const api = {
     request(
       `/api/progress${contentType ? `?content_type=${encodeURIComponent(contentType)}` : ""}`
     ),
+  progressSummary: () => request("/api/progress/summary"),
   toggleProgress: (contentType, contentId) =>
     request("/api/progress/toggle", {
       method: "POST",

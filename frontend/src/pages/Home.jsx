@@ -4,6 +4,7 @@ import { api } from "../api/client.js";
 import { useAuth } from "../auth/AuthContext.jsx";
 import BookCover from "../components/BookCover.jsx";
 import BookSpread from "../components/BookSpread.jsx";
+import SubjectProgressWidget from "../components/SubjectProgressWidget.jsx";
 
 // A member's display name, derived from the local part of their email
 // (e.g. "jane.doe@…" -> "Jane Doe"), since the account has no separate name field.
@@ -71,6 +72,8 @@ export default function Home() {
         </h1>
         <p className="muted">Open a book to browse its question index.</p>
       </div>
+
+      <SubjectProgressWidget />
 
       {error && <p className="form-error">{error}</p>}
       {!subjects && !error && <p className="muted">Loading…</p>}

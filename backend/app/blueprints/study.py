@@ -41,6 +41,57 @@ def _bookmark_json(row: Bookmark) -> dict:
     }
 
 
+@bp.get("/progress/summary")
+@approved_required
+def progress_summary():
+    """Per-subject completion stats for the student dashboard."""
+    from ..models import CanonicalAnswer, Subject
+
+    user = current_user()
+    subjects = db.session.execute(db.select(Subject).order_by(Subject.id)).scalars().all()
+    totals = dict(
+        db.session.execute(
+            db.select(CanonicalAnswer.subject_id, db.func.count(CanonicalAnswer.id)).group_by(
+                CanonicalAnswer.subject_id
+            )
+        ).all()
+    )
+    completed_rows = db.session.execute(
+        db.select(UserProgress.content_id).where(
+            UserProgress.user_id == user.id,
+            UserProgress.content_type == "answer",
+        )
+    ).scalars().all()
+    completed_ids = set(completed_rows)
+
+    # Map answer id -> subject id for completed answers only.
+    completed_by_subject = {}
+    if completed_ids:
+        for sid, aid in db.session.execute(
+            db.select(CanonicalAnswer.subject_id, CanonicalAnswer.id).where(
+                CanonicalAnswer.id.in_(completed_ids)
+            )
+        ).all():
+            completed_by_subject[sid] = completed_by_subject.get(sid, 0) + 1
+
+    out = []
+    for s in subjects:
+        total = int(totals.get(s.id, 0))
+        done = int(completed_by_subject.get(s.id, 0))
+        pct = round((done / total) * 100) if total else 0
+        out.append(
+            {
+                "subject_id": s.id,
+                "slug": s.slug,
+                "name": s.name,
+                "completed": done,
+                "total": total,
+                "percent": pct,
+            }
+        )
+    return jsonify(out)
+
+
 @bp.get("/progress")
 @approved_required
 def list_progress():

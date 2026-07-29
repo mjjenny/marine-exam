@@ -5,6 +5,7 @@ import SuggestModal from "../components/SuggestModal.jsx";
 import SketchZoom from "../components/SketchZoom.jsx";
 import Markdown from "../components/Markdown.jsx";
 import MasteryToggle from "../components/MasteryToggle.jsx";
+import BookmarkButton from "../components/BookmarkButton.jsx";
 import { qLabel } from "../utils/format.js";
 
 // Single question page: verbatim question, canonical answer, highlighted examiner
@@ -33,7 +34,10 @@ export default function Question() {
     <div className="card question-page reading-page">
       <div className="reading-bar">
         <Link to={`/?book=${q.subject.slug}`} className="back-to-index">‹ Back to Index</Link>
-        <MasteryToggle slug={q.subject.slug} answerId={q.canonical_answer.id} />
+        <div className="reading-bar-actions">
+          <BookmarkButton contentType="question" contentId={q.id} />
+          <MasteryToggle slug={q.subject.slug} answerId={q.canonical_answer.id} />
+        </div>
       </div>
 
       <p className="crumbs">

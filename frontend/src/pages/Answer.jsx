@@ -5,6 +5,7 @@ import SketchZoom from "../components/SketchZoom.jsx";
 import SuggestModal from "../components/SuggestModal.jsx";
 import Markdown from "../components/Markdown.jsx";
 import MasteryToggle from "../components/MasteryToggle.jsx";
+import BookmarkButton from "../components/BookmarkButton.jsx";
 import { qLabel } from "../utils/format.js";
 
 // Canonical answer page. Reachable for answers with no occurrences (empty
@@ -31,7 +32,10 @@ export default function Answer() {
     <div className="card question-page reading-page">
       <div className="reading-bar">
         <Link to={`/?book=${a.subject.slug}`} className="back-to-index">‹ Back to Index</Link>
-        <MasteryToggle slug={a.subject.slug} answerId={a.id} />
+        <div className="reading-bar-actions">
+          <BookmarkButton contentType="answer" contentId={a.id} />
+          <MasteryToggle slug={a.subject.slug} answerId={a.id} />
+        </div>
       </div>
 
       <p className="crumbs">

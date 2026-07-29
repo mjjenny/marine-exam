@@ -45,6 +45,17 @@ function IconLogin() {
   );
 }
 
+function IconStar() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="bottom-nav-icon">
+      <path
+        fill="currentColor"
+        d="M12 3.2 14.4 9l6.1.5-4.7 4 1.5 6L12 16.8 6.7 19.5l1.5-6-4.7-4L9.6 9 12 3.2Z"
+      />
+    </svg>
+  );
+}
+
 export default function BottomNav() {
   const { user } = useAuth();
   const { pathname } = useLocation();
@@ -52,6 +63,7 @@ export default function BottomNav() {
   const items = user
     ? [
         { to: "/", label: "Home", icon: <IconHome />, end: true },
+        { to: "/bookmarks", label: "Saved", icon: <IconStar />, end: true },
         ...(user.is_admin
           ? [
               {
