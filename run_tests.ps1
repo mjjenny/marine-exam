@@ -35,9 +35,10 @@ try {
   try { python -m flask db upgrade 2>$null } catch {}
   python -m flask seed-e2e
 
-  $log = Join-Path $env:TEMP "era-flask-test.log"
+  $stdoutLog = Join-Path $env:TEMP "era-flask-stdout.log"
+  $stderrLog = Join-Path $env:TEMP "era-flask-stderr.log"
   $flaskProc = Start-Process -FilePath "python" -ArgumentList "-m","flask","run","--host","127.0.0.1","--port","5000" `
-    -RedirectStandardOutput $log -RedirectStandardError $log -PassThru -WindowStyle Hidden
+    -RedirectStandardOutput $stdoutLog -RedirectStandardError $stderrLog -PassThru -WindowStyle Hidden
 
   $ready = $false
   for ($i = 0; $i -lt 40; $i++) {
@@ -46,7 +47,7 @@ try {
       if ($r.StatusCode -eq 200) { $ready = $true; break }
     } catch { Start-Sleep -Milliseconds 500 }
   }
-  if (-not $ready) { throw "Flask failed to start — see $log" }
+  if (-not $ready) { throw "Flask failed to start - see $stdoutLog and $stderrLog" }
   Write-Ok "Flask ready on :5000"
 
   Write-Step "3/3 Playwright E2E (Desktop Chrome + Mobile Safari)"
