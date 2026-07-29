@@ -1,7 +1,7 @@
 """Admin-only routes: the member approval queue (step 5), the suggested-edit
 moderation queue (step 7), and the Add-Diet tool (manual + PDF-assisted question entry)."""
 import re
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from flask import Blueprint, jsonify, request
 
@@ -19,7 +19,7 @@ from ..models import (
     User,
 )
 from ..models.moderation import SuggestedEditStatus
-from ..models.user import UserStatus
+from ..models.user import MEMBERSHIP_DAYS, UserStatus
 from ..services.email import notify_user_approved
 from ..services.pdf_parse import parse_exam_pdf
 
@@ -79,6 +79,10 @@ def approve_user(user_id):
     user, err = _set_status(user_id, UserStatus.approved)
     if err:
         return err
+    # Start a fresh 365-day membership window on first approval.
+    if not user.is_admin and user.expires_at is None:
+        user.expires_at = datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS)
+        db.session.commit()
     notify_user_approved(user.email)
     return jsonify(_user_json(user))
 

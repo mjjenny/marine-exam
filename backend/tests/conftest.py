@@ -57,13 +57,46 @@ def _ensure_test_database():
         conn.close()
 
 
+def _ensure_user_status_enum():
+    """Keep Postgres user_status enum in sync with the model (enums survive DROP TABLE)."""
+    conn = psycopg2.connect(dbname=TEST_DB_NAME, **PG)
+    conn.autocommit = True
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                DO $$ BEGIN
+                    CREATE TYPE user_status AS ENUM (
+                        'pending', 'approved', 'rejected', 'expired', 'revoked'
+                    );
+                EXCEPTION
+                    WHEN duplicate_object THEN NULL;
+                END $$;
+                """
+            )
+            for value in ("pending", "approved", "rejected", "expired", "revoked"):
+                cur.execute(
+                    f"ALTER TYPE user_status ADD VALUE IF NOT EXISTS '{value}'"
+                )
+    finally:
+        conn.close()
+
+
 @pytest.fixture(scope="session")
 def app():
     _ensure_test_database()
+    _ensure_user_status_enum()
     app = create_app(TestingConfig)
     with app.app_context():
         db.drop_all()
         db.create_all()
+        db.session.execute(
+            db.text(
+                "ALTER TABLE users ADD COLUMN IF NOT EXISTS expires_at "
+                "TIMESTAMP WITH TIME ZONE"
+            )
+        )
+        db.session.commit()
     yield app
     with app.app_context():
         db.session.remove()
@@ -85,20 +118,41 @@ def _clean_db(app):
 def user_factory(app):
     counter = {"n": 0}
 
-    def _make(status="approved", is_admin=False, password="password123", email=None):
+    def _make(
+        status="approved",
+        is_admin=False,
+        password="password123",
+        email=None,
+        expires_at=None,
+        *,
+        set_default_expiry=False,
+    ):
+        from datetime import datetime, timedelta, timezone
+
+        from app.models.user import MEMBERSHIP_DAYS
+
         counter["n"] += 1
         email = email or f"user{counter['n']}@test.local"
+        if set_default_expiry and not is_admin and expires_at is None:
+            expires_at = datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS)
         with app.app_context():
             u = User(
                 email=email,
                 password_hash=hash_password(password),
                 status=UserStatus(status),
                 is_admin=is_admin,
+                expires_at=expires_at,
             )
             db.session.add(u)
             db.session.commit()
             uid = u.id
-        return {"id": uid, "email": email, "password": password}
+            expires_iso = u.expires_at.isoformat() if u.expires_at else None
+        return {
+            "id": uid,
+            "email": email,
+            "password": password,
+            "expires_at": expires_iso,
+        }
 
     return _make
 

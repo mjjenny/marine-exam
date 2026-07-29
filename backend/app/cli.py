@@ -111,6 +111,66 @@ def check_expiries():
     click.echo("check-expiries complete.")
 
 
+@click.command("seed-e2e")
+@with_appcontext
+def seed_e2e():
+    """Upsert deterministic users for Playwright E2E tests (idempotent)."""
+    from datetime import datetime, timedelta, timezone
+
+    from .models.user import MEMBERSHIP_DAYS
+
+    specs = [
+        {
+            "email": "admin@e2e.local",
+            "password": "E2eAdmin1!",
+            "is_admin": True,
+            "status": UserStatus.approved,
+            "expires_at": None,
+        },
+        {
+            "email": "member@e2e.local",
+            "password": "E2eMember1!",
+            "is_admin": False,
+            "status": UserStatus.approved,
+            "expires_at": datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS),
+        },
+        {
+            "email": "revoked@e2e.local",
+            "password": "E2eRevoked1!",
+            "is_admin": False,
+            "status": UserStatus.revoked,
+            "expires_at": datetime.now(timezone.utc) + timedelta(days=100),
+        },
+        {
+            "email": "searchable@e2e.local",
+            "password": "E2eSearch1!",
+            "is_admin": False,
+            "status": UserStatus.approved,
+            "expires_at": datetime.now(timezone.utc) + timedelta(days=MEMBERSHIP_DAYS),
+        },
+    ]
+
+    for spec in specs:
+        user = db.session.execute(
+            db.select(User).filter_by(email=spec["email"])
+        ).scalar_one_or_none()
+        if user is None:
+            user = User(email=spec["email"], password_hash=hash_password(spec["password"]))
+            db.session.add(user)
+            action = "created"
+        else:
+            user.password_hash = hash_password(spec["password"])
+            action = "updated"
+        user.is_admin = spec["is_admin"]
+        user.status = spec["status"]
+        user.expires_at = spec["expires_at"]
+        click.echo(f"E2E user {action}: {spec['email']} ({spec['status'].value})")
+
+    db.session.commit()
+    click.echo("seed-e2e complete.")
+
+
 def register_cli(app: Flask) -> None:
     app.cli.add_command(create_admin)
     app.cli.add_command(check_expiries)
+    app.cli.add_command(seed_e2e)
