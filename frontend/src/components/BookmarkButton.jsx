@@ -1,17 +1,23 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { api } from "../api/client.js";
 
 /** Star toggle that bookmarks a content item via the study API. */
 export default function BookmarkButton({ contentType, contentId, label }) {
   const [on, setOn] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [ready, setReady] = useState(false);
+  // Bumped when a toggle starts so an in-flight listBookmarks cannot clobber state.
+  const gen = useRef(0);
 
   useEffect(() => {
     let cancelled = false;
+    const id = ++gen.current;
+    setReady(false);
+    setOn(false);
     api
       .listBookmarks(contentType)
       .then((items) => {
-        if (cancelled) return;
+        if (cancelled || id !== gen.current) return;
         setOn(
           items.some(
             (i) =>
@@ -19,16 +25,21 @@ export default function BookmarkButton({ contentType, contentId, label }) {
               Number(i.content_id) === Number(contentId)
           )
         );
+        setReady(true);
       })
-      .catch(() => {});
+      .catch(() => {
+        if (cancelled || id !== gen.current) return;
+        setReady(true);
+      });
     return () => {
       cancelled = true;
     };
   }, [contentType, contentId]);
 
   const toggle = useCallback(async () => {
-    if (busy) return;
+    if (busy || !ready) return;
     setBusy(true);
+    gen.current += 1; // invalidate any pending listBookmarks apply
     const prev = on;
     setOn(!prev);
     try {
@@ -39,7 +50,7 @@ export default function BookmarkButton({ contentType, contentId, label }) {
     } finally {
       setBusy(false);
     }
-  }, [busy, on, contentType, contentId]);
+  }, [busy, ready, on, contentType, contentId]);
 
   return (
     <button
@@ -49,7 +60,7 @@ export default function BookmarkButton({ contentType, contentId, label }) {
       aria-pressed={on}
       aria-label={on ? "Remove bookmark" : "Bookmark for later"}
       title={on ? "Saved - click to remove" : "Save for later"}
-      disabled={busy}
+      disabled={busy || !ready}
       onClick={toggle}
     >
       <span aria-hidden="true">{on ? "★" : "☆"}</span>

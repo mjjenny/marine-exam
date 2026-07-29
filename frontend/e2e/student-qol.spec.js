@@ -52,19 +52,33 @@ test.describe("Student QoL — account, theme, bookmarks", () => {
     await page.goto(`/answers/${answerId}`);
     const star = page.locator('[data-testid="bookmark-button"]:visible');
     await expect(star).toBeVisible({ timeout: 15_000 });
+    // BookmarkButton stays disabled until the initial listBookmarks hydrate finishes.
+    await expect(star).toBeEnabled({ timeout: 15_000 });
 
-    // Idempotent: flip whatever the current state is.
+    async function clickStarAndWait(expectedLabel) {
+      const toggleWait = page.waitForResponse(
+        (res) =>
+          res.url().includes("/api/bookmarks/toggle") &&
+          res.request().method() === "POST" &&
+          res.ok()
+      );
+      await star.click({ force: true, delay: 100 });
+      await toggleWait;
+      await expect(star).toHaveAttribute("aria-label", expectedLabel, { timeout: 10_000 });
+    }
+
+    // Idempotent: flip whatever the current state is, waiting on the network each time.
     const starBefore = await star.getAttribute("aria-label");
     expect(
       starBefore === "Bookmark for later" || starBefore === "Remove bookmark"
     ).toBeTruthy();
-    await star.click();
-    await expect(star).not.toHaveAttribute("aria-label", starBefore);
+    const afterFirst =
+      starBefore === "Bookmark for later" ? "Remove bookmark" : "Bookmark for later";
+    await clickStarAndWait(afterFirst);
 
-    // If we just removed a leftover bookmark, add it again so the list assertion holds.
+    // Ensure a bookmark exists for the list assertion.
     if ((await star.getAttribute("aria-label")) === "Bookmark for later") {
-      await star.click();
-      await expect(star).toHaveAttribute("aria-label", "Remove bookmark");
+      await clickStarAndWait("Remove bookmark");
     }
 
     await page.goto("/bookmarks");
