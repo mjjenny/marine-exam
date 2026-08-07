@@ -1,32 +1,20 @@
-name: Deploy to DigitalOcean
+name: Deploy to production
+
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [main]
+  workflow_dispatch: {}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Copy files to server via SCP
-        uses: appleboy/scp-action@v0.1.7
+      - name: SSH in and run deploy.sh
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.DO_HOST }}
-          username: ${{ secrets.DO_USERNAME }}
-          key: ${{ secrets.DO_SSH_KEY }}
-          source: "backend,frontend,docker-compose.prod.yml,init-letsencrypt.sh"
-          target: "/opt/marine-exam/"
-          overwrite: true
-
-      - name: Execute deployment commands via SSH
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.DO_HOST }}
-          username: ${{ secrets.DO_USERNAME }}
-          key: ${{ secrets.DO_SSH_KEY }}
+          host: ${{ secrets.PROD_HOST }}
+          username: root
+          key: ${{ secrets.PROD_SSH_KEY }}
           script: |
             cd /opt/marine-exam
-            docker compose -f docker-compose.prod.yml --env-file .env.prod up -d --build
+            ./deploy.sh
