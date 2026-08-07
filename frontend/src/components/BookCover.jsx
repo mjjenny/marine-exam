@@ -36,6 +36,7 @@ export default function BookCover({ subject, onClick, showRibbon = true }) {
           : undefined
       }
       aria-label={interactive ? `Open ${subject.name}` : undefined}
+      data-testid={interactive ? `subject-book-${subject.slug}` : undefined}
     >
       <span className="book-spine" aria-hidden="true" />
       <span className="book-edges" aria-hidden="true" />

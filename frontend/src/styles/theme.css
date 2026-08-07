@@ -258,20 +258,72 @@ a { color: var(--link); }
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(13.125rem, 100%), 1fr));
-  gap: 1.75rem 1.5rem;
-  perspective: 112.5rem;
-  padding: 0.5rem 0 1rem;
+/* Static library bookshelf — opaque wood panel so books never "float" over the watermark */
+.bookshelf {
+  --shelf-panel: linear-gradient(180deg, #2a221c 0%, #1a1511 55%, #14100d 100%);
+  --shelf-plank: linear-gradient(180deg, #6b4e35 0%, #4a3424 42%, #3a291c 100%);
+  --shelf-plank-edge: #24180f;
+  --shelf-plank-highlight: rgba(232, 200, 150, 0.22);
+  background: var(--shelf-panel);
+}
+html.light .bookshelf {
+  --shelf-panel: linear-gradient(180deg, #e8d9c4 0%, #d4c0a4 50%, #c4ad8c 100%);
+  --shelf-plank: linear-gradient(180deg, #b8956a 0%, #9a7548 45%, #7d5c36 100%);
+  --shelf-plank-edge: #5c4026;
+  --shelf-plank-highlight: rgba(255, 248, 235, 0.55);
 }
 
-/* Book cover — spine on the left, page edges on the right, foil title */
+.bookshelf-slot {
+  width: 100%;
+  max-width: 11.5rem;
+  margin-inline: auto;
+}
+
+.bookshelf-plank {
+  display: block;
+  width: calc(100% + 1.25rem);
+  height: 0.7rem;
+  margin-top: 0.15rem;
+  border-radius: 2px 2px 3px 3px;
+  background: var(--shelf-plank);
+  box-shadow:
+    0 3px 0 var(--shelf-plank-edge),
+    0 6px 10px -4px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 var(--shelf-plank-highlight);
+}
+
+/* One continuous shelf look on wide screens */
+@media (min-width: 64rem) {
+  .bookshelf-grid {
+    position: relative;
+    padding-bottom: 1.1rem;
+  }
+  .bookshelf-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.85rem;
+    border-radius: 2px 2px 4px 4px;
+    background: var(--shelf-plank);
+    box-shadow:
+      0 4px 0 var(--shelf-plank-edge),
+      0 8px 14px -4px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 var(--shelf-plank-highlight);
+  }
+  .bookshelf-plank { display: none; }
+  .bookshelf-slot { max-width: none; padding-bottom: 0.35rem; }
+}
+
+/* Book cover — spine on the left, page edges on the right, foil title.
+   Strictly static on the shelf: no scroll/parallax motion; hover lift only. */
 .book-cover {
   position: relative;
+  width: 100%;
   aspect-ratio: 3 / 4;
   border-radius: 3px 8px 8px 3px;
-  padding: 1.4rem 1.1rem 1.2rem 1.6rem;
+  padding: 1.25rem 1rem 1.1rem 1.45rem;
   color: #f7ecd0;
   background: var(--cover-bg, linear-gradient(135deg, #2a3d63, #16233d));
   box-shadow:
@@ -280,19 +332,22 @@ a { color: var(--link); }
     inset -1px 0 2px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   user-select: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
   backface-visibility: hidden;
+  transform: none;
 }
 .book-cover[role="button"] { cursor: pointer; }
 @media (hover: hover) and (pointer: fine) {
   .book-cover[role="button"]:hover {
-  transform: translateY(-6px) rotate(-0.5deg);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 18px 30px -10px rgba(11, 26, 43, 0.6);
-}
+    transform: translateY(-5px);
+    filter: brightness(1.06);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 16px 28px -10px rgba(11, 26, 43, 0.65);
+  }
 }
 .book-cover[role="button"]:active {
-  transform: translateY(-6px) rotate(-0.5deg);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 18px 30px -10px rgba(11, 26, 43, 0.6);
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 12px 22px -10px rgba(11, 26, 43, 0.55);
 }
 .book-cover[role="button"]:focus-visible { outline: 3px solid var(--amber-500); outline-offset: 3px; }
 
@@ -318,8 +373,13 @@ a { color: var(--link); }
   color: rgba(247, 236, 208, 0.7);
 }
 .book-cover-title {
-  margin: 0.5rem 0 0; font-size: 1.5rem; line-height: 1.15; font-weight: 800;
-  color: #f7ecd0; text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  margin: 0.5rem 0 0;
+  font-size: clamp(1.15rem, 3.6vw, 1.55rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: #f7ecd0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 .book-cover-rule { display: block; width: 46px; height: 2px; background: var(--amber-500); margin: 0.8rem 0; }
 .book-cover-sub { margin-top: auto; font-size: 0.82rem; color: rgba(247, 236, 208, 0.8); }
@@ -444,15 +504,18 @@ a { color: var(--link); }
 /* fall back to a cross-fade instead of the 3D flip on small screens / reduced motion */
 @keyframes book-fade { from { opacity: 1; } to { opacity: 0; } }
 @media (max-width: 40rem) {
-  .book-grid { grid-template-columns: repeat(auto-fill, minmax(min(9.375rem, 100%), 1fr)); perspective: none; gap: 1.25rem 1rem; }
   .open-book { width: 100%; height: 90vh; perspective: none; }
   .open-book-page, .open-book-cover, .open-book-cover .book-cover { border-radius: 8px; }
   .open-book-cover { animation: book-fade 0.4s ease both; }
+  .bookshelf-slot { max-width: 10.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .open-book-cover { animation: book-fade 0.3s ease both; }
   .book-cover[role="button"]:hover,
-  .book-cover[role="button"]:active { transform: none; }
+  .book-cover[role="button"]:active {
+    transform: none;
+    filter: none;
+  }
 }
 
 .list { list-style: none; padding: 0; margin: 1rem 0 0; }

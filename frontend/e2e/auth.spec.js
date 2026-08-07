@@ -9,6 +9,9 @@ test.describe("Auth flow", () => {
     await expect(page.getByText(/Good (morning|afternoon|evening)/i)).toBeVisible({
       timeout: 15_000,
     });
+    // Static bookshelf with clickable subject books (BookCover aria-label / data-testid).
+    await expect(page.getByTestId("bookshelf")).toBeVisible();
+    await expect(page.getByRole("button", { name: /^Open / }).first()).toBeVisible();
   });
 
   test("invalid credentials show an error", async ({ page }) => {

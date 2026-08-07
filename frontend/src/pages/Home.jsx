@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api/client.js";
 import { useAuth } from "../auth/AuthContext.jsx";
-import BookCover from "../components/BookCover.jsx";
 import BookSpread from "../components/BookSpread.jsx";
+import Bookshelf from "../components/Bookshelf.jsx";
 import SubjectProgressWidget from "../components/SubjectProgressWidget.jsx";
 
 // A member's display name, derived from the local part of their email
@@ -26,8 +26,8 @@ function timeGreeting() {
   return "Good evening";
 }
 
-// Approved-only landing page: a shelf of subject "books" that flip open to a
-// searchable question index.
+// Approved-only landing page: a static library shelf of subject books that open
+// to a searchable question index (BookSpread).
 export default function Home() {
   const { user } = useAuth();
   const [subjects, setSubjects] = useState(null);
@@ -48,6 +48,11 @@ export default function Home() {
       if (s) setActive(s);
     }
   }, [subjects, bookSlug]);
+
+  function openBook(subject) {
+    setActive(subject);
+    setSearchParams({ book: subject.slug }, { replace: true });
+  }
 
   function closeBook() {
     setActive(null);
@@ -70,7 +75,7 @@ export default function Home() {
             ""
           )}
         </h1>
-        <p className="muted">Open a book to browse its question index.</p>
+        <p className="muted">Choose a book from the shelf to browse its question index.</p>
       </div>
 
       <SubjectProgressWidget />
@@ -78,11 +83,7 @@ export default function Home() {
       {error && <p className="form-error">{error}</p>}
       {!subjects && !error && <p className="muted">Loading…</p>}
 
-      <div className="book-grid">
-        {subjects?.map((s) => (
-          <BookCover key={s.slug} subject={s} onClick={() => setActive(s)} />
-        ))}
-      </div>
+      {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
 
       {active && (
         <BookSpread subject={active} subjects={subjects} onClose={closeBook} />

@@ -7,12 +7,23 @@ import { USERS, loginAs } from "./helpers.js";
  *   ThemeToggle.jsx    — data-testid="theme-toggle", aria-label Switch to light/dark mode
  *   BookmarkButton.jsx — data-testid="bookmark-button", aria-label Bookmark for later / Remove bookmark
  *   Bookmarks.jsx      — h1 "Bookmarks", list shows "Answer #<id>"
+ *   Bookshelf.jsx      — data-testid="bookshelf", aria-label="Subject library"
+ *   BookCover.jsx      — data-testid="subject-book-<slug>", aria-label `Open ${name}`
  *
  * Content: `flask seed-e2e` creates subject slug `e2e-motor` + answer titled "E2E sample answer".
  */
 test.describe("Student QoL — account, theme, bookmarks", () => {
   test("member can open My Account, toggle theme, and click bookmark", async ({ page }) => {
     await loginAs(page, USERS.member);
+
+    // --- Home bookshelf → open seeded subject book ---
+    await page.goto("/");
+    await expect(page.getByTestId("bookshelf")).toBeVisible({ timeout: 15_000 });
+    const e2eBook = page.getByTestId("subject-book-e2e-motor");
+    await expect(e2eBook).toBeVisible();
+    await e2eBook.click();
+    await expect(page.getByRole("button", { name: "Close book" })).toBeVisible();
+    await page.getByRole("button", { name: "Close book" }).click();
 
     // --- My Account ---
     await page.goto("/account");
