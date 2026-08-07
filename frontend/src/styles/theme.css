@@ -258,6 +258,169 @@ a { color: var(--link); }
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
+.home-progress-loading { margin-top: 1rem; }
+.home-progress-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.home-progress-rings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+/* Desktop: fit greeting + progress rail + shelf in the viewport (no page scroll) */
+@media (min-width: 64rem) {
+  body:has(.home-page) .app-shell {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  body:has(.home-page) .app-shell > .container {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-width: none;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .home-page {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .home-viewport {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: clamp(5.5rem, 7.5vw, 7.75rem) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas:
+      "progress head"
+      "progress shelf";
+    column-gap: clamp(0.75rem, 2vw, 1.75rem);
+    row-gap: clamp(0.35rem, 1vh, 0.75rem);
+    overflow: hidden;
+  }
+  .home-progress-rail {
+    grid-area: progress;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-head {
+    grid-area: head;
+    margin-bottom: 0;
+  }
+  .home-greeting {
+    font-size: clamp(1.35rem, 2.4vw, 2.25rem);
+  }
+  .home-shelf {
+    grid-area: shelf;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .home-progress {
+    margin: 0;
+  }
+  .home-progress-title {
+    font-size: clamp(0.7rem, 1.1vw, 0.85rem);
+    text-align: center;
+    margin-bottom: clamp(0.4rem, 1vh, 0.7rem);
+  }
+  .home-progress-rings {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: clamp(0.3rem, 1.1vh, 0.65rem);
+  }
+  .home-progress-rings > * {
+    transform: scale(clamp(0.62, 0.45 + 1.35vh, 0.88));
+    transform-origin: top center;
+    margin-bottom: clamp(-0.55rem, -1.2vh, -0.15rem);
+  }
+  .home-shelf .bookshelf {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .home-shelf .bookshelf-inner {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: clamp(0.4rem, 1.2vh, 0.85rem);
+    padding-bottom: clamp(0.5rem, 1.4vh, 1rem);
+  }
+  .home-shelf .bookshelf-grid {
+    flex: 0 1 auto;
+    align-items: end;
+    gap: clamp(0.35rem, 1.2vw, 0.85rem);
+  }
+  .home-shelf .bookshelf-slot {
+    max-width: clamp(5.25rem, 11vw, 9.25rem);
+    padding-bottom: 0.2rem;
+  }
+  .home-shelf .book-cover {
+    padding: clamp(0.55rem, 1.1vh, 1rem) clamp(0.45rem, 0.9vw, 0.85rem)
+      clamp(0.5rem, 1vh, 0.9rem) clamp(0.7rem, 1.2vw, 1.2rem);
+  }
+  .home-shelf .book-cover-kicker {
+    font-size: clamp(0.5rem, 0.85vw, 0.68rem);
+  }
+  .home-shelf .book-cover-title {
+    font-size: clamp(0.72rem, 1.35vw, 1.15rem);
+    margin: 0.2rem 0;
+  }
+  .home-shelf .book-cover-sub {
+    font-size: clamp(0.58rem, 1vw, 0.78rem);
+  }
+  .home-shelf .book-cover-rule {
+    margin: clamp(0.35rem, 0.8vh, 0.7rem) 0;
+  }
+}
+
+/* Narrow / mobile: stacked layout, normal page scrolling */
+@media (max-width: 63.99rem) {
+  .home-viewport {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-progress-rail {
+    order: 2;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .home-head {
+    order: 1;
+  }
+  .home-shelf {
+    order: 3;
+  }
+  .home-progress {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* Static library bookshelf — opaque wood panel so books never "float" over the watermark */
 .bookshelf {
   --shelf-panel: linear-gradient(180deg, #2a221c 0%, #1a1511 55%, #14100d 100%);
@@ -457,14 +620,28 @@ html.light .bookshelf {
 }
 .book-search:focus { outline: none; border-color: var(--amber-500); box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.18); }
 
-.book-index { flex: 1; min-height: 0; overflow-y: auto; margin-top: 0.3rem; }
+.book-index {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  margin-top: 0.3rem;
+}
 .book-index-head, .book-index-row {
-  display: grid; grid-template-columns: 5.125rem 2.125rem 1fr 5.75rem; gap: 0.6rem; align-items: center;
+  display: grid;
+  grid-template-columns: 5.125rem 2.125rem minmax(0, 1fr) 5.75rem;
+  gap: 0.6rem;
+  align-items: start;
+  width: 100%;
+  box-sizing: border-box;
 }
 .book-index-head {
   position: sticky; top: 0; background: #fdfbf7; z-index: 1;
   padding: 0.4rem 0.5rem; font-size: 0.72rem; text-transform: uppercase;
   letter-spacing: 0.05em; color: #a08a5e; border-bottom: 1px solid #ece2ce;
+  align-items: center;
 }
 .book-index-list { list-style: none; margin: 0; padding: 0; }
 .book-index-row {
@@ -487,7 +664,15 @@ html.light .bookshelf {
 }
 .book-index-row .col-sitting { font-size: 0.8rem; color: var(--muted); }
 .book-index-row .col-q { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.book-index-row .col-question { font-weight: 600; color: var(--navy-800); line-height: 1.3; }
+.book-index-row .col-question {
+  font-weight: 600;
+  color: var(--navy-800);
+  line-height: 1.3;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
 .book-index-row .col-status { font-size: 0.72rem; text-align: right; color: var(--muted); }
 .status-verified { color: #1f7a4d; }
 .status-unverified { color: #b06a00; }
@@ -496,7 +681,7 @@ html.light .bookshelf {
 
 /* EK Oral: flat bank has no sittings — drop the Sitting column */
 .book-index.oral .book-index-head,
-.book-index.oral .book-index-row { grid-template-columns: 2.5rem 1fr 5.25rem; }
+.book-index.oral .book-index-row { grid-template-columns: 2.5rem minmax(0, 1fr) 5.25rem; }
 .book-index.oral .col-sitting { display: none; }
 .book-index-empty { padding: 1rem 0.5rem; }
 .book-page-foot { padding-top: 0.7rem; border-top: 1px solid #ece2ce; margin-top: 0.4rem; font-size: 0.9rem; }

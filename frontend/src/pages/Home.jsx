@@ -62,28 +62,33 @@ export default function Home() {
   const name = displayName(user?.email);
 
   return (
-    <div>
-      <div className="home-head">
-        <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
-        <h1 className="home-greeting">
-          {timeGreeting()}
-          {name ? (
-            <>
-              , <span className="home-name">{name}</span>
-            </>
-          ) : (
-            ""
-          )}
-        </h1>
-        <p className="muted">Choose a book from the shelf to browse its question index.</p>
+    <div className="home-page">
+      <div className="home-viewport">
+        <aside className="home-progress-rail">
+          <SubjectProgressWidget />
+        </aside>
+
+        <div className="home-head">
+          <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
+          <h1 className="home-greeting">
+            {timeGreeting()}
+            {name ? (
+              <>
+                , <span className="home-name">{name}</span>
+              </>
+            ) : (
+              ""
+            )}
+          </h1>
+          <p className="muted">Choose a book from the shelf to browse its question index.</p>
+        </div>
+
+        <div className="home-shelf">
+          {error && <p className="form-error">{error}</p>}
+          {!subjects && !error && <p className="muted">Loading…</p>}
+          {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
+        </div>
       </div>
-
-      <SubjectProgressWidget />
-
-      {error && <p className="form-error">{error}</p>}
-      {!subjects && !error && <p className="muted">Loading…</p>}
-
-      {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
 
       {active && (
         <BookSpread subject={active} subjects={subjects} onClose={closeBook} />

@@ -65,16 +65,16 @@ export default function SubjectProgressWidget() {
 
   if (error) return null;
   if (!rows) {
-    return <p className="muted text-sm mt-4">Loading progress…</p>;
+    return <p className="muted text-sm home-progress-loading">Loading progress…</p>;
   }
   if (!rows.length) return null;
 
   return (
-    <section className="mt-6 mb-2" aria-labelledby="progress-heading">
-      <h2 id="progress-heading" className="text-base font-semibold mb-3">
+    <section className="home-progress" aria-labelledby="progress-heading">
+      <h2 id="progress-heading" className="home-progress-title">
         Your progress
       </h2>
-      <div className="flex flex-wrap gap-5 items-start">
+      <div className="home-progress-rings">
         {rows.map((r) => (
           <Ring key={r.subject_id} percent={r.percent} label={r.name} />
         ))}
