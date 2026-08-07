@@ -1,10 +1,9 @@
 """Import EK Oral questions & model answers from a PDF question bank.
 
 Text is extracted with PyMuPDF (``import fitz``) and split into question/answer
-blocks by the patterns below. Parsed blocks are inserted as flat EK Oral entries
-(one ``CanonicalAnswer`` + one ``QuestionInstance`` each, ``diet_id`` = NULL), the
-same shape the rest of EK Oral uses. Re-running with the same PDF is a no-op — each
-entry is keyed by a content hash of its question, so nothing is duplicated.
+blocks by the patterns below. Each import **replaces** all existing EK Oral
+content: the PDF is parsed first (so a parse failure never wipes the DB), then
+deletion + insertion run in a single transaction.
 
 Used by the ``flask import-orals <pdf>`` CLI command (see app/cli.py).
 
@@ -14,11 +13,10 @@ Only three regexes below decide how the text is cut up. If a new PDF doesn't
 parse, tweak these — nothing else needs to change:
 
   • QUESTION_START — what marks the start of a question. Currently matches
-        "Q1." / "Q42."   "Q:"   "Q)"   "Question 3:"   "Question:"
-    e.g. for "1) ..." numbering use:  r"^\\s*(?P<num>\\d+)\\)\\s*"
+        "Q1." / "Q42." / "Question 3:"
+    (a bare "question." without a number is ignored — avoids TOC false hits)
   • ANSWER_MARKER  — what separates the question from its answer inside a block.
         Currently matches " A: ", " A. ", " Ans: ", " Answer: "
-    e.g. for "Model Answer:" use:  r"(?:^|\\s)Model Answer\\s*[:.]\\s+"
   • CHAPTER        — section headings, used only as block boundaries so a
         question never swallows the next section's heading.
 ────────────────────────────────────────────────────────────────────────────
@@ -36,9 +34,9 @@ ORAL_SLUG = "ek-oral"
 ORAL_NAME = "EK Oral"
 IMPORT_SOURCE = "Oral PDF Import"
 
-# A question begins at a line starting with one of these markers. Case-insensitive.
+# A question begins at a line starting with Q1. / Question 3: etc. Number required.
 QUESTION_START = re.compile(
-    r"^\s*Q(?:uestion)?\s*(?P<num>\d+)?\s*[.:)]\s*",
+    r"^\s*Q(?:uestion)?\s*(?P<num>\d+)\s*[.:)]\s*",
     re.IGNORECASE | re.MULTILINE,
 )
 # Splits a block into (question, answer). Requires leading whitespace/line-start so a
@@ -76,7 +74,8 @@ def parse_qa_blocks(text: str) -> list[dict]:
 
     Each question runs from its marker to the next question marker; a chapter
     heading inside that span truncates it (so trailing section headings don't leak
-    into an answer). The block is then split on the first answer marker.
+    into an answer). The block is then split on the first answer marker. Multi-line
+    questions and answers are preserved (whitespace collapsed to single spaces).
     """
     starts = list(QUESTION_START.finditer(text))
     blocks: list[dict] = []
@@ -93,7 +92,7 @@ def parse_qa_blocks(text: str) -> list[dict]:
         split = ANSWER_MARKER.search(body)
         if split:
             question = _collapse_ws(body[: split.start()])
-            answer = _collapse_ws(body[split.end():])
+            answer = _collapse_ws(body[split.end() :])
         else:
             question = _collapse_ws(body)
             answer = ""
@@ -110,10 +109,11 @@ def parse_qa_blocks(text: str) -> list[dict]:
     return blocks
 
 
-def _question_slug(question: str) -> str:
-    """Deterministic slug from the question text — makes imports idempotent."""
+def _question_slug(question: str, index: int) -> str:
+    """Deterministic slug from question text + import index (unique within a wipe)."""
     norm = _collapse_ws(question).lower()
-    return "oral-pdf-" + hashlib.sha1(norm.encode("utf-8")).hexdigest()[:12]
+    digest = hashlib.sha1(norm.encode("utf-8")).hexdigest()[:12]
+    return f"oral-pdf-{index:04d}-{digest}"
 
 
 def get_or_create_oral_subject() -> Subject:
@@ -128,12 +128,27 @@ def get_or_create_oral_subject() -> Subject:
     return subject
 
 
-def import_oral_pdf(path: str) -> dict:
-    """Parse ``path`` and insert new EK Oral questions. Commits on success.
+def wipe_oral_content(subject: Subject) -> int:
+    """Delete all CanonicalAnswer rows for ``subject`` (cascades to instances/edits).
 
-    Returns a summary dict: parsed / imported / skipped / no_answer. Raises
-    PDFParseError if the PDF is unreadable or contains no Q/A blocks. The caller
-    (CLI command) is responsible for rolling back on any exception.
+    Returns the number of answers removed. Relies on DB ``ON DELETE CASCADE`` for
+    ``question_instances``, ``suggested_edits``, and ``answer_history``.
+    """
+    answers = db.session.execute(
+        db.select(CanonicalAnswer).where(CanonicalAnswer.subject_id == subject.id)
+    ).scalars().all()
+    deleted = len(answers)
+    for answer in answers:
+        db.session.delete(answer)
+    db.session.flush()
+    return deleted
+
+
+def import_oral_pdf(path: str) -> dict:
+    """Parse ``path``, wipe EK Oral content, and insert the new Q/A set.
+
+    Parse runs *before* any DB writes so a bad PDF never clears existing data.
+    Wipe + insert share one transaction; the caller rolls back on exception.
     """
     text = extract_pdf_text(path)
     blocks = parse_qa_blocks(text)
@@ -145,41 +160,25 @@ def import_oral_pdf(path: str) -> dict:
         )
 
     subject = get_or_create_oral_subject()
+    deleted = wipe_oral_content(subject)
 
-    # Slugs already in the DB for this subject — skip them so re-imports don't duplicate.
-    existing = set(
-        db.session.execute(
-            db.select(CanonicalAnswer.slug).where(
-                CanonicalAnswer.subject_id == subject.id,
-                CanonicalAnswer.slug.is_not(None),
-            )
-        ).scalars().all()
-    )
-
-    imported = skipped = no_answer = 0
-    seen: set[str] = set()
-    for block in blocks:
-        slug = _question_slug(block["question"])
-        if slug in existing or slug in seen:  # duplicate across DB or within this PDF
-            skipped += 1
-            continue
-        seen.add(slug)
-
+    imported = no_answer = 0
+    for index, block in enumerate(blocks, start=1):
         answer = CanonicalAnswer(
             subject_id=subject.id,
-            topic_id=None,  # EK Oral is flat — no topic layer (matches existing entries)
-            slug=slug,
+            topic_id=None,  # EK Oral is flat — no topic layer
+            slug=_question_slug(block["question"], index),
             title=block["question"][:200],
             question_as_set=block["question"],
             answer_text=block["answer"] or "",
             sketch_refs=[],
         )
         db.session.add(answer)
-        db.session.flush()  # assign answer.id for the FK below
+        db.session.flush()
 
         db.session.add(QuestionInstance(
             canonical_answer_id=answer.id,
-            diet_id=None,  # oral rows never belong to a diet
+            diet_id=None,
             question_number=block["number"],
             question_text_as_asked=block["question"],
             examiner_feedback_text=None,
@@ -192,7 +191,7 @@ def import_oral_pdf(path: str) -> dict:
     db.session.commit()
     return {
         "parsed": len(blocks),
+        "deleted": deleted,
         "imported": imported,
-        "skipped": skipped,
         "no_answer": no_answer,
     }

@@ -115,12 +115,13 @@ def check_expiries():
 @click.argument("pdf_path", type=click.Path(exists=True, dir_okay=False, readable=True))
 @with_appcontext
 def import_orals(pdf_path: str):
-    """Parse a Q/A PDF and add its questions to the EK Oral subject.
+    """Replace all EK Oral questions with those parsed from a Q/A PDF.
 
         flask import-orals path/to/questions.pdf
 
-    Idempotent: questions already present (matched by content) are skipped, so the
-    same PDF — or a newer edition that overlaps — can be re-imported safely.
+    The PDF is parsed first. On success, existing EK Oral answers/questions are
+    wiped and the new set is inserted in a single transaction — a parse failure
+    leaves the previous content untouched.
     """
     # Imported lazily so the rest of the CLI (create-admin, check-expiries) doesn't
     # depend on PyMuPDF being installed.
@@ -136,9 +137,9 @@ def import_orals(pdf_path: str):
         raise click.ClickException(f"Import failed (rolled back, nothing was saved): {exc}")
 
     click.echo(
-        f"Successfully imported {summary['imported']} questions to EK Oral "
-        f"({summary['parsed']} parsed, {summary['skipped']} already present, "
-        f"{summary['no_answer']} with no answer text)."
+        f"EK Oral replaced: deleted {summary['deleted']} old question(s), "
+        f"imported {summary['imported']} new question(s) "
+        f"({summary['parsed']} parsed, {summary['no_answer']} with no answer text)."
     )
 
 

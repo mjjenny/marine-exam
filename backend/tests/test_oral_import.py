@@ -1,4 +1,4 @@
-"""EK Oral PDF import: parsing + idempotent DB insertion."""
+"""EK Oral PDF import: parsing + wipe-and-replace DB insertion."""
 import fitz  # PyMuPDF
 import pytest
 
@@ -48,6 +48,19 @@ def test_parse_handles_missing_answer_marker():
     assert blocks[0]["question"].startswith("A question with no answer")
 
 
+def test_parse_ignores_bare_question_word_in_prose():
+    # TOC / preface lines like "question. Where the same…" must not become Q/A blocks.
+    text = (
+        "Merged guides cross-referenced question by\n"
+        "question. Where the same ground was covered, answers were combined.\n"
+        "Q1. Real question? A: Real answer.\n"
+    )
+    blocks = parse_qa_blocks(text)
+    assert len(blocks) == 1
+    assert blocks[0]["question"] == "Real question?"
+    assert blocks[0]["answer"] == "Real answer."
+
+
 def test_import_creates_oral_subject_and_entries(app, tmp_path):
     pdf = tmp_path / "orals.pdf"
     _write_pdf(pdf, SAMPLE)
@@ -56,7 +69,7 @@ def test_import_creates_oral_subject_and_entries(app, tmp_path):
         summary = import_oral_pdf(str(pdf))
         assert summary["imported"] == 3
         assert summary["parsed"] == 3
-        assert summary["skipped"] == 0
+        assert summary["deleted"] == 0
 
         subject = db.session.execute(
             db.select(Subject).filter_by(slug="ek-oral")
@@ -77,21 +90,31 @@ def test_import_creates_oral_subject_and_entries(app, tmp_path):
         assert all(qi.source == "Oral PDF Import" for qi in instances)
 
 
-def test_import_is_idempotent(app, tmp_path):
-    pdf = tmp_path / "orals.pdf"
-    _write_pdf(pdf, SAMPLE)
+def test_import_replaces_existing_oral_content(app, tmp_path):
+    first = tmp_path / "orals-v1.pdf"
+    second = tmp_path / "orals-v2.pdf"
+    _write_pdf(first, SAMPLE)
+    _write_pdf(
+        second,
+        "Q1. Replacement only question? A: Replacement only answer.\n",
+    )
 
     with app.app_context():
-        first = import_oral_pdf(str(pdf))
-        assert first["imported"] == 3
+        first_summary = import_oral_pdf(str(first))
+        assert first_summary["imported"] == 3
 
-        # Re-importing the same PDF adds nothing.
-        second = import_oral_pdf(str(pdf))
-        assert second["imported"] == 0
-        assert second["skipped"] == 3
+        second_summary = import_oral_pdf(str(second))
+        assert second_summary["deleted"] == 3
+        assert second_summary["imported"] == 1
+        assert second_summary["parsed"] == 1
 
-        count = db.session.scalar(db.select(db.func.count(CanonicalAnswer.id)))
-        assert count == 3
+        answers = db.session.execute(db.select(CanonicalAnswer)).scalars().all()
+        assert len(answers) == 1
+        assert answers[0].question_as_set == "Replacement only question?"
+        assert answers[0].answer_text == "Replacement only answer."
+
+        instances = db.session.execute(db.select(QuestionInstance)).scalars().all()
+        assert len(instances) == 1
 
 
 def test_import_rejects_pdf_with_no_questions(app, tmp_path):
@@ -99,8 +122,26 @@ def test_import_rejects_pdf_with_no_questions(app, tmp_path):
     _write_pdf(pdf, "This document has no question markers at all.\nJust prose.")
 
     with app.app_context():
+        # Seed one existing oral answer — a failed parse must leave it intact.
+        subject = Subject(name="EK Oral", slug="ek-oral", is_oral=True)
+        db.session.add(subject)
+        db.session.flush()
+        db.session.add(CanonicalAnswer(
+            subject_id=subject.id,
+            slug="keep-me",
+            title="Keep me",
+            question_as_set="Old question?",
+            answer_text="Old answer.",
+            sketch_refs=[],
+        ))
+        db.session.commit()
+
         with pytest.raises(PDFParseError):
             import_oral_pdf(str(pdf))
+
+        db.session.rollback()
+        count = db.session.scalar(db.select(db.func.count(CanonicalAnswer.id)))
+        assert count == 1
 
 
 def test_import_missing_file_raises(app):
