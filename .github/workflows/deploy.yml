@@ -1,12 +1,22 @@
 name: Deploy to production
-
 on:
   push:
     branches: [main]
   workflow_dispatch: {}
-
 jobs:
+  build-check:
+    name: Build images (pre-flight)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Create a placeholder env file so compose can resolve variables
+        run: cp .env.prod.example .env.prod
+      - name: Build backend and web images
+        run: docker compose -f docker-compose.prod.yml --env-file .env.prod build backend web
   deploy:
+    name: Deploy to droplet
+    needs: build-check
     runs-on: ubuntu-latest
     steps:
       - name: SSH in and run deploy.sh
@@ -15,6 +25,7 @@ jobs:
           host: ${{ secrets.PROD_HOST }}
           username: root
           key: ${{ secrets.PROD_SSH_KEY }}
+          command_timeout: 20m
           script: |
             cd /opt/marine-exam
             ./deploy.sh
