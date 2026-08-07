@@ -78,16 +78,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <div className="home-hero">
-        <div className="home-hero-bg" aria-hidden="true">
-          <img
-            src={COMPASS_SRC}
-            alt=""
-            width={512}
-            height={512}
-            decoding="async"
-            fetchPriority="low"
-          />
-        </div>
+        {/* Atmosphere only — does not hold the compass image */}
         <div className="home-hero-scrim" aria-hidden="true" />
 
         <div className="home-hero-content">
@@ -110,11 +101,24 @@ export default function Home() {
             )}
           </header>
 
-          {/* Reserves the mid band for the compass so the shelf hint never sits on it */}
-          <div className="home-hero-mid" aria-hidden="true" />
+          {/* Compass in normal flow — not absolutely positioned over content */}
+          <div className="home-compass">
+            <img
+              src={COMPASS_SRC}
+              alt=""
+              width={512}
+              height={512}
+              decoding="async"
+              fetchPriority="low"
+            />
+          </div>
+
+          {/* Sibling AFTER compass, BEFORE shelf — never overlaps the logo */}
+          <p className="home-shelf-hint">
+            Choose a book from the shelf to browse its question index.
+          </p>
 
           <div className="home-shelf">
-            <p className="home-shelf-hint">Choose a book from the shelf to browse its question index.</p>
             {error && <p className="form-error">{error}</p>}
             {!subjects && !error && <p className="muted">Loading…</p>}
             {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
