@@ -394,8 +394,8 @@ html.light .bookshelf {
 .book-overlay {
   position: fixed; inset: 0; z-index: 200;
   background: rgba(11, 26, 43, 0.6);
-  display: flex; align-items: center; justify-content: center;
-  padding: 1.5rem;
+  display: flex; align-items: stretch; justify-content: stretch;
+  padding: 0;
   animation: fade-in 0.25s ease;
 }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
@@ -457,7 +457,7 @@ html.light .bookshelf {
 }
 .book-search:focus { outline: none; border-color: var(--amber-500); box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.18); }
 
-.book-index { flex: 1; overflow-y: auto; margin-top: 0.3rem; }
+.book-index { flex: 1; min-height: 0; overflow-y: auto; margin-top: 0.3rem; }
 .book-index-head, .book-index-row {
   display: grid; grid-template-columns: 5.125rem 2.125rem 1fr 5.75rem; gap: 0.6rem; align-items: center;
 }
@@ -504,8 +504,8 @@ html.light .bookshelf {
 /* fall back to a cross-fade instead of the 3D flip on small screens / reduced motion */
 @keyframes book-fade { from { opacity: 1; } to { opacity: 0; } }
 @media (max-width: 40rem) {
-  .open-book { width: 100%; height: 90vh; perspective: none; }
-  .open-book-page, .open-book-cover, .open-book-cover .book-cover { border-radius: 8px; }
+  .open-book { width: 100%; height: 100%; perspective: none; }
+  .open-book-page, .open-book-cover, .open-book-cover .book-cover { border-radius: 0; }
   .open-book-cover { animation: book-fade 0.4s ease both; }
   .bookshelf-slot { max-width: 10.5rem; }
 }
@@ -918,11 +918,14 @@ html.light .bookshelf {
    Open-book two-page spread (desktop)   — Part 3
    ══════════════════════════════════════════════════════════ */
 .open-book.spread {
-  width: min(66.25rem, 100%);
-  height: min(84vh, 47.5rem);
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   perspective: 150rem;
+  border-radius: 0;
 }
 .book-page {
   background: #fdfbf7;
@@ -930,10 +933,11 @@ html.light .bookshelf {
   flex-direction: column;
   padding: 1.6rem 1.7rem 1.2rem;
   overflow: hidden;
+  min-height: 0;
   box-shadow: 0 20px 50px -12px rgba(11, 26, 43, 0.5);
 }
 .book-page-left {
-  border-radius: 6px 0 0 6px;
+  border-radius: 0;
   /* spine crease shadow on the inner (right) edge */
   box-shadow: inset -22px 0 26px -22px rgba(120, 90, 40, 0.4),
     inset 0 0 0 1px rgba(120, 90, 40, 0.08);
@@ -942,10 +946,35 @@ html.light .bookshelf {
     #fdfbf7;
 }
 .book-page-right {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0;
   box-shadow: inset 22px 0 26px -22px rgba(120, 90, 40, 0.35),
     inset 0 0 0 1px rgba(120, 90, 40, 0.08);
   animation: page-fade 0.45s ease; /* crossfade on quick-switch */
+}
+.book-page-chrome {
+  flex-shrink: 0;
+}
+.book-drawer-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+.book-drawer-tabs .book-tab {
+  writing-mode: horizontal-tb;
+  transform: none;
+  opacity: 0.85;
+  border-radius: 8px;
+  padding: 0.35rem 0.7rem;
+}
+.book-drawer-tabs .book-tab.active {
+  transform: none;
+  opacity: 1;
+  box-shadow: 0 0 0 2px rgba(44, 40, 37, 0.35), 2px 2px 6px -2px rgba(0,0,0,0.45);
+}
+/* Right-edge tabs stay in the DOM but are not shown — switching is in the header */
+.open-book.spread > .book-tabs {
+  display: none;
 }
 @keyframes page-fade { from { opacity: 0.2; } to { opacity: 1; } }
 
@@ -1183,22 +1212,13 @@ html.light .theme-toggle {
 @media (max-width: 48rem) {
   .open-book.spread {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    width: 100%; height: 92vh; perspective: none;
+    grid-template-rows: 1fr;
+    width: 100%; height: 100%; perspective: none;
   }
   .book-page-left { display: none; }            /* index-only modal on mobile */
-  .book-page-right { border-radius: 8px; box-shadow: none; }
+  .book-page-right { border-radius: 0; box-shadow: none; }
   .book-ribbon { display: none; }
   .open-book.spread .open-book-cover { animation: book-fade 0.4s ease both; }
-  .book-tabs {
-    position: static; flex-direction: row; gap: 0.35rem; top: auto; right: auto;
-    order: -1; overflow-x: auto; padding: 0.5rem 0;
-  }
-  .book-tab {
-    writing-mode: horizontal-tb; transform: none; opacity: 0.85;
-    border-radius: 8px; padding: 0.35rem 0.7rem;
-  }
-  .book-tab.active { transform: none; }
   .reading-page.reading-page { max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {

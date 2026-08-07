@@ -7,9 +7,9 @@ import { masteredIds, masteryPercent, onMasteryChange } from "../utils/mastery.j
 
 // The opened book. On desktop it is a two-page spread: the left page is the
 // subject dashboard (overview + study timer), the right page is the searchable
-// question index. A cover flips away (3D) on open; quick-switch tabs on the right
-// edge swap subjects without closing the book. Below 768px it collapses to a single
-// full-screen index page (the mobile fallback). See theme.css `.open-book.spread`.
+// question index. A cover flips away (3D) on open; subject tabs in the index
+// header swap subjects without closing the book. Below 768px it collapses to a
+// single full-screen index page (the mobile fallback). See theme.css `.open-book.spread`.
 const DISPLAY_TITLE = { "ek-naval": "EK Naval Architecture" };
 
 function ribbonTier(pct) {
@@ -94,6 +94,24 @@ export default function BookSpread({ subject: initial, subjects, onClose }) {
 
   const title = DISPLAY_TITLE[subject.slug] || subject.name;
 
+  const subjectTabs =
+    subjects && subjects.length > 1 ? (
+      <div className="book-drawer-tabs" role="tablist" aria-label="Switch subject">
+        {subjects.map((s) => (
+          <button
+            key={s.slug}
+            role="tab"
+            aria-selected={s.slug === subject.slug}
+            className={`book-tab cover-${s.slug} ${s.slug === subject.slug ? "active" : ""}`}
+            onClick={() => s.slug !== subject.slug && setSubject(s)}
+            title={s.name}
+          >
+            {s.name.replace(/^EK\s+/, "")}
+          </button>
+        ))}
+      </div>
+    ) : null;
+
   return (
     <div className="book-overlay" onClick={onClose}>
       <div
@@ -131,26 +149,30 @@ export default function BookSpread({ subject: initial, subjects, onClose }) {
 
         {/* RIGHT PAGE — question index */}
         <div className="book-page book-page-right" key={subject.slug}>
-          <div className="book-page-head">
-            <div>
-              <h2>{subject.name}</h2>
-              <p className="muted">
-                Question index{entries ? ` · ${entries.length} entries` : ""}
-              </p>
+          <div className="book-page-chrome">
+            <div className="book-page-head">
+              <div>
+                <h2>{subject.name}</h2>
+                <p className="muted">
+                  Question index{entries ? ` · ${entries.length} entries` : ""}
+                </p>
+              </div>
+              <button className="book-close" onClick={onClose} aria-label="Close book">
+                ✕
+              </button>
             </div>
-            <button className="book-close" onClick={onClose} aria-label="Close book">
-              ✕
-            </button>
-          </div>
 
-          <input
-            className="book-search"
-            type="search"
-            placeholder="Search question, sitting, or code…"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            autoFocus
-          />
+            {subjectTabs}
+
+            <input
+              className="book-search"
+              type="search"
+              placeholder="Search question, sitting, or code…"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              autoFocus
+            />
+          </div>
 
           {error && <p className="form-error">{error}</p>}
           {!entries && !error && <p className="muted">Opening the index…</p>}
@@ -210,7 +232,9 @@ export default function BookSpread({ subject: initial, subjects, onClose }) {
           <span>{pct}%</span>
         </div>
 
-        {/* quick-switch tabs — swap subjects without closing the book */}
+        {/* quick-switch tabs — swap subjects without closing the book.
+            Hidden while the drawer is open (subject switching is in the sticky
+            header); markup kept so styling/behavior remains available. */}
         {subjects && subjects.length > 1 && (
           <div className="book-tabs" role="tablist" aria-label="Switch book">
             {subjects.map((s) => (

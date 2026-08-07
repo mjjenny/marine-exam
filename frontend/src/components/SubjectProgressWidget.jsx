@@ -9,14 +9,15 @@ function Ring({ percent, label }) {
   const offset = c - (Math.max(0, Math.min(100, percent)) / 100) * c;
 
   return (
-    <div className="flex flex-col items-center gap-2 min-w-[5.5rem]">
+    <div className="flex flex-col items-center gap-2 min-w-[5.5rem] rounded-xl px-2 py-2 bg-black/45 backdrop-blur-sm">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden="true">
+        <circle cx={size / 2} cy={size / 2} r={size / 2 + 2} fill="rgba(6,14,24,0.92)" />
         <circle
           cx={size / 2}
           cy={size / 2}
           r={r}
           fill="none"
-          stroke="var(--border)"
+          stroke="rgba(255,255,255,0.35)"
           strokeWidth={stroke}
         />
         <circle
@@ -38,12 +39,12 @@ function Ring({ percent, label }) {
           dominantBaseline="central"
           textAnchor="middle"
           className="fill-[var(--ink)] text-[0.7rem] font-semibold"
-          style={{ fontSize: "0.75rem", fontWeight: 700, fill: "var(--ink)" }}
+          style={{ fontSize: "0.75rem", fontWeight: 700, fill: "#ffffff" }}
         >
           {percent}%
         </text>
       </svg>
-      <p className="text-xs text-center text-[var(--muted)] leading-tight max-w-[6rem]">
+      <p className="text-xs text-center text-white font-medium leading-tight max-w-[6rem]">
         {label}
       </p>
     </div>
