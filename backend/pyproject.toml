@@ -13,13 +13,13 @@ dependencies = [
     "boto3>=1.34",
     "python-dotenv>=1.0",
     "pdfplumber>=0.11",   # admin "parse exam PDF" endpoint (runtime)
+    "pymupdf>=1.24",      # EK Oral PDF importer (flask import-orals)
     "gunicorn>=21.2",     # production WSGI server
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
-    "pymupdf>=1.24",  # synthesise exam PDFs in admin add-diet tests (import fitz)
 ]
 
 [build-system]
