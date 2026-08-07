@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { masteryPercent, onMasteryChange } from "../utils/mastery.js";
 
-// A styled book cover — a spine on the left, page edges on the right, foil title.
+// A styled book cover — spine on the left, page edges on the right, foil title.
 // Used both as the clickable "book on the shelf" (pass onClick) and as the flipping
-// cover inside the opened book (no onClick). When showRibbon is set and the subject
-// carries an answer_count, a bookmark ribbon hangs from the top showing mastery
-// progress (grey → silver → gold), kept live via the mastery store.
+// cover inside the opened book (no onClick). Shelf cards show an inline progress
+// bar (or an inviting empty state); the corner ribbon remains for non-shelf uses.
 function ribbonTier(pct) {
   if (pct >= 100) return "gold";
   if (pct >= 26) return "silver";
@@ -15,26 +14,23 @@ function ribbonTier(pct) {
 export default function BookCover({ subject, onClick, showRibbon = true }) {
   const interactive = typeof onClick === "function";
   const [pct, setPct] = useState(0);
-  const hasProgress = showRibbon && subject.answer_count > 0;
+  const total = subject.answer_count || 0;
+  const trackProgress = total > 0;
 
   useEffect(() => {
-    if (!hasProgress) return;
-    const recompute = () => setPct(masteryPercent(subject.slug, subject.answer_count));
+    if (!trackProgress) return;
+    const recompute = () => setPct(masteryPercent(subject.slug, total));
     recompute();
     return onMasteryChange(recompute);
-  }, [hasProgress, subject.slug, subject.answer_count]);
+  }, [trackProgress, subject.slug, total]);
+
+  const Tag = interactive ? "button" : "div";
 
   return (
-    <div
-      className={`book-cover cover-${subject.slug}`}
+    <Tag
+      type={interactive ? "button" : undefined}
+      className={`book-cover cover-${subject.slug}${interactive ? " book-cover-interactive" : ""}`}
       onClick={onClick}
-      role={interactive ? "button" : undefined}
-      tabIndex={interactive ? 0 : undefined}
-      onKeyDown={
-        interactive
-          ? (e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onClick())
-          : undefined
-      }
       aria-label={interactive ? `Open ${subject.name}` : undefined}
       data-testid={interactive ? `subject-book-${subject.slug}` : undefined}
     >
@@ -42,13 +38,38 @@ export default function BookCover({ subject, onClick, showRibbon = true }) {
       <span className="book-edges" aria-hidden="true" />
       <div className="book-cover-face">
         <span className="book-cover-kicker">MCA · SQA</span>
-        <h3 className="book-cover-title">{subject.name}</h3>
+        {interactive ? (
+          <span className="book-cover-title">{subject.name}</span>
+        ) : (
+          <h3 className="book-cover-title">{subject.name}</h3>
+        )}
         <span className="book-cover-rule" aria-hidden="true" />
+
+        {interactive && trackProgress && pct > 0 && (
+          <div className="book-cover-progress" aria-label={`${pct}% mastered`}>
+            <div className="book-cover-progress-track">
+              <span
+                className="book-cover-progress-fill"
+                style={{ width: `${pct}%` }}
+              />
+            </div>
+            <span className="book-cover-progress-pct">{pct}%</span>
+          </div>
+        )}
+        {interactive && trackProgress && pct === 0 && (
+          <p className="book-cover-progress-empty">
+            {total ? `${total} answers · start here` : "Start here"}
+          </p>
+        )}
+        {interactive && !trackProgress && (
+          <p className="book-cover-progress-empty">Start here</p>
+        )}
+
         <span className="book-cover-sub">
           {subject.is_oral ? "Oral · topic index" : "Question index"}
         </span>
       </div>
-      {hasProgress && pct > 0 && (
+      {!interactive && showRibbon && trackProgress && pct > 0 && (
         <span
           className={`cover-ribbon ribbon-${ribbonTier(pct)}`}
           title={`${pct}% mastered`}
@@ -57,6 +78,6 @@ export default function BookCover({ subject, onClick, showRibbon = true }) {
           {pct}%
         </span>
       )}
-    </div>
+    </Tag>
   );
 }

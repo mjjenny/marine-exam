@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { api } from "../api/client.js";
 import { useAuth } from "../auth/AuthContext.jsx";
 import BookSpread from "../components/BookSpread.jsx";
 import Bookshelf from "../components/Bookshelf.jsx";
-import SubjectProgressWidget from "../components/SubjectProgressWidget.jsx";
+import { masteredCount, onMasteryChange } from "../utils/mastery.js";
+
+const COMPASS_SRC = "/branding/engine_room_academy_slow_spin.webp";
 
 // A member's display name, derived from the local part of their email
 // (e.g. "jane.doe@…" -> "Jane Doe"), since the account has no separate name field.
@@ -26,18 +28,20 @@ function timeGreeting() {
   return "Good evening";
 }
 
-// Approved-only landing page: a static library shelf of subject books that open
-// to a searchable question index (BookSpread).
+// Approved-only landing page: layered hero with compass + subject shelf.
 export default function Home() {
   const { user } = useAuth();
   const [subjects, setSubjects] = useState(null);
   const [error, setError] = useState(null);
   const [active, setActive] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
+  const [masteryTick, setMasteryTick] = useState(0);
 
   useEffect(() => {
     api.subjects().then(setSubjects).catch((e) => setError(e.message));
   }, []);
+
+  useEffect(() => onMasteryChange(() => setMasteryTick((n) => n + 1)), []);
 
   // Deep-link: /?book=<slug> auto-opens that subject's book (e.g. "Back to Index"
   // from an answer page returns the reader straight to the open book, not the shelf).
@@ -61,32 +65,57 @@ export default function Home() {
 
   const name = displayName(user?.email);
 
+  const overall = useMemo(() => {
+    if (!subjects?.length) return null;
+    const total = subjects.reduce((sum, s) => sum + (s.answer_count || 0), 0);
+    if (!total) return null;
+    const mastered = subjects.reduce((sum, s) => sum + masteredCount(s.slug), 0);
+    const pct = Math.round((mastered / total) * 100);
+    return { total, mastered, pct };
+    // masteryTick forces recompute when local mastery changes
+  }, [subjects, masteryTick]);
+
   return (
     <div className="home-page">
-      <div className="home-viewport">
-        <aside className="home-progress-rail">
-          <SubjectProgressWidget />
-        </aside>
-
-        <div className="home-head">
-          <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
-          <h1 className="home-greeting">
-            {timeGreeting()}
-            {name ? (
-              <>
-                , <span className="home-name">{name}</span>
-              </>
-            ) : (
-              ""
-            )}
-          </h1>
-          <p className="muted">Choose a book from the shelf to browse its question index.</p>
+      <div className="home-hero">
+        <div className="home-hero-bg" aria-hidden="true">
+          <img
+            src={COMPASS_SRC}
+            alt=""
+            width={512}
+            height={512}
+            decoding="async"
+            fetchPriority="low"
+          />
         </div>
+        <div className="home-hero-scrim" aria-hidden="true" />
 
-        <div className="home-shelf">
-          {error && <p className="form-error">{error}</p>}
-          {!subjects && !error && <p className="muted">Loading…</p>}
-          {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
+        <div className="home-hero-content">
+          <header className="home-head">
+            <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
+            <h1 className="home-greeting">
+              {timeGreeting()}
+              {name ? (
+                <>
+                  , <span className="home-name">{name}</span>
+                </>
+              ) : (
+                ""
+              )}
+            </h1>
+            {overall && (
+              <p className="home-overall">
+                Overall {overall.pct}% · {overall.mastered} of {overall.total} mastered
+              </p>
+            )}
+          </header>
+
+          <div className="home-shelf">
+            <p className="home-shelf-hint">Choose a book from the shelf to browse its question index.</p>
+            {error && <p className="form-error">{error}</p>}
+            {!subjects && !error && <p className="muted">Loading…</p>}
+            {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}
+          </div>
         </div>
       </div>
 
