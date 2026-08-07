@@ -29,6 +29,8 @@ export default function Question() {
     ? { to: `/diets/${q.diet.id}`, label: q.diet.label }
     : { to: `/subjects/${q.subject.slug}`, label: q.subject.name };
   const pending = q.canonical_answer.answer_pending;
+  const heading = q.canonical_answer?.title || q.question_text_as_asked;
+  const asSetText = q.canonical_answer?.question_as_set || q.question_text_as_asked;
 
   return (
     <div className="card question-page reading-page">
@@ -62,12 +64,12 @@ export default function Question() {
           ))}
         {q.question_number && <span className="muted">{qLabel(q.question_number)}</span>}
       </div>
-      <h1 className="q-text">{q.question_text_as_asked}</h1>
+      <h1 className="q-text">{heading}</h1>
 
-      {q.canonical_answer.question_as_set && (
+      {asSetText && (
         <section className="question-as-set">
           <h2>Question as set</h2>
-          <Markdown>{q.canonical_answer.question_as_set}</Markdown>
+          <Markdown>{asSetText}</Markdown>
         </section>
       )}
 

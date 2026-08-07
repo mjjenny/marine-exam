@@ -480,6 +480,7 @@ def get_question(question_id):
             "topic": _topic_json(topic) if topic else None,
             "canonical_answer": {
                 "id": answer.id,
+                "title": answer.title,
                 "question_as_set": answer.question_as_set,
                 "answer_text": answer.answer_text,
                 "answer_pending": _answer_is_pending(answer.answer_text),
