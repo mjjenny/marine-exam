@@ -9,7 +9,7 @@ function Ring({ percent, label }) {
   const offset = c - (Math.max(0, Math.min(100, percent)) / 100) * c;
 
   return (
-    <div className="flex flex-col items-center gap-2 min-w-[5.5rem] rounded-xl px-2 py-2 bg-black/45 backdrop-blur-sm">
+    <div className="home-progress-ring">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} aria-hidden="true">
         <circle cx={size / 2} cy={size / 2} r={size / 2 + 2} fill="rgba(6,14,24,0.92)" />
         <circle
@@ -44,9 +44,7 @@ function Ring({ percent, label }) {
           {percent}%
         </text>
       </svg>
-      <p className="text-xs text-center text-white font-medium leading-tight max-w-[6rem]">
-        {label}
-      </p>
+      <p className="home-progress-ring-label">{label}</p>
     </div>
   );
 }

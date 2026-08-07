@@ -271,6 +271,29 @@ a { color: var(--link); }
   gap: 1.25rem;
   align-items: flex-start;
 }
+.home-progress-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  padding: 0;
+  min-width: 0;
+}
+.home-progress-ring svg {
+  width: clamp(2.75rem, 8vw, 3.5rem);
+  height: clamp(2.75rem, 8vw, 3.5rem);
+  display: block;
+}
+.home-progress-ring-label {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.15;
+  font-size: clamp(0.58rem, 1.4vw, 0.7rem);
+  max-width: 5.5rem;
+}
 
 /* Desktop: fit greeting + progress rail + shelf in the viewport (no page scroll) */
 @media (min-width: 64rem) {
@@ -301,7 +324,7 @@ a { color: var(--link); }
     flex: 1 1 auto;
     min-height: 0;
     display: grid;
-    grid-template-columns: clamp(5.5rem, 7.5vw, 7.75rem) minmax(0, 1fr);
+    grid-template-columns: clamp(3.75rem, 5.5vw, 5rem) minmax(0, 1fr);
     grid-template-rows: auto minmax(0, 1fr);
     grid-template-areas:
       "progress head"
@@ -313,9 +336,7 @@ a { color: var(--link); }
   .home-progress-rail {
     grid-area: progress;
     min-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-gutter: stable;
+    overflow: hidden;
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -333,68 +354,129 @@ a { color: var(--link); }
     min-height: 0;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     overflow: hidden;
   }
   .home-progress {
     margin: 0;
   }
   .home-progress-title {
-    font-size: clamp(0.7rem, 1.1vw, 0.85rem);
+    font-size: clamp(0.55rem, 1vh, 0.7rem);
     text-align: center;
-    margin-bottom: clamp(0.4rem, 1vh, 0.7rem);
+    margin-bottom: clamp(0.2rem, 0.6vh, 0.4rem);
   }
   .home-progress-rings {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: clamp(0.3rem, 1.1vh, 0.65rem);
+    gap: clamp(0.12rem, 0.55vh, 0.3rem);
   }
-  .home-progress-rings > * {
-    transform: scale(clamp(0.62, 0.45 + 1.35vh, 0.88));
-    transform-origin: top center;
-    margin-bottom: clamp(-0.55rem, -1.2vh, -0.15rem);
+  .home-progress-ring {
+    gap: 0.1rem;
   }
+  .home-progress-ring svg {
+    width: clamp(1.65rem, 3.6vh, 2.15rem);
+    height: clamp(1.65rem, 3.6vh, 2.15rem);
+  }
+  .home-progress-ring-label {
+    font-size: clamp(0.45rem, 0.95vh, 0.55rem);
+    max-width: 4.25rem;
+  }
+  /* Shelf sits in the lower third; panel/plank are translucent so the compass reads through */
   .home-shelf .bookshelf {
-    flex: 1 1 auto;
-    min-height: 0;
+    flex: 0 0 auto;
+    width: min(100%, clamp(28rem, 72vw, 52rem));
+    margin-inline: auto;
+    margin-top: 0;
+    max-height: clamp(9.5rem, 30vh, 16rem);
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(42, 34, 28, 0.4) 0%,
+      rgba(26, 21, 17, 0.4) 55%,
+      rgba(20, 16, 13, 0.4) 100%
+    );
+    border-color: rgba(120, 90, 40, 0.28);
+    box-shadow: none;
+  }
+  html.light .home-shelf .bookshelf {
+    background: linear-gradient(
+      180deg,
+      rgba(232, 217, 196, 0.42) 0%,
+      rgba(212, 192, 164, 0.4) 50%,
+      rgba(196, 173, 140, 0.38) 100%
+    );
+    border-color: rgba(120, 90, 40, 0.22);
   }
   .home-shelf .bookshelf-inner {
-    flex: 1 1 auto;
-    min-height: 0;
+    flex: 0 0 auto;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-top: clamp(0.4rem, 1.2vh, 0.85rem);
-    padding-bottom: clamp(0.5rem, 1.4vh, 1rem);
+    padding-top: clamp(0.35rem, 1vh, 0.65rem);
+    padding-bottom: clamp(0.4rem, 1.1vh, 0.75rem);
+  }
+  /* Soft darkening only behind the book row — keeps titles legible without a hard box */
+  .home-shelf .bookshelf-inner::before {
+    content: "";
+    position: absolute;
+    left: 0.35rem;
+    right: 0.35rem;
+    bottom: 0.15rem;
+    top: 15%;
+    border-radius: 0.5rem;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.18) 42%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+    pointer-events: none;
+    z-index: 0;
   }
   .home-shelf .bookshelf-grid {
-    flex: 0 1 auto;
+    position: relative;
+    z-index: 1;
+    flex: 0 0 auto;
     align-items: end;
-    gap: clamp(0.35rem, 1.2vw, 0.85rem);
+    gap: clamp(0.3rem, 1vw, 0.65rem);
+    padding-bottom: clamp(0.55rem, 1.2vh, 0.85rem);
+  }
+  .home-shelf .bookshelf-grid::after {
+    opacity: 0.4;
+  }
+  .home-shelf .bookshelf-plank {
+    opacity: 0.4;
   }
   .home-shelf .bookshelf-slot {
-    max-width: clamp(5.25rem, 11vw, 9.25rem);
-    padding-bottom: 0.2rem;
+    max-width: clamp(3.75rem, 7.5vw, 5.75rem);
+    padding-bottom: 0.15rem;
+    position: relative;
+    z-index: 1;
   }
   .home-shelf .book-cover {
-    padding: clamp(0.55rem, 1.1vh, 1rem) clamp(0.45rem, 0.9vw, 0.85rem)
-      clamp(0.5rem, 1vh, 0.9rem) clamp(0.7rem, 1.2vw, 1.2rem);
+    opacity: 1;
+    padding: clamp(0.4rem, 0.9vh, 0.7rem) clamp(0.35rem, 0.7vw, 0.55rem)
+      clamp(0.35rem, 0.8vh, 0.6rem) clamp(0.55rem, 1vw, 0.85rem);
   }
   .home-shelf .book-cover-kicker {
-    font-size: clamp(0.5rem, 0.85vw, 0.68rem);
+    font-size: clamp(0.42rem, 0.7vw, 0.55rem);
   }
   .home-shelf .book-cover-title {
-    font-size: clamp(0.72rem, 1.35vw, 1.15rem);
-    margin: 0.2rem 0;
+    font-size: clamp(0.58rem, 1.05vw, 0.85rem);
+    margin: 0.15rem 0;
   }
   .home-shelf .book-cover-sub {
-    font-size: clamp(0.58rem, 1vw, 0.78rem);
+    font-size: clamp(0.48rem, 0.85vw, 0.62rem);
   }
   .home-shelf .book-cover-rule {
-    margin: clamp(0.35rem, 0.8vh, 0.7rem) 0;
+    width: clamp(1.5rem, 3vw, 2.2rem);
+    margin: clamp(0.25rem, 0.6vh, 0.45rem) 0;
+  }
+  .home-shelf .book-spine {
+    width: clamp(8px, 1.1vw, 12px);
   }
 }
 
@@ -408,6 +490,7 @@ a { color: var(--link); }
     order: 2;
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
+    overflow: visible;
   }
   .home-head {
     order: 1;
