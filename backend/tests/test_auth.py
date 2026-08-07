@@ -118,3 +118,28 @@ def test_logout_clears_session(approved):
 def test_pending_user_can_log_in_but_is_not_approved(pending):
     # Login succeeds (valid credentials) but the account is still pending.
     assert pending.get("/api/auth/me").get_json()["status"] == "pending"
+
+
+def test_exam_date_requires_auth(anon):
+    assert anon.put("/api/auth/exam-date", json={"exam_date": "2026-10-12"}).status_code == 401
+
+
+def test_exam_date_defaults_to_null(approved):
+    assert approved.get("/api/auth/me").get_json()["exam_date"] is None
+
+
+def test_exam_date_set_and_clear_round_trip(approved):
+    set_resp = approved.put("/api/auth/exam-date", json={"exam_date": "2026-10-12"})
+    assert set_resp.status_code == 200
+    assert set_resp.get_json()["exam_date"] == "2026-10-12"
+    assert approved.get("/api/auth/me").get_json()["exam_date"] == "2026-10-12"
+
+    clear_resp = approved.put("/api/auth/exam-date", json={"exam_date": None})
+    assert clear_resp.status_code == 200
+    assert clear_resp.get_json()["exam_date"] is None
+    assert approved.get("/api/auth/me").get_json()["exam_date"] is None
+
+
+def test_exam_date_rejects_garbage(approved):
+    resp = approved.put("/api/auth/exam-date", json={"exam_date": "not-a-date"})
+    assert resp.status_code == 400

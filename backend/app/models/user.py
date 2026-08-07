@@ -1,6 +1,6 @@
 """User table with the pending/approved/rejected/expired/revoked approval gate."""
 import enum
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from sqlalchemy import Enum as SAEnum
 from sqlalchemy import Index
@@ -42,6 +42,10 @@ class User(db.Model):
     expires_at: Mapped[datetime | None] = mapped_column(
         db.DateTime(timezone=True), nullable=True, default=None
     )
+    # Member-set target date for their own oral exam (opt-in; NULL = not set). Powers
+    # the homepage countdown. Not validated against "the future" — a past date simply
+    # doesn't render a countdown (see Home.jsx), which sidesteps timezone edge cases.
+    exam_date: Mapped[date | None] = mapped_column(db.Date, nullable=True, default=None)
 
     __table_args__ = (
         Index("idx_users_status", "status"),

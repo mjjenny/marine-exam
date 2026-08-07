@@ -4,6 +4,7 @@ Uses Flask signed-session cookies. The SPA reaches these through the Vite /api p
 so requests are same-origin and cookies flow without extra CORS config.
 """
 import re
+from datetime import date
 
 from flask import Blueprint, current_app, jsonify, request
 from sqlalchemy.exc import IntegrityError
@@ -34,6 +35,7 @@ def _user_json(user: User) -> dict:
         "status": user.status.value,
         "is_admin": user.is_admin,
         "expires_at": user.expires_at.isoformat() if user.expires_at else None,
+        "exam_date": user.exam_date.isoformat() if user.exam_date else None,
     }
 
 
@@ -110,6 +112,31 @@ def change_password():
     user.password_hash = hash_password(new_password)
     db.session.commit()
     return jsonify({"message": "Password updated."}), 200
+
+
+@bp.put("/exam-date")
+@login_required
+def set_exam_date():
+    """Let a logged-in user set (or clear, with null) their target exam date.
+
+    Powers the homepage countdown. No "must be in the future" validation — a past
+    date just means the countdown doesn't render (see frontend Home.jsx), which is
+    simpler than adjudicating "future" across timezones.
+    """
+    data = request.get_json(silent=True) or {}
+    raw = data.get("exam_date")
+
+    user = current_user()
+    if raw is None or raw == "":
+        user.exam_date = None
+    else:
+        try:
+            user.exam_date = date.fromisoformat(str(raw))
+        except ValueError:
+            return jsonify({"error": "exam_date must be an ISO date (YYYY-MM-DD) or null"}), 400
+
+    db.session.commit()
+    return jsonify(_user_json(user)), 200
 
 
 @bp.post("/forgot-password")
