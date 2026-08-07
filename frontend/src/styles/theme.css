@@ -3,54 +3,54 @@
 @tailwind utilities;
 
 :root {
-  /* Dark "marine engineering" theme (default) */
-  --navy-900: #0b1a2b;   /* header bar + dark text on amber buttons */
-  --navy-800: #12263a;
-  --navy-700: #1c3a57;
-  --navy-100: #dbe6f0;   /* light header text */
-  --amber-500: #f5a623;
-  --amber-400: #ffbb44;
+  /* Dark "marine engineering" theme (default) — pine green / amber / emerald */
+  --navy-900: #0a2c23;   /* header bar + dark text on amber buttons */
+  --navy-800: #123d31;
+  --navy-700: #1b493c;
+  --navy-100: #d8f0e6;   /* light header text */
+  --amber-500: #d98a16;
+  --amber-400: #eaa83f;
 
-  --paper: #0f111a;      /* global page background (deep dark) */
-  --ink: #e7e9f0;        /* primary text (light) */
-  --muted: #8b93a7;      /* secondary text */
+  --paper: #071f19;      /* global page background (deep dark pine) */
+  --ink: #ffffff;        /* primary text (light) */
+  --muted: #9fc4b6;      /* secondary text */
 
   /* dark surfaces + accents */
-  --surface: #171a26;    /* cards, modals, toasts */
-  --surface-2: #212636;  /* inputs, chips, hovers */
-  --border: #2c3245;     /* hairlines */
-  --paper-book: #1b1d28; /* open-book / reading "paper" (charcoal) */
-  --book-ink: #dcdae2;   /* off-white text on the charcoal paper */
-  --heading: #c7d3ea;    /* light heading text (replaces dark navy headings) */
-  --link: #8fb0e0;       /* links on dark */
+  --surface: #0a2c23;    /* cards, modals, toasts */
+  --surface-2: #123d31;  /* inputs, chips, hovers */
+  --border: #1b493c;     /* hairlines */
+  --paper-book: #16241f; /* open-book / reading "paper" (dark pine-charcoal) */
+  --book-ink: #e2e6e0;   /* off-white text on the charcoal paper */
+  --heading: #5fd6a9;    /* mint/teal heading text (replaces light navy headings) */
+  --link: #1fb37e;       /* emerald links on dark */
 
   --radius: 10px;
-  --shadow: 0 4px 22px rgba(0, 0, 0, 0.5);
+  --shadow: 0 4px 22px rgba(2, 15, 11, 0.55);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 /* Explicit light theme — toggled via ThemeToggle (html.light) */
 html.light {
-  --navy-900: #0b1a2b;
-  --navy-800: #12263a;
-  --navy-700: #1c3a57;
-  --navy-100: #dbe6f0;
-  --amber-500: #d97706;
-  --amber-400: #f59e0b;
+  --navy-900: #0a2c23;
+  --navy-800: #123d31;
+  --navy-700: #1b493c;
+  --navy-100: #d8f0e6;
+  --amber-500: #b9720f;
+  --amber-400: #d98a16;
 
-  --paper: #f4f6fa;
-  --ink: #152033;
-  --muted: #5c6b82;
+  --paper: #f3f8f6;
+  --ink: #0a2c23;
+  --muted: #52716a;
 
   --surface: #ffffff;
-  --surface-2: #eef2f8;
-  --border: #d5dee8;
+  --surface-2: #e7f3ee;
+  --border: #cfe6dc;
   --paper-book: #fdfbf7;
   --book-ink: #2c2825;
-  --heading: #0b1a2b;
-  --link: #1c4f8f;
+  --heading: #0a2c23;
+  --link: #147a57;
 
-  --shadow: 0 4px 18px rgba(11, 26, 43, 0.1);
+  --shadow: 0 4px 18px rgba(10, 44, 35, 0.12);
 }
 
 * { box-sizing: border-box; }
@@ -594,7 +594,7 @@ html.light .bookshelf {
   border-radius: 3px 8px 8px 3px;
   padding: 1.25rem 1rem 1.1rem 1.45rem;
   color: #f7ecd0;
-  background: var(--cover-bg, linear-gradient(135deg, #2a3d63, #16233d));
+  background: var(--cover-bg, linear-gradient(135deg, #1b493c, #0a2c23));
   box-shadow:
     0 1px 1px rgba(0, 0, 0, 0.2),
     0 10px 20px -8px rgba(11, 26, 43, 0.55),
@@ -1460,7 +1460,7 @@ button.book-cover {
   border: none; cursor: pointer;
   padding: 0.7rem 0.35rem; border-radius: 0 8px 8px 0;
   color: #f7ecd0; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
-  background: var(--cover-bg, #2a3d63);
+  background: var(--cover-bg, #1b493c);
   box-shadow: 2px 2px 6px -2px rgba(0,0,0,0.5);
   transform: translateX(-8px); opacity: 0.78;
   transition: transform 0.18s ease, opacity 0.18s ease;
