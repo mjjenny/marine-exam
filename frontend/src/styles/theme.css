@@ -276,26 +276,32 @@ body:has(.home-page) .app-bg {
 .home-hero-bg,
 .home-hero-scrim {
   position: absolute;
-  inset: 0;
   pointer-events: none;
 }
 
 .home-hero-bg {
   z-index: 0;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  /* Keep logo clear of the greeting (top) and shelf/hint (bottom) */
+  padding:
+    clamp(4.25rem, 10.5vh, 5.75rem)
+    0
+    clamp(11.5rem, 32vh, 16.5rem);
 }
 .home-hero-bg img {
-  width: min(92vw, 44rem);
-  height: auto;
-  max-height: 78%;
+  width: min(96vw, 58rem);
+  height: 100%;
+  max-height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 0 18px rgba(180, 120, 60, 0.25));
 }
 
 .home-hero-scrim {
+  inset: 0;
   z-index: 1;
   background:
     radial-gradient(
@@ -308,10 +314,10 @@ body:has(.home-page) .app-bg {
     linear-gradient(
       180deg,
       rgba(6, 14, 24, 0.28) 0%,
-      transparent 28%,
-      transparent 48%,
+      transparent 22%,
+      transparent 52%,
       rgba(6, 14, 24, 0.55) 78%,
-      rgba(6, 14, 24, 0.82) 100%
+      rgba(6, 14, 24, 0.88) 100%
     );
 }
 html.light .home-hero-scrim {
@@ -339,14 +345,18 @@ html.light .home-hero-scrim {
   flex: 1 1 auto;
   min-height: 0;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  gap: var(--home-space-3);
-  padding: var(--home-space-2) 0 var(--home-space-3);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: var(--home-space-1);
+  padding: var(--home-space-2) 0 var(--home-space-2);
 }
 
 .home-head {
   margin: 0;
   max-width: 42rem;
+  padding-bottom: var(--home-space-1);
+}
+.home-hero-mid {
+  min-height: 0;
 }
 .home-kicker {
   margin: 0 0 var(--home-space-1);
@@ -382,13 +392,15 @@ html.light .home-hero-scrim {
   flex-direction: column;
   justify-content: flex-end;
   min-height: 0;
-  gap: var(--home-space-2);
+  gap: var(--home-space-1);
+  padding-top: var(--home-space-1);
 }
 .home-shelf-hint {
   margin: 0;
-  font-size: clamp(0.72rem, 0.65rem + 0.3vw, 0.85rem);
+  font-size: clamp(0.7rem, 0.62rem + 0.25vw, 0.8rem);
   color: var(--muted);
   text-align: center;
+  line-height: 1.3;
 }
 
 /* Desktop: viewport-fit hero, no page/element scrollbars */
@@ -426,18 +438,40 @@ html.light .home-hero-scrim {
     overflow: hidden;
   }
   .home-shelf {
-    overflow: hidden;
+    overflow: visible;
   }
   .home-shelf .bookshelf {
     flex: 0 0 auto;
     width: min(100%, clamp(40rem, 88vw, 64rem));
     margin-inline: auto;
-    max-height: clamp(14rem, 38vh, 22rem);
+    max-height: none;
+    background: linear-gradient(
+      180deg,
+      rgba(42, 34, 28, 0.4) 0%,
+      rgba(26, 21, 17, 0.4) 55%,
+      rgba(20, 16, 13, 0.38) 100%
+    );
+    border-color: rgba(120, 90, 40, 0.25);
+    box-shadow: none;
+  }
+  html.light .home-shelf .bookshelf {
+    background: linear-gradient(
+      180deg,
+      rgba(232, 217, 196, 0.42) 0%,
+      rgba(212, 192, 164, 0.4) 50%,
+      rgba(196, 173, 140, 0.38) 100%
+    );
+    border-color: rgba(120, 90, 40, 0.22);
+  }
+  .home-shelf .bookshelf-grid::after,
+  .home-shelf .bookshelf-plank {
+    opacity: 0.4;
   }
   .home-shelf .bookshelf-slot {
-    max-width: clamp(6.5rem, 12vw, 10.5rem);
+    max-width: clamp(6.75rem, 12.5vw, 10.75rem);
   }
   .home-shelf .book-cover {
+    opacity: 1;
     padding: clamp(0.7rem, 1.4vh, 1.15rem) clamp(0.55rem, 1vw, 0.9rem)
       clamp(0.65rem, 1.2vh, 1rem) clamp(0.9rem, 1.5vw, 1.35rem);
   }
@@ -448,6 +482,9 @@ html.light .home-hero-scrim {
   .home-shelf .book-cover-progress-empty {
     font-size: var(--home-card-meta);
   }
+  .home-shelf .book-cover-progress-empty {
+    font-size: clamp(0.52rem, 0.45rem + 0.25vw, 0.62rem);
+  }
 }
 
 /* Narrow / mobile: stack and allow normal page scrolling */
@@ -456,14 +493,19 @@ html.light .home-hero-scrim {
     min-height: auto;
     overflow: visible;
   }
-  .home-hero-bg img {
-    width: min(88vw, 22rem);
-    max-height: 42vw;
+  .home-hero-bg {
+    padding:
+      clamp(4.5rem, 18vw, 6rem)
+      0
+      clamp(2rem, 8vw, 3rem);
   }
-  .home-hero-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--home-space-3);
+  .home-hero-bg img {
+    width: min(92vw, 28rem);
+    height: auto;
+    max-height: min(52vw, 18rem);
+  }
+  .home-hero-mid {
+    min-height: min(48vw, 16rem);
   }
   .home-shelf {
     justify-content: flex-start;
@@ -479,7 +521,7 @@ html.light .home-hero-scrim {
   background: var(--shelf-panel);
   border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
   border-radius: 0.75rem;
-  overflow: hidden;
+  overflow: visible;
 }
 html.light .bookshelf {
   --shelf-panel: linear-gradient(180deg, #e8d9c4 0%, #d4c0a4 50%, #c4ad8c 100%);
@@ -631,6 +673,7 @@ button.book-cover {
 .book-cover-kicker {
   font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
   color: rgba(247, 236, 208, 0.7);
+  flex-shrink: 0;
 }
 .book-cover-title {
   margin: 0.5rem 0 0;
@@ -641,6 +684,8 @@ button.book-cover {
   letter-spacing: 0.01em;
   color: #f7ecd0;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  /* Reserve two lines so all five cards share the same baselines */
+  min-height: calc(1.15em * 2);
 }
 .book-cover-rule {
   display: block;
@@ -656,6 +701,8 @@ button.book-cover {
   gap: 0.4rem;
   margin: 0 0 0.35rem;
   width: 100%;
+  min-height: 1.15rem;
+  flex-shrink: 0;
 }
 .book-cover-progress-track {
   flex: 1 1 auto;
@@ -681,12 +728,22 @@ button.book-cover {
 }
 .book-cover-progress-empty {
   margin: 0 0 0.35rem;
-  font-size: 0.68rem;
-  line-height: 1.25;
+  font-size: clamp(0.52rem, 0.45rem + 0.3vw, 0.64rem);
+  line-height: 1.2;
   color: rgba(247, 236, 208, 0.78);
   font-weight: 600;
+  min-height: 1.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
-.book-cover-sub { margin-top: auto; font-size: 0.82rem; color: rgba(247, 236, 208, 0.8); }
+.book-cover-sub {
+  margin-top: auto;
+  font-size: 0.82rem;
+  color: rgba(247, 236, 208, 0.8);
+  flex-shrink: 0;
+}
 
 .cover-ek-motor {
   --cover-bg: linear-gradient(135deg, #8a2b2b, #5f1717);

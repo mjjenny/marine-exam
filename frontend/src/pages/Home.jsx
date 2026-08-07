@@ -110,6 +110,9 @@ export default function Home() {
             )}
           </header>
 
+          {/* Reserves the mid band for the compass so the shelf hint never sits on it */}
+          <div className="home-hero-mid" aria-hidden="true" />
+
           <div className="home-shelf">
             <p className="home-shelf-hint">Choose a book from the shelf to browse its question index.</p>
             {error && <p className="form-error">{error}</p>}

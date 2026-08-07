@@ -58,7 +58,7 @@ export default function BookCover({ subject, onClick, showRibbon = true }) {
         )}
         {interactive && trackProgress && pct === 0 && (
           <p className="book-cover-progress-empty">
-            {total ? `${total} answers · start here` : "Start here"}
+            {total ? `${total} answers · start` : "Start here"}
           </p>
         )}
         {interactive && !trackProgress && (
