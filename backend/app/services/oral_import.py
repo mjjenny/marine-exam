@@ -25,7 +25,10 @@ import hashlib
 import os
 import re
 
-import fitz  # PyMuPDF
+try:
+    import pymupdf as fitz
+except ImportError:  # PyMuPDF < 1.24.3
+    import fitz
 
 from ..extensions import db
 from ..models import CanonicalAnswer, QuestionInstance, Subject
