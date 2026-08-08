@@ -3,54 +3,70 @@
 @tailwind utilities;
 
 :root {
-  /* Dark "marine engineering" theme (default) — pine green / amber / emerald */
-  --navy-900: #0a2c23;   /* header bar + dark text on amber buttons */
-  --navy-800: #123d31;
-  --navy-700: #1b493c;
-  --navy-100: #d8f0e6;   /* light header text */
-  --amber-500: #d98a16;
-  --amber-400: #eaa83f;
+  /* Premium Dark Luxury Maritime — deep charcoal/navy + bronze/gold */
+  --navy-900: #0A0F1A;
+  --navy-800: #0D1520;
+  --navy-700: #141C2B;
+  --navy-100: #E8D5A3;
 
-  --paper: #071f19;      /* global page background (deep dark pine) */
-  --ink: #ffffff;        /* primary text (light) */
-  --muted: #9fc4b6;      /* secondary text */
+  --amber-500: #C9A227;
+  --amber-400: #D4AF37;
 
-  /* dark surfaces + accents */
-  --surface: #0a2c23;    /* cards, modals, toasts */
-  --surface-2: #123d31;  /* inputs, chips, hovers */
-  --border: #1b493c;     /* hairlines */
-  --paper-book: #16241f; /* open-book / reading "paper" (dark pine-charcoal) */
-  --book-ink: #e2e6e0;   /* off-white text on the charcoal paper */
-  --heading: #5fd6a9;    /* mint/teal heading text (replaces light navy headings) */
-  --link: #1fb37e;       /* emerald links on dark */
+  --paper: #0D1117;
+  --ink: #F0E6D3;
+  --muted: #A89F8E;
+  --surface: #161B22;
+  --surface-2: #1C2128;
+  --border: #30363D;
+
+  --paper-book: #12161E;
+  --book-ink: #E8E0D0;
+
+  --heading: #E8D5A3;
+  --link: #D4AF37;
 
   --radius: 10px;
-  --shadow: 0 4px 22px rgba(2, 15, 11, 0.55);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+
+  --gold-border: rgba(201, 162, 39, 0.45);
+  --gold-glow: 0 0 0 1px rgba(201, 162, 39, 0.25), 0 4px 20px rgba(201, 162, 39, 0.08);
+  --ribbon-start: #0D9488;
+  --ribbon-end: #C9A227;
+  --font-display: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  font-family: var(--font-sans);
 }
 
-/* Explicit light theme — toggled via ThemeToggle (html.light) */
+/* Explicit light theme — warm parchment complementary (html.light) */
 html.light {
-  --navy-900: #0a2c23;
-  --navy-800: #123d31;
-  --navy-700: #1b493c;
-  --navy-100: #d8f0e6;
-  --amber-500: #b9720f;
-  --amber-400: #d98a16;
+  --navy-900: #1A1208;
+  --navy-800: #2A1F12;
+  --navy-700: #3A2C1A;
+  --navy-100: #F5EFE0;
 
-  --paper: #f3f8f6;
-  --ink: #0a2c23;
-  --muted: #52716a;
+  --amber-500: #A67C00;
+  --amber-400: #C9A227;
 
-  --surface: #ffffff;
-  --surface-2: #e7f3ee;
-  --border: #cfe6dc;
-  --paper-book: #fdfbf7;
-  --book-ink: #2c2825;
-  --heading: #0a2c23;
-  --link: #147a57;
+  --paper: #F8F4EC;
+  --ink: #1A1208;
+  --muted: #6B5E4A;
+  --surface: #FFFFFF;
+  --surface-2: #F0E9DC;
+  --border: #D9CFB8;
 
-  --shadow: 0 4px 18px rgba(10, 44, 35, 0.12);
+  --paper-book: #FDFBF7;
+  --book-ink: #2C2418;
+
+  --heading: #1A1208;
+  --link: #8B6914;
+
+  --shadow: 0 4px 18px rgba(26, 18, 8, 0.10);
+
+  --gold-border: rgba(166, 124, 0, 0.35);
+  --gold-glow: 0 0 0 1px rgba(166, 124, 0, 0.18), 0 4px 16px rgba(166, 124, 0, 0.06);
+  --ribbon-start: #0F766E;
+  --ribbon-end: #A67C00;
 }
 
 * { box-sizing: border-box; }
@@ -2363,4 +2379,409 @@ a.list-row,
   max-width: 100%;
   height: auto;
   border-radius: var(--radius);
+}
+
+/* ══════════════════════════════════════════════════════════
+   PREMIUM DARK LUXURY MARITIME THEME — Sprint 1
+   Visual layer only. Token names unchanged; shelf sizing /
+   compass dimensions / homepage scroll behaviour untouched.
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Shared shell: cards, buttons, inputs ─────────────── */
+.card {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--gold-glow), var(--shadow);
+  border-radius: var(--radius);
+}
+
+.btn {
+  background: var(--amber-500);
+  color: var(--navy-900);
+  border: 1px solid transparent;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover { background: var(--amber-400); }
+}
+.btn:active { background: var(--amber-400); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--amber-400);
+  border: 1px solid var(--gold-border);
+  box-shadow: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn-secondary:hover {
+    background: color-mix(in srgb, var(--amber-500) 12%, transparent);
+    border-color: var(--amber-400);
+    color: var(--amber-400);
+  }
+}
+.btn-secondary:active {
+  background: color-mix(in srgb, var(--amber-500) 16%, transparent);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--navy-100);
+  border: 1px solid var(--gold-border);
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn-ghost:hover {
+    background: color-mix(in srgb, var(--amber-500) 14%, transparent);
+    border-color: var(--amber-400);
+  }
+}
+.btn-ghost:active {
+  background: color-mix(in srgb, var(--amber-500) 18%, transparent);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]),
+textarea,
+select,
+.auth-card input,
+.book-search,
+.search,
+.admin-input {
+  background: var(--surface-2);
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="range"]):focus,
+textarea:focus,
+select:focus,
+.auth-card input:focus,
+.book-search:focus,
+.search:focus,
+.admin-input:focus {
+  outline: none;
+  border-color: var(--amber-500);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--amber-500) 28%, transparent);
+}
+
+/* ── Header polish ────────────────────────────────────── */
+.app-header {
+  background: linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 100%);
+  color: var(--navy-100);
+  border-bottom: 1px solid var(--gold-border);
+  box-shadow: 0 1px 0 rgba(201, 162, 39, 0.08);
+}
+.app-header .brand {
+  font-family: var(--font-display);
+  letter-spacing: 0.01em;
+  color: var(--navy-100);
+}
+.app-header .brand .accent {
+  color: var(--amber-400);
+}
+.header-nav-link {
+  color: var(--navy-100);
+  opacity: 0.92;
+}
+.header-nav-link.accent,
+.header-nav-link:hover {
+  color: var(--amber-400);
+  opacity: 1;
+}
+.header-nav-meta {
+  color: color-mix(in srgb, var(--navy-100) 78%, transparent);
+}
+
+/* ── Login / auth card ────────────────────────────────── */
+.auth-card {
+  background: var(--surface);
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--gold-glow), var(--shadow);
+  padding: 1.5rem 1.35rem 1.35rem;
+}
+.auth-card h1 {
+  font-family: var(--font-display);
+  color: var(--heading);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 0.35rem 0 0;
+}
+.auth-card label {
+  color: var(--heading);
+  font-weight: 600;
+}
+.auth-alt a {
+  color: var(--link);
+}
+
+/* ── Homepage: greeting hierarchy ─────────────────────── */
+.home-hero-scrim {
+  background:
+    radial-gradient(
+      ellipse 55% 48% at 50% 40%,
+      transparent 0%,
+      transparent 38%,
+      rgba(10, 15, 26, 0.45) 78%,
+      rgba(10, 15, 26, 0.82) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10, 15, 26, 0.28) 0%,
+      transparent 22%,
+      transparent 52%,
+      rgba(10, 15, 26, 0.55) 82%,
+      rgba(10, 15, 26, 0.9) 100%
+    );
+}
+html.light .home-hero-scrim {
+  background:
+    radial-gradient(
+      ellipse 60% 55% at 50% 42%,
+      rgba(232, 200, 150, 0.5) 0%,
+      rgba(245, 230, 200, 0.26) 42%,
+      rgba(253, 251, 247, 0.14) 68%,
+      transparent 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(248, 244, 236, 0.55) 0%,
+      rgba(248, 244, 236, 0.18) 28%,
+      transparent 50%,
+      rgba(40, 32, 24, 0.1) 78%,
+      rgba(26, 18, 8, 0.22) 100%
+    );
+}
+
+.home-kicker {
+  color: var(--amber-400);
+  letter-spacing: 0.24em;
+  font-weight: 600;
+}
+.home-greeting {
+  font-family: var(--font-display);
+  color: var(--ink);
+  font-weight: 400;
+}
+.home-name {
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--amber-400), var(--amber-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.home-overall,
+.home-empty-copy {
+  color: var(--muted);
+}
+.home-exam-countdown {
+  color: var(--heading);
+}
+.resume-card {
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--gold-glow);
+  background: var(--surface);
+}
+.resume-card-kicker {
+  background: transparent;
+  color: var(--amber-400);
+  border: 1px solid var(--gold-border);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  letter-spacing: 0.08em;
+}
+.resume-card-title {
+  font-family: var(--font-display);
+  color: var(--heading);
+}
+
+/* Soft gold aura on the existing compass asset — size unchanged */
+.home-compass img {
+  filter: drop-shadow(0 0 22px rgba(201, 162, 39, 0.32));
+}
+
+/* ── Homepage books: visual restyle only (no sizing) ──── */
+.book-cover {
+  color: #f7ecd0;
+  border: 1px solid var(--gold-border);
+  box-shadow:
+    var(--gold-glow),
+    0 1px 1px rgba(0, 0, 0, 0.35),
+    0 14px 26px -10px rgba(0, 0, 0, 0.65),
+    inset -1px 0 2px rgba(0, 0, 0, 0.35);
+  background: var(--cover-bg, linear-gradient(145deg, #1a2436 0%, #0d1520 55%, #0a0f1a 100%));
+}
+@media (hover: hover) and (pointer: fine) {
+  .book-cover-interactive:hover {
+    box-shadow:
+      0 0 0 1px rgba(212, 175, 55, 0.45),
+      0 4px 22px rgba(201, 162, 39, 0.16),
+      0 18px 30px -10px rgba(0, 0, 0, 0.7);
+  }
+}
+.book-spine {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(201, 162, 39, 0.22) 45%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+  box-shadow: inset -2px 0 3px rgba(0, 0, 0, 0.35);
+}
+.book-spine::after {
+  background: linear-gradient(
+    180deg,
+    transparent 8%,
+    rgba(212, 175, 55, 0.55) 20%,
+    rgba(212, 175, 55, 0.55) 80%,
+    transparent 92%
+  );
+  width: 1px;
+  left: 11px;
+}
+.book-edges {
+  background: repeating-linear-gradient(
+    180deg,
+    #e8d5a3 0 2px,
+    #c9b07a 2px 3px
+  );
+}
+.book-cover-kicker {
+  color: rgba(232, 213, 163, 0.72);
+  letter-spacing: 0.2em;
+}
+.book-cover-title {
+  font-family: var(--font-display);
+  color: #f7ecd0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 0 18px rgba(201, 162, 39, 0.18);
+}
+.book-cover-rule {
+  background: linear-gradient(90deg, var(--amber-400), transparent);
+  height: 1px;
+  width: 52px;
+}
+.book-cover-progress-track {
+  background: rgba(232, 213, 163, 0.16);
+}
+.book-cover-progress-fill {
+  background: linear-gradient(90deg, var(--ribbon-start), var(--ribbon-end));
+  box-shadow: 0 0 8px color-mix(in srgb, var(--ribbon-end) 45%, transparent);
+}
+.book-cover-sub {
+  color: rgba(232, 213, 163, 0.78);
+}
+
+/* Subject covers — darker luxury leather, subject hue retained */
+.cover-ek-motor {
+  --cover-bg: linear-gradient(145deg, #5a1f24 0%, #2a1014 55%, #14080a 100%);
+  --cover-progress: #e8a0a0;
+}
+.cover-ek-general {
+  --cover-bg: linear-gradient(145deg, #1a4a42 0%, #0e2a26 55%, #071614 100%);
+  --cover-progress: #7dcfc4;
+}
+.cover-ek-naval {
+  --cover-bg: linear-gradient(145deg, #1e3560 0%, #121f38 55%, #0a1220 100%);
+  --cover-progress: #8eb6f0;
+}
+.cover-ek-electrical {
+  --cover-bg: linear-gradient(145deg, #6b3a12 0%, #3a200a 55%, #1a1006 100%);
+  --cover-progress: #f0b46a;
+}
+.cover-ek-oral {
+  --cover-bg: linear-gradient(145deg, #3f2a55 0%, #231830 55%, #120c18 100%);
+  --cover-progress: #c9a0e8;
+}
+
+/* ── Subject Index (BookSpread): teal → gold ribbon ───── */
+.book-ribbon {
+  background: linear-gradient(180deg, var(--ribbon-start) 0%, var(--ribbon-end) 100%);
+  box-shadow:
+    -2px 0 6px rgba(0, 0, 0, 0.25) inset,
+    0 6px 14px -4px rgba(0, 0, 0, 0.45),
+    0 0 14px color-mix(in srgb, var(--ribbon-end) 35%, transparent);
+  color: #fffdf6;
+}
+.ribbon-grey {
+  --rb: linear-gradient(180deg, color-mix(in srgb, var(--ribbon-start) 55%, #6b7280), color-mix(in srgb, var(--ribbon-end) 40%, #6b7280));
+}
+.ribbon-silver {
+  --rb: linear-gradient(180deg, var(--ribbon-start), color-mix(in srgb, var(--ribbon-end) 70%, #e8d5a3));
+}
+.ribbon-gold {
+  --rb: linear-gradient(180deg, var(--ribbon-start), var(--ribbon-end));
+}
+.book-ribbon.ribbon-grey,
+.book-ribbon.ribbon-silver,
+.book-ribbon.ribbon-gold {
+  background: var(--rb);
+}
+.book-ribbon.ribbon-gold {
+  box-shadow:
+    0 0 18px 2px color-mix(in srgb, var(--ribbon-end) 55%, transparent),
+    0 6px 12px -4px rgba(0, 0, 0, 0.4);
+}
+
+.dash-progress-fill {
+  background: linear-gradient(90deg, var(--ribbon-start), var(--ribbon-end));
+}
+.open-book-page,
+.book-page {
+  border-color: var(--gold-border);
+}
+.open-book-page {
+  box-shadow:
+    0 20px 50px -12px rgba(0, 0, 0, 0.65),
+    inset 22px 0 26px -22px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px var(--gold-border);
+}
+
+/* ── Answer / reading page ───────────────────────────── */
+.reading-page.reading-page {
+  background-color: var(--paper-book);
+  color: var(--book-ink);
+  font-family: var(--font-display);
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--gold-glow), 0 6px 30px -10px rgba(0, 0, 0, 0.55);
+}
+.reading-page .q-text {
+  font-family: var(--font-display);
+  color: var(--heading);
+}
+.reading-page h2,
+.question-page h2 {
+  color: var(--amber-400);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.reading-page .markdown {
+  color: var(--book-ink);
+  font-family: var(--font-display);
+}
+.back-to-index {
+  background: var(--surface-2);
+  color: var(--book-ink);
+  border: 1px solid var(--gold-border);
+  font-family: var(--font-sans);
+}
+@media (hover: hover) and (pointer: fine) {
+  .back-to-index:hover {
+    background: color-mix(in srgb, var(--amber-500) 14%, var(--surface-2));
+    border-color: var(--amber-400);
+  }
+}
+.question-as-set {
+  background: var(--surface-2);
+  border-left: 3px solid var(--amber-500);
+  box-shadow: inset 0 0 0 1px var(--gold-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.reading-page .markdown blockquote {
+  border-left-color: var(--amber-500);
+  background: color-mix(in srgb, var(--amber-500) 10%, transparent);
+  color: color-mix(in srgb, var(--book-ink) 88%, var(--amber-400));
+}
+.reading-page .markdown blockquote strong {
+  color: var(--amber-400);
 }
