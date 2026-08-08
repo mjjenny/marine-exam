@@ -174,7 +174,13 @@ export default function Home() {
             Choose a book from the shelf to browse its question index.
           </p>
 
-          <div className="home-shelf">
+          {/* --shelf-books lets the stylesheet size the shelf panel to the
+              books it actually holds (see .home-shelf in theme.css), rather
+              than assuming a fixed count. */}
+          <div
+            className="home-shelf"
+            style={subjects ? { "--shelf-books": subjects.length } : undefined}
+          >
             {error && <p className="form-error">{error}</p>}
             {!subjects && !error && <p className="muted">Loading…</p>}
             {subjects && <Bookshelf subjects={subjects} onOpen={openBook} />}

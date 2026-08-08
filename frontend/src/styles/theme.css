@@ -541,15 +541,25 @@ html.light .home-hero-scrim {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    /* Size container so the panel below can be sized from this box's own
+       height (100cqh), which is the only thing that knows how tall — and
+       therefore, at a fixed 3:4, how wide — the books will be. */
+    container-type: size;
   }
   .home-shelf .bookshelf {
     flex: 1 1 auto;
     min-height: 0;
-    height: 100%;
+    /* Narrow, centred panel that hugs the books instead of stretching to
+       64rem and stranding them in the middle. `width: fit-content` can't
+       work here: the covers are size containers, so they contribute
+       nothing to intrinsic width and the panel collapsed to 62px. Each
+       book is 3:4, so n books span roughly n × 0.75 × the shelf height —
+       76cqh per book leaves ~5% slack for gaps and padding. */
+    width: min(100%, calc(var(--shelf-books, 5) * 76cqh));
+    margin-inline: auto;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    width: min(100%, clamp(40rem, 88vw, 64rem));
-    margin-inline: auto;
     max-height: none;
     background: linear-gradient(
       180deg,
@@ -577,40 +587,124 @@ html.light .home-hero-scrim {
     padding-top: clamp(0.4rem, 1vh, 1rem);
     padding-bottom: clamp(0.35rem, 0.6vh, 0.75rem);
   }
+  /* Flex row, not a 5-column grid: each book sizes itself from the shelf's
+     available height and the row shrink-wraps around them. A grid with
+     `1fr` columns would keep its full width and leave each height-derived
+     book stranded in the middle of a much wider cell (measured: a 107px
+     book in a 196px column), which is what made the shelf look sparse and
+     clipped the longer titles. */
   .home-shelf .bookshelf-grid {
+    display: flex;
     flex: 1 1 auto;
     min-height: 0;
-    grid-template-rows: minmax(0, 1fr);
-    padding-bottom: clamp(0.4rem, 1vh, 1.1rem);
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(0.4rem, 0.9vw, 0.85rem);
+    /* Floor must clear the plank drawn by ::after inside this padding, or
+       the plank pushes past the panel and gets shaved by .home-shelf's
+       overflow: hidden. */
+    padding-bottom: clamp(0.72rem, 1vh, 1.1rem);
   }
   .home-shelf .bookshelf-grid::after,
   .home-shelf .bookshelf-plank {
     opacity: 0.4;
   }
+  /* Slimmer than the full-page shelf's 0.85rem — keeps the plank in
+     proportion with these smaller books and returns the height to them. */
+  .home-shelf .bookshelf-grid::after {
+    height: 0.6rem;
+  }
+  /* The 3:4 book proportion lives on the SLOT, not the cover. The cover is
+     the size container (cqw/cqh below), and `container-type: size` tells
+     the browser its contents cannot influence its size — which also stops
+     aspect-ratio resolving against them. Keeping the ratio one level up on
+     an uncontained box means the slot's width derives cleanly from the
+     shelf's definite height, and the cover simply fills it. */
   .home-shelf .bookshelf-slot {
+    flex: 0 0 auto;
+    display: block;
+    width: auto;
     max-width: none;
     height: 100%;
     min-height: 0;
+    aspect-ratio: 3 / 4;
     padding: 0;
   }
   .home-shelf .book-cover {
     opacity: 1;
+    width: 100%;
     height: 100%;
-    width: auto;
-    max-width: 100%;
-    aspect-ratio: 3 / 4;
-    padding: clamp(0.45rem, 1.4vh, 1.15rem) clamp(0.55rem, 1vw, 0.9rem)
-      clamp(0.4rem, 1.2vh, 1rem) clamp(0.7rem, 1.5vw, 1.35rem);
+    max-width: none;
+    aspect-ratio: auto;
+    container-type: size;
+    /* No padding here: cq units resolve against the nearest ANCESTOR
+       container, so `5cqw` written on the container itself silently falls
+       back to the viewport (measured: 140px of left padding on a 205px
+       card, which collapsed the text box to zero width). The inset moves
+       to .book-cover-face, a descendant, where cqw/cqh correctly mean
+       "percentage of this book". */
+    padding: 0;
   }
-  .home-shelf .book-cover-kicker { font-size: var(--home-card-kicker); }
-  .home-shelf .book-cover-title { font-size: var(--home-card-title); }
-  .home-shelf .book-cover-sub,
-  .home-shelf .book-cover-progress-pct,
-  .home-shelf .book-cover-progress-empty {
-    font-size: var(--home-card-meta);
+  .home-shelf .book-cover-face {
+    padding: 4.5cqh 5cqw 4cqh 11cqw;
+  }
+  /* Proportionate interior — every dimension tracks the card, so nothing
+     can ever overflow or clip. The clamp() floors/ceilings only guard
+     against illegibly small or comically large type at the extremes. */
+  .home-shelf .book-spine { width: 7cqw; }
+  .home-shelf .book-spine::after { left: 8cqw; width: 1cqw; }
+  .home-shelf .book-edges { width: 3.5cqw; top: 2cqh; bottom: 2cqh; }
+  .home-shelf .book-cover-kicker {
+    font-size: clamp(0.42rem, 5.2cqh, 0.72rem);
+    letter-spacing: 0.12em;
+  }
+  .home-shelf .book-cover-title {
+    margin-top: 3cqh;
+    font-size: clamp(0.62rem, 8.6cqh, 1.2rem);
+    /* "Electrotechnology" is a single unbreakable word wider than the
+       card at these sizes — without this it runs straight off the edge
+       and gets sliced by the cover's overflow:hidden. */
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+  .home-shelf .book-cover-rule {
+    width: 30cqw;
+    height: 1.1cqh;
+    margin: 3cqh 0 2.5cqh;
+  }
+  .home-shelf .book-cover-progress {
+    gap: 3cqw;
+    margin-bottom: 2cqh;
+    min-height: 6cqh;
+  }
+  .home-shelf .book-cover-progress-track { height: 1.5cqh; }
+  .home-shelf .book-cover-progress-pct {
+    font-size: clamp(0.42rem, 5cqh, 0.7rem);
   }
   .home-shelf .book-cover-progress-empty {
-    font-size: clamp(0.52rem, 0.45rem + 0.25vw, 0.62rem);
+    margin-bottom: 2cqh;
+    min-height: 6cqh;
+    font-size: clamp(0.4rem, 4.6cqh, 0.64rem);
+  }
+  .home-shelf .book-cover-sub {
+    font-size: clamp(0.42rem, 5cqh, 0.8rem);
+  }
+}
+
+/* Very short desktop windows (a half-height window, a netbook, a laptop
+   with a big browser toolbar). Below this the header + resume card +
+   the compass's 200px floor + the shelf's floor genuinely exceed the
+   viewport, and something has to give or the shelf gets cut off at the
+   bottom edge. The compass yields here rather than the books, since this
+   only applies under ~688px of viewport height — on a normal laptop
+   (700px and up) the compass renders at 300-640px, nowhere near a floor,
+   and is completely unaffected by this rule. */
+@media (min-width: 64rem) and (max-height: 43rem) {
+  .home-compass {
+    min-height: 130px;
+  }
+  .home-shelf {
+    min-height: 128px;
   }
 }
 
