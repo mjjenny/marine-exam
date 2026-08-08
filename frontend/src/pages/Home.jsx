@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { api } from "../api/client.js";
 import { useAuth } from "../auth/AuthContext.jsx";
 import BookSpread from "../components/BookSpread.jsx";
 import Bookshelf from "../components/Bookshelf.jsx";
+import ResumeCard from "../components/ResumeCard.jsx";
+import { daysUntilFuture } from "../utils/dates.js";
 import { masteredCount, onMasteryChange } from "../utils/mastery.js";
 
 const COMPASS_SRC = "/branding/engine_room_academy_slow_spin.webp";
@@ -36,12 +38,35 @@ export default function Home() {
   const [active, setActive] = useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
   const [masteryTick, setMasteryTick] = useState(0);
+  const [resumeAnswer, setResumeAnswer] = useState(null);
 
   useEffect(() => {
     api.subjects().then(setSubjects).catch((e) => setError(e.message));
   }, []);
 
   useEffect(() => onMasteryChange(() => setMasteryTick((n) => n + 1)), []);
+
+  // "Resume where you left off" — the member's most recently completed answer
+  // (server-side, via the same progress records MasteryToggle already writes).
+  // Silently gives up on any error: this is a nice-to-have, not core navigation.
+  useEffect(() => {
+    let alive = true;
+    api
+      .listProgress("answer")
+      .then((items) => {
+        const last = items?.[0];
+        if (!last) return;
+        return api.answer(last.content_id).then((a) => alive && setResumeAnswer(a));
+      })
+      .catch(() => {
+        /* no progress yet, or offline — resume card just doesn't render */
+      });
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  const examDaysLeft = useMemo(() => daysUntilFuture(user?.exam_date), [user?.exam_date]);
 
   // Deep-link: /?book=<slug> auto-opens that subject's book (e.g. "Back to Index"
   // from an answer page returns the reader straight to the open book, not the shelf).
@@ -75,6 +100,13 @@ export default function Home() {
     // masteryTick forces recompute when local mastery changes
   }, [subjects, masteryTick]);
 
+  // "Has this member done anything at all" needs to check both progress sources:
+  // local mastery (this browser's localStorage) AND server progress (resumeAnswer,
+  // which is device-independent). Gating purely on local mastery would show the
+  // "you haven't started" empty state on a second device even when the server has
+  // real history — exactly what resumeAnswer is there to prevent.
+  const hasAnyProgress = Boolean((overall && overall.mastered > 0) || resumeAnswer);
+
   return (
     <div className="home-page">
       <div className="home-hero">
@@ -94,12 +126,36 @@ export default function Home() {
                 ""
               )}
             </h1>
-            {overall && (
+            {overall && !hasAnyProgress && (
+              <p className="home-empty-copy">
+                You haven't started yet — pick a book from the shelf below to begin.
+              </p>
+            )}
+            {/* Deliberately gated on local mastery alone (not hasAnyProgress): this
+                count is this-browser-only (see utils/mastery.js), so on a device
+                where only the server knows about progress (resumeAnswer is set but
+                mastered is still 0 here), showing "0 of N mastered" next to a
+                resume card for that very answer would look self-contradictory.
+                Safer to just omit the stale local number than show it. */}
+            {overall && overall.mastered > 0 && (
               <p className="home-overall">
                 Overall {overall.pct}% · {overall.mastered} of {overall.total} mastered
               </p>
             )}
+            {user && (
+              <p className="home-exam-countdown">
+                {examDaysLeft != null ? (
+                  <>
+                    {examDaysLeft} {examDaysLeft === 1 ? "day" : "days"} until your exam
+                  </>
+                ) : (
+                  <Link to="/account">Set your exam date →</Link>
+                )}
+              </p>
+            )}
           </header>
+
+          {resumeAnswer && <ResumeCard answer={resumeAnswer} />}
 
           {/* Compass in normal flow — not absolutely positioned over content */}
           <div className="home-compass">

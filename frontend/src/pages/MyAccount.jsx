@@ -2,16 +2,9 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api/client.js";
 import { useAuth } from "../auth/AuthContext.jsx";
+import { daysRemaining } from "../utils/dates.js";
 
 const MEMBERSHIP_DAYS = 365;
-
-function daysRemaining(expiresAt) {
-  if (!expiresAt) return null;
-  const end = new Date(expiresAt);
-  const now = new Date();
-  const ms = end.getTime() - now.getTime();
-  return Math.max(0, Math.ceil(ms / (1000 * 60 * 60 * 24)));
-}
 
 function membershipPct(daysLeft) {
   if (daysLeft == null) return 100;
@@ -19,9 +12,47 @@ function membershipPct(daysLeft) {
 }
 
 export default function MyAccount() {
-  const { user, logout } = useAuth();
+  const { user, logout, refreshUser } = useAuth();
   const days = useMemo(() => daysRemaining(user?.expires_at), [user?.expires_at]);
   const pct = membershipPct(days);
+
+  const [examDateInput, setExamDateInput] = useState(user?.exam_date || "");
+  const [examMsg, setExamMsg] = useState(null);
+  const [examError, setExamError] = useState(null);
+  const [examBusy, setExamBusy] = useState(false);
+  const examDaysLeft = useMemo(() => daysRemaining(user?.exam_date), [user?.exam_date]);
+
+  async function onSaveExamDate(e) {
+    e.preventDefault();
+    setExamMsg(null);
+    setExamError(null);
+    setExamBusy(true);
+    try {
+      await api.setExamDate(examDateInput || null);
+      await refreshUser();
+      setExamMsg(examDateInput ? "Exam date saved." : "Exam date cleared.");
+    } catch (err) {
+      setExamError(err.message || "Could not save exam date.");
+    } finally {
+      setExamBusy(false);
+    }
+  }
+
+  async function onClearExamDate() {
+    setExamDateInput("");
+    setExamMsg(null);
+    setExamError(null);
+    setExamBusy(true);
+    try {
+      await api.setExamDate(null);
+      await refreshUser();
+      setExamMsg("Exam date cleared.");
+    } catch (err) {
+      setExamError(err.message || "Could not clear exam date.");
+    } finally {
+      setExamBusy(false);
+    }
+  }
 
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
@@ -111,6 +142,52 @@ export default function MyAccount() {
             <p className="muted text-xs mt-2">{pct}% of the {MEMBERSHIP_DAYS}-day membership window left</p>
           </div>
         )}
+      </section>
+
+      <section className="mt-8" aria-labelledby="exam-date-heading">
+        <h2 id="exam-date-heading" className="text-lg font-semibold mb-3">
+          Exam date
+        </h2>
+        <p className="muted text-sm mb-3">
+          Set the date of your own oral exam and the homepage will show a countdown.
+        </p>
+        <div className="rounded-lg border border-[var(--border)] bg-[var(--surface-2)] p-4">
+          {user?.exam_date && examDaysLeft != null && (
+            <p className="text-base font-semibold mb-3">
+              <span className="text-[var(--amber-400)]">{examDaysLeft}</span>{" "}
+              {examDaysLeft === 1 ? "Day" : "Days"} Until Your Exam
+            </p>
+          )}
+          <form
+            onSubmit={onSaveExamDate}
+            className="flex flex-wrap items-end gap-3"
+          >
+            <label className="flex flex-col gap-1 text-sm">
+              Exam date
+              <input
+                type="date"
+                className="border border-[var(--border)] rounded px-3 py-2 bg-[var(--surface)] text-[var(--ink)]"
+                value={examDateInput}
+                onChange={(e) => setExamDateInput(e.target.value)}
+              />
+            </label>
+            <button type="submit" className="btn" disabled={examBusy}>
+              {examBusy ? "Saving…" : "Save"}
+            </button>
+            {user?.exam_date && (
+              <button
+                type="button"
+                className="btn btn-ghost"
+                onClick={onClearExamDate}
+                disabled={examBusy}
+              >
+                Clear
+              </button>
+            )}
+          </form>
+          {examError && <p className="form-error mt-2">{examError}</p>}
+          {examMsg && <p className="text-sm text-emerald-400 mt-2">{examMsg}</p>}
+        </div>
       </section>
 
       <section className="mt-8" aria-labelledby="details-heading">

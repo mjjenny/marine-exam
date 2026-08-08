@@ -34,7 +34,16 @@ export function AuthProvider({ children }) {
     setUser(null);
   }, []);
 
-  const value = { user, loading, login, signup, logout };
+  // Re-pull the current user from the server — used after a profile change (e.g.
+  // setting the exam date on My Account) so dependents like Home's countdown pick
+  // it up immediately without a full reload.
+  const refreshUser = useCallback(async () => {
+    const u = await api.me();
+    setUser(u);
+    return u;
+  }, []);
+
+  const value = { user, loading, login, signup, logout, refreshUser };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 

@@ -362,7 +362,64 @@ html.light .home-hero-scrim {
   font-weight: 500;
 }
 
-/* Compass — in-flow block, explicit size, no parent height cap */
+/* Encouraging copy shown instead of .home-overall when a member has zero
+   completed answers — same slot, same rhythm, friendlier tone. */
+.home-empty-copy {
+  margin: 0;
+  font-size: var(--home-subtitle);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Quiet exam-date countdown chip, next to the greeting/overall line. */
+.home-exam-countdown {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: var(--heading);
+}
+.home-exam-countdown a {
+  color: var(--link);
+  text-decoration: none;
+}
+.home-exam-countdown a:hover {
+  text-decoration: underline;
+}
+
+/* "Continue where you left off" card, shown above the compass once a member
+   has at least one completed answer (see ResumeCard.jsx). */
+.resume-card {
+  max-width: 32rem;
+  margin: var(--home-space-1) auto 0;
+  padding: 1rem 1.25rem;
+  text-align: left;
+}
+.resume-card-kicker {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--amber-500);
+  color: var(--navy-900);
+  font-weight: 700;
+}
+.resume-card-crumb {
+  margin: 0 0 0.15rem;
+}
+.resume-card-title {
+  margin: 0 0 0.85rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+/* Compass — in-flow block, explicit size, no parent height cap.
+   overflow: hidden (not visible) so that when the flex column above it
+   (header + resume card + countdown) is tall, the shrunk .home-compass box
+   clips the logo instead of letting it bleed over the resume card / shelf
+   hint below — before this, a member with both an exam date and a resume
+   card could get a compass image tall enough to visually and pointer-event
+   overlap the "Continue" button beneath it. */
 .home-compass {
   flex: 1 1 auto;
   min-height: 0;
@@ -371,14 +428,20 @@ html.light .home-hero-scrim {
   justify-content: center;
   margin: var(--home-space-1) auto 0;
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
+  /* Purely decorative (alt=""), never a click target — belt-and-suspenders
+     in case it still overlaps a sibling at some extreme viewport. */
+  pointer-events: none;
 }
 .home-compass img {
   display: block;
   width: clamp(320px, 38vw, 620px);
   max-width: 100%;
   height: auto;
-  max-height: min(52vh, 620px);
+  /* Capped by the box's own (post-flex-shrink) height too, not just
+     viewport units, so the image can never render taller than the space
+     actually allotted to it. */
+  max-height: min(52vh, 620px, 100%);
   object-fit: contain;
   filter: drop-shadow(0 0 18px rgba(180, 120, 60, 0.28));
 }

@@ -66,6 +66,12 @@ export const api = {
         new_password: newPassword,
       }),
     }),
+  // examDate: "YYYY-MM-DD" to set, or null to clear.
+  setExamDate: (examDate) =>
+    request("/api/auth/exam-date", {
+      method: "PUT",
+      body: JSON.stringify({ exam_date: examDate }),
+    }),
 
   // Study QoL — progress & bookmarks
   listProgress: (contentType) =>
