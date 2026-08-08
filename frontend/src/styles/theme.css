@@ -3575,3 +3575,528 @@ html.light .dash-progress-bar {
     color-mix(in srgb, var(--ribbon-end) 18%, #f8f4ec)
   ) !important;
 }
+
+/* ══════════════════════════════════════════════════════════
+   PREMIUM DARK LUXURY — Density, materiality & craft
+   Composition + surface quality. Tokens / shelf cq /
+   aspect-ratio / --shelf-books / compass img size untouched.
+   ══════════════════════════════════════════════════════════ */
+
+/* ── 1. Homepage density & composition ────────────────── */
+.home-page {
+  --home-space-1: clamp(0.15rem, 0.25vh, 0.3rem);
+  --home-space-2: clamp(0.3rem, 0.55vh, 0.55rem);
+  --home-space-3: clamp(0.5rem, 0.9vh, 0.85rem);
+}
+
+@media (min-width: 64rem) {
+  body:has(.home-page) .app-shell > .container {
+    padding-top: clamp(0.35rem, 0.8vh, 0.65rem) !important;
+    padding-bottom: clamp(0.35rem, 0.8vh, 0.65rem) !important;
+  }
+}
+
+.home-hero-content {
+  padding: var(--home-space-1) 0 var(--home-space-1) !important;
+  gap: 0;
+  justify-content: flex-start;
+}
+
+/* Greeting block: compact, intentional, gold accent rail */
+.home-head {
+  flex: 0 0 auto !important;
+  margin: 0 0 var(--home-space-1) !important;
+  max-width: 38rem !important;
+  padding: 0.2rem 0 0.15rem 0.85rem !important;
+  border-left: 2.5px solid var(--amber-500) !important;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--amber-500) 10%, transparent) 0%,
+    transparent 65%
+  ) !important;
+}
+.home-kicker {
+  margin: 0 0 0.2rem !important;
+  font-size: clamp(0.62rem, 0.55rem + 0.28vw, 0.72rem) !important;
+  letter-spacing: 0.22em !important;
+  font-weight: 700 !important;
+  color: var(--amber-400) !important;
+  text-transform: uppercase;
+}
+.home-greeting {
+  margin: 0 0 0.2rem !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(1.45rem, 1.05rem + 1.35vw, 2.25rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.12 !important;
+  color: var(--ink) !important;
+}
+.home-name {
+  font-weight: 700 !important;
+  background: linear-gradient(90deg, var(--amber-400), var(--amber-500)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--amber-500) 30%, transparent));
+}
+/* Meta under greeting — quieter than the title */
+.home-overall,
+.home-empty-copy {
+  margin: 0 0 0.15rem !important;
+  font-family: var(--font-sans) !important;
+  font-size: clamp(0.78rem, 0.7rem + 0.3vw, 0.92rem) !important;
+  font-weight: 500 !important;
+  color: var(--muted) !important;
+  letter-spacing: 0.01em;
+}
+.home-exam-countdown {
+  margin: 0.15rem 0 0 !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  color: color-mix(in srgb, var(--muted) 70%, var(--heading)) !important;
+  letter-spacing: 0.02em;
+}
+.home-exam-countdown a {
+  color: var(--link) !important;
+  font-weight: 600;
+}
+
+/* Resume sits tight under greeting */
+.resume-card {
+  flex: 0 0 auto !important;
+  margin: var(--home-space-1) auto 0 !important;
+  padding: 0.55rem 0.95rem !important;
+  max-width: 30rem !important;
+}
+
+/*
+  Kill the large empty flex void around the compass:
+  stop the compass box from absorbing leftover viewport height.
+  The <img> width/max-height rules are NOT overridden here.
+*/
+.home-compass {
+  flex: 0 1 auto !important;
+  min-height: 0 !important;
+  margin: var(--home-space-1) auto 0 !important;
+  padding: 0 !important;
+  align-self: center;
+  max-height: none;
+}
+.home-compass::before {
+  inset: 12% 22% !important;
+  opacity: 0.85;
+}
+
+/* Shelf label — deliberate caption between logo and books */
+.home-shelf-hint {
+  flex: 0 0 auto !important;
+  margin: var(--home-space-2) 0 var(--home-space-1) !important;
+  padding: 0.2rem 0.5rem !important;
+  font-family: var(--font-sans) !important;
+  font-size: clamp(0.62rem, 0.56rem + 0.22vw, 0.72rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  color: var(--amber-400) !important;
+  opacity: 0.9;
+  text-shadow: none;
+  border-top: 1px solid color-mix(in srgb, var(--amber-500) 22%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--amber-500) 22%, transparent);
+  align-self: center;
+  width: min(28rem, 92%);
+}
+
+/* Shelf takes remaining room (sizing system inside unchanged) */
+@media (min-width: 64rem) {
+  .home-shelf {
+    flex: 1 1 auto !important;
+    margin-top: 0 !important;
+  }
+  .home-shelf .bookshelf {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 55%, #2a2218) 0%,
+      color-mix(in srgb, var(--navy-800) 70%, #1a1410) 55%,
+      color-mix(in srgb, var(--navy-900) 80%, #120e0a) 100%
+    ) !important;
+    border: 1px solid color-mix(in srgb, var(--amber-500) 28%, transparent) !important;
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--amber-400) 12%, transparent),
+      0 10px 28px rgba(0, 0, 0, 0.35) !important;
+    border-radius: 10px;
+  }
+}
+
+/* ── 2. Card & panel materiality ──────────────────────── */
+.card,
+.auth-card,
+.reading-page.reading-page,
+.resume-card,
+.question-as-set,
+.study-timer {
+  background:
+    linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--surface) 70%, var(--amber-500)) 0%,
+      var(--surface) 28%,
+      var(--surface-2) 100%
+    ) !important;
+  border: 1.5px solid color-mix(in srgb, var(--amber-500) 68%, var(--gold-border)) !important;
+  box-shadow:
+    var(--gold-glow),
+    0 0 0 1px color-mix(in srgb, var(--amber-500) 22%, transparent),
+    0 1px 0 color-mix(in srgb, var(--amber-400) 14%, transparent) inset,
+    0 12px 32px rgba(0, 0, 0, 0.48),
+    0 2px 6px rgba(0, 0, 0, 0.25) !important;
+  border-radius: var(--radius) !important;
+}
+
+.reading-page.reading-page {
+  background:
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--paper-book) 82%, var(--amber-500)) 0%,
+      var(--paper-book) 32%,
+      color-mix(in srgb, var(--paper-book) 92%, #000) 100%
+    ) !important;
+}
+
+.question-as-set {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--surface-2) 88%, var(--amber-500)) 0%,
+      var(--surface-2) 100%
+    ) !important;
+  border-left: 4px solid var(--amber-500) !important;
+  padding: 1rem 1.2rem !important;
+}
+
+.study-timer {
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--surface) 75%, var(--amber-500)) 0%,
+      var(--surface) 40%,
+      var(--surface-2) 100%
+    ) !important;
+  padding: 1.1rem 1.2rem !important;
+}
+.study-timer-label {
+  color: var(--amber-400) !important;
+  font-size: 0.64rem !important;
+  letter-spacing: 0.18em !important;
+  font-weight: 700 !important;
+}
+.study-timer-face {
+  color: var(--heading) !important;
+  font-weight: 600 !important;
+}
+
+/* Book spread panels — same material language */
+.book-page,
+.open-book-page {
+  background:
+    linear-gradient(
+      160deg,
+      color-mix(in srgb, var(--paper-book) 88%, var(--amber-500)) 0%,
+      var(--paper-book) 40%,
+      color-mix(in srgb, var(--paper-book) 94%, #000) 100%
+    ) !important;
+  border: 1.5px solid color-mix(in srgb, var(--amber-500) 55%, var(--gold-border)) !important;
+  box-shadow:
+    var(--gold-glow),
+    inset 0 1px 0 color-mix(in srgb, var(--amber-400) 10%, transparent),
+    0 18px 40px -12px rgba(0, 0, 0, 0.6) !important;
+}
+
+.auth-card {
+  padding: 1.7rem 1.55rem 1.5rem !important;
+}
+.auth-card h1 {
+  font-family: var(--font-display) !important;
+  color: var(--heading) !important;
+  font-weight: 600 !important;
+  font-size: 1.7rem !important;
+  letter-spacing: 0.01em;
+}
+
+.card section > div.rounded-lg,
+.card .rounded-lg.border {
+  background:
+    linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--surface-2) 90%, var(--amber-500)),
+      var(--surface-2)
+    ) !important;
+  border: 1.5px solid color-mix(in srgb, var(--amber-500) 55%, var(--gold-border)) !important;
+  box-shadow:
+    var(--gold-glow),
+    inset 0 1px 0 color-mix(in srgb, var(--amber-400) 10%, transparent) !important;
+}
+
+/* ── 3. Book spine craft (size system untouched) ──────── */
+.book-cover {
+  border: 1.5px solid color-mix(in srgb, var(--amber-500) 62%, transparent) !important;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--amber-500) 20%, transparent),
+    0 1px 0 color-mix(in srgb, var(--amber-400) 22%, transparent) inset,
+    -1px 0 0 color-mix(in srgb, #000 40%, transparent) inset,
+    0 14px 26px -8px rgba(0, 0, 0, 0.72) !important;
+  /* Soft vignette over existing --cover-bg */
+  background-image:
+    linear-gradient(
+      125deg,
+      color-mix(in srgb, #fff 8%, transparent) 0%,
+      transparent 28%,
+      transparent 62%,
+      color-mix(in srgb, #000 35%, transparent) 100%
+    ),
+    var(--cover-bg, linear-gradient(145deg, #1a2436, #0a0f1a)) !important;
+}
+.book-spine {
+  background: linear-gradient(
+    90deg,
+    #05070c 0%,
+    color-mix(in srgb, var(--amber-500) 55%, #1a1208) 36%,
+    color-mix(in srgb, var(--amber-400) 40%, transparent) 58%,
+    rgba(0, 0, 0, 0.15) 100%
+  ) !important;
+  box-shadow:
+    inset -3px 0 5px rgba(0, 0, 0, 0.45),
+    1px 0 0 color-mix(in srgb, var(--amber-500) 50%, transparent) !important;
+}
+.book-spine::after {
+  background: linear-gradient(
+    180deg,
+    transparent 5%,
+    #f3e2a8 14%,
+    var(--amber-400) 50%,
+    #f3e2a8 86%,
+    transparent 95%
+  ) !important;
+  opacity: 0.95;
+  box-shadow: 0 0 7px color-mix(in srgb, var(--amber-500) 45%, transparent) !important;
+}
+.book-edges {
+  background: repeating-linear-gradient(
+    180deg,
+    #efe0b0 0 1.5px,
+    #c9b07a 1.5px 2.5px,
+    #a89058 2.5px 3px
+  ) !important;
+  box-shadow: inset 2px 0 3px rgba(0, 0, 0, 0.25) !important;
+}
+.book-cover-kicker {
+  color: color-mix(in srgb, #f3e2a8 75%, transparent) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  font-size: 0.64rem !important;
+}
+.book-cover-title {
+  font-family: var(--font-display) !important;
+  color: #fff8e4 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.005em !important;
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.85),
+    0 2px 8px rgba(0, 0, 0, 0.45),
+    0 0 16px color-mix(in srgb, var(--amber-500) 18%, transparent) !important;
+  /* Keep two-line reservation from base styles for long titles */
+  hyphens: auto;
+  overflow-wrap: anywhere;
+}
+.book-cover-rule {
+  height: 1.5px !important;
+  width: 2.6rem !important;
+  background: linear-gradient(90deg, var(--amber-400), transparent) !important;
+  box-shadow: 0 0 6px color-mix(in srgb, var(--amber-500) 35%, transparent);
+  margin: 0.4rem 0 0.35rem !important;
+}
+.book-cover-sub,
+.book-cover-progress-pct,
+.book-cover-progress-empty {
+  color: color-mix(in srgb, #f3e2a8 72%, transparent) !important;
+  font-weight: 600 !important;
+}
+
+/* ── 4. Accent discipline ─────────────────────────────── */
+/* Quiet chips / meta — not gold-framed by default */
+.chip,
+.chip.chip-link,
+.topic-tab {
+  border: 1px solid var(--border) !important;
+  background: var(--surface-2) !important;
+  color: var(--muted) !important;
+  box-shadow: none !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+.chip.chip-link:hover,
+.topic-tab:hover {
+  border-color: color-mix(in srgb, var(--amber-500) 45%, var(--border)) !important;
+  color: var(--heading) !important;
+}
+
+/* Gold reserved for: primary CTAs, progress, active nav, shelf label, name */
+.btn:not(.btn-secondary),
+.btn.btn-ghost,
+.app-header .btn-ghost,
+.study-timer-btn:not(.ghost),
+.mastery-stamp {
+  background: var(--amber-500) !important;
+  color: var(--navy-900) !important;
+  border: 1px solid color-mix(in srgb, var(--amber-400) 60%, transparent) !important;
+}
+.btn.btn-secondary,
+.study-timer-btn.ghost {
+  background: transparent !important;
+  color: var(--amber-400) !important;
+  border: 1.5px solid color-mix(in srgb, var(--amber-500) 55%, var(--gold-border)) !important;
+  box-shadow: none !important;
+}
+
+.header-nav-link {
+  color: var(--navy-100) !important;
+  opacity: 0.78 !important;
+  text-shadow: none !important;
+}
+.header-nav-link:hover,
+.header-nav-link.accent,
+.header-nav-link.active,
+.header-nav-link[aria-current="page"] {
+  color: var(--amber-400) !important;
+  opacity: 1 !important;
+}
+.header-nav-meta {
+  color: color-mix(in srgb, var(--navy-100) 55%, transparent) !important;
+  font-size: 0.8rem !important;
+}
+
+/* ── 5. Micro-hierarchy ───────────────────────────────── */
+/* Page / greeting titles */
+.home-greeting,
+.auth-card h1,
+.reading-page .q-text,
+.dash-title {
+  font-family: var(--font-display) !important;
+  color: var(--heading) !important;
+  font-weight: 600 !important;
+}
+.reading-page .q-text {
+  font-size: clamp(1.45rem, 1.2rem + 0.9vw, 1.85rem) !important;
+  line-height: 1.28 !important;
+  margin-bottom: 0.85rem;
+}
+
+/* Section titles — smaller, tracked, gold-accented but secondary to page title */
+.reading-page h2,
+.question-page h2,
+.card h2,
+.dash-kicker,
+.study-timer-label,
+.resume-card-kicker {
+  font-family: var(--font-sans) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--amber-400) !important;
+}
+
+/* Body */
+.reading-page .markdown,
+.dash-summary,
+.auth-card label,
+.card p {
+  font-family: var(--font-display);
+  color: var(--book-ink);
+}
+.dash-summary,
+.auth-card label {
+  font-family: var(--font-sans) !important;
+  color: var(--muted) !important;
+  font-size: 0.92rem !important;
+  font-weight: 400 !important;
+}
+.dash-summary strong {
+  color: var(--heading) !important;
+  font-weight: 700 !important;
+}
+
+/* Meta / quiet labels */
+.crumbs,
+.muted,
+.dash-progress-label,
+.book-index-row .col-sitting,
+.book-index-row .col-q,
+.book-index-row .col-status,
+.resume-card-crumb,
+.home-overall,
+.home-empty-copy,
+.home-exam-countdown {
+  font-family: var(--font-sans) !important;
+  font-weight: 500 !important;
+}
+.crumbs,
+.book-index-row .col-sitting,
+.book-index-row .col-q,
+.book-index-row .col-status,
+.resume-card-crumb {
+  color: var(--muted) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.02em;
+}
+.dash-progress-label {
+  color: color-mix(in srgb, var(--muted) 75%, var(--heading)) !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+}
+
+.resume-card-title {
+  font-family: var(--font-display) !important;
+  color: var(--heading) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+.resume-card-kicker {
+  background: transparent !important;
+  border: 1px solid color-mix(in srgb, var(--amber-500) 45%, transparent) !important;
+  color: var(--amber-400) !important;
+  padding: 0.12rem 0.5rem !important;
+  font-size: 0.62rem !important;
+}
+
+/* Light mode material parity */
+html.light .card,
+html.light .auth-card,
+html.light .reading-page.reading-page,
+html.light .resume-card,
+html.light .question-as-set,
+html.light .study-timer,
+html.light .book-page,
+html.light .open-book-page {
+  background:
+    linear-gradient(
+      155deg,
+      #fff 0%,
+      var(--surface) 40%,
+      var(--surface-2) 100%
+    ) !important;
+  box-shadow: var(--gold-glow), var(--shadow), 0 1px 0 rgba(255, 255, 255, 0.8) inset !important;
+}
+html.light .home-shelf-hint {
+  color: var(--amber-500) !important;
+  border-top-color: color-mix(in srgb, var(--amber-500) 28%, transparent);
+  border-bottom-color: color-mix(in srgb, var(--amber-500) 28%, transparent);
+}
+html.light .home-shelf .bookshelf {
+  background: linear-gradient(
+    180deg,
+    #f3ebe0 0%,
+    #e8dcc8 55%,
+    #d9cbb4 100%
+  ) !important;
+  border-color: color-mix(in srgb, var(--amber-500) 30%, transparent) !important;
+}
