@@ -522,18 +522,23 @@ html.light .home-hero-scrim {
     min-height: 0;
   }
   .home-hero-content {
-    /* Was overflow: hidden (part of the "no scroll, ever" desktop hero).
-       Now that .home-compass has a 200px floor, total content can exceed
-       100dvh on shorter screens — overflow-y: auto lets THIS box scroll
-       internally in that case (nav bar stays put above it) rather than
-       silently clipping the bottom of the shelf or crushing the compass
-       back down to a sliver. On screens with room to spare this is a
-       no-op — nothing to scroll. */
+    overflow: hidden;
+  }
+  /* .home-shelf (not .home-hero-content) is the scroll container on short
+     screens. Earlier this made the whole hero scroll, which — on a window
+     just barely short of fitting — could still crop the shelf below the
+     fold on first paint (the compass's 200px floor plus everything above
+     it is often taller than what's left for the shelf) and dragged the
+     greeting/compass out of view along with it. Scoping the scroll to
+     just the shelf keeps the header and the compass (at its full, fixed
+     size) permanently visible, and only the book list — the one thing
+     that's naturally a scrollable list anyway — scrolls internally when
+     it doesn't fully fit. */
+  .home-shelf {
+    flex: 1 1 auto;
+    min-height: 0;
     overflow-y: auto;
     overflow-x: hidden;
-  }
-  .home-shelf {
-    overflow: visible;
   }
   .home-shelf .bookshelf {
     flex: 0 0 auto;
