@@ -114,69 +114,67 @@ export default function Home() {
         <div className="home-hero-scrim" aria-hidden="true" />
 
         <div className="home-hero-content">
-          <header className="home-head">
-            <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
-            <h1 className="home-greeting">
-              {timeGreeting()}
-              {name ? (
-                <>
-                  , <span className="home-name">{name}</span>
-                </>
-              ) : (
-                ""
-              )}
-            </h1>
-            {overall && !hasAnyProgress && (
-              <p className="home-empty-copy">
-                You haven't started yet — pick a book from the shelf below to begin.
-              </p>
-            )}
-            {/* Deliberately gated on local mastery alone (not hasAnyProgress): this
-                count is this-browser-only (see utils/mastery.js), so on a device
-                where only the server knows about progress (resumeAnswer is set but
-                mastered is still 0 here), showing "0 of N mastered" next to a
-                resume card for that very answer would look self-contradictory.
-                Safer to just omit the stale local number than show it. */}
-            {overall && overall.mastered > 0 && (
-              <p className="home-overall">
-                Overall {overall.pct}% · {overall.mastered} of {overall.total} mastered
-              </p>
-            )}
-            {user && (
-              <p className="home-exam-countdown">
-                {examDaysLeft != null ? (
+          {/* Stage: greeting + compass as one composed band */}
+          <div className="home-stage">
+            <header className="home-head">
+              <p className="home-kicker">MCA · SQA Chief Engineer Exam Prep</p>
+              <h1 className="home-greeting">
+                {timeGreeting()}
+                {name ? (
                   <>
-                    {examDaysLeft} {examDaysLeft === 1 ? "day" : "days"} until your exam
+                    , <span className="home-name">{name}</span>
                   </>
                 ) : (
-                  <Link to="/account">Set your exam date →</Link>
+                  ""
                 )}
-              </p>
-            )}
-          </header>
+              </h1>
+              {overall && !hasAnyProgress && (
+                <p className="home-empty-copy">
+                  You haven't started yet — pick a book from the shelf below to begin.
+                </p>
+              )}
+              {/* Deliberately gated on local mastery alone (not hasAnyProgress): this
+                  count is this-browser-only (see utils/mastery.js), so on a device
+                  where only the server knows about progress (resumeAnswer is set but
+                  mastered is still 0 here), showing "0 of N mastered" next to a
+                  resume card for that very answer would look self-contradictory.
+                  Safer to just omit the stale local number than show it. */}
+              {overall && overall.mastered > 0 && (
+                <p className="home-overall">
+                  Overall {overall.pct}% · {overall.mastered} of {overall.total} mastered
+                </p>
+              )}
+              {user && (
+                <p className="home-exam-countdown">
+                  {examDaysLeft != null ? (
+                    <>
+                      {examDaysLeft} {examDaysLeft === 1 ? "day" : "days"} until your exam
+                    </>
+                  ) : (
+                    <Link to="/account">Set your exam date →</Link>
+                  )}
+                </p>
+              )}
+            </header>
+
+            <div className="home-compass">
+              <img
+                src={COMPASS_SRC}
+                alt=""
+                width={512}
+                height={512}
+                decoding="async"
+                fetchPriority="low"
+              />
+            </div>
+          </div>
 
           {resumeAnswer && <ResumeCard answer={resumeAnswer} />}
 
-          {/* Compass in normal flow — not absolutely positioned over content */}
-          <div className="home-compass">
-            <img
-              src={COMPASS_SRC}
-              alt=""
-              width={512}
-              height={512}
-              decoding="async"
-              fetchPriority="low"
-            />
-          </div>
-
-          {/* Sibling AFTER compass, BEFORE shelf — never overlaps the logo */}
           <p className="home-shelf-hint">
             Choose a book from the shelf to browse its question index.
           </p>
 
-          {/* --shelf-books lets the stylesheet size the shelf panel to the
-              books it actually holds (see .home-shelf in theme.css), rather
-              than assuming a fixed count. */}
           <div
             className="home-shelf"
             style={subjects ? { "--shelf-books": subjects.length } : undefined}

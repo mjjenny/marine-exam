@@ -5239,3 +5239,489 @@ html.light .home-shelf-hint {
     transparent
   );
 }
+
+/* ══════════════════════════════════════════════════════════
+   HOMEPAGE REDESIGN — composed stage + premium shelf
+   Greeting ∥ Compass band → label → redesigned books.
+   Same medallion asset + real subject titles. Width-driven
+   shelf (overrides prior height/cq homepage shelf rules).
+   Prefer no scrollbar at ≥900px tall; allow on shorter.
+   ══════════════════════════════════════════════════════════ */
+
+/* Stage: greeting left, compass right — one dense band */
+.home-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: clamp(0.75rem, 2.5vw, 2.5rem);
+  width: min(68rem, 100%);
+  margin: 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 0.15rem 0.25rem;
+}
+
+.home-stage .home-head {
+  margin: 0 !important;
+  max-width: none !important;
+  width: 100%;
+  padding: 0.35rem 0 0.35rem 1rem !important;
+  border-left: 3px solid var(--amber-500) !important;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--amber-500) 12%, transparent) 0%,
+    transparent 75%
+  ) !important;
+  align-self: center;
+}
+
+.home-stage .home-kicker {
+  margin: 0 0 0.45rem !important;
+  font-size: clamp(0.68rem, 0.58rem + 0.3vw, 0.78rem) !important;
+  letter-spacing: 0.26em !important;
+  font-weight: 700 !important;
+  color: var(--amber-400) !important;
+}
+
+.home-stage .home-greeting {
+  margin: 0 0 0.45rem !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(1.85rem, 1.25rem + 1.8vw, 3rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  color: var(--ink) !important;
+  max-width: 18ch;
+}
+
+.home-stage .home-name {
+  font-weight: 700 !important;
+  background: linear-gradient(92deg, #f3e2a8, var(--amber-400), var(--amber-500)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+.home-stage .home-overall,
+.home-stage .home-empty-copy {
+  margin: 0 0 0.25rem !important;
+  font-size: clamp(0.88rem, 0.78rem + 0.35vw, 1.05rem) !important;
+  color: var(--muted) !important;
+  max-width: 36ch;
+  line-height: 1.4;
+}
+
+.home-stage .home-exam-countdown {
+  margin: 0.35rem 0 0 !important;
+  font-size: 0.82rem !important;
+  color: color-mix(in srgb, var(--muted) 65%, var(--heading)) !important;
+  font-weight: 600 !important;
+}
+
+/* Compass — right of greeting, composed scale (same asset) */
+.home-stage .home-compass {
+  flex: none !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  max-width: min(22rem, 38vw);
+  justify-self: end;
+  align-self: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: visible !important;
+  position: relative !important;
+  pointer-events: none;
+}
+
+.home-stage .home-compass::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -8% -6% !important;
+  z-index: 0 !important;
+  background: radial-gradient(
+    ellipse 55% 55% at 50% 50%,
+    color-mix(in srgb, var(--amber-500) 28%, transparent) 0%,
+    color-mix(in srgb, var(--ribbon-start) 12%, transparent) 45%,
+    transparent 72%
+  ) !important;
+  filter: blur(2px);
+}
+
+.home-stage .home-compass::after {
+  display: none !important;
+}
+
+.home-stage .home-compass img {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 20rem) !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: min(32vh, 20rem) !important;
+  object-fit: contain;
+  filter: drop-shadow(0 0 26px rgba(201, 162, 39, 0.4))
+    drop-shadow(0 8px 28px rgba(0, 0, 0, 0.35)) !important;
+}
+
+@media (min-width: 64rem) {
+  body:has(.home-page) .app-shell {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+  body:has(.home-page) .app-shell > .container {
+    overflow: hidden !important;
+    padding-top: clamp(0.4rem, 1vh, 0.75rem) !important;
+    padding-bottom: clamp(0.45rem, 1.1vh, 0.85rem) !important;
+  }
+  .home-page,
+  .home-hero {
+    overflow: hidden !important;
+    min-height: 0 !important;
+  }
+  .home-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: clamp(0.45rem, 1.2vh, 0.9rem) !important;
+    padding: 0.2rem 0 !important;
+    overflow: hidden !important;
+    min-height: 0 !important;
+    max-width: 72rem;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .home-hero-content > .resume-card {
+    flex: 0 0 auto !important;
+    margin: 0 auto !important;
+    max-width: 32rem !important;
+    width: min(32rem, 100%);
+  }
+
+  .home-shelf-hint {
+    flex: 0 0 auto !important;
+    margin: 0.1rem auto 0 !important;
+    padding: 0.3rem 1rem !important;
+    width: fit-content !important;
+    max-width: 90%;
+    font-size: 0.68rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.24em !important;
+    text-transform: uppercase !important;
+    color: var(--amber-400) !important;
+    border: none !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--amber-500) 35%, transparent) !important;
+    background: none !important;
+    text-align: center !important;
+  }
+
+  /*
+    Redesigned shelf: width-driven books (not height/cq cascade).
+    Clearer presence, readable titles, premium object treatment.
+  */
+  .home-shelf {
+    flex: 0 0 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+    container-type: normal !important;
+  }
+
+  .home-shelf .bookshelf {
+    width: min(100%, 56rem) !important;
+    margin-inline: auto !important;
+    max-width: 100% !important;
+    flex: none !important;
+    min-height: 0 !important;
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--surface) 40%, #2c2418) 0%,
+        color-mix(in srgb, var(--navy-800) 65%, #1a1410) 55%,
+        #0e0b08 100%
+      ) !important;
+    border: 1.5px solid color-mix(in srgb, var(--amber-500) 38%, transparent) !important;
+    border-radius: 12px !important;
+    box-shadow:
+      var(--gold-glow),
+      inset 0 1px 0 color-mix(in srgb, var(--amber-400) 14%, transparent),
+      0 16px 36px rgba(0, 0, 0, 0.45) !important;
+    padding: 0 !important;
+  }
+
+  .home-shelf .bookshelf-inner {
+    flex: none !important;
+    padding: clamp(0.85rem, 1.8vh, 1.35rem) clamp(0.9rem, 2vw, 1.5rem)
+      clamp(0.7rem, 1.4vh, 1.1rem) !important;
+  }
+
+  .home-shelf .bookshelf-grid {
+    display: flex !important;
+    flex: none !important;
+    min-height: 0 !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    gap: clamp(0.55rem, 1.4vw, 1.1rem) !important;
+    padding-bottom: 0.85rem !important;
+    position: relative;
+  }
+
+  .home-shelf .bookshelf-grid::after {
+    content: "";
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: 0;
+    height: 0.55rem;
+    border-radius: 2px;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--amber-500) 35%, #3a2c1a) 0%,
+      #1a1208 100%
+    );
+    box-shadow:
+      0 2px 0 #0a0806,
+      0 6px 14px rgba(0, 0, 0, 0.4);
+    opacity: 1 !important;
+  }
+
+  .home-shelf .bookshelf-plank {
+    display: none !important;
+  }
+
+  .home-shelf .bookshelf-slot {
+    flex: 0 1 auto !important;
+    width: clamp(6.75rem, 11.5vw, 9.75rem) !important;
+    height: auto !important;
+    max-width: none !important;
+    aspect-ratio: 3 / 4 !important;
+    padding: 0 !important;
+  }
+
+  .home-shelf .book-cover {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: auto !important;
+    container-type: normal !important;
+    padding: 0.85rem 0.7rem 0.75rem 1.05rem !important;
+    border: 1.5px solid color-mix(in srgb, var(--amber-500) 55%, transparent) !important;
+    border-radius: 3px 7px 7px 3px !important;
+    background-image:
+      linear-gradient(
+        125deg,
+        color-mix(in srgb, #fff 10%, transparent) 0%,
+        transparent 32%,
+        transparent 58%,
+        color-mix(in srgb, #000 42%, transparent) 100%
+      ),
+      var(--cover-bg) !important;
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--amber-500) 20%, transparent),
+      0 1px 0 color-mix(in srgb, var(--amber-400) 20%, transparent) inset,
+      -2px 0 0 color-mix(in srgb, #000 35%, transparent) inset,
+      0 12px 22px -6px rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .home-shelf .book-cover-face {
+    padding: 0 !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-shelf .book-spine {
+    width: 11px !important;
+    background: linear-gradient(
+      90deg,
+      #04060a 0%,
+      color-mix(in srgb, var(--amber-500) 60%, #1a1208) 42%,
+      color-mix(in srgb, var(--amber-400) 40%, transparent) 68%,
+      rgba(0, 0, 0, 0.1) 100%
+    ) !important;
+  }
+  .home-shelf .book-spine::after {
+    left: 8px !important;
+    width: 1.5px !important;
+    background: linear-gradient(
+      180deg,
+      transparent 6%,
+      #f6e4a8 16%,
+      var(--amber-400) 50%,
+      #f6e4a8 84%,
+      transparent 94%
+    ) !important;
+  }
+  .home-shelf .book-edges {
+    width: 6px !important;
+    top: 5px !important;
+    bottom: 5px !important;
+  }
+
+  .home-shelf .book-cover-kicker {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.16em !important;
+    color: color-mix(in srgb, #f3e2a8 80%, transparent) !important;
+  }
+  .home-shelf .book-cover-title {
+    margin-top: 0.45rem !important;
+    font-family: var(--font-display) !important;
+    font-size: clamp(0.82rem, 0.7rem + 0.55vw, 1.15rem) !important;
+    line-height: 1.15 !important;
+    min-height: calc(1.15em * 2);
+    color: #fff9e8 !important;
+    font-weight: 800 !important;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    text-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.9),
+      0 0 14px color-mix(in srgb, var(--amber-500) 22%, transparent) !important;
+  }
+  .home-shelf .book-cover-rule {
+    width: 2.2rem !important;
+    height: 1.5px !important;
+    margin: 0.4rem 0 0.35rem !important;
+    background: linear-gradient(90deg, var(--amber-400), transparent) !important;
+  }
+  .home-shelf .book-cover-progress {
+    margin-bottom: 0.3rem !important;
+    min-height: 1rem !important;
+    gap: 0.35rem !important;
+  }
+  .home-shelf .book-cover-progress-track {
+    height: 0.28rem !important;
+  }
+  .home-shelf .book-cover-progress-pct,
+  .home-shelf .book-cover-progress-empty,
+  .home-shelf .book-cover-sub {
+    font-size: 0.62rem !important;
+    color: color-mix(in srgb, #f3e2a8 75%, transparent) !important;
+  }
+  .home-shelf .book-cover-progress-empty {
+    min-height: 1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+}
+
+/* Short laptops: allow controlled scroll */
+@media (min-width: 64rem) and (max-height: 56.24rem) {
+  body:has(.home-page) .app-shell {
+    height: auto !important;
+    min-height: 100dvh !important;
+    max-height: none !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+  body:has(.home-page) .app-shell > .container {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .home-page,
+  .home-hero,
+  .home-hero-content {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .home-hero-content {
+    justify-content: flex-start !important;
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  .home-stage .home-compass img {
+    max-height: min(28vh, 16rem) !important;
+  }
+  .home-shelf .bookshelf-slot {
+    width: clamp(6.25rem, 10.5vw, 8.5rem) !important;
+  }
+}
+
+/* Prefer locked viewport on 1440×900 and taller */
+@media (min-width: 64rem) and (min-height: 56.25rem) {
+  body:has(.home-page) .app-shell {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Mobile / narrow: stack stage, keep premium shelf */
+@media (max-width: 63.99rem) {
+  .home-stage {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 0.25rem 0;
+  }
+  .home-stage .home-head {
+    border-left: none !important;
+    padding: 0.25rem 0.5rem !important;
+    background: none !important;
+    text-align: center;
+  }
+  .home-stage .home-greeting {
+    max-width: none;
+  }
+  .home-stage .home-compass {
+    justify-self: center;
+    max-width: min(16rem, 70vw);
+  }
+  .home-stage .home-compass img {
+    width: min(100%, 15rem) !important;
+    max-height: min(36vh, 15rem) !important;
+  }
+  .home-shelf .bookshelf {
+    width: 100% !important;
+    border: 1.5px solid color-mix(in srgb, var(--amber-500) 32%, transparent);
+    border-radius: 12px;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--surface) 45%, #2c2418),
+      #0e0b08
+    );
+    box-shadow: var(--gold-glow);
+  }
+  .home-shelf .bookshelf-inner {
+    padding: 0.85rem 0.75rem 0.7rem;
+  }
+  .home-shelf .bookshelf-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.65rem;
+    padding-bottom: 0.75rem;
+  }
+  .home-shelf .bookshelf-slot {
+    width: clamp(6.5rem, 28vw, 8.5rem);
+    aspect-ratio: 3 / 4;
+  }
+}
+
+html.light .home-shelf .bookshelf {
+  background: linear-gradient(
+    180deg,
+    #f4ebe0 0%,
+    #e6d8c4 55%,
+    #d4c3a8 100%
+  ) !important;
+  border-color: color-mix(in srgb, var(--amber-500) 35%, transparent) !important;
+}
+html.light .home-shelf .bookshelf-grid::after {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--amber-500) 40%, #8b6914),
+    #5c4a28
+  ) !important;
+}
+html.light .home-stage .home-compass::before {
+  background: radial-gradient(
+    ellipse 55% 55% at 50% 50%,
+    color-mix(in srgb, var(--amber-500) 32%, transparent) 0%,
+    transparent 72%
+  ) !important;
+}
