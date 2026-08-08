@@ -425,7 +425,18 @@ html.light .home-hero-scrim {
    overlap the "Continue" button beneath it. */
 .home-compass {
   flex: 1 1 auto;
-  min-height: 0;
+  /* Was min-height: 0 (uncapped shrink). On shorter/narrower real laptop
+     screens (confirmed via a live user's DevTools: 1280px-wide window,
+     compass squeezed to a 640x136 sliver) this flex column simply doesn't
+     have enough spare vertical budget once the resume card / countdown /
+     empty-state copy are added on top of the original design, so the
+     compass — the one flexible, non-essential element — absorbed all of
+     the deficit down to almost nothing. A real floor keeps it recognizable
+     regardless of viewport height; .home-hero-content below switches to
+     overflow-y: auto on desktop so if the floor pushes total content
+     taller than the screen, the hero scrolls instead of clipping the
+     shelf or reintroducing an overlap. */
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -511,7 +522,15 @@ html.light .home-hero-scrim {
     min-height: 0;
   }
   .home-hero-content {
-    overflow: hidden;
+    /* Was overflow: hidden (part of the "no scroll, ever" desktop hero).
+       Now that .home-compass has a 200px floor, total content can exceed
+       100dvh on shorter screens — overflow-y: auto lets THIS box scroll
+       internally in that case (nav bar stays put above it) rather than
+       silently clipping the bottom of the shelf or crushing the compass
+       back down to a sliver. On screens with room to spare this is a
+       no-op — nothing to scroll. */
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .home-shelf {
     overflow: visible;
