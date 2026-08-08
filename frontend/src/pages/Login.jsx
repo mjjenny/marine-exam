@@ -26,9 +26,9 @@ export default function Login() {
 
   return (
     <div className="card auth-card">
-      <div className="flex flex-col items-center justify-center mb-4 overflow-visible">
+      <div className="flex flex-col items-center justify-center mb-2 overflow-visible">
         <img
-          className="w-32 h-32 md:w-48 md:h-48 object-contain drop-shadow-2xl"
+          className="w-20 h-20 md:w-28 md:h-28 object-contain drop-shadow-2xl"
           src="/branding/engine_room_academy_slow_spin.webp"
           alt="Engine Room Academy"
           width={192}

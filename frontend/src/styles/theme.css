@@ -124,7 +124,10 @@ a { color: var(--link); }
 }
 
 /* ── Auth forms & buttons ─────────────────────────────── */
-.auth-card { max-width: min(26.25rem, 100%); margin: 2rem auto; }
+/* margin trimmed from 2rem so the card (logo + form + links) fits inside
+   typical laptop-height viewports without needing a scroll to reach
+   "Forgot password?" / "Sign up". */
+.auth-card { max-width: min(26.25rem, 100%); margin: 0.75rem auto; }
 
 .auth-card form { display: flex; flex-direction: column; gap: 0.9rem; margin-top: 1rem; }
 
