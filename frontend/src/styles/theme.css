@@ -435,18 +435,19 @@ html.light .home-hero-scrim {
 }
 .home-compass img {
   display: block;
-  /* +10% over the previous 320/38vw/620 sizing. Safe to grow because the
-     parent .home-compass now has overflow: hidden + pointer-events: none
-     and this max-height is capped at 100% of the box's actual (post-shrink)
-     height — so even at this larger size the logo clips to its allotted
-     space instead of bleeding into the resume card or shelf hint text. */
-  width: clamp(352px, 42vw, 682px);
+  /* ~40% over the original 320/38vw/620 sizing (the first +10% pass read
+     as barely noticeable). Safe to grow because the parent .home-compass
+     has overflow: hidden + pointer-events: none and this max-height is
+     capped at 100% of the box's actual (post-shrink) height — so even at
+     this larger size the logo clips to its allotted space instead of
+     bleeding into the resume card or shelf hint text. */
+  width: clamp(420px, 50vw, 840px);
   max-width: 100%;
   height: auto;
   /* Capped by the box's own (post-flex-shrink) height too, not just
      viewport units, so the image can never render taller than the space
      actually allotted to it. */
-  max-height: min(57vh, 682px, 100%);
+  max-height: min(70vh, 840px, 100%);
   object-fit: contain;
   filter: drop-shadow(0 0 18px rgba(180, 120, 60, 0.28));
 }
@@ -570,8 +571,8 @@ html.light .home-hero-scrim {
     margin-top: var(--home-space-2);
   }
   .home-compass img {
-    /* +10% to match the desktop bump above */
-    width: clamp(286px, 79vw, 462px);
+    /* ~40% to match the desktop bump above */
+    width: clamp(338px, 94vw, 546px);
   }
 }
 
