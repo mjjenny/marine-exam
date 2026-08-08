@@ -393,12 +393,12 @@ html.light .home-hero-scrim {
 .resume-card {
   max-width: 32rem;
   margin: var(--home-space-1) auto 0;
-  padding: 1rem 1.25rem;
+  padding: clamp(0.6rem, 1.6vh, 1rem) clamp(0.9rem, 1.6vw, 1.25rem);
   text-align: left;
 }
 .resume-card-kicker {
   display: inline-block;
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.35rem;
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -410,7 +410,7 @@ html.light .home-hero-scrim {
   margin: 0 0 0.15rem;
 }
 .resume-card-title {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.5rem;
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--ink);
@@ -432,10 +432,9 @@ html.light .home-hero-scrim {
      empty-state copy are added on top of the original design, so the
      compass — the one flexible, non-essential element — absorbed all of
      the deficit down to almost nothing. A real floor keeps it recognizable
-     regardless of viewport height; .home-hero-content below switches to
-     overflow-y: auto on desktop so if the floor pushes total content
-     taller than the screen, the hero scrolls instead of clipping the
-     shelf or reintroducing an overlap. */
+     regardless of viewport height. No element on this page scrolls, ever
+     (see .home-shelf below) — the shelf's own height-driven sizing is
+     what absorbs any remaining shortfall, not the compass or the hero. */
   min-height: 200px;
   display: flex;
   align-items: center;
@@ -524,24 +523,31 @@ html.light .home-hero-scrim {
   .home-hero-content {
     overflow: hidden;
   }
-  /* .home-shelf (not .home-hero-content) is the scroll container on short
-     screens. Earlier this made the whole hero scroll, which — on a window
-     just barely short of fitting — could still crop the shelf below the
-     fold on first paint (the compass's 200px floor plus everything above
-     it is often taller than what's left for the shelf) and dragged the
-     greeting/compass out of view along with it. Scoping the scroll to
-     just the shelf keeps the header and the compass (at its full, fixed
-     size) permanently visible, and only the book list — the one thing
-     that's naturally a scrollable list anyway — scrolls internally when
-     it doesn't fully fit. */
+  /* No scrollbar anywhere, ever — the shelf must always render fully
+     within whatever vertical budget is left after the header/resume card/
+     countdown and the compass (at its normal, unshrunk size) take their
+     share. Instead of letting the book list overflow and scroll (or clip),
+     every layer from .home-shelf down to .book-cover is wired as a 100%
+     height cascade: .home-shelf gets a real (but modest) floor so it
+     can't be starved to nothing by flex-shrink, and everything inside it
+     stretches to fill exactly that height. The book cover's aspect ratio
+     is then driven by its HEIGHT (not its width, as elsewhere on the
+     site) — height: 100% + width: auto + aspect-ratio together mean the
+     card shrinks/grows to whatever room is actually available, so the
+     shelf is always fully visible with no overflow and no scroll. */
   .home-shelf {
     flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
+    min-height: clamp(150px, 19vh, 260px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .home-shelf .bookshelf {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     width: min(100%, clamp(40rem, 88vw, 64rem));
     margin-inline: auto;
     max-height: none;
@@ -563,17 +569,38 @@ html.light .home-hero-scrim {
     );
     border-color: rgba(120, 90, 40, 0.22);
   }
+  .home-shelf .bookshelf-inner {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: clamp(0.4rem, 1vh, 1rem);
+    padding-bottom: clamp(0.35rem, 0.6vh, 0.75rem);
+  }
+  .home-shelf .bookshelf-grid {
+    flex: 1 1 auto;
+    min-height: 0;
+    grid-template-rows: minmax(0, 1fr);
+    padding-bottom: clamp(0.4rem, 1vh, 1.1rem);
+  }
   .home-shelf .bookshelf-grid::after,
   .home-shelf .bookshelf-plank {
     opacity: 0.4;
   }
   .home-shelf .bookshelf-slot {
-    max-width: clamp(6.75rem, 12.5vw, 10.75rem);
+    max-width: none;
+    height: 100%;
+    min-height: 0;
+    padding: 0;
   }
   .home-shelf .book-cover {
     opacity: 1;
-    padding: clamp(0.7rem, 1.4vh, 1.15rem) clamp(0.55rem, 1vw, 0.9rem)
-      clamp(0.65rem, 1.2vh, 1rem) clamp(0.9rem, 1.5vw, 1.35rem);
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 3 / 4;
+    padding: clamp(0.45rem, 1.4vh, 1.15rem) clamp(0.55rem, 1vw, 0.9rem)
+      clamp(0.4rem, 1.2vh, 1rem) clamp(0.7rem, 1.5vw, 1.35rem);
   }
   .home-shelf .book-cover-kicker { font-size: var(--home-card-kicker); }
   .home-shelf .book-cover-title { font-size: var(--home-card-title); }
