@@ -4971,3 +4971,271 @@ html.light .home-compass::before {
     animation: none !important;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   HOMEPAGE COMPOSITION UPGRADE (controlled viewport relax)
+   Greeting → Compass → Shelf label → Books as one group.
+   Scroll only as a safety valve on shorter laptop heights;
+   prefer locked viewport at ≥1440×900. Shelf cq / aspect /
+   --shelf-books and compass <img> size rules untouched.
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 64rem) {
+  /*
+    Tall / common desktops (≥900px tall): keep zero-scrollbar
+    lock and pack the vertical stack tightly.
+  */
+  body:has(.home-page) .app-shell {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    overflow: hidden !important;
+  }
+  body:has(.home-page) .app-shell > .container {
+    overflow: hidden !important;
+    padding-top: clamp(0.25rem, 0.55vh, 0.45rem) !important;
+    padding-bottom: clamp(0.25rem, 0.55vh, 0.45rem) !important;
+  }
+  .home-page,
+  .home-hero {
+    overflow: hidden !important;
+  }
+
+  .home-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    gap: 0.12rem !important;
+    padding: 0.1rem 0 0.15rem !important;
+    overflow: hidden !important;
+  }
+
+  /* Greeting — compact lead-in */
+  .home-head {
+    flex: 0 0 auto !important;
+    margin: 0 0 0.1rem !important;
+    max-width: 34rem !important;
+    padding: 0.08rem 0 0.05rem 0.7rem !important;
+  }
+  .home-kicker {
+    margin: 0 0 0.08rem !important;
+    font-size: 0.62rem !important;
+    letter-spacing: 0.22em !important;
+  }
+  .home-greeting {
+    margin: 0 0 0.08rem !important;
+    font-size: clamp(1.3rem, 1rem + 1.05vw, 1.95rem) !important;
+  }
+  .home-overall,
+  .home-empty-copy {
+    margin: 0 !important;
+    font-size: 0.8rem !important;
+  }
+  .home-exam-countdown {
+    margin: 0.08rem 0 0 !important;
+    font-size: 0.72rem !important;
+  }
+
+  .resume-card {
+    flex: 0 0 auto !important;
+    margin: 0.15rem auto 0 !important;
+    padding: 0.45rem 0.8rem !important;
+    max-width: 26rem !important;
+  }
+
+  /*
+    Compass: absorbs remaining flex budget (keeps shelf system
+    working) but atmosphere fills the box so it doesn't read as
+    a dark void. Do NOT alter .home-compass img width/max-height.
+  */
+  .home-compass {
+    flex: 1 1 auto !important;
+    min-height: 150px !important;
+    margin: 0.1rem auto 0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+  .home-compass::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 4% 12% !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+    background:
+      radial-gradient(
+        ellipse 58% 58% at 50% 48%,
+        color-mix(in srgb, var(--amber-500) 20%, transparent) 0%,
+        color-mix(in srgb, var(--ribbon-start) 10%, transparent) 42%,
+        transparent 72%
+      ) !important;
+    opacity: 0.95;
+  }
+  .home-compass::after {
+    content: "";
+    position: absolute;
+    inset: 18% 28%;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at 50% 50%,
+      color-mix(in srgb, var(--amber-400) 10%, transparent) 0%,
+      transparent 70%
+    );
+    filter: blur(8px);
+  }
+  .home-compass img {
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 0 22px rgba(201, 162, 39, 0.36))
+      drop-shadow(0 0 36px rgba(13, 148, 136, 0.14)) !important;
+  }
+
+  /* Shelf label — binds logo to books */
+  .home-shelf-hint {
+    flex: 0 0 auto !important;
+    margin: 0.15rem auto 0.08rem !important;
+    padding: 0.2rem 0.65rem !important;
+    width: min(24rem, 88%) !important;
+    font-size: 0.62rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.22em !important;
+    text-transform: uppercase !important;
+    color: var(--amber-400) !important;
+    border-top: 1px solid color-mix(in srgb, var(--amber-500) 28%, transparent) !important;
+    border-bottom: 1px solid color-mix(in srgb, var(--amber-500) 28%, transparent) !important;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in srgb, var(--amber-500) 6%, transparent),
+      transparent
+    );
+  }
+
+  /* Shelf keeps existing flex + cq sizing; only tighten outer rhythm */
+  .home-shelf {
+    flex: 1 1 auto !important;
+    min-height: clamp(140px, 17vh, 240px) !important;
+    margin-top: 0 !important;
+  }
+  .home-shelf .bookshelf {
+    border: 1px solid color-mix(in srgb, var(--amber-500) 30%, transparent) !important;
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--amber-400) 12%, transparent),
+      0 8px 22px rgba(0, 0, 0, 0.3) !important;
+  }
+  .home-shelf .bookshelf-inner {
+    padding-top: clamp(0.3rem, 0.7vh, 0.65rem) !important;
+    padding-bottom: clamp(0.28rem, 0.5vh, 0.55rem) !important;
+  }
+}
+
+/* Mid-tall laptops (~900px): stay locked, slightly denser */
+@media (min-width: 64rem) and (min-height: 56.25rem) {
+  body:has(.home-page) .app-shell {
+    overflow: hidden !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+  }
+  .home-hero-content {
+    gap: 0.1rem !important;
+  }
+}
+
+/*
+  Shorter laptops (<900px tall, e.g. 1280×800): controlled page
+  scroll as safety valve so the composed stack isn't crushed.
+*/
+@media (min-width: 64rem) and (max-height: 56.24rem) {
+  body:has(.home-page) .app-shell {
+    height: auto !important;
+    min-height: 100dvh !important;
+    max-height: none !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+  body:has(.home-page) .app-shell > .container {
+    overflow: visible !important;
+    height: auto !important;
+    flex: 0 1 auto !important;
+  }
+  .home-page,
+  .home-hero,
+  .home-hero-content {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .home-hero-content {
+    min-height: 0 !important;
+    gap: 0.2rem !important;
+  }
+  .home-compass {
+    flex: 0 1 auto !important;
+    min-height: 140px !important;
+  }
+  .home-shelf {
+    flex: 0 0 auto !important;
+    /* definite height feeds existing cq system — formulas unchanged */
+    height: clamp(168px, 22vh, 220px) !important;
+    min-height: 0 !important;
+  }
+}
+
+/* Book spine presence — visual only */
+@media (min-width: 64rem) {
+  .book-spine {
+    background: linear-gradient(
+      90deg,
+      #04060a 0%,
+      color-mix(in srgb, var(--amber-500) 58%, #1a1208) 40%,
+      color-mix(in srgb, var(--amber-400) 42%, transparent) 62%,
+      rgba(0, 0, 0, 0.12) 100%
+    ) !important;
+    box-shadow:
+      inset -3px 0 5px rgba(0, 0, 0, 0.5),
+      1px 0 0 color-mix(in srgb, var(--amber-500) 55%, transparent) !important;
+  }
+  .book-spine::after {
+    background: linear-gradient(
+      180deg,
+      transparent 4%,
+      #f6e4a8 12%,
+      var(--amber-400) 50%,
+      #f6e4a8 88%,
+      transparent 96%
+    ) !important;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--amber-500) 50%, transparent) !important;
+  }
+  .book-cover {
+    border-color: color-mix(in srgb, var(--amber-500) 68%, transparent) !important;
+    box-shadow:
+      var(--gold-glow),
+      0 0 0 1px color-mix(in srgb, var(--amber-500) 22%, transparent),
+      0 1px 0 color-mix(in srgb, var(--amber-400) 16%, transparent) inset,
+      0 14px 26px -8px rgba(0, 0, 0, 0.74) !important;
+  }
+  .book-cover-title {
+    color: #fff9e8 !important;
+    text-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.9),
+      0 0 16px color-mix(in srgb, var(--amber-500) 20%, transparent) !important;
+  }
+}
+
+html.light .home-compass::before {
+  background:
+    radial-gradient(
+      ellipse 58% 58% at 50% 48%,
+      color-mix(in srgb, var(--amber-500) 26%, transparent) 0%,
+      color-mix(in srgb, var(--amber-400) 12%, transparent) 45%,
+      transparent 72%
+    ) !important;
+}
+html.light .home-shelf-hint {
+  color: var(--amber-500) !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--amber-500) 8%, transparent),
+    transparent
+  );
+}
