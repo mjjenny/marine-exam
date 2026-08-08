@@ -4100,3 +4100,175 @@ html.light .home-shelf .bookshelf {
   ) !important;
   border-color: color-mix(in srgb, var(--amber-500) 30%, transparent) !important;
 }
+
+/* ══════════════════════════════════════════════════════════
+   HOMEPAGE DENSITY COMPOSITION PASS
+   Branch: redesign/homepage-density-pass
+   Relaxes fixed-viewport / zero-scrollbar so Greeting →
+   Compass → Shelf label → Books read as one dense group.
+   Protected: token values, compass <img> size, shelf cq /
+   aspect-ratio / --shelf-books formulas (untouched).
+   ══════════════════════════════════════════════════════════ */
+
+@media (min-width: 64rem) {
+  /*
+    Controlled scroll unlock: shell may grow past the viewport
+    when the dense stack (large compass + shelf) needs room.
+    Prefer fitting; allow page scroll rather than sparse flex voids.
+  */
+  body:has(.home-page) .app-shell {
+    height: auto !important;
+    min-height: 100dvh !important;
+    max-height: none !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+  body:has(.home-page) .app-shell > .container {
+    flex: 0 1 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-top: 0.55rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  .home-page,
+  .home-hero {
+    flex: 0 1 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  /*
+    One composed column: tight, even gaps; vertically centred in the
+    viewport when short enough, otherwise natural height + scroll.
+  */
+  .home-hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: safe center !important;
+    gap: 0.4rem !important;
+    padding: 0.25rem 0 0.5rem !important;
+    min-height: calc(100dvh - 4.75rem) !important; /* approx header */
+    overflow: visible !important;
+    max-width: 72rem;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Greeting — compact lead-in to the group */
+  .home-head {
+    flex: 0 0 auto !important;
+    margin: 0 auto 0 !important;
+    max-width: 36rem !important;
+    width: 100%;
+    padding: 0.15rem 0 0.1rem 0.75rem !important;
+  }
+  .home-kicker {
+    margin: 0 0 0.15rem !important;
+  }
+  .home-greeting {
+    margin: 0 0 0.15rem !important;
+    font-size: clamp(1.35rem, 1rem + 1.15vw, 2.05rem) !important;
+  }
+  .home-overall,
+  .home-empty-copy {
+    margin: 0 !important;
+    font-size: 0.84rem !important;
+  }
+  .home-exam-countdown {
+    margin: 0.1rem 0 0 !important;
+    font-size: 0.74rem !important;
+  }
+
+  .resume-card {
+    flex: 0 0 auto !important;
+    margin: 0 auto !important;
+    max-width: 28rem !important;
+    padding: 0.5rem 0.85rem !important;
+  }
+
+  /*
+    Compass: no flex growth void. Image width/max-height NOT changed.
+    Box hugs the logo so greeting/label sit close to it.
+  */
+  .home-compass {
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    width: 100%;
+    overflow: visible !important;
+  }
+  .home-compass::before {
+    inset: 10% 20% !important;
+  }
+
+  /* Shelf label — tight caption binding logo to books */
+  .home-shelf-hint {
+    flex: 0 0 auto !important;
+    margin: 0.15rem auto 0.1rem !important;
+    padding: 0.28rem 0.75rem !important;
+    width: min(26rem, 90%) !important;
+    font-size: 0.66rem !important;
+    letter-spacing: 0.22em !important;
+  }
+
+  /*
+    Shelf: definite height budget (feeds existing cq system) instead of
+    stretching into leftover void. Does NOT alter cq / aspect-ratio /
+    --shelf-books formulas inside .home-shelf .
+  */
+  .home-shelf {
+    flex: 0 0 auto !important;
+    height: clamp(210px, 26vh, 300px) !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    width: 100%;
+    overflow: hidden !important;
+    /* container-type: size remains from earlier rule — do not remove */
+  }
+
+  .home-shelf .bookshelf-inner {
+    padding-top: 0.45rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+}
+
+/* Mid-height laptops: slightly shorter shelf budget, keep stack dense */
+@media (min-width: 64rem) and (max-height: 56.25rem) {
+  .home-hero-content {
+    gap: 0.3rem !important;
+    min-height: 0 !important; /* natural height → scroll if needed */
+    justify-content: flex-start !important;
+    padding-top: 0.15rem !important;
+  }
+  .home-shelf {
+    height: clamp(190px, 24vh, 260px) !important;
+  }
+}
+
+/* Shorter common laptops (~800px tall): prefer scroll over crushing */
+@media (min-width: 64rem) and (max-height: 50.5rem) {
+  .home-hero-content {
+    min-height: 0 !important;
+    justify-content: flex-start !important;
+    gap: 0.25rem !important;
+  }
+  .home-shelf {
+    height: clamp(175px, 22vh, 230px) !important;
+  }
+  .home-greeting {
+    font-size: clamp(1.25rem, 0.95rem + 1vw, 1.75rem) !important;
+  }
+}
+
+/* Tall desktops: keep the group centred as one composition */
+@media (min-width: 64rem) and (min-height: 56.3rem) {
+  .home-hero-content {
+    justify-content: safe center !important;
+  }
+}
